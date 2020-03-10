@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="14de0894-be09-4b15-9b9d-013d8c9304fe" />
+          <option name="name" value="cafe_beverages" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/main/resources/cafe_beverages.sql" />
+            </array>
+          </option>
+        </State>
+        <State>
+          <option name="id" value="7a25182e-d225-4eed-8050-8cfbe6b80d84" />
+          <option name="name" value="cafe_orders" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/main/resources/cafe_orders.sql" />
+            </array>
+          </option>
+        </State>
+        <State>
+          <option name="id" value="1e71759c-710f-42f7-8709-27df4945e554" />
+          <option name="name" value="cafe_waiters" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/main/resources/cafe_waiters.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

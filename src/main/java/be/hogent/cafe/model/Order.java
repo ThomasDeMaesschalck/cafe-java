@@ -1,0 +1,96 @@
+package be.hogent.cafe.model;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+
+public class Order {
+    private final int orderNumber;
+    private final LocalDate date;
+    private final int waiterID;
+    private Set<OrderItem> orderItems  =  new HashSet<>();
+    private final int tableID;
+    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+
+    public Order(int orderNumber, LocalDate date, OrderItem orderItem, int waterID, int tableID) {
+        this.orderNumber = orderNumber;
+        getOrderLines().add(orderItem);
+        this.date = date;
+        this.waiterID = waterID;
+        this.tableID = tableID;
+    }
+
+    public void AddOrUpdateOrderLine(OrderItem orderItem)
+    {
+        if(getOrderLines().contains(orderItem)) {  //qty van bestaande orderlijn updaten
+            Optional<OrderItem> originalOrderItem = getOrderLines().stream().filter((orderItem::equals)).findFirst();
+            int newQuantity = originalOrderItem.orElseThrow().getQty() + orderItem.getQty();
+            int ID = originalOrderItem.orElseThrow().getID();
+            getOrderLines().remove(orderItem);
+            OrderItem orderItemUpdated = new OrderItem(ID, orderItem.getBeverage(), newQuantity);
+            getOrderLines().add(orderItemUpdated);
+            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline with " + orderItemUpdated.toString());
+        }
+        else{ //orderlijn toevoegen aan bestaand order
+            OrderItem orderItemToAdd = new OrderItem(orderItem.getID(), orderItem.getBeverage(), orderItem.getQty());
+            getOrderLines().add(orderItemToAdd);
+            logger.info("orderNumber: " + getOrderNumber() + " -  added orderline " + orderItemToAdd.toString());
+        }
+    }
+
+    public boolean orderLineExists(OrderItem orderItem)
+    {
+        return getOrderLines().contains(orderItem);
+    }
+
+    public int getOrderNumber() {
+        return orderNumber;
+    }
+
+    public double getTotalOrderPrice(){ //totaal bedrag van een volledig order
+        return getOrderLines().stream().mapToDouble(OrderItem::getOrderLinePrice).sum();
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public int getWaiterID() {
+        return waiterID;
+    }
+
+    public Set<OrderItem> getOrderLines() {
+        return orderItems;
+    }
+
+    public int getTableID() {
+        return tableID;
+    }
+    
+    @Override
+    public String toString() {
+        return "Order: " + getOrderNumber() +
+                ", date: " + getDate() +
+                ", waiterID: " + getWaiterID() +
+                ", orderItems: " + orderItems.toString() +
+                ", tableID: " + getTableID();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return orderNumber == order.orderNumber &&  waiterID == order.waiterID;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orderNumber, waiterID);
+    }
+}
