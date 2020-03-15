@@ -31,17 +31,16 @@ public class Order {
             Optional<OrderItem> originalOrderItem = getOrderLines().stream().filter((orderItem::equals)).findFirst();
             int newQuantity = originalOrderItem.orElseThrow().getQty() + orderItem.getQty();
             int ID = originalOrderItem.orElseThrow().getID();
-            getOrderLines().forEach((o) ->  {
+            getOrderLines().forEach(o ->  {
                 if(o.equals(orderItem))
                 {
                     o.setQty(newQuantity);
                 }});
             logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline with ID: " + ID  + " to new quantity: " + newQuantity);
-        }
+          }
         else{ //orderlijn toevoegen aan bestaand order
-            OrderItem orderItemToAdd = new OrderItem(orderItem.getID(), orderItem.getBeverage(), orderItem.getQty());
-            getOrderLines().add(orderItemToAdd);
-            logger.info("orderNumber: " + getOrderNumber() + " -  added orderline " + orderItemToAdd.toString());
+            getOrderLines().add(orderItem);
+            logger.info("orderNumber: " + getOrderNumber() + " -  added orderline " + orderItem.toString());
         }
     }
 
