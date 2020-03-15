@@ -285,14 +285,15 @@ public class CafeTest {
         cafe.logIn("Wout Peters","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
+        cafe.placeOrder(cola, 10); //24 - test om te zien of qty updaten werkt
         cafe.placeOrder(leffe, 10); //30
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 30); //90
         cafe.placeOrder(cola, 20); //48
         cafe.pay();
-        assertEquals(192, cafe.getTotalWaiterRevenue(), "Test getTotalWaiterRevenue() 01 failed");
-        assertEquals(192, cafe.getTotalWaiterRevenue(1), "Test getTotalWaiterRevenue() 02 failed");
+        assertEquals(216, cafe.getTotalWaiterRevenue(), "Test getTotalWaiterRevenue() 01 failed");
+        assertEquals(216, cafe.getTotalWaiterRevenue(1), "Test getTotalWaiterRevenue() 02 failed");
     }
 
     @Test

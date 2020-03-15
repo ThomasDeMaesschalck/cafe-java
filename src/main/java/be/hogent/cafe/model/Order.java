@@ -31,10 +31,12 @@ public class Order {
             Optional<OrderItem> originalOrderItem = getOrderLines().stream().filter((orderItem::equals)).findFirst();
             int newQuantity = originalOrderItem.orElseThrow().getQty() + orderItem.getQty();
             int ID = originalOrderItem.orElseThrow().getID();
-            getOrderLines().remove(orderItem);
-            OrderItem orderItemUpdated = new OrderItem(ID, orderItem.getBeverage(), newQuantity);
-            getOrderLines().add(orderItemUpdated);
-            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline with " + orderItemUpdated.toString());
+            getOrderLines().forEach((o) ->  {
+                if(o.equals(orderItem))
+                {
+                    o.setQty(newQuantity);
+                }});
+            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline with ID: " + ID  + " to new quantity: " + newQuantity);
         }
         else{ //orderlijn toevoegen aan bestaand order
             OrderItem orderItemToAdd = new OrderItem(orderItem.getID(), orderItem.getBeverage(), orderItem.getQty());
