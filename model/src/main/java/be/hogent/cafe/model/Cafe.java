@@ -3,10 +3,10 @@ package be.hogent.cafe.model;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.*;
-import be.hogent.cafe.model.reports.AllWaiterSales;
-import be.hogent.cafe.model.reports.MakePDFSalesReport;
-import be.hogent.cafe.model.reports.MakeTopWaitersChart;
-import be.hogent.cafe.model.reports.WaitersByRevenue;
+import be.hogent.cafe.model.reporting.AllWaiterSales;
+import be.hogent.cafe.model.reporting.MakePDFSalesReport;
+import be.hogent.cafe.model.reporting.MakeTopWaitersChart;
+import be.hogent.cafe.model.reporting.WaitersByRevenue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,0 +1,2280 @@
+[INFO ] 2020-03-15 11:33:32.987 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.004 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.007 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.008 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.011 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.011 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.012 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.035 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 11:33:33.039 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.039 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.039 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.039 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.040 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.040 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.040 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.041 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.044 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:33.044 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.045 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.045 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.045 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.046 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.057 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.061 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.066 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.067 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.068 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.068 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.069 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:33.069 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.070 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:33.070 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.076 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 11:33:33.077 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.082 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.083 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.083 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.083 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.084 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.084 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.084 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.085 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.085 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.085 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.086 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.086 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.086 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.086 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.086 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.087 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.087 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.087 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:33.088 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.088 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.089 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.089 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.089 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.090 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.090 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.090 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.091 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.091 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 11:33:33.091 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.092 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:33.093 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.093 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:33.093 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.102 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 11:33:33.103 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.104 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.104 [main] Cafe - Patrick Desmet retrieved his sales data
+[INFO ] 2020-03-15 11:33:33.111 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.111 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.112 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.112 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.113 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.113 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.114 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.114 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.114 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 11:33:33.115 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.115 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 11:33:33.115 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.116 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 11:33:33.116 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.116 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.116 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.117 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.117 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 11:33:33.117 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.117 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.118 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.118 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 20], tableID: 10
+[DEBUG] 2020-03-15 11:33:33.118 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 11:33:33.118 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Leffe, quantity: 30
+[DEBUG] 2020-03-15 11:33:33.119 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 11:33:33.119 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Duvel, quantity: 40
+[INFO ] 2020-03-15 11:33:33.119 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:33.119 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.120 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.120 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.120 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.120 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 11:33:33.120 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 8, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.122 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 11:33:33.122 [main] Cafe - orderNumber: 3 -  added orderline ID: 9, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 11:33:33.122 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.122 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.123 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 11:33:33.123 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.123 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 11:33:33.127 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.127 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 11:33:33.128 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-03-15 11:33:33.128 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.128 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.128 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.129 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.129 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.129 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.129 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 11:33:33.129 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.129 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 10
+[INFO ] 2020-03-15 11:33:33.130 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.130 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.130 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.130 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.137 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 11:33:33.138 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.138 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.138 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.138 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 1], tableID: 10
+[DEBUG] 2020-03-15 11:33:33.138 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.138 [main] Cafe - orderNumber: 2 -  added orderline ID: 5, beverage: Leffe, quantity: 3
+[DEBUG] 2020-03-15 11:33:33.139 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 11:33:33.139 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Duvel, quantity: 5
+[DEBUG] 2020-03-15 11:33:33.140 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 11:33:33.140 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Fanta, quantity: 4
+[INFO ] 2020-03-15 11:33:33.140 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.140 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 11:33:33.142 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.142 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.144 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-03-15 11:33:33.146 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-03-15 11:33:33.146 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-03-15 11:33:33.146 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-03-15 11:33:33.147 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-03-15 11:33:33.147 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.147 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-03-15 11:33:33.147 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-03-15 11:33:33.149 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.152 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.153 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.154 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.154 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.154 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.155 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.155 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.155 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.155 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 11:33:33.155 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.155 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.155 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.156 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.156 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 11:33:33.161 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 4
+[INFO ] 2020-03-15 11:33:33.162 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 9
+[INFO ] 2020-03-15 11:33:33.162 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.162 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 11:33:33.162 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 11:33:33.163 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 11:33:33.163 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.163 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.163 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.163 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 11:33:33.163 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.163 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 11:33:33.164 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:33.165 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.165 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.166 [main] Cafe - orderNumber: 1 - updated orderline with ID: 2 to new quantity: 4
+[INFO ] 2020-03-15 11:33:33.167 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.168 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 11:33:33.168 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-03-15 11:33:33.169 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.169 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.169 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.169 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.170 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.170 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.170 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 11:33:33.170 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.170 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 11:33:33.171 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.171 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 11:33:33.171 [main] Cafe - Removed orderline ID: 1, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 11:33:33.174 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.174 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.175 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.176 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.178 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.178 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.178 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.178 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.179 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.179 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.179 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.179 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.179 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.179 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.179 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.180 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.180 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.180 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.180 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.184 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.184 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.184 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:33.184 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.185 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.195 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.196 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.199 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-03-15 11:33:33.201 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.202 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.203 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.203 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.203 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.203 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.204 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 20], tableID: 1
+[INFO ] 2020-03-15 11:33:33.204 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.204 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.204 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.204 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.205 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.205 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.205 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.205 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.205 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:33.205 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.205 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.206 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.206 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.206 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.206 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.206 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.206 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.206 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.206 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:33.207 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.207 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.207 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.212 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 11:33:33.539 [main] Cafe - Wout Peters created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-03-15 11:33:33.541 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:33.542 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:33.543 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.544 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.544 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:33.544 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:33.544 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.544 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:33.544 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.545 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:33.545 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.545 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.545 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:33.545 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:33.545 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:33.545 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.545 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:33.546 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:33.546 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:33.546 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.546 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:33.546 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:33.547 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:33.547 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.548 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:33.548 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:33.549 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:33.549 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 11:33:33.549 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.550 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:33.550 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:33.550 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:33.550 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:33.551 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 11:33:33.551 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 11:33:33.551 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 11:33:33.551 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 11:33:33.551 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 11:33:33.552 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 11:33:33.552 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:33.553 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:33.553 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 11:33:33.553 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 11:33:33.553 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 11:33:33.554 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 11:33:33.554 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 11:33:33.554 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 11:33:33.554 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 11:33:33.554 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:33.554 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 11:33:33.554 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 11:33:34.211 [main] Cafe - Ilse Vandenbroeck created top waiter pie chart
+[INFO ] 2020-03-15 11:33:34.212 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.212 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.213 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.213 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.214 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.214 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.215 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 11:33:34.215 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:34.215 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:34.215 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:34.215 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.215 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:34.216 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:34.216 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:34.216 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:34.216 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:34.216 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:34.216 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:34.216 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:34.217 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:34.217 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.217 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:34.217 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:34.217 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:34.217 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:34.217 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:34.217 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:34.218 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:34.218 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:34.218 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:34.218 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.218 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 11:33:34.224 [main] Cafe - Wout Peters created a waiter sales PDF report
+[INFO ] 2020-03-15 11:33:34.227 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.230 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.231 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.231 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.232 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.232 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.233 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.233 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 11:33:34.233 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 11:33:34.233 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:34.234 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:34.236 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.237 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.237 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.237 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.237 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.237 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.238 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:34.238 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:34.238 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:34.238 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:33:34.238 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:34.238 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:34.239 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.239 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:33:34.239 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:33:34.239 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:33:34.239 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:33:34.240 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:33:34.240 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:33:34.240 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:34.240 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:34.241 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:34.241 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.241 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:34.241 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:33:34.241 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:33:34.241 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 11:33:34.242 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 11:33:34.242 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:34.243 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 11:33:34.243 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:33:34.243 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:33:34.244 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 11:33:34.245 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 11:33:34.245 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 11:33:34.246 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 11:33:34.246 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 11:33:34.247 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 11:33:34.248 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 11:33:34.248 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 11:33:34.248 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:33:34.248 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 11:33:34.248 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 11:33:34.249 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 11:33:34.249 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 11:33:34.249 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 11:33:34.249 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 11:33:34.249 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 11:33:34.249 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:33:34.249 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 11:33:34.249 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 11:33:34.251 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.251 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.252 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:34.252 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.253 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.253 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:33:34.253 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 11:33:34.258 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.258 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.258 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.260 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.261 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.261 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.262 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.262 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.262 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.262 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 11:33:34.262 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:34.262 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 11:33:34.265 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.265 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.266 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.267 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.267 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.267 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.273 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.279 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.279 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.279 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.281 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.281 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.281 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.281 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 11:33:34.281 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:33:34.281 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 11:33:34.284 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.288 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:33:34.289 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:33:34.289 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:33:34.290 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:33:34.290 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:33:34.292 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:33:34.292 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[INFO ] 2020-03-15 11:33:34.298 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:51:23.285 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:51:23.293 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:51:23.294 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:51:23.308 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:51:23.309 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:51:23.310 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:51:23.331 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 11:51:23.331 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:51:23.331 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 11:51:23.331 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:51:23.331 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:51:23.331 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:51:23.331 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:51:23.331 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 11:51:23.349 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 4
+[INFO ] 2020-03-15 11:51:23.350 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 9
+[INFO ] 2020-03-15 11:51:23.350 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 11:51:23.350 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 11:51:23.351 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 11:51:23.353 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 11:51:23.353 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 11:51:23.353 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 11:51:23.354 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:51:23.354 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 11:51:23.354 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 11:51:23.354 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 11:51:23.355 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 11:51:23.355 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:51:23.355 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:51:23.356 [main] Cafe - orderNumber: 1 - updated orderline with ID: 2 to new quantity: 4
+[INFO ] 2020-03-15 11:59:14.012 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 11:59:14.019 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 11:59:14.020 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 11:59:14.027 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 11:59:14.028 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 11:59:14.028 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 11:59:14.040 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 11:59:14.046 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 11:59:14.047 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 11:59:14.049 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 11:59:14.052 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 11:59:14.052 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 11:59:14.053 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 11:59:14.053 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 11:59:14.053 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 11:59:14.053 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 11:59:14.054 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 11:59:14.054 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 11:59:14.054 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 11:59:14.054 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 11:59:14.054 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:01.657 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.667 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.669 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.670 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.679 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.680 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.680 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.700 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:48:01.703 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.704 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.704 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:01.704 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.704 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.705 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.705 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:01.705 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.709 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:01.709 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.709 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:01.709 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.710 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.710 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.732 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:01.732 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:01.732 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.733 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.733 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.734 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:01.734 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:01.734 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.735 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:01.735 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.742 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:48:01.742 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.745 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.747 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.748 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.748 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.748 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.749 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.749 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.749 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.750 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:01.750 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.750 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.751 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:01.751 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.751 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.752 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.752 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:01.753 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.753 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:01.754 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.754 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:01.755 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.755 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.758 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.761 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:01.762 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:01.763 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.763 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.765 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:48:01.766 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:01.767 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:01.769 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.770 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:01.770 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.771 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:48:01.771 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.771 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.772 [main] Cafe - Patrick Desmet retrieved his sales data
+[INFO ] 2020-03-15 20:48:01.775 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.776 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.777 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.778 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.778 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.778 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.779 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.779 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.779 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:48:01.779 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.779 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:48:01.780 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.780 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:48:01.780 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.780 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.780 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.781 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.781 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:48:01.781 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:01.781 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.781 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.782 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 20], tableID: 10
+[DEBUG] 2020-03-15 20:48:01.782 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:48:01.782 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Leffe, quantity: 30
+[DEBUG] 2020-03-15 20:48:01.782 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:48:01.782 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Duvel, quantity: 40
+[INFO ] 2020-03-15 20:48:01.783 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:01.783 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.783 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.783 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.784 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:01.784 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:48:01.784 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 8, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.785 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:48:01.785 [main] Cafe - orderNumber: 3 -  added orderline ID: 9, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:48:01.785 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.786 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.786 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:48:01.786 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.787 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:48:01.791 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.792 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:48:01.792 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-03-15 20:48:01.792 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.792 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.792 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.793 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.793 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.793 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.793 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:48:01.793 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.794 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 10
+[INFO ] 2020-03-15 20:48:01.794 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.795 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.796 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.796 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.796 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:48:01.803 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:01.804 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.804 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.805 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 1], tableID: 10
+[DEBUG] 2020-03-15 20:48:01.805 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.805 [main] Cafe - orderNumber: 2 -  added orderline ID: 5, beverage: Leffe, quantity: 3
+[DEBUG] 2020-03-15 20:48:01.806 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:48:01.806 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Duvel, quantity: 5
+[DEBUG] 2020-03-15 20:48:01.807 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:48:01.807 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Fanta, quantity: 4
+[INFO ] 2020-03-15 20:48:01.807 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.807 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:48:01.812 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.812 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.814 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-03-15 20:48:01.815 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-03-15 20:48:01.816 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-03-15 20:48:01.817 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-03-15 20:48:01.817 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-03-15 20:48:01.818 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.818 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-03-15 20:48:01.818 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-03-15 20:48:01.819 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.822 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.823 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.823 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.824 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.824 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.824 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.825 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.825 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.827 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:48:01.828 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:01.828 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.828 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.829 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.829 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 20:48:01.834 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 4
+[INFO ] 2020-03-15 20:48:01.835 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 9
+[INFO ] 2020-03-15 20:48:01.835 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.835 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 20:48:01.835 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 20:48:01.836 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 20:48:01.836 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:01.836 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:01.836 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.836 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 20:48:01.837 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.837 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:48:01.837 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:01.837 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.837 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.837 [main] Cafe - orderNumber: 1 - updated orderline with ID: 2 to new quantity: 4
+[INFO ] 2020-03-15 20:48:01.839 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.841 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:48:01.841 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-03-15 20:48:01.842 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.842 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.842 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.842 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.842 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.842 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.842 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:48:01.843 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.843 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:48:01.843 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.843 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:48:01.843 [main] Cafe - Removed orderline ID: 1, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:48:01.846 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.846 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.847 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.847 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:01.849 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.850 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.850 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.850 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.851 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.851 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.851 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:48:01.851 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:48:01.851 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.852 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:01.852 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.852 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.853 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:01.853 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.856 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.857 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.857 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:01.857 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.857 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:01.857 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.857 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:01.870 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.871 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.871 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-03-15 20:48:01.873 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:01.873 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.873 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.874 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:01.874 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 20], tableID: 1
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:01.874 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.874 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:01.874 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:01.875 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:01.875 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:01.875 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:01.875 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:01.876 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:01.876 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:01.876 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:01.876 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:01.876 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:01.876 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:01.882 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:48:02.231 [main] Cafe - Wout Peters created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-03-15 20:48:02.235 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.236 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.236 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.237 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.237 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.237 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.237 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.237 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.237 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.237 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:02.237 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.238 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:02.238 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.238 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:02.238 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:02.238 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:02.239 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:02.239 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:02.240 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:02.240 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:02.241 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:02.241 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:02.241 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.241 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:02.241 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:02.241 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:02.241 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.241 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:02.242 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:48:02.242 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:48:02.242 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:48:02.242 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:48:02.243 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:48:02.243 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:48:02.243 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:02.244 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:02.244 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:48:02.244 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:48:02.244 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:48:02.245 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:48:02.245 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:48:02.245 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:48:02.245 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:48:02.245 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.245 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:48:02.245 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:48:02.901 [main] Cafe - Ilse Vandenbroeck created top waiter pie chart
+[INFO ] 2020-03-15 20:48:02.902 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.903 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.904 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.905 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.905 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.905 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.906 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:48:02.906 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:02.907 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.907 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:02.907 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.908 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:02.908 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.909 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:02.909 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:02.909 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:02.909 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:02.910 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:02.910 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:02.910 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.911 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.911 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:48:02.917 [main] Cafe - Wout Peters created a waiter sales PDF report
+[INFO ] 2020-03-15 20:48:02.923 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.929 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.932 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.932 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.932 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.932 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.932 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.932 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:48:02.933 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:48:02.933 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.933 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.936 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.937 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.937 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.938 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.938 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.938 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.938 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.939 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.939 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.939 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:48:02.939 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.939 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:02.939 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.939 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:48:02.939 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:48:02.940 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.940 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:02.941 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:48:02.941 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:48:02.941 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.941 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:48:02.941 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.941 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:48:02.941 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:48:02.943 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:48:02.944 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:48:02.944 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:48:02.945 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:48:02.945 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:48:02.946 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:48:02.946 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:48:02.946 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:48:02.947 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:48:02.947 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:48:02.947 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:48:02.947 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:48:02.948 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:48:02.949 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:48:02.961 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:48:02.961 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:48:02.962 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:48:02.962 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:48:02.962 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:48:02.962 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:48:02.966 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.966 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.966 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:02.969 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.969 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.969 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:48:02.970 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:48:02.978 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.978 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.978 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.979 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.980 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.980 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.980 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.980 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.982 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.982 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.982 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.983 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:48:02.985 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.985 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.986 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.987 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.987 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.987 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.990 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.997 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:02.997 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:02.998 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:02.998 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:02.998 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:02.998 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:02.998 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:48:02.998 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:48:02.998 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:48:03.000 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:03.003 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:48:03.003 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:48:03.003 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:48:03.004 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:48:03.004 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:48:03.004 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:48:03.004 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[INFO ] 2020-03-15 20:48:03.005 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.196 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.205 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.207 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.208 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.211 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.211 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.211 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.240 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:52:17.244 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.245 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.246 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.246 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.246 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.253 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.254 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.254 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.260 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:17.263 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.268 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.269 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.270 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.270 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.290 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.290 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.291 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.291 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.291 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.292 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.292 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:17.293 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.293 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:17.293 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.299 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:52:17.300 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.302 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.303 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.303 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.304 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.305 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.305 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.305 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.306 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.306 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.306 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.307 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.307 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.307 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.307 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.308 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.308 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.308 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.308 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:17.309 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.309 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.309 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.309 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.309 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.310 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.310 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.310 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.310 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.311 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:52:17.311 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.311 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:17.312 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.312 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:17.312 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.314 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:52:17.314 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.314 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.314 [main] Cafe - Patrick Desmet retrieved his sales data
+[INFO ] 2020-03-15 20:52:17.317 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.318 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.318 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.318 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.319 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.320 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.320 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.320 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.321 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:52:17.321 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.321 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:52:17.321 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.322 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:52:17.322 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.322 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.322 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.323 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.323 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:52:17.323 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.323 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.324 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.325 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 20], tableID: 10
+[DEBUG] 2020-03-15 20:52:17.327 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:52:17.327 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Leffe, quantity: 30
+[DEBUG] 2020-03-15 20:52:17.327 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:52:17.327 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Duvel, quantity: 40
+[INFO ] 2020-03-15 20:52:17.328 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:17.328 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.328 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.328 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.328 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.329 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:52:17.329 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 8, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.329 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:52:17.329 [main] Cafe - orderNumber: 3 -  added orderline ID: 9, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:52:17.330 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.330 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.330 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:52:17.330 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.330 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:52:17.335 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.336 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:52:17.336 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-03-15 20:52:17.337 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.337 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.337 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.337 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.338 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.338 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.338 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:52:17.339 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.339 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 10
+[INFO ] 2020-03-15 20:52:17.339 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.339 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.339 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.340 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.340 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:52:17.341 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.341 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.341 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.342 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 1], tableID: 10
+[DEBUG] 2020-03-15 20:52:17.342 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.342 [main] Cafe - orderNumber: 2 -  added orderline ID: 5, beverage: Leffe, quantity: 3
+[DEBUG] 2020-03-15 20:52:17.342 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:52:17.343 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Duvel, quantity: 5
+[DEBUG] 2020-03-15 20:52:17.343 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:52:17.343 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Fanta, quantity: 4
+[INFO ] 2020-03-15 20:52:17.343 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.344 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:52:17.347 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.348 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.351 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-03-15 20:52:17.352 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-03-15 20:52:17.352 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-03-15 20:52:17.352 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-03-15 20:52:17.358 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-03-15 20:52:17.360 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.360 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-03-15 20:52:17.360 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-03-15 20:52:17.368 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.374 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.376 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.376 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.377 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.377 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.377 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.378 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.379 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.379 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:52:17.379 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.379 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.380 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.380 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.380 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 20:52:17.389 [main] Cafe - orderNumber: 2 - updated orderline with ID: 0 to new quantity: 4
+[INFO ] 2020-03-15 20:52:17.390 [main] Cafe - orderNumber: 2 - updated orderline with ID: 0 to new quantity: 9
+[INFO ] 2020-03-15 20:52:17.390 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.390 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 20:52:17.391 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 20:52:17.391 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 20:52:17.391 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.391 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.392 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.392 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 20:52:17.392 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.392 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:52:17.394 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:17.394 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.394 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.395 [main] Cafe - orderNumber: 1 - updated orderline with ID: 0 to new quantity: 4
+[INFO ] 2020-03-15 20:52:17.400 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.401 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:52:17.401 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-03-15 20:52:17.402 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.402 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.402 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.402 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.402 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.402 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.403 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:52:17.403 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.404 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:52:17.404 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.405 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:52:17.405 [main] Cafe - Removed orderline ID: 1, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:52:17.408 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.409 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.410 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.411 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.414 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.417 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.417 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.417 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.417 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.418 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.418 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:52:17.418 [main] Cafe - orderNumber: 1 - updated orderline with ID: 0 to new quantity: 20
+[DEBUG] 2020-03-15 20:52:17.419 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.420 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.420 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.420 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.420 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.421 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.424 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.425 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.425 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.425 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.425 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:17.425 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.425 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.437 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.437 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.438 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-03-15 20:52:17.439 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.440 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.440 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.440 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.440 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.440 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.440 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 20], tableID: 1
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.441 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.441 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.441 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.441 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.442 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.442 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.442 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.442 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.443 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:17.443 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.443 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.443 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.447 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:52:17.773 [main] Cafe - Wout Peters created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-03-15 20:52:17.775 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:17.776 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:17.777 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.777 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.777 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:17.777 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:17.777 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.777 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:17.778 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:17.778 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:17.778 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.778 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.779 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:17.779 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:17.779 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:17.779 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:52:17.780 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.780 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:17.780 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:17.780 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:17.780 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:17.780 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:52:17.780 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:52:17.781 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:52:17.782 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:52:17.783 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:52:17.783 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:52:17.783 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:17.783 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:17.787 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:52:17.787 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:52:17.787 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:52:17.787 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:52:17.788 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:52:17.788 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:52:17.788 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:52:17.788 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:17.788 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:52:17.789 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:52:18.400 [main] Cafe - Ilse Vandenbroeck created top waiter pie chart
+[INFO ] 2020-03-15 20:52:18.402 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.403 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.404 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.404 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.404 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.404 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.404 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:52:18.405 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:18.405 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:18.405 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:18.405 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.405 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:18.405 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:18.405 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:18.406 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:18.406 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:18.406 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:18.406 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:18.406 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:18.407 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:18.407 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.407 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:18.407 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:18.407 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:18.408 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:18.408 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.409 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:52:18.415 [main] Cafe - Wout Peters created a waiter sales PDF report
+[INFO ] 2020-03-15 20:52:18.419 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.424 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.424 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.425 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.425 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.425 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.425 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.425 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:52:18.426 [main] Cafe - orderNumber: 1 - updated orderline with ID: 0 to new quantity: 20
+[DEBUG] 2020-03-15 20:52:18.426 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:18.426 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:18.429 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.430 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.430 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.430 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.431 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.431 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.432 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:18.432 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.433 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:52:18.433 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:52:18.433 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:52:18.433 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:18.434 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:52:18.434 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:52:18.434 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:52:18.434 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:52:18.435 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:52:18.435 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:52:18.435 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:52:18.436 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:52:18.436 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:52:18.436 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:52:18.436 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:52:18.436 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:52:18.436 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:52:18.437 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:52:18.437 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:52:18.437 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:52:18.437 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:52:18.437 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:52:18.438 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:52:18.438 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:52:18.438 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:52:18.438 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:52:18.442 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.442 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.443 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:18.444 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.445 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.445 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:52:18.445 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:52:18.451 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.451 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.452 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.454 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.454 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.454 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.455 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.455 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.455 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.455 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:52:18.455 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:18.455 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:52:18.456 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.457 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.457 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.459 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.459 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.460 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.463 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.467 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.467 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.468 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.468 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.468 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.468 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.468 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:52:18.468 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:52:18.468 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:52:18.470 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.472 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:52:18.472 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:52:18.472 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:52:18.473 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:52:18.473 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:52:18.473 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:52:18.473 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[INFO ] 2020-03-15 20:52:18.474 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.589 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.597 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.598 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.599 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.602 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.603 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.603 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.627 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:55:29.631 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.631 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.631 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:29.632 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.632 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.632 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.632 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:29.633 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.637 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:29.637 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.637 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:29.637 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.638 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.638 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.647 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:29.648 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:29.655 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.656 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.658 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.658 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:29.659 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:29.660 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.660 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:29.660 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.665 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:55:29.666 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.668 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.669 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.669 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.670 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.670 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.670 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.670 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.671 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.671 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:29.671 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.671 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.671 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:29.672 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.672 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.672 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.672 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:29.672 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.673 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.674 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:29.674 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:29.674 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.674 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.675 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:55:29.675 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:29.675 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:29.676 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.676 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:29.676 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.678 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:55:29.678 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.678 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.678 [main] Cafe - Patrick Desmet retrieved his sales data
+[INFO ] 2020-03-15 20:55:29.683 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.683 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.683 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.684 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.684 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.684 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.685 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.686 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.686 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:55:29.687 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.687 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:55:29.687 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.687 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:55:29.688 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.688 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.688 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.688 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.688 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:55:29.689 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:29.689 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.689 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.689 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 20], tableID: 10
+[DEBUG] 2020-03-15 20:55:29.689 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:55:29.690 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Leffe, quantity: 30
+[DEBUG] 2020-03-15 20:55:29.690 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:55:29.691 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Duvel, quantity: 40
+[INFO ] 2020-03-15 20:55:29.691 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:29.691 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.691 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.691 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.692 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:29.692 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:55:29.692 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 8, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.692 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:55:29.692 [main] Cafe - orderNumber: 3 -  added orderline ID: 9, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:55:29.693 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.693 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.693 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:55:29.693 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.693 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:55:29.696 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.696 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:55:29.697 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-03-15 20:55:29.697 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.697 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.698 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.698 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.698 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.698 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.698 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:55:29.699 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.699 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 10
+[INFO ] 2020-03-15 20:55:29.699 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.699 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.699 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.699 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.700 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:55:29.700 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:29.700 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.700 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.701 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 1], tableID: 10
+[DEBUG] 2020-03-15 20:55:29.701 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.701 [main] Cafe - orderNumber: 2 -  added orderline ID: 5, beverage: Leffe, quantity: 3
+[DEBUG] 2020-03-15 20:55:29.701 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:55:29.701 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Duvel, quantity: 5
+[DEBUG] 2020-03-15 20:55:29.702 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:55:29.702 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Fanta, quantity: 4
+[INFO ] 2020-03-15 20:55:29.703 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.703 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:55:29.707 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.707 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.709 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-03-15 20:55:29.710 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-03-15 20:55:29.710 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-03-15 20:55:29.711 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-03-15 20:55:29.711 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-03-15 20:55:29.711 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.711 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-03-15 20:55:29.712 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-03-15 20:55:29.714 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.717 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.718 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.719 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.721 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.722 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.722 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.723 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.724 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.724 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:55:29.725 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:29.725 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.725 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.725 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.726 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 20:55:29.730 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 4
+[INFO ] 2020-03-15 20:55:29.730 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 9
+[INFO ] 2020-03-15 20:55:29.730 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.731 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 20:55:29.731 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 20:55:29.731 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 20:55:29.731 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:29.731 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:29.732 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 20:55:29.732 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.732 [main] Cafe - orderNumber: 1 - updated orderline with ID: 2 to new quantity: 4
+[INFO ] 2020-03-15 20:55:29.734 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.735 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:55:29.736 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-03-15 20:55:29.736 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.736 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.736 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.737 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.737 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.737 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.737 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:55:29.737 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.737 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:55:29.737 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.738 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:55:29.738 [main] Cafe - Removed orderline ID: 1, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:55:29.740 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.740 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.741 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.741 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:29.744 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.744 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.745 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.745 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.745 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.745 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.745 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:55:29.745 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:55:29.745 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.746 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:29.746 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.746 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.746 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:29.746 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.749 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.749 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.749 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:29.749 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.750 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:29.750 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.750 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:29.758 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.758 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.758 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-03-15 20:55:29.761 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:29.762 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.762 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.762 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.762 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:29.762 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:29.763 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 20], tableID: 1
+[INFO ] 2020-03-15 20:55:29.763 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:29.763 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.763 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.764 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:29.764 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:29.764 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:29.764 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:29.765 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:29.765 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:29.765 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:29.765 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:29.765 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:29.765 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:29.765 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:29.766 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:29.766 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:29.766 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:29.772 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:55:30.115 [main] Cafe - Wout Peters created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-03-15 20:55:30.117 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.121 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.121 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.121 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.121 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.122 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.122 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.122 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.122 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.123 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:30.123 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.123 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:30.123 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.123 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:30.123 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:30.123 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:30.124 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:30.124 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:30.124 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:30.124 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.125 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:55:30.125 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.125 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:30.125 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.125 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:30.125 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:30.125 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:55:30.126 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:55:30.126 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:55:30.126 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:55:30.126 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:55:30.126 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:55:30.127 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:30.127 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:30.127 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:55:30.127 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:55:30.127 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:55:30.127 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:55:30.127 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:55:30.128 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:55:30.128 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:55:30.128 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.128 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:55:30.128 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:55:30.605 [main] Cafe - Ilse Vandenbroeck created top waiter pie chart
+[INFO ] 2020-03-15 20:55:30.607 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.607 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.608 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.608 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.608 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.609 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.609 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:55:30.609 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:30.609 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.610 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:30.610 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.610 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:30.610 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.610 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:30.611 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:30.611 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:30.611 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:30.611 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:30.611 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:30.611 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:30.612 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:30.612 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.612 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:30.612 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.613 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:30.613 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.613 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:55:30.619 [main] Cafe - Wout Peters created a waiter sales PDF report
+[INFO ] 2020-03-15 20:55:30.622 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.624 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.625 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.625 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.625 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.625 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.625 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.625 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:55:30.625 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:55:30.626 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.626 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.627 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.627 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.628 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.628 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.628 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.628 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.629 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:30.629 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.629 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:55:30.629 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:55:30.630 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.630 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:30.630 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:55:30.630 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.631 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:55:30.631 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:55:30.631 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:55:30.632 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:55:30.632 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:55:30.632 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:55:30.632 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:55:30.632 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:55:30.632 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:55:30.633 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:55:30.633 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:55:30.633 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:55:30.633 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:55:30.633 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:55:30.633 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:55:30.633 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:55:30.634 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:55:30.634 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:55:30.634 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:55:30.634 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:55:30.638 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.638 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.639 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:30.643 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.644 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.644 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:55:30.644 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:55:30.648 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.649 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.649 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.650 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.650 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.650 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.651 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.652 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.652 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.652 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.652 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.652 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:55:30.654 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.654 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.654 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.655 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.656 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.656 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.658 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.662 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.663 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.663 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.663 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.663 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.663 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.663 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:55:30.663 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:55:30.663 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:55:30.666 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.671 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:55:30.672 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:55:30.672 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:55:30.672 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:55:30.672 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:55:30.673 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:55:30.673 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[INFO ] 2020-03-15 20:55:30.674 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.375 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.383 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.384 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.385 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.387 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.387 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.388 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.409 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:56:55.412 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.413 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.413 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:55.414 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.414 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.415 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.415 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:55.416 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.419 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:55.420 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.420 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:55.420 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.420 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.421 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.430 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:55.431 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:55.432 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.432 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.432 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.432 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:55.433 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:55.433 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.433 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:55.433 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.446 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:56:55.446 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.449 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.450 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.450 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.451 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.451 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.451 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.452 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.452 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.453 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:55.453 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.453 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.454 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:55.454 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.454 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.454 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.454 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:55.454 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.455 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:55.455 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.455 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:55.455 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.455 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.456 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.456 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:55.456 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:55.457 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.457 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.457 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:56:55.457 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:55.458 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:55.458 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.458 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:55.458 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.459 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:56:55.460 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.460 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.460 [main] Cafe - Patrick Desmet retrieved his sales data
+[INFO ] 2020-03-15 20:56:55.462 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.463 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.464 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.465 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.466 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.466 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.466 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.466 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.467 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:56:55.467 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.467 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:56:55.467 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.467 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:56:55.467 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.468 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.468 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.468 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.468 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:56:55.469 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:55.469 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.469 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.469 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 20], tableID: 10
+[DEBUG] 2020-03-15 20:56:55.469 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:56:55.469 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Leffe, quantity: 30
+[DEBUG] 2020-03-15 20:56:55.470 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:56:55.470 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Duvel, quantity: 40
+[INFO ] 2020-03-15 20:56:55.470 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:55.470 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.470 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.470 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.471 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:55.471 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:56:55.471 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 8, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.471 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:56:55.471 [main] Cafe - orderNumber: 3 -  added orderline ID: 9, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:56:55.471 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.472 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.472 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:56:55.472 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.472 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:56:55.475 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.475 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:56:55.476 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-03-15 20:56:55.476 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.477 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.477 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.477 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.477 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.477 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.478 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:56:55.478 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.478 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 10
+[INFO ] 2020-03-15 20:56:55.478 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.478 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.479 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.479 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.479 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-03-15 20:56:55.479 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:55.479 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.480 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.480 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 1], tableID: 10
+[DEBUG] 2020-03-15 20:56:55.480 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.480 [main] Cafe - orderNumber: 2 -  added orderline ID: 5, beverage: Leffe, quantity: 3
+[DEBUG] 2020-03-15 20:56:55.481 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:56:55.482 [main] Cafe - orderNumber: 2 -  added orderline ID: 6, beverage: Duvel, quantity: 5
+[DEBUG] 2020-03-15 20:56:55.482 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:56:55.482 [main] Cafe - orderNumber: 2 -  added orderline ID: 7, beverage: Fanta, quantity: 4
+[INFO ] 2020-03-15 20:56:55.483 [main] Cafe - Table table 10 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.483 [main] Cafe - Cleared table table 10
+[INFO ] 2020-03-15 20:56:55.487 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.487 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.489 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-03-15 20:56:55.490 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-03-15 20:56:55.490 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-03-15 20:56:55.490 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-03-15 20:56:55.491 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-03-15 20:56:55.491 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.491 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-03-15 20:56:55.491 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-03-15 20:56:55.493 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.495 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.495 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.496 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.496 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.496 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.497 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.497 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.497 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.497 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[INFO ] 2020-03-15 20:56:55.498 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:55.498 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.499 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.499 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.499 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 2], tableID: 2
+[INFO ] 2020-03-15 20:56:55.506 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 4
+[INFO ] 2020-03-15 20:56:55.507 [main] Cafe - orderNumber: 2 - updated orderline with ID: 3 to new quantity: 9
+[INFO ] 2020-03-15 20:56:55.507 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.507 [main] Cafe - Patrick Desmet logged in
+[ERROR] 2020-03-15 20:56:55.508 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-03-15 20:56:55.508 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-03-15 20:56:55.508 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:55.509 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:55.509 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.509 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Leffe, quantity: 3], tableID: 3
+[DEBUG] 2020-03-15 20:56:55.509 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.510 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:56:55.510 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:55.510 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.510 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.511 [main] Cafe - orderNumber: 1 - updated orderline with ID: 2 to new quantity: 4
+[INFO ] 2020-03-15 20:56:55.515 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.516 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-03-15 20:56:55.517 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-03-15 20:56:55.517 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.517 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.517 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.517 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.517 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 2], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.518 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.518 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 2
+[DEBUG] 2020-03-15 20:56:55.519 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.523 [main] Cafe - orderNumber: 1 -  added orderline ID: 3, beverage: Duvel, quantity: 2
+[DEBUG] 2020-03-15 20:56:55.524 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.524 [main] Cafe - orderNumber: 1 -  added orderline ID: 4, beverage: Fanta, quantity: 2
+[INFO ] 2020-03-15 20:56:55.524 [main] Cafe - Removed orderline ID: 1, beverage: Cola, quantity: 2
+[INFO ] 2020-03-15 20:56:55.526 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.527 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.529 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.529 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:55.533 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.534 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.534 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.535 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.535 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.535 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.535 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:56:55.535 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:56:55.535 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.535 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:55.536 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.536 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.536 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:55.536 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.540 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.540 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.541 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:55.541 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.541 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:55.541 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.541 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:55.551 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.551 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.553 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-03-15 20:56:55.555 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:55.556 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.557 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.557 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.557 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:55.557 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:55.557 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 20], tableID: 1
+[INFO ] 2020-03-15 20:56:55.558 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:55.558 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.558 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:55.558 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.558 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:55.558 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:55.558 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:55.559 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:55.559 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:55.559 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:55.559 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:55.559 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:55.559 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:55.559 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:55.560 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:55.560 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 1, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:55.560 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:55.560 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:55.560 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:55.560 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:55.561 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:55.561 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:55.571 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:56:56.053 [main] Cafe - Wout Peters created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-03-15 20:56:56.057 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.058 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.059 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.059 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.059 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.059 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.059 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.060 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.060 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.060 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:56.060 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.060 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:56.060 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.060 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:56.061 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:56.061 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:56.061 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.062 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:56.062 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:56.062 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:56.062 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.062 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:56:56.062 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.062 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:56.063 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.063 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:56.063 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:56.063 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:56:56.063 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:56:56.063 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:56:56.064 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:56:56.064 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:56:56.064 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:56:56.065 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:56.065 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:56.065 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:56:56.065 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:56:56.065 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:56:56.065 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:56:56.065 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:56:56.066 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:56:56.066 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:56:56.066 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.066 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:56:56.066 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:56:56.666 [main] Cafe - Ilse Vandenbroeck created top waiter pie chart
+[INFO ] 2020-03-15 20:56:56.668 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.669 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.670 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.671 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.671 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.672 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.672 [main] Cafe - New order made: Order: 1, date: 2020-02-05, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:56:56.672 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:56.673 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.673 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:56.673 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.673 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:56.673 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.674 [main] Cafe - New order made: Order: 2, date: 2020-02-05, waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:56.674 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:56.674 [main] Cafe - orderNumber: 2 -  added orderline ID: 3, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:56.675 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:56.677 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:56.678 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:56.678 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:56.678 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.678 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:56.678 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:56.679 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:56.679 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 4, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.680 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:56.680 [main] Cafe - orderNumber: 3 -  added orderline ID: 5, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.680 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:56.681 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.681 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:56.681 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.682 [main] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-03-15 20:56:56.693 [main] Cafe - Wout Peters created a waiter sales PDF report
+[INFO ] 2020-03-15 20:56:56.701 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.705 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.707 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.708 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.708 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.708 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.709 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.710 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[INFO ] 2020-03-15 20:56:56.710 [main] Cafe - orderNumber: 1 - updated orderline with ID: 1 to new quantity: 20
+[DEBUG] 2020-03-15 20:56:56.711 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.712 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.715 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.715 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.716 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.716 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.716 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.716 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.716 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.717 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.717 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.717 [main] Cafe - Table table 1 paid orderNumber 1
+[INFO ] 2020-03-15 20:56:56.717 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.717 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:56.717 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.717 [main] Cafe - orderNumber count increased to: 2
+[DEBUG] 2020-03-15 20:56:56.717 [main] Cafe - ID count increased to: 3
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - New order made: Order: 2, date: 2020-03-15, waiterID: 1, orderItems: [ID: 3, beverage: Leffe, quantity: 30], tableID: 2
+[DEBUG] 2020-03-15 20:56:56.718 [main] Cafe - ID count increased to: 4
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - orderNumber: 2 -  added orderline ID: 4, beverage: Cola, quantity: 20
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Table table 2 paid orderNumber 2
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - Assigned  table 1 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:56.718 [main] Cafe - orderNumber count increased to: 3
+[DEBUG] 2020-03-15 20:56:56.718 [main] Cafe - ID count increased to: 5
+[INFO ] 2020-03-15 20:56:56.718 [main] Cafe - New order made: Order: 3, date: 2020-03-15, waiterID: 4, orderItems: [ID: 5, beverage: Cola, quantity: 10], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.719 [main] Cafe - ID count increased to: 6
+[INFO ] 2020-03-15 20:56:56.719 [main] Cafe - orderNumber: 3 -  added orderline ID: 6, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.719 [main] Cafe - Table table 1 paid orderNumber 3
+[INFO ] 2020-03-15 20:56:56.719 [main] Cafe - Cleared table table 1
+[INFO ] 2020-03-15 20:56:56.720 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-03-15 20:56:56.726 [main] Cafe - Assigned  table 2 to Patrick Desmet
+[DEBUG] 2020-03-15 20:56:56.729 [main] Cafe - orderNumber count increased to: 4
+[DEBUG] 2020-03-15 20:56:56.729 [main] Cafe - ID count increased to: 7
+[INFO ] 2020-03-15 20:56:56.730 [main] Cafe - New order made: Order: 4, date: 2020-03-15, waiterID: 4, orderItems: [ID: 7, beverage: Leffe, quantity: 10], tableID: 2
+[DEBUG] 2020-03-15 20:56:56.731 [main] Cafe - ID count increased to: 8
+[INFO ] 2020-03-15 20:56:56.732 [main] Cafe - orderNumber: 4 -  added orderline ID: 8, beverage: Cola, quantity: 10
+[INFO ] 2020-03-15 20:56:56.732 [main] Cafe - Table table 2 paid orderNumber 4
+[INFO ] 2020-03-15 20:56:56.732 [main] Cafe - Cleared table table 2
+[INFO ] 2020-03-15 20:56:56.733 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-03-15 20:56:56.733 [main] Cafe - Ilse Vandenbroeck logged in
+[INFO ] 2020-03-15 20:56:56.733 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-03-15 20:56:56.733 [main] Cafe - Assigned  table 5 to Ilse Vandenbroeck
+[DEBUG] 2020-03-15 20:56:56.733 [main] Cafe - orderNumber count increased to: 5
+[DEBUG] 2020-03-15 20:56:56.733 [main] Cafe - ID count increased to: 9
+[INFO ] 2020-03-15 20:56:56.736 [main] Cafe - New order made: Order: 5, date: 2020-03-15, waiterID: 3, orderItems: [ID: 9, beverage: Cola, quantity: 100], tableID: 5
+[DEBUG] 2020-03-15 20:56:56.737 [main] Cafe - ID count increased to: 10
+[INFO ] 2020-03-15 20:56:56.737 [main] Cafe - orderNumber: 5 -  added orderline ID: 10, beverage: Leffe, quantity: 10
+[INFO ] 2020-03-15 20:56:56.738 [main] Cafe - Table table 5 paid orderNumber 5
+[INFO ] 2020-03-15 20:56:56.738 [main] Cafe - Cleared table table 5
+[INFO ] 2020-03-15 20:56:56.741 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.742 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.742 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:56.744 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.745 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.745 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-03-15 20:56:56.745 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-03-15 20:56:56.751 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.752 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.752 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.753 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.753 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.754 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.754 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.754 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.754 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.754 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.754 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.754 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:56:56.756 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.756 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.756 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.757 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.758 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.758 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.760 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.765 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.765 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.765 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.765 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.765 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.765 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.765 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[DEBUG] 2020-03-15 20:56:56.765 [main] Cafe - ID count increased to: 2
+[INFO ] 2020-03-15 20:56:56.766 [main] Cafe - orderNumber: 1 -  added orderline ID: 2, beverage: Leffe, quantity: 5
+[INFO ] 2020-03-15 20:56:56.768 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.770 [main] Cafe - Cafe started
+[INFO ] 2020-03-15 20:56:56.771 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-03-15 20:56:56.771 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-03-15 20:56:56.771 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-03-15 20:56:56.771 [main] Cafe - orderNumber count increased to: 1
+[DEBUG] 2020-03-15 20:56:56.771 [main] Cafe - ID count increased to: 1
+[INFO ] 2020-03-15 20:56:56.771 [main] Cafe - New order made: Order: 1, date: 2020-03-15, waiterID: 1, orderItems: [ID: 1, beverage: Cola, quantity: 5], tableID: 1
+[INFO ] 2020-03-15 20:56:56.772 [main] Cafe - Cafe started

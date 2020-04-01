@@ -1,4 +1,4 @@
-package be.hogent.cafe.model.reports;
+package be.hogent.cafe.model.reporting;
 import java.io.*;
 import java.util.HashMap;
 

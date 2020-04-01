@@ -1,4 +1,4 @@
-package be.hogent.cafe.model.reports;
+package be.hogent.cafe.model.reporting;
 
 import be.hogent.cafe.model.Order;
 import be.hogent.cafe.model.Waiter;
