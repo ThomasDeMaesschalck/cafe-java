@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class OrderItem {
 
-    private final Beverage beverage;
+    private  Beverage beverage;
     private int qty;
     private  int ID;
 

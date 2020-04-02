@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Waiter {
 
-    private final String lastName;
-    private final String firstName;
-    private final String password;
-    private final int ID;
+    private  String lastName;
+    private  String firstName;
+    private  String password;
+    private  int ID;
 
     public Waiter(int ID, String lastName, String firstName, String password) {
         this.lastName = lastName;

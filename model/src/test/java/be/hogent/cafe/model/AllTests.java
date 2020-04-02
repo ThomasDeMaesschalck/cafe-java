@@ -5,6 +5,6 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages("be.hogent.cafe.model")
+@SelectPackages({"be.hogent.cafe.model"})
 public class AllTests {
 }

@@ -10,11 +10,11 @@ import java.util.Optional;
 import java.util.Set;
 
 public class Order {
-    private final int orderNumber;
-    private final LocalDate date;
-    private final int waiterID;
+    private  int orderNumber;
+    private  LocalDate date;
+    private  int waiterID;
     private Set<OrderItem> orderItems  =  new HashSet<>();
-    private final int tableID;
+    private  int tableID;
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
 
     public Order(int orderNumber, LocalDate date, OrderItem orderItem, int waterID, int tableID) {

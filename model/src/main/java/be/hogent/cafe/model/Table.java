@@ -3,7 +3,7 @@ package be.hogent.cafe.model;
 import java.util.Objects;
 
 public class Table {
-    private final int tableID;
+    private int tableID;
     private Waiter belongsToWaiter;
     private boolean activeOrder;
 

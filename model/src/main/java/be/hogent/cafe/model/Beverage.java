@@ -3,15 +3,19 @@ package be.hogent.cafe.model;
 import java.util.Objects;
 
 public class Beverage{
-    private final int beverageID;
-    private final String beverageName;
-    private final double price;
+    private int beverageID;
+    private String beverageName;
+    private double price;
 
     public Beverage(int beverageID, String beverageName, double price) {
         this.beverageID = beverageID;
         this.beverageName = beverageName;
         this.price = price;
     }
+
+    public Beverage() {
+    }
+
 
     public int getBeverageID() {
         return beverageID;
@@ -23,6 +27,18 @@ public class Beverage{
 
     public double getPrice() {
         return price;
+    }
+
+    public void setBeverageID(int beverageID) {
+        this.beverageID = beverageID;
+    }
+
+    public void setBeverageName(String beverageName) {
+        this.beverageName = beverageName;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override
