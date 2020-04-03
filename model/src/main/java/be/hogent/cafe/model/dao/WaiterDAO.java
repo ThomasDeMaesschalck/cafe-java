@@ -1,9 +1,8 @@
 package be.hogent.cafe.model.dao;
 
-import be.hogent.cafe.model.Beverage;
-import be.hogent.cafe.model.*;
+import be.hogent.cafe.model.Waiter;
 
-import java.util.*;
+import java.util.Set;
 
 
 public interface WaiterDAO {

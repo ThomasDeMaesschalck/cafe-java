@@ -14,28 +14,18 @@ import java.util.stream.Collectors;
 
 public class AllWaiterSales {
 
-    private final LocalDate date;
-    private final Set<Order> paidOrders;
-    private final Waiter loggedInWaiter;
-    final Map<Beverage, Integer> salesMap = new HashMap<>();
 
-    public AllWaiterSales(LocalDate date, Set<Order> paidOrders, Waiter loggedInWaiter) {
-        this.date = date;
-        this.paidOrders = paidOrders;
-        this.loggedInWaiter = loggedInWaiter;
-        calculate();
-    }
-
-    private void calculate(){        //afsplitsen OrderItems en filteren op datum indien nodig
+    public static Map<Beverage, Integer> calculate(LocalDate date, Set<Order> paidOrders, Waiter loggedInWaiter){        //afsplitsen OrderItems en filteren op datum indien nodig
+        Map<Beverage, Integer> salesMap = new HashMap<>();
         List<OrderItem> sales;
 
         if (date != null)
         {
-            sales =   getPaidOrders().stream().filter(o -> o.getWaiterID() == getLoggedInWaiter().getID()).filter(o -> o.getDate() == date)
+            sales =   paidOrders.stream().filter(o -> o.getWaiterID() == loggedInWaiter.getID()).filter(o -> o.getDate() == date)
                     .flatMap(o -> o.getOrderLines().stream()).collect(Collectors.toList());
         }
         else {
-            sales =  getPaidOrders().stream().filter(o -> o.getWaiterID() == getLoggedInWaiter().getID())
+            sales =  paidOrders.stream().filter(o -> o.getWaiterID() == loggedInWaiter.getID())
                     .flatMap(o -> o.getOrderLines().stream()).collect(Collectors.toList());
         }
 
@@ -47,17 +37,8 @@ public class AllWaiterSales {
                 salesMap.put(beverage, salesMap.get(beverage) + item.getQty());
             }
         });
-    }
-
-    private Set<Order> getPaidOrders() {
-        return paidOrders;
-    }
-
-    private Waiter getLoggedInWaiter() {
-        return loggedInWaiter;
-    }
-
-    public Map<Beverage, Integer> getSalesMap() {
         return salesMap;
     }
+
+
 }

@@ -1,14 +1,13 @@
 package be.hogent.cafe.model.dao;
 
 import be.hogent.cafe.model.Beverage;
-import be.hogent.cafe.model.*;
-
-import java.sql.*;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {

@@ -144,8 +144,7 @@ public class Cafe {
 
     public HashMap<Waiter, Double> getTopWaitersByRevenue(int numberOfHowMany) //sales report van x aantal waiters
     {
-        WaitersByRevenue waitersByRevenue = new WaitersByRevenue(getWaiterCollection(),numberOfHowMany,getPaidOrders());
-        return waitersByRevenue.getTopWaitersMap();
+        return WaitersByRevenue.calculate(getWaiterCollection(), numberOfHowMany, getPaidOrders());
     }
 
     public void topWaiterPieChart() throws Exception {
@@ -160,9 +159,8 @@ public class Cafe {
     }
 
     public Map<Beverage, Integer> getAllWaiterSales(LocalDate date){ //sales voor specifieke datum indien date niet null
-        AllWaiterSales allWaiterSales = new AllWaiterSales(date, getPaidOrders(), getLoggedInWaiter());
         logger.info(getLoggedInWaiter().toString() + " retrieved his sales data");
-        return  allWaiterSales.getSalesMap();
+        return  AllWaiterSales.calculate(date, getPaidOrders(), getLoggedInWaiter());
     }
 
     public void waiterSalesReportPDF() throws IOException {

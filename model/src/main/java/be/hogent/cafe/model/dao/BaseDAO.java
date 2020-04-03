@@ -14,12 +14,13 @@ public class BaseDAO implements DAO {
     private String dbUrl, dbPassword, dbUser;
 
 
-    private  void readProperties (String propFile) {
+    private  void readProperties() {
 
         Properties dbProperties = new Properties ();
 
-        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream (propFile)) {
+        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream ("db.properties")) {
 
+            assert inputStream != null;
             dbProperties.load (inputStream);
             dbUrl = dbProperties.getProperty("dbUrl");
             dbPassword = dbProperties.getProperty("dbPassword");
@@ -33,7 +34,7 @@ public class BaseDAO implements DAO {
 
     public Connection getConnection () throws DAOException {
         try {
-            readProperties("db.properties");
+            readProperties();
             return DriverManager.getConnection (dbUrl, dbUser, dbPassword);
         } catch (SQLException e) {
             logger.error(e.getMessage());
