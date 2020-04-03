@@ -30,13 +30,15 @@
 
 
     <Loggers>
-        <Logger name="be.hogent" level="debug" additivity="true">
+
+        <Logger name="be.hogent.cafe.model" level="debug" additivity="true">
             <appender-ref ref="fileLogger" level="debug"/>
         </Logger>
 
-        <Logger name="be.hogent.database" level="debug" additivity="true">
+        <Logger name="be.hogent.cafe.model.dao" level="debug" additivity="false">
             <appender-ref ref="databaseLogger" level="info"/>
         </Logger>
+
         <Root level="debug" additivity="false">
             <appender-ref ref="console"/>
         </Root>

@@ -3,6 +3,9 @@ package be.hogent.cafe.model;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.*;
+
+import be.hogent.cafe.model.dao.BeverageDAOImpl;
+import be.hogent.cafe.model.dao.DAOException;
 import be.hogent.cafe.model.reporting.AllWaiterSales;
 import be.hogent.cafe.model.reporting.MakePDFSalesReport;
 import be.hogent.cafe.model.reporting.MakeTopWaitersChart;
@@ -24,10 +27,11 @@ public class Cafe {
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
 
-    public Cafe(String cafeName, int numberOfTables) {
+    public Cafe(String cafeName, int numberOfTables) throws Exception {
         logger.info("Cafe started");
         this.cafeName = cafeName;
         createTables(numberOfTables);
+        this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
     }
 
     public boolean logIn(String name, String password)
@@ -221,6 +225,11 @@ public class Cafe {
 
     public List<Beverage> getBeverages() {
         return beverages;
+    }
+
+    public void setBeverages(List<Beverage> beverage)
+    {
+        this.beverages = beverage;
     }
 
     public HashMap<Table, Order> getUnpaidOrders() {

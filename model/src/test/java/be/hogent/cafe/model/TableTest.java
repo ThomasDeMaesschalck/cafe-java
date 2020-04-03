@@ -14,7 +14,7 @@ public class TableTest {
     private Beverage cola;
 
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws Exception {
         cafe = new Cafe("Cafe Thomas", 12);
         wout = new Waiter(1,"Peters", "Wout", "password");
         one = new Table(1);
