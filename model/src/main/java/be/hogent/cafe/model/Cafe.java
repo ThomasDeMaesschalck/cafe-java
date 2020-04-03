@@ -1,17 +1,17 @@
 package be.hogent.cafe.model;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.*;
-
 import be.hogent.cafe.model.dao.BeverageDAOImpl;
-import be.hogent.cafe.model.dao.DAOException;
+import be.hogent.cafe.model.dao.WaiterDAOImpl;
 import be.hogent.cafe.model.reporting.AllWaiterSales;
 import be.hogent.cafe.model.reporting.MakePDFSalesReport;
 import be.hogent.cafe.model.reporting.MakeTopWaitersChart;
 import be.hogent.cafe.model.reporting.WaitersByRevenue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.util.*;
 
 public class Cafe {
 
@@ -21,7 +21,7 @@ public class Cafe {
     private Waiter loggedInWaiter;
     private Table activeTable;
     private List<Table> tables = new ArrayList<>();
-    private List<Beverage> beverages = new ArrayList<>();
+    private Set<Beverage> beverages = new HashSet<>();
     private int orderNumber = 0;
     private int IDCount = 0;
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
@@ -32,6 +32,8 @@ public class Cafe {
         this.cafeName = cafeName;
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
+        this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
+
     }
 
     public boolean logIn(String name, String password)
@@ -181,6 +183,12 @@ public class Cafe {
         return waiters;
     }
 
+    public void setWaiters(Set<Waiter> waiter)
+    {
+        this.waiters = waiter;
+    }
+
+
     public Waiter getLoggedInWaiter() {
                return loggedInWaiter;
     }
@@ -223,11 +231,11 @@ public class Cafe {
         return cafeName;
     }
 
-    public List<Beverage> getBeverages() {
+    public Set<Beverage> getBeverages() {
         return beverages;
     }
 
-    public void setBeverages(List<Beverage> beverage)
+    public void setBeverages(Set<Beverage> beverage)
     {
         this.beverages = beverage;
     }

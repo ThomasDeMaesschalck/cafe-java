@@ -1,8 +1,10 @@
 package be.hogent.cafe.model;
 
+import be.hogent.cafe.model.dao.BeverageDAO;
+
 import java.util.Objects;
 
-public class Beverage{
+public class Beverage {
     private int beverageID;
     private String beverageName;
     private double price;
@@ -54,8 +56,10 @@ public class Beverage{
         return Objects.hash(beverageID, beverageName, price);
     }
 
+
     @Override
     public String toString() {
         return getBeverageID() + ". " + getBeverageName() + " " + getPrice();
     }
+
 }

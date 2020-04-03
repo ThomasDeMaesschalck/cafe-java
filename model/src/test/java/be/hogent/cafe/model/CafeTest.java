@@ -15,6 +15,7 @@ public class CafeTest {
     private Waiter wout;
     private Waiter patrick;
     private Waiter ilse;
+    private Waiter thomas;
     private Beverage cola;
     private Beverage leffe;
     private Beverage duvel;
@@ -26,6 +27,8 @@ public class CafeTest {
         wout = new Waiter( 1,"Peters", "Wout", "password");
         ilse = new Waiter( 3,"Vandenbroeck", "Ilse", "password");
         patrick = new Waiter( 4,"Desmet", "Patrick", "password");
+        thomas = new Waiter( 5,"Dheer", "Thomas", "password");
+
         cola = new Beverage ( 1,"Cola", 2.40);
         leffe = new Beverage ( 2,"Leffe", 3.00);
         duvel = new Beverage ( 3,"Duvel", 2.40);
@@ -42,13 +45,8 @@ public class CafeTest {
 
     @Test
     public void testAddWaiter() {
-        assertEquals(0, cafe.getWaiterCollection().size(), "Test addWaiter() 01 failed");
-        cafe.addWaiter(wout);
-        assertEquals(1, cafe.getWaiterCollection().size(), "Test addWaiter() 02 failed");
-        cafe.addWaiter(wout);
-        assertEquals(1, cafe.getWaiterCollection().size(), "Test addWaiter() 03 failed");
-        cafe.addWaiter(patrick);
-        assertEquals(2, cafe.getWaiterCollection().size(), "Test addWaiter() 04 failed");
+        cafe.addWaiter(thomas);
+        assertTrue(cafe.getWaiterCollection().contains(thomas), "Test addWaiter() 012 failed");
     }
 
     @Test

@@ -37,7 +37,7 @@ public class BaseDAO implements DAO {
             return DriverManager.getConnection (dbUrl, dbUser, dbPassword);
         } catch (SQLException e) {
             logger.error(e.getMessage());
-            throw new DAOException ();
+            throw new DAOException (e.getMessage());
         }
     }
 }

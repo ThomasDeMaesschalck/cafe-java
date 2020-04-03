@@ -9,10 +9,29 @@ public class Waiter {
     private  String password;
     private  int ID;
 
+    public Waiter(){
+    }
+
     public Waiter(int ID, String lastName, String firstName, String password) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.password = password;
+        this.ID = ID;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setID(int ID) {
         this.ID = ID;
     }
 

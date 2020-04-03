@@ -4,8 +4,8 @@ import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.*;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,8 +29,8 @@ public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {
     }
 
     @Override
-    public  List<Beverage> getBeverages() throws  DAOException {
-        List<Beverage> beverages = new ArrayList<>();
+    public  Set<Beverage> getBeverages() {
+        Set<Beverage> beverages = new HashSet<>();
 
         try (
                 Connection connection = getConnection();
@@ -47,7 +47,7 @@ public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {
             }
             logger.info("beverages are loaded from database");
 
-        } catch (Exception e) {
+    } catch (Exception e) {
             logger.error("Error getting beverages. " + e.getMessage());
         }
         return beverages;

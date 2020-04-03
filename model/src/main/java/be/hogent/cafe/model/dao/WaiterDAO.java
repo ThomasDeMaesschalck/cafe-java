@@ -1,4 +1,3 @@
-
 package be.hogent.cafe.model.dao;
 
 import be.hogent.cafe.model.Beverage;
@@ -7,6 +6,6 @@ import be.hogent.cafe.model.*;
 import java.util.*;
 
 
-public interface BeverageDAO {
-    Set<Beverage> getBeverages();
+public interface WaiterDAO {
+    Set<Waiter> getWaiters();
 }
