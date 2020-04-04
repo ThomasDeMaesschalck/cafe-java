@@ -11,11 +11,11 @@ public class WaiterDAOImplTest {
 
     @Test
     public void testGetWaiters() {
-        Set<Waiter> WaitersDAO;
+        Set<Waiter> waitersDAO;
 
-        WaitersDAO = WaiterDAOImpl.getInstance().getWaiters();
+        waitersDAO = WaiterDAOImpl.getInstance().getWaiters();
         Waiter wout = new Waiter(1, "Peters", "Wout", "password");
-        Assertions.assertTrue(WaitersDAO.contains(wout), "testGetWaiters 01 failed");
-        assertEquals(4, WaitersDAO.size(), "testGetWaiters 02 failed");
+        Assertions.assertTrue(waitersDAO.contains(wout), "testGetWaiters 01 failed");
+        assertEquals(4, waitersDAO.size(), "testGetWaiters 02 failed");
     }
 }

@@ -7,11 +7,10 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class WaiterDAOImpl extends BaseDAO implements WaiterDAO {
     private static final String GET_ALL_WAITERS = "SELECT * from waiters";
 
-    private final Logger logger = LogManager.getLogger(BeverageDAOImpl.class.getName());
+    private final Logger logger = LogManager.getLogger(WaiterDAOImpl.class.getName());
 
     private static WaiterDAOImpl instance;
 

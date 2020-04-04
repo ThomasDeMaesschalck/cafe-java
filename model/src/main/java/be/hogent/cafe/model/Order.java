@@ -17,6 +17,9 @@ public class Order {
     private  int tableID;
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
 
+    public Order() {
+    }
+
     public Order(int orderNumber, LocalDate date, OrderItem orderItem, int waterID, int tableID) {
         this.orderNumber = orderNumber;
         getOrderLines().add(orderItem);
@@ -72,7 +75,27 @@ public class Order {
     public int getTableID() {
         return tableID;
     }
-    
+
+    public void setOrderNumber(int orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setWaiterID(int waiterID) {
+        this.waiterID = waiterID;
+    }
+
+    public void setOrderItems(OrderItem orderItem) {
+        this.orderItems.add(orderItem);
+    }
+
+    public void setTableID(int tableID) {
+        this.tableID = tableID;
+    }
+
     @Override
     public String toString() {
         return "Order: " + getOrderNumber() +
@@ -87,7 +110,7 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return orderNumber == order.orderNumber &&  waiterID == order.waiterID;
+        return orderNumber == order.orderNumber;
     }
 
     @Override

@@ -18,7 +18,6 @@ public class Beverage {
     public Beverage() {
     }
 
-
     public int getBeverageID() {
         return beverageID;
     }
@@ -42,6 +41,7 @@ public class Beverage {
     public void setPrice(double price) {
         this.price = price;
     }
+
 
     @Override
     public boolean equals(Object o) {

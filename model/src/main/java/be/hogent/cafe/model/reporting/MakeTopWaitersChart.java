@@ -12,18 +12,11 @@ import org.jfree.data.general.DefaultPieDataset;
 
 public class MakeTopWaitersChart {
 
-    private final HashMap<Waiter, Double> topwaiters;
-
-    public MakeTopWaitersChart(HashMap<Waiter, Double> topWaiters) throws Exception {
-        this.topwaiters = topWaiters;
-        createJPG();
-    }
-
-    private void createJPG() throws Exception {
+    public static void createJPG(HashMap<Waiter, Double> topWaiters) throws Exception {
 
         DefaultPieDataset dataset = new DefaultPieDataset( );
 
-        getTopwaiters().forEach((waiter, revenue) ->  { //dataset vullen
+        topWaiters.forEach((waiter, revenue) ->  { //dataset vullen
             dataset.setValue((waiter.toString()), revenue);
         });
 
@@ -38,9 +31,5 @@ public class MakeTopWaitersChart {
         int height = 480;  /* Height of the image */
         File pieChart = new File( "reports/topwaiterchart.jpg" );
         ChartUtilities.saveChartAsJPEG( pieChart , chart , width , height );
-    }
-
-    private HashMap<Waiter, Double> getTopwaiters() {
-        return topwaiters;
     }
 }

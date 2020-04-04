@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 
 public class AllWaiterSales {
 
-
     public static Map<Beverage, Integer> calculate(LocalDate date, Set<Order> paidOrders, Waiter loggedInWaiter){        //afsplitsen OrderItems en filteren op datum indien nodig
         Map<Beverage, Integer> salesMap = new HashMap<>();
         List<OrderItem> sales;

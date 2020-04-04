@@ -13,11 +13,11 @@ public class BeverageDAOImplTest {
 
     @Test
     public void testGetBeverages()  {
-        Set<Beverage> BeveragesDAO;
+        Set<Beverage> beveragesDAO;
 
-        BeveragesDAO = BeverageDAOImpl.getInstance().getBeverages();
+        beveragesDAO = BeverageDAOImpl.getInstance().getBeverages();
         Beverage cola = new Beverage(1, "Cola", 2.40);
-        Assertions.assertTrue(BeveragesDAO.contains(cola), "testGetBeverages 01 failed");
-        assertEquals(17, BeveragesDAO.size(), "testGetBeverages02 failed");
+        Assertions.assertTrue(beveragesDAO.contains(cola), "testGetBeverages 01 failed");
+        assertEquals(17, beveragesDAO.size(), "testGetBeverages02 failed");
     }
     }

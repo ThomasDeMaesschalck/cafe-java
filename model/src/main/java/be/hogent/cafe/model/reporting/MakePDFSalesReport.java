@@ -9,25 +9,14 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Map;
 
-//NOG AF TE WERKEN: Exception handling
 public class MakePDFSalesReport {
 
     public static final String DEST = "reports/salesreport.pdf";
-    private final Map<Beverage, Integer> sales;
-    private final String waiterName;
-    private final LocalDate date;
 
-    public MakePDFSalesReport(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
-        this.sales = sales;
-        this.waiterName = waiterName;
-        this.date = date;
-        createPDF();
-    }
-
-    private void createPDF() throws IOException {
+    public static void createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
         File file = new File(DEST);
-        file.getParentFile().mkdirs();
-
+        File parent = file.getParentFile();
+        if (!parent.exists() && !parent.mkdirs()) {throw new IllegalStateException("Couldn't create dir: " + parent); }
         //Initialize PDF writer
         PdfWriter writer = new PdfWriter(DEST);
 

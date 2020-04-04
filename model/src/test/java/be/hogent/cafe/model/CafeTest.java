@@ -33,8 +33,8 @@ public class CafeTest {
         leffe = new Beverage ( 2,"Leffe", 3.00);
         duvel = new Beverage ( 3,"Duvel", 2.40);
         fanta = new Beverage ( 4,"Fanta", 3.00);
-        cafe.getBeverages().add(cola);
-        cafe.getBeverages().add(leffe);
+        Cafe.getBeverages().add(cola);
+        Cafe.getBeverages().add(leffe);
 
     }
 
