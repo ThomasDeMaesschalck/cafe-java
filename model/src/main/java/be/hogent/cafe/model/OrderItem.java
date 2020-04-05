@@ -71,8 +71,5 @@ public class OrderItem {
         return Objects.hash(beverage);
     }
 
-    public void setBeverage(Beverage beverage) {
-        this.beverage = beverage;
-    }
 
 }

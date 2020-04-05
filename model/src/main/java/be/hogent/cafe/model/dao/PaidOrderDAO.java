@@ -7,6 +7,8 @@ import java.util.Set;
 public interface PaidOrderDAO {
     Set<Order> getOrders();
 
-    int insertOrder (Order o);
+    boolean insertOrder (Order o);
+
+    int highestOrderNumber();
 
 }

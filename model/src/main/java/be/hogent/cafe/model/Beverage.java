@@ -1,7 +1,5 @@
 package be.hogent.cafe.model;
 
-import be.hogent.cafe.model.dao.BeverageDAO;
-
 import java.util.Objects;
 
 public class Beverage {

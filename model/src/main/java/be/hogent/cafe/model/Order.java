@@ -92,10 +92,6 @@ public class Order {
         this.orderItems.add(orderItem);
     }
 
-    public void setTableID(int tableID) {
-        this.tableID = tableID;
-    }
-
     @Override
     public String toString() {
         return "Order: " + getOrderNumber() +

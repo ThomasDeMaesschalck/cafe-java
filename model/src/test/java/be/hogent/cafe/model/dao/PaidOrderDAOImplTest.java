@@ -9,12 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.*;
 
 public class PaidOrderDAOImplTest {
-
     private OrderItem o1;
     private OrderItem o2;
     private OrderItem o3;
@@ -23,7 +20,7 @@ public class PaidOrderDAOImplTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        Cafe cafe = new Cafe("Cafe Thomas", 12);
+        Cafe cafe = new Cafe("Thomas", 12);
         Beverage duvel = new Beverage(10, "Duvel", 3.20);
         Beverage koffie = new Beverage(3, "Koffie", 2.40);
         Beverage spa = new Beverage(7, "Spa", 2.40);
@@ -32,7 +29,6 @@ public class PaidOrderDAOImplTest {
          o2 = new OrderItem(120, koffie, 2);
          o3 = new OrderItem(140, spa, 3);
          o4 = new OrderItem(130, westmalle, 3);
-
     }
 
     @Test
@@ -60,10 +56,23 @@ public class PaidOrderDAOImplTest {
         LocalDate date = LocalDate.of (2020, 4, 1);
         Order orderDAOTest = new Order(1000, date, o1, 2, 999 );
          orderDAOTest.getOrderLines().add(o2);
+
+
         PaidOrderDAOImpl.getInstance().insertOrder(orderDAOTest);
 
 
         Assertions.assertTrue(PaidOrderDAOImpl.getInstance().getOrders().contains(orderDAOTest), "testInsertOrder 01 failed");
-        assertEquals(originalsize, PaidOrderDAOImpl.getInstance().getOrders().size() , "testInsertOrder 02 failed - size not correct");
+ //       assertEquals(originalsize, PaidOrderDAOImpl.getInstance().getOrders().size() , "testInsertOrder 02 failed - size not correct");
     }
+
+
+    @Test
+    public void testGetHighestOrderNumber() {
+        Set<Order> paidOrdersDAO;
+        paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders();
+        int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
+        OptionalInt max = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
+        Assertions.assertEquals(max.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
+    }
+
 }
