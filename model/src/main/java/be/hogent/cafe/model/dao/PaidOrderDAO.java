@@ -9,6 +9,6 @@ public interface PaidOrderDAO {
 
     boolean insertOrder (Order o);
 
-    int highestOrderNumber();
+    int highestOrderNumber(String orderOrIDNumber);
 
 }

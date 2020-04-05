@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.util.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class PaidOrderDAOImplTest {
     private OrderItem o1;
     private OrderItem o2;
@@ -46,23 +48,24 @@ public class PaidOrderDAOImplTest {
         Assertions.assertTrue(paidOrdersDAO.contains(orderDAOTest), "testGetPaidOrders 01 failed");
     }
 
-
     @Test
     public void testInsertOrder() {
         Set<Order> paidOrdersDAO;
         paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders();
-        int originalsize = paidOrdersDAO.size();
+        int originalSize = paidOrdersDAO.size();
 
         LocalDate date = LocalDate.of (2020, 4, 1);
         Order orderDAOTest = new Order(1000, date, o1, 2, 999 );
-         orderDAOTest.getOrderLines().add(o2);
+        orderDAOTest.getOrderLines().add(o2);
 
-
+        int newSize = originalSize;
+        if (!PaidOrderDAOImpl.getInstance().getOrders().contains(orderDAOTest)) {
+            newSize = originalSize + 1;
+        }
         PaidOrderDAOImpl.getInstance().insertOrder(orderDAOTest);
 
-
         Assertions.assertTrue(PaidOrderDAOImpl.getInstance().getOrders().contains(orderDAOTest), "testInsertOrder 01 failed");
- //       assertEquals(originalsize, PaidOrderDAOImpl.getInstance().getOrders().size() , "testInsertOrder 02 failed - size not correct");
+        assertEquals(newSize, PaidOrderDAOImpl.getInstance().getOrders().size() , "testInsertOrder 02 failed - size not correct");
     }
 
 
@@ -70,9 +73,14 @@ public class PaidOrderDAOImplTest {
     public void testGetHighestOrderNumber() {
         Set<Order> paidOrdersDAO;
         paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders();
-        int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
-        OptionalInt max = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
-        Assertions.assertEquals(max.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
+
+        int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber("orderNumber");
+        OptionalInt maxOrderNumber = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
+        assertEquals(maxOrderNumber.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
+
+        int highestIDNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber("ID");
+        OptionalInt maxIDNumber = paidOrdersDAO.stream().flatMap(order -> order.getOrderLines().stream()).mapToInt(OrderItem::getID).max();
+        assertEquals(maxIDNumber.getAsInt(), highestIDNumber , "testGetHighestIDNumber 01 failed - number not correct");
     }
 
 }
