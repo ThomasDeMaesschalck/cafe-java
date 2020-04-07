@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
+
+import static java.time.LocalDate.of;
+import static java.time.Month.FEBRUARY;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -33,8 +37,8 @@ public class CafeTest {
         leffe = new Beverage ( 2,"Leffe", 3.00);
         duvel = new Beverage ( 3,"Duvel", 2.40);
         fanta = new Beverage ( 4,"Fanta", 3.00);
-        Cafe.getBeverages().add(cola);
-        Cafe.getBeverages().add(leffe);
+        cafe.getBeverages().add(cola);
+        cafe.getBeverages().add(leffe);
 
     }
 
@@ -134,24 +138,26 @@ public class CafeTest {
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5); //ID1, orderNumber 1
         assertEquals(1, cafe.getUnpaidOrders().size(), "Test PlaceOrder() 01 failed");
-        assertEquals(1,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 02 failed - problem with orderNumber count");
+        int thisOrderNumber = cafe.getHighestOrderNumber() + 1; //nieuwe order nummer verkrijgen, daarna voor volgende orders terug eentje bijtellen voor de test
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 02 failed - problem with orderNumber count");
 
         cafe.placeOrder(leffe, 2); //ID2, orderNumber 1
         assertEquals(2, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 03 failed");
-        assertEquals(1,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 04 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 04 failed - problem with orderNumber count");
         OrderItem leffeTest = new OrderItem(3, leffe, 2);
         assertTrue(cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().contains(leffeTest), "Test PlaceOrder() 05 failed");
 
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 2); //ID3, orderNumber 2
         assertEquals(2, cafe.getUnpaidOrders().size(), "Test PlaceOrder() 06 failed");
-        assertEquals(2,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 07 failed - problem with orderNumber count");
+        thisOrderNumber += 1;
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 07 failed - problem with orderNumber count");
 
         cafe.placeOrder(leffe, 2); //blijft ID3 orderNumber 2
         cafe.placeOrder(leffe, 5); //blijft ID3 orderNumber 2
 
         assertEquals(1, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 08 failed - order not added to existing orderline");
-        assertEquals(2,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 09 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 09 failed - problem with orderNumber count");
 
 
         cafe.logOut();
@@ -167,11 +173,12 @@ public class CafeTest {
         cafe.setActiveTable(3);
         cafe.placeOrder(leffe, 3); //ID4
         assertEquals(1, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 11 failed");
-        assertEquals(3,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 12 failed - problem with orderNumber count");
+        thisOrderNumber += 1;
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 12 failed - problem with orderNumber count");
 
         cafe.placeOrder(cola, 2); //ID5
         assertEquals(2, cafe.getUnpaidOrders().get((cafe.getActiveTable())).getOrderLines().size(), "Test PlaceOrder() 13 failed");
-        assertEquals(3,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 14 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 14 failed - problem with orderNumber count");
 
         cafe.logOut();
 
@@ -179,7 +186,9 @@ public class CafeTest {
         cafe.setActiveTable(1);
         cafe.placeOrder(leffe, 2); //ID2
         assertEquals(2, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 15 failed");
-        assertEquals(1,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 16 failed - problem with orderNumber count");
+        thisOrderNumber -= 2;
+
+        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 16 failed - problem with orderNumber count");
     }
 
 
@@ -386,10 +395,10 @@ public class CafeTest {
     @Test
     public void testWaiterSalesReportPDF() throws IOException {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
-        LocalDate date = LocalDate.of(2020, Month.FEBRUARY, 5);
-        cafe.placeOrder(cola, 10,  date);
+        LocalDate date = of(2020, FEBRUARY, 5);
+        cafe.placeOrder(cola, 10, date);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 30, date);
@@ -397,24 +406,23 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Wout Peters","password");
-        cafe.waiterSalesReportPDF();
-        //nog af te werken, checken of report bestaat?
+        cafe.logIn("Wout Peters", "password");
+        assertThat(cafe.waiterSalesReportPDF()).isTrue();
     }
 
     @Test
     public void testWaiterSalesReportPDFSpecificDate() throws IOException {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
-        LocalDate date = LocalDate.of(2020, Month.FEBRUARY, 5);
-        cafe.placeOrder(cola, 20,  date);
+        LocalDate date = of(2020, FEBRUARY, 5);
+        cafe.placeOrder(cola, 20, date);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 30, date);
@@ -425,15 +433,14 @@ public class CafeTest {
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Wout Peters","password");
-        cafe.waiterSalesReportPDF(date);
-        //nog af te werken, checken of report bestaat?
+        cafe.logIn("Wout Peters", "password");
+        assertThat(cafe.waiterSalesReportPDF(date)).isTrue();
     }
 
     @Test
     public void testGetTopThreeWaitersJPEG() throws Exception {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(leffe, 10); //30
@@ -444,7 +451,7 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(leffe, 10); //30
@@ -455,14 +462,13 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(ilse);
-        cafe.logIn("Ilse Vandenbroeck","password");
+        cafe.logIn("Ilse Vandenbroeck", "password");
         cafe.setActiveTable(5);
         cafe.placeOrder(cola, 100); //240
         cafe.placeOrder(leffe, 10); //30  == 270 totaal
         cafe.pay();
         cafe.getTopWaitersByRevenue(3);
-        cafe.topWaiterPieChart();
-        //nog af te werken, checken of JPEG bestaat?
+        assertThat(cafe.topWaiterPieChart()).isTrue();
     }
 
 }

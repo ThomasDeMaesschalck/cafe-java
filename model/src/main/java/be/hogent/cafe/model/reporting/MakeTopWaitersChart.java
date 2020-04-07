@@ -2,17 +2,22 @@ package be.hogent.cafe.model.reporting;
 import java.io.*;
 import java.util.HashMap;
 
+import be.hogent.cafe.model.Cafe;
 import be.hogent.cafe.model.Waiter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 
-//NOG af te werken: exception handling insteken
-
 public class MakeTopWaitersChart {
 
-    public static void createJPG(HashMap<Waiter, Double> topWaiters) throws Exception {
+    //exception handling nog af te werken
+
+    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+
+    public static boolean createJPG(HashMap<Waiter, Double> topWaiters) throws IOException {
 
         DefaultPieDataset dataset = new DefaultPieDataset( );
 
@@ -31,5 +36,12 @@ public class MakeTopWaitersChart {
         int height = 480;  /* Height of the image */
         File pieChart = new File( "reports/topwaiterchart.jpg" );
         ChartUtilities.saveChartAsJPEG( pieChart , chart , width , height );
+        if (pieChart.exists()) {
+            return true;
+        } else
+        {
+            logger.error("PDF file creation failed");
+            return false;
+        }
     }
 }

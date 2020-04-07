@@ -23,12 +23,12 @@ public class Cafe {
     private Waiter loggedInWaiter;
     private Table activeTable;
     private List<Table> tables = new ArrayList<>();
-    private int orderNumber = 0;
     private int IDCount = 0;
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
     private Set<Order> paidOrders2 = new HashSet<>();
-
+    private int highestOrderNumber;
+    private int orderNumber = 0;
 
     public Cafe(String cafeName, int numberOfTables) throws Exception {
         logger.info("Cafe started");
@@ -36,7 +36,9 @@ public class Cafe {
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
-        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
+        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
+        this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber"));
+        orderNumber = highestOrderNumber;
     }
 
     public boolean logIn(String name, String password)
@@ -150,9 +152,9 @@ public class Cafe {
         return WaitersByRevenue.calculate(getWaiterCollection(), numberOfHowMany, getPaidOrders());
     }
 
-    public void topWaiterPieChart() throws Exception {
-        MakeTopWaitersChart.createJPG(getTopWaitersByRevenue(3));
+    public boolean topWaiterPieChart() throws Exception {
         logger.info(getLoggedInWaiter().toString() + " created top waiter pie chart");
+        return  MakeTopWaitersChart.createJPG(getTopWaitersByRevenue(3));
 
     }
 
@@ -166,14 +168,14 @@ public class Cafe {
         return  AllWaiterSales.calculate(date, getPaidOrders(), getLoggedInWaiter());
     }
 
-    public void waiterSalesReportPDF() throws IOException {
-        MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), null);
+    public boolean waiterSalesReportPDF() throws IOException {
         logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report");
+        return MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), null);
     }
 
-    public void waiterSalesReportPDF(LocalDate date) throws IOException {
-        MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), date);
+    public boolean waiterSalesReportPDF(LocalDate date) throws IOException {
         logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report for " + date);
+    return   MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), date);
     }
 
     public void addWaiter(Waiter waiter){
@@ -188,7 +190,6 @@ public class Cafe {
     {
         this.waiters = waiter;
     }
-
 
     public Waiter getLoggedInWaiter() {
                return loggedInWaiter;
@@ -228,11 +229,15 @@ public class Cafe {
         return paidOrders;
     }
 
+    public int getHighestOrderNumber() {
+        return highestOrderNumber;
+    }
+
     public String getCafeName() {
         return cafeName;
     }
 
-    public static Set<Beverage> getBeverages() {
+    public Set<Beverage> getBeverages() {
         return beverages;
     }
 
@@ -241,11 +246,12 @@ public class Cafe {
         beverages = beverage;
     }
 
+    public void setHighestOrderNumber(int number) {highestOrderNumber = number;}
+
     public void setPaidOrders(Set<Order> paidOrder2)
     {
         paidOrders2 = paidOrder2;
     }
-
 
     public HashMap<Table, Order> getUnpaidOrders() {
         return unpaidOrders;

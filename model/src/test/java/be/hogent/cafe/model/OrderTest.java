@@ -1,5 +1,6 @@
 package be.hogent.cafe.model;
 
+import be.hogent.cafe.model.dao.PaidOrderDAOImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
@@ -37,9 +38,9 @@ public class OrderTest {
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 5);
 
-            LocalDate date = LocalDate.now();
-
-        assertEquals("Order: 1, date: "  + date + ", waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 5, ID: 1, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
+        LocalDate date = LocalDate.now();
+        int thisOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber") + 1; //om het nieuwe ordernummer te verkrijgen voor onderstaande test
+        assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 5, ID: 1, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
     }
 
 

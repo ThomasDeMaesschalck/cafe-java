@@ -30,7 +30,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
 
 
         @Override
-        public Set<Order> getOrders() {
+        public Set<Order> getOrders(Set<Beverage> beverages) {
             Set<Order> paidOrders = new HashSet<>();
 
             try (
@@ -46,23 +46,18 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                     paidOrder.setWaiterID(resultSet.getInt("waiterID"));
                     paidOrder.setDate(resultSet.getDate("date").toLocalDate());
 
+                    int beverageIDFromDB = resultSet.getInt("beverageID");
                     final double[] beveragePrice = {0}; //om lambda te kunnen gebruiken
                     final String[] beverageName = {null}; //idem
 
-                    Cafe.getBeverages().forEach(beverage -> { //naam en prijs van beverage opzoeken
-                                try {
-                                    if (beverage.getBeverageID() == resultSet.getInt("beverageID"))
-                                    {
-                                        beveragePrice[0] = beverage.getPrice();
-                                        beverageName[0] = beverage.getBeverageName();
-                                    }
-                                } catch (SQLException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                    );
+                   beverages.forEach(beverage -> { //naam en prijs van beverage opzoeken
+                        if (beverage.getBeverageID() == beverageIDFromDB) {
+                            beveragePrice[0] = beverage.getPrice();
+                            beverageName[0] = beverage.getBeverageName();
+                        }
+                    });
 
-                    Beverage beverage = new Beverage(resultSet.getInt("beverageID"), beverageName[0], beveragePrice[0]);
+                    Beverage beverage = new Beverage(beverageIDFromDB, beverageName[0], beveragePrice[0]);
 
                     OrderItem orderItem = new OrderItem(resultSet.getInt("ID"), beverage, resultSet.getInt("qty"));
                     if (paidOrders.contains(paidOrder)) //als er een order in collectie zit met zelfde orderNumber => geen nieuw order aanmaken maar orderiTem toevoegen
@@ -88,7 +83,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
         }
 
         @Override
-        public boolean insertOrder(Order o) {
+        public boolean insertOrder(Order o) throws DAOException {
 
             for (OrderItem oi: o.getOrderLines()) {
 
@@ -103,9 +98,9 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                     pStatement.executeUpdate();
                 }
 
-                catch (Exception e) {
+                catch (SQLException e) {
                     logger.error("Error insert person. " + e.getMessage());
-                    return false;
+                    throw new DAOException ("Failed to insert order in DB " + e.getMessage());
                 }
 
             }
@@ -113,7 +108,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
         }
 
     @Override
-    public int highestOrderNumber(String orderOrIDNumber) {
+    public int highestOrderAndIDNumber(String orderOrIDNumber) {
         int result = 0;
         String MAX_NUMBER = null;
 
