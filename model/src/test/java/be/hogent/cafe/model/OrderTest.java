@@ -18,7 +18,7 @@ public class OrderTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        cafe = new Cafe("Cafe Thomas", 12);
+        cafe = new Cafe();
         wout = new Waiter(1,"Peters", "Wout", "password");
         cola = new Beverage ( 1,"Cola", 2.40);
         leffe = new Beverage ( 2,"Leffe", 3.00);
@@ -39,7 +39,7 @@ public class OrderTest {
         cafe.placeOrder(leffe, 5);
 
         LocalDate date = LocalDate.now();
-        int thisOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber") + 1; //om het nieuwe ordernummer te verkrijgen voor onderstaande test
+        int thisOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber() + 1; //om het nieuwe ordernummer te verkrijgen voor onderstaande test
         assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 5, ID: 1, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
     }
 

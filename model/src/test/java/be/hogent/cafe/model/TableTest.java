@@ -15,7 +15,7 @@ public class TableTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        cafe = new Cafe("Cafe Thomas", 12);
+        cafe = new Cafe();
         wout = new Waiter(1,"Peters", "Wout", "password");
         one = new Table(1);
         oneone = new Table(1);

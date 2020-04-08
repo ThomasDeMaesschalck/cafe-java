@@ -21,8 +21,8 @@ public class PaidOrderDAOImplTest {
     private Cafe cafe;
 
     @BeforeEach
-    public void setUp() throws Exception {
-        cafe = new Cafe("Thomas", 12);
+    public void setUp()  {
+        cafe = new Cafe();
         Beverage duvel = new Beverage(10, "Duvel", 3.20);
         Beverage koffie = new Beverage(3, "Koffie", 2.40);
         Beverage spa = new Beverage(7, "Spa", 2.40);
@@ -41,10 +41,10 @@ public class PaidOrderDAOImplTest {
 
     @Test
     public void testInsertOrder() throws DAOException {
-        int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber");
+        int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         int newSize = paidOrdersDAO.size() + 1;
 
-        LocalDate date = LocalDate.of (2020, 4, 1);
+        LocalDate date = LocalDate.of (2020, 4, 8);
         Order orderTest = new Order(1000, date, o1, 2, 999 );
         orderTest.getOrderLines().add(o2);
 
@@ -64,14 +64,10 @@ public class PaidOrderDAOImplTest {
 
 
     @Test
-    public void testHighestOrderAndIDNumber() {
+    public void testHighestOrderNumber() {
         OptionalInt maxOrderNumber = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
-        int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber");
+        int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         assertEquals(maxOrderNumber.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
-
-        OptionalInt maxIDNumber = paidOrdersDAO.stream().flatMap(order -> order.getOrderLines().stream()).mapToInt(OrderItem::getID).max();
-        int highestIDNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("ID");
-        assertEquals(maxIDNumber.getAsInt(), highestIDNumber , "testGetHighestIDNumber 01 failed - number not correct");
-    }
+         }
 
 }

@@ -20,7 +20,7 @@ public class AllWaiterSales {
 
         if (date != null)
         {
-            sales =   paidOrders.stream().filter(o -> o.getWaiterID() == loggedInWaiter.getID()).filter(o -> o.getDate() == date)
+            sales =   paidOrders.stream().filter(o -> o.getWaiterID() == loggedInWaiter.getID()).filter(o -> o.getDate().equals(date))
                     .flatMap(o -> o.getOrderLines().stream()).collect(Collectors.toList());
         }
         else {

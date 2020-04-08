@@ -1,6 +1,7 @@
 package be.hogent.cafe.model;
 
 import be.hogent.cafe.model.dao.BeverageDAOImpl;
+import be.hogent.cafe.model.dao.DAOException;
 import be.hogent.cafe.model.dao.PaidOrderDAOImpl;
 import be.hogent.cafe.model.dao.WaiterDAOImpl;
 import be.hogent.cafe.model.reporting.AllWaiterSales;
@@ -11,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -18,7 +20,9 @@ public class Cafe {
 
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
     private static Set<Beverage> beverages;
-    private final String cafeName;
+    private  String cafeName;
+    private int numberOfTables;
+    private int numberOfWaitersInPieChart;
     private Set<Waiter> waiters = new HashSet<>();
     private Waiter loggedInWaiter;
     private Table activeTable;
@@ -26,19 +30,36 @@ public class Cafe {
     private int IDCount = 0;
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
-    private Set<Order> paidOrders2 = new HashSet<>();
     private int highestOrderNumber;
-    private int orderNumber = 0;
+    private int orderNumber;
 
-    public Cafe(String cafeName, int numberOfTables) throws Exception {
+    public Cafe()  {
         logger.info("Cafe started");
-        this.cafeName = cafeName;
+        readProperties();
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
         this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
-        this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber"));
+        this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
+        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
         orderNumber = highestOrderNumber;
+    }
+
+    private  void readProperties() {
+        Properties cafeProperties = new Properties ();
+
+        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream ("cafe.properties")) {
+
+            assert inputStream != null;
+            cafeProperties.load (inputStream);
+            cafeName = cafeProperties.getProperty("cafeName");
+            numberOfTables = Integer.parseInt(cafeProperties.getProperty("numberOfTables"));
+            numberOfWaitersInPieChart = Integer.parseInt(cafeProperties.getProperty("numberOfWaitersInPieChart"));
+
+        } catch (IOException ioe) {
+            logger.error("cafe properties not loaded");
+            ioe.printStackTrace ();
+        }
     }
 
     public boolean logIn(String name, String password)
@@ -127,17 +148,18 @@ public class Cafe {
         removeActiveTable();
     }
 
-    public void pay() { //order betalen en verplaatsen naar paidorder collectie
+    public void pay() throws DAOException { //order betalen en verplaatsen naar paidorder collectie
         if (getActiveTable() == null)
         {
             logger.error("Pay failed, no active table");
             throw new IllegalArgumentException("No active table");
         }
         logger.info("Table " + getActiveTable().toString() + " paid orderNumber " + getUnpaidOrders().get(getActiveTable()).getOrderNumber());
-        getPaidOrders().add(getUnpaidOrders().get(getActiveTable()));
+        PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
         getUnpaidOrders().remove(getActiveTable());
         clearTable();
-     }
+        setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
+    }
 
     public double getTotalWaiterRevenue(){ //voor actieve waiter
         return getTotalWaiterRevenue( getLoggedInWaiter().getID());
@@ -163,9 +185,9 @@ public class Cafe {
         return getAllWaiterSales(null);
     }
 
-    public Map<Beverage, Integer> getAllWaiterSales(LocalDate date){ //sales voor specifieke datum indien date niet null
+    public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate){ //sales voor specifieke datum indien date niet null
         logger.info(getLoggedInWaiter().toString() + " retrieved his sales data");
-        return  AllWaiterSales.calculate(date, getPaidOrders(), getLoggedInWaiter());
+        return  AllWaiterSales.calculate(specificDate, getPaidOrders(), getLoggedInWaiter());
     }
 
     public boolean waiterSalesReportPDF() throws IOException {
@@ -175,7 +197,7 @@ public class Cafe {
 
     public boolean waiterSalesReportPDF(LocalDate date) throws IOException {
         logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report for " + date);
-    return   MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), date);
+    return   MakePDFSalesReport.createPDF(getAllWaiterSales(date), getLoggedInWaiter().toString(), date);
     }
 
     public void addWaiter(Waiter waiter){
@@ -248,9 +270,9 @@ public class Cafe {
 
     public void setHighestOrderNumber(int number) {highestOrderNumber = number;}
 
-    public void setPaidOrders(Set<Order> paidOrder2)
+    public void setPaidOrders(Set<Order> paidOrder)
     {
-        paidOrders2 = paidOrder2;
+        paidOrders = paidOrder;
     }
 
     public HashMap<Table, Order> getUnpaidOrders() {
@@ -274,7 +296,7 @@ public class Cafe {
     }
 
     public HashMap<Waiter, Double> getTopWaitersMap() {
-        return getTopWaitersByRevenue(3);
+        return getTopWaitersByRevenue(numberOfWaitersInPieChart);
     }
 
     private void setLoggedInWaiter(Waiter loggedInWaiter) {

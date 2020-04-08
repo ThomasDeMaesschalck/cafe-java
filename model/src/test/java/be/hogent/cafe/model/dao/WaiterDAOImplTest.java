@@ -16,6 +16,6 @@ public class WaiterDAOImplTest {
         waitersDAO = WaiterDAOImpl.getInstance().getWaiters();
         Waiter wout = new Waiter(1, "Peters", "Wout", "password");
         Assertions.assertTrue(waitersDAO.contains(wout), "testGetWaiters 01 failed");
-        assertEquals(4, waitersDAO.size(), "testGetWaiters 02 failed");
+        assertEquals(7, waitersDAO.size(), "testGetWaiters 02 failed");
     }
 }
