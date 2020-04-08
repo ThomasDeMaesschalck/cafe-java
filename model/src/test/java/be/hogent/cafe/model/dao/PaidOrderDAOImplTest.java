@@ -27,10 +27,10 @@ public class PaidOrderDAOImplTest {
         Beverage koffie = new Beverage(3, "Koffie", 2.40);
         Beverage spa = new Beverage(7, "Spa", 2.40);
         Beverage westmalle = new Beverage(8, "Westmalle", 3.00);
-         o1 = new OrderItem(110, duvel, 2);
-         o2 = new OrderItem(120, koffie, 2);
-         o3 = new OrderItem(140, spa, 3);
-         o4 = new OrderItem(130, westmalle, 3);
+         o1 = new OrderItem( duvel, 2);
+         o2 = new OrderItem(koffie, 2);
+         o3 = new OrderItem( spa, 3);
+         o4 = new OrderItem( westmalle, 3);
         paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders(cafe.getBeverages());
     }
 

@@ -27,7 +27,6 @@ public class Cafe {
     private Waiter loggedInWaiter;
     private Table activeTable;
     private List<Table> tables = new ArrayList<>();
-    private int IDCount = 0;
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
@@ -111,22 +110,15 @@ public class Cafe {
         if (!getActiveTable().isActiveOrder())
         { //nieuw order aanmaken indien actieve tafel niet bezet is
             increaseOrderNumber();
-            increaseIDCount();
             logger.debug("orderNumber count increased to: " + getOrderNumber());
-            logger.debug("ID count increased to: " + getIDCount());
-            Order order = new Order(getOrderNumber(), date, new OrderItem(getIDCount(), beverage, quantity), getLoggedInWaiter().getID(), getActiveTable().getTableID());
+            Order order = new Order(getOrderNumber(), date, new OrderItem(beverage, quantity), getLoggedInWaiter().getID(), getActiveTable().getTableID());
             getUnpaidOrders().put(getActiveTable(), order);
             getActiveTable().setActiveOrder(true);
             logger.info("New order made: " + order.toString());
         }
         else
             { //in een bestaand order een lijn toevoegen of updaten
-                if (!getUnpaidOrders().get(getActiveTable()).orderLineExists(new OrderItem(beverage, quantity)))
-                {
-                increaseIDCount(); //increasen indien de lijn niet bestaat
-                logger.debug("ID count increased to: " + getIDCount());
-                }
-            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(getIDCount(), beverage, quantity));
+            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
             }
         }
 
@@ -285,14 +277,6 @@ public class Cafe {
 
     private void increaseOrderNumber(){
         orderNumber++;
-    }
-
-    private int getIDCount() {
-        return IDCount;
-    }
-
-    private void increaseIDCount(){
-        IDCount++;
     }
 
     public HashMap<Waiter, Double> getTopWaitersMap() {

@@ -6,13 +6,6 @@ public class OrderItem {
 
     private  Beverage beverage;
     private int qty;
-    private  int ID;
-
-    public OrderItem(int ID, Beverage beverage, int qty) {
-        this.ID = ID;
-        this.beverage = beverage;
-        this.qty = qty;
-    }
 
     public OrderItem(Beverage beverage, int qty) {
         this.beverage = beverage;
@@ -31,9 +24,6 @@ public class OrderItem {
         return qty;
     }
 
-    public int getID() {
-        return ID;
-    }
 
     public void increaseQty(){
         qty++;
@@ -51,7 +41,7 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return "ID: " + getID() + ", beverage: " + getBeverage().getBeverageName() + ", quantity: " + getQty();
+        return "beverage: " + getBeverage().getBeverageName() + ", quantity: " + getQty();
     }
 
     @Override

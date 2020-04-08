@@ -150,7 +150,7 @@ public class CafeTest {
         cafe.placeOrder(leffe, 2); //ID2, orderNumber 1
         assertEquals(2, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 03 failed");
         assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 04 failed - problem with orderNumber count");
-        OrderItem leffeTest = new OrderItem(3, leffe, 2);
+        OrderItem leffeTest = new OrderItem( leffe, 2);
         assertTrue(cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().contains(leffeTest), "Test PlaceOrder() 05 failed");
 
         cafe.setActiveTable(2);
@@ -211,7 +211,7 @@ public class CafeTest {
 
   @Test
     public void testRemoveOrder(){
-        OrderItem  orderItem = new OrderItem(1, cola, 2);
+        OrderItem  orderItem = new OrderItem( cola, 2);
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters", "password");
         try {

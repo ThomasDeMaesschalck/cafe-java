@@ -24,7 +24,7 @@ public class OrderTest {
         leffe = new Beverage ( 2,"Leffe", 3.00);
         cafe.getBeverages().add(cola);
         cafe.getBeverages().add(leffe);
-        OrderItem  orderItem = new OrderItem(1, cola, 5);
+        OrderItem  orderItem = new OrderItem( cola, 5);
         order1 = new Order(1,  LocalDate.now(), orderItem,2, 2);
         order2 = new Order(2, LocalDate.now(), orderItem, 4, 1);
     }
@@ -40,7 +40,7 @@ public class OrderTest {
 
         LocalDate date = LocalDate.now();
         int thisOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber() + 1; //om het nieuwe ordernummer te verkrijgen voor onderstaande test
-        assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [ID: 2, beverage: Leffe, quantity: 5, ID: 1, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
+        assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [beverage: Leffe, quantity: 5, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
     }
 
 

@@ -21,7 +21,7 @@ public class OrderItemTest {
             leffe = new Beverage ( 2,"Leffe", 3.00);
             cafe.getBeverages().add(cola);
             cafe.getBeverages().add(leffe);
-            order1 = new OrderItem(1, cola,2);
+            order1 = new OrderItem(cola,2);
         }
 
     @Test
@@ -58,7 +58,7 @@ public class OrderItemTest {
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 5);
-        assertEquals("[ID: 2, beverage: Leffe, quantity: 5, ID: 1, beverage: Cola, quantity: 5]", cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().toString(), "Test toString() 01 failed");
+        assertEquals("[beverage: Leffe, quantity: 5, beverage: Cola, quantity: 5]", cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().toString(), "Test toString() 01 failed");
     }
 
     @Test

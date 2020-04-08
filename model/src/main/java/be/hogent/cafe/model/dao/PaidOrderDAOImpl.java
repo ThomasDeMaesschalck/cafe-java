@@ -62,7 +62,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
 
                     Beverage beverage = new Beverage(beverageIDFromDB, beverageName[0], beveragePrice[0]);
 
-                    OrderItem orderItem = new OrderItem(resultSet.getInt("ID"), beverage, resultSet.getInt("qty"));
+                    OrderItem orderItem = new OrderItem(beverage, resultSet.getInt("qty"));
                     if (paidOrders.contains(paidOrder)) //als er een order in collectie zit met zelfde orderNumber => geen nieuw order aanmaken maar orderiTem toevoegen
                     {
                         for (Order paidOrderFromSet: paidOrders)

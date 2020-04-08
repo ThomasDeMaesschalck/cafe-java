@@ -33,23 +33,17 @@ public class Order {
         if(getOrderLines().contains(orderItem)) {  //qty van bestaande orderlijn updaten
             Optional<OrderItem> originalOrderItem = getOrderLines().stream().filter((orderItem::equals)).findFirst();
             int newQuantity = originalOrderItem.orElseThrow().getQty() + orderItem.getQty();
-            int ID = originalOrderItem.orElseThrow().getID();
             getOrderLines().forEach(o ->  {
                 if(o.equals(orderItem))
                 {
                     o.setQty(newQuantity);
                 }});
-            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline with ID: " + ID  + " to new quantity: " + newQuantity);
+            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline " + orderItem.getBeverage().getBeverageName() + " to new quantity: " + newQuantity);
           }
         else{ //orderlijn toevoegen aan bestaand order
             getOrderLines().add(orderItem);
             logger.info("orderNumber: " + getOrderNumber() + " -  added orderline " + orderItem.toString());
         }
-    }
-
-    public boolean orderLineExists(OrderItem orderItem)
-    {
-        return getOrderLines().contains(orderItem);
     }
 
     public int getOrderNumber() {
