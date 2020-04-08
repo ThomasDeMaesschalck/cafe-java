@@ -12,6 +12,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
         private static final String INSERT_ORDER = "INSERT into orders (orderNumber, beverageID, qty, date, waiterID) VALUES (?, ?,?,?,?)";
         private static final String MAX_ORDER_NUMBER = "SELECT MAX(orderNumber) from orders";
         private static final String MAX_ID_NUMBER = "SELECT MAX(ID) from orders";
+        private static final String DELETE_FROM_ORDERS = "DELETE from orders WHERE orderNumber >= ?";
 
 
     private final Logger logger = LogManager.getLogger(PaidOrderDAOImpl.class.getName());
@@ -96,16 +97,37 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                     pStatement.setDate(4, Date.valueOf(o.getDate()));
                     pStatement.setInt(5, o.getWaiterID());
                     pStatement.executeUpdate();
+                    logger.info("Inserted orderLine from orderNumber " +  o.getOrderNumber() + " into database");
+
                 }
 
                 catch (SQLException e) {
-                    logger.error("Error insert person. " + e.getMessage());
+                    logger.error("Error insert order in DB. " + e.getMessage());
                     throw new DAOException ("Failed to insert order in DB " + e.getMessage());
                 }
 
             }
             return true;
         }
+
+    @Override
+    public boolean deleteOrders(int orderNumbersToDelete) throws DAOException { //gebruikt om orders van de testen terug uit de DB te halen
+        try (Connection connection = getConnection();
+
+            PreparedStatement pStatement = connection.prepareStatement(DELETE_FROM_ORDERS)) {
+            pStatement.setInt(1, orderNumbersToDelete);
+            pStatement.executeUpdate();
+            logger.info("Deleted orderNumber(s) equal or higher than " + orderNumbersToDelete + " from database");
+
+        }
+
+
+        catch (SQLException e) {
+            logger.error("Error deleting orders in DB. " + e.getMessage());
+            throw new DAOException ("Failed to delete order(s) in DB " + e.getMessage());
+        }
+            return true;
+}
 
     @Override
     public int highestOrderAndIDNumber(String orderOrIDNumber) {

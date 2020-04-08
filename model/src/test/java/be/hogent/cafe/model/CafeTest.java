@@ -20,6 +20,8 @@ public class CafeTest {
     private Waiter patrick;
     private Waiter ilse;
     private Waiter thomas;
+    private Waiter tina;
+    private Waiter tom;
     private Beverage cola;
     private Beverage leffe;
     private Beverage duvel;
@@ -31,7 +33,9 @@ public class CafeTest {
         wout = new Waiter( 1,"Peters", "Wout", "password");
         ilse = new Waiter( 3,"Vandenbroeck", "Ilse", "password");
         patrick = new Waiter( 4,"Desmet", "Patrick", "password");
-        thomas = new Waiter( 5,"Dheer", "Thomas", "password");
+        thomas = new Waiter( 5,"DM", "Thomas", "password");
+        tina = new Waiter( 7,"DM", "Tina", "password");
+        tom = new Waiter( 8,"DM", "Tom", "password");
 
         cola = new Beverage ( 1,"Cola", 2.40);
         leffe = new Beverage ( 2,"Leffe", 3.00);
@@ -233,6 +237,7 @@ public class CafeTest {
         cafe.placeOrder(leffe, 2);
         cafe.placeOrder(duvel, 2);
         cafe.placeOrder(fanta, 2);
+        int paidOrderOriginalSize = cafe.getPaidOrders().size();
         cafe.pay();
         assertEquals(0,  cafe.getUnpaidOrders().size(), "Test clearTable 01 failed");
         cafe.logOut();
@@ -252,7 +257,7 @@ public class CafeTest {
         cafe.setActiveTable(10);
         cafe.pay();
         assertEquals(1,  cafe.getUnpaidOrders().size(), "Test clearTable 02 failed");
-        assertEquals(2,  cafe.getPaidOrders().size(), "Test clearTable 03 failed - interfered with other table");
+        assertEquals(paidOrderOriginalSize+2,  cafe.getPaidOrders().size(), "Test clearTable 03 failed - interfered with other table");
     }
 
 
@@ -270,6 +275,7 @@ public class CafeTest {
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 2);
         cafe.placeOrder(duvel, 10);
+        int paidOrderOriginalSize = cafe.getPaidOrders().size();
         cafe.pay();
         assertEquals(0, cafe.getUnpaidOrders().size(), "Test pay() 02 failed - table not cleared");
         assertEquals(1, cafe.getPaidOrders().size(), "Test pay() 03 failed - paidOrders collection not OK");
@@ -283,13 +289,13 @@ public class CafeTest {
         cafe.placeOrder(fanta, 4);
         cafe.pay();
         assertEquals(0, cafe.getUnpaidOrders().size(), "Test pay() 04 failed - table not cleared");
-        assertEquals(2, cafe.getPaidOrders().size(), "Test pay() 05 failed - paidOrders collection not OK");
+        assertEquals(paidOrderOriginalSize+2, cafe.getPaidOrders().size(), "Test pay() 05 failed - paidOrders collection not OK");
     }
 
     @Test
     public void testGetTotalWaiterRevenue(){
-        cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.addWaiter(thomas);
+        cafe.logIn("Thomas DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(cola, 10); //24 - test om te zien of qty updaten werkt
@@ -300,13 +306,13 @@ public class CafeTest {
         cafe.placeOrder(cola, 20); //48
         cafe.pay();
         assertEquals(216, cafe.getTotalWaiterRevenue(), "Test getTotalWaiterRevenue() 01 failed");
-        assertEquals(216, cafe.getTotalWaiterRevenue(1), "Test getTotalWaiterRevenue() 02 failed");
+        assertEquals(216, cafe.getTotalWaiterRevenue(5), "Test getTotalWaiterRevenue() 02 failed");
     }
 
     @Test
     public void testGetTopThreeWaitersByRevenue(){
-        cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.addWaiter(thomas);
+        cafe.logIn("Thomas DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(leffe, 10); //30
@@ -316,8 +322,8 @@ public class CafeTest {
         cafe.placeOrder(cola, 20); //48  == 192 totaal
         cafe.pay();
         cafe.logOut();
-        cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.addWaiter(tina);
+        cafe.logIn("Tina DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(leffe, 10); //30
@@ -327,22 +333,22 @@ public class CafeTest {
         cafe.placeOrder(cola, 10); //24 == 108 totaal
         cafe.pay();
         cafe.logOut();
-        cafe.addWaiter(ilse);
-        cafe.logIn("Ilse Vandenbroeck","password");
+        cafe.addWaiter(tom);
+        cafe.logIn("Tom DM","password");
         cafe.setActiveTable(5);
         cafe.placeOrder(cola, 100); //240
         cafe.placeOrder(leffe, 10); //30  == 270 totaal
         cafe.pay();
         cafe.getTopWaitersByRevenue(3);
-        assertEquals(270, cafe.getTopWaitersMap().get(ilse).doubleValue(), "Test getTopThreeWaitersByRevenue() 01 failed");
-        assertEquals(192, cafe.getTopWaitersMap().get(wout).intValue(), "Test getTopThreeWaitersByRevenue() 02 failed");
-        assertEquals(108, cafe.getTopWaitersMap().get(patrick).intValue(), "Test getTopThreeWaitersByRevenue() 03 failed");
+        assertEquals(270, cafe.getTopWaitersMap().get(tom).doubleValue(), "Test getTopThreeWaitersByRevenue() 01 failed");
+        assertEquals(192, cafe.getTopWaitersMap().get(thomas).intValue(), "Test getTopThreeWaitersByRevenue() 02 failed");
+        assertEquals(108, cafe.getTopWaitersMap().get(tina).intValue(), "Test getTopThreeWaitersByRevenue() 03 failed");
     }
 
     @Test
     public void testgetAllWaiterSales(){
-        cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.addWaiter(thomas);
+        cafe.logIn("Thomas DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
@@ -352,25 +358,25 @@ public class CafeTest {
         cafe.placeOrder(cola, 20);
         cafe.pay();
         cafe.logOut();
-        cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.addWaiter(tom);
+        cafe.logIn("Tom DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Thomas DM","password");
         assertEquals(2, cafe.getAllWaiterSales().size(), "Test getAllWaiterSales() 01 failed");
         cafe.logOut();
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Tom DM","password");
         assertEquals(2, cafe.getAllWaiterSales().size(), "Test getAllWaiterSales() 02 failed");
     }
 
 
     @Test
     public void testgetAllWaiterSalesByDate(){
-        cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.addWaiter(thomas);
+        cafe.logIn("Thomas DM","password");
         cafe.setActiveTable(1);
         LocalDate date = LocalDate.of(2020, Month.FEBRUARY, 5);
         cafe.placeOrder(cola, 10,  date);
@@ -380,14 +386,14 @@ public class CafeTest {
         cafe.placeOrder(cola, 20, date);
         cafe.pay();
         cafe.logOut();
-        cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.addWaiter(tom);
+        cafe.logIn("Tom DM","password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Thomas DM","password");
         assertEquals(2, cafe.getAllWaiterSales(date).size(), "Test getAllWaiterSalesByDate() 01 failed");
         cafe.logOut();
     }

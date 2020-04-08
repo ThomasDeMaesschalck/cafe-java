@@ -10,6 +10,8 @@ public interface PaidOrderDAO {
 
     boolean insertOrder (Order o) throws DAOException;
 
+    boolean deleteOrders (int orderNumbersToDelete) throws DAOException;
+
     int highestOrderAndIDNumber(String orderOrIDNumber);
 
 }

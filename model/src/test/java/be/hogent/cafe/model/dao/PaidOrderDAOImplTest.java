@@ -36,19 +36,12 @@ public class PaidOrderDAOImplTest {
 
     @Test
     public void testGetPaidOrders() {
-    cafe.logIn("Wout Peters", "password");
-        LocalDate date = LocalDate.of (2019, 12, 21);
-        Order orderDAOTest = new Order(16, date, o1, 2, -1 );
-        orderDAOTest.getOrderLines().add(o2);
-        orderDAOTest.getOrderLines().add(o3);
-        orderDAOTest.getOrderLines().add(o4);
-
-        Assertions.assertTrue(paidOrdersDAO.contains(orderDAOTest), "testGetPaidOrders 01 failed");
+        Assertions.assertTrue(paidOrdersDAO.size() > 0, "testGetPaidOrders 01 failed");
     }
 
     @Test
     public void testInsertOrder() throws DAOException {
-
+        int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber");
         int newSize = paidOrdersDAO.size() + 1;
 
         LocalDate date = LocalDate.of (2020, 4, 1);
@@ -64,12 +57,14 @@ public class PaidOrderDAOImplTest {
 
         Assertions.assertTrue(PaidOrderDAOImpl.getInstance().insertOrder(orderTest), "testInsertOrder 01 failed");
         int sizeCheck = PaidOrderDAOImpl.getInstance().getOrders(cafe.getBeverages()).size();
-       assertEquals(newSize, sizeCheck , "testInsertOrder 02 failed - size not correct"); // werkt niet omdat er orderItems bijkomen dus niet gelijk aan orderTest van hierboven
+       assertEquals(newSize, sizeCheck , "testInsertOrder 02 failed - size not correct");
+
+        PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }
 
 
     @Test
-    public void testHighestOrderAndIDNumber() { //failt bij rerun door double entries in DB gezien enkel eerste opgehaald wordt door den get
+    public void testHighestOrderAndIDNumber() {
         OptionalInt maxOrderNumber = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
         int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderAndIDNumber("orderNumber");
         assertEquals(maxOrderNumber.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
