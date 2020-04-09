@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import java.sql.Connection;
 import java.sql.SQLException;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.BDDMockito.willThrow;
 import static org.mockito.Mockito.mock;
 
@@ -15,7 +14,7 @@ public class BaseDAOTest {
            BaseDAO testDAO = new BaseDAO();
 
            Connection connectionTest = testDAO.getConnection();
-           assertNotNull(connectionTest);
+           assertThat(connectionTest).isNotNull();
            assertThat(connectionTest.isValid(0)).isTrue();
        }
 

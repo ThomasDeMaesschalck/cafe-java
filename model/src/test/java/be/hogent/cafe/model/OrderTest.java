@@ -17,7 +17,7 @@ public class OrderTest {
     private Order order2;
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp() {
         cafe = new Cafe();
         wout = new Waiter(1,"Peters", "Wout", "password");
         cola = new Beverage ( 1,"Cola", 2.40);

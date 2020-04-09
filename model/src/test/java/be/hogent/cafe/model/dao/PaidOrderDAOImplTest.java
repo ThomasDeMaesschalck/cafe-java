@@ -66,6 +66,10 @@ public class PaidOrderDAOImplTest {
     @Test
     public void testHighestOrderNumber() {
         OptionalInt maxOrderNumber = paidOrdersDAO.stream().mapToInt(Order::getOrderNumber).max();
+        if (maxOrderNumber.isEmpty())
+        {
+            throw new IllegalStateException("There is no maxOrderNumber");
+        }
         int highestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         assertEquals(maxOrderNumber.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
          }

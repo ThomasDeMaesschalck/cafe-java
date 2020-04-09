@@ -45,9 +45,13 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                     Order paidOrder = new Order();
                     paidOrder.setOrderNumber(resultSet.getInt("orderNumber"));
                     paidOrder.setWaiterID(resultSet.getInt("waiterID"));
-                    LocalDate date = resultSet.getDate("date").toLocalDate();
 
-                    paidOrder.setDate(date.plusDays(1)); ///PROBLEEM MET DATABASE => bij opslagen in DB trekt hij 1 dag af?!
+                    //LocalDate date = resultSet.getDate("date").toLocalDate(); ///PROBLEEM MET DATABASE => bij opslagen in DB trekt hij 1 dag af?!
+
+                    paidOrder.setDate(resultSet.getDate("date").toLocalDate());
+
+
+                   // paidOrder.setDate(date.plusDays(1)); ///PROBLEEM MET DATABASE => bij opslagen in DB trekt hij 1 dag af?!
 
                     int beverageIDFromDB = resultSet.getInt("beverageID");
                     final double[] beveragePrice = {0}; //om lambda te kunnen gebruiken
