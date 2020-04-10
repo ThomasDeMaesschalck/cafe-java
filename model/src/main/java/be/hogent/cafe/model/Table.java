@@ -5,12 +5,10 @@ import java.util.Objects;
 public class Table {
     private int tableID;
     private Waiter belongsToWaiter;
-    private boolean activeOrder;
 
     public Table(int tableID){
         this.tableID = tableID;
         this.belongsToWaiter = null;
-        this.activeOrder = false;
     }
 
     @Override
@@ -41,14 +39,6 @@ public class Table {
 
     public int getTableID() {
         return tableID;
-    }
-
-    public boolean isActiveOrder() {
-        return activeOrder;
-    }
-
-    public void setActiveOrder(boolean activeOrder) {
-        this.activeOrder = activeOrder;
     }
 }
 

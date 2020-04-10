@@ -99,6 +99,15 @@ public class Cafe {
         {
             getActiveTable().setBelongsToWaiter(getLoggedInWaiter());
             logger.info("Assigned  " + getActiveTable().toString() + " to " + getLoggedInWaiter().toString());
+            increaseOrderNumber();
+            logger.debug("orderNumber count increased to: " + getOrderNumber());
+            Order order = new Order(getOrderNumber(), date, new OrderItem(beverage, quantity), getLoggedInWaiter().getID(), getActiveTable().getTableID());
+            getUnpaidOrders().put(getActiveTable(), order);
+            logger.info("New order made: " + order.toString());
+        }
+        else
+        { //in een bestaand order een lijn toevoegen of updaten
+            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
         }
 
         if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter()))
@@ -106,20 +115,6 @@ public class Cafe {
             logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
             throw new IllegalArgumentException("Table belongs to other waiter");
         }
-
-        if (!getActiveTable().isActiveOrder())
-        { //nieuw order aanmaken indien actieve tafel niet bezet is
-            increaseOrderNumber();
-            logger.debug("orderNumber count increased to: " + getOrderNumber());
-            Order order = new Order(getOrderNumber(), date, new OrderItem(beverage, quantity), getLoggedInWaiter().getID(), getActiveTable().getTableID());
-            getUnpaidOrders().put(getActiveTable(), order);
-            getActiveTable().setActiveOrder(true);
-            logger.info("New order made: " + order.toString());
-        }
-        else
-            { //in een bestaand order een lijn toevoegen of updaten
-            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
-            }
         }
 
     public void removeOrder(OrderItem orderItem) { //orderlijn verwijderen
@@ -136,7 +131,6 @@ public class Cafe {
     {
         logger.info("Cleared table " + getActiveTable().toString());
         getActiveTable().setBelongsToWaiter(null);
-        getActiveTable().setActiveOrder(false);
         removeActiveTable();
     }
 
