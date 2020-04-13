@@ -40,7 +40,6 @@ public class Cafe {
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
         this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
         this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
-        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
         orderNumber = highestOrderNumber;
     }
 
