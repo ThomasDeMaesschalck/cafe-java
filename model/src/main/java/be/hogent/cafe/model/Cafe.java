@@ -94,26 +94,19 @@ public class Cafe {
 
     public void placeOrder(Beverage beverage, int quantity, LocalDate date) //waiter een order laten maken
     {
-        if (getActiveTable().getBelongsToWaiter() == null) //lege tafel koppelen aan de waiter
-        {
-            getActiveTable().setBelongsToWaiter(getLoggedInWaiter());
-            logger.info("Assigned  " + getActiveTable().toString() + " to " + getLoggedInWaiter().toString());
-            increaseOrderNumber();
-            logger.debug("orderNumber count increased to: " + getOrderNumber());
-            Order order = new Order(getOrderNumber(), date, new OrderItem(beverage, quantity), getLoggedInWaiter().getID(), getActiveTable().getTableID());
-            getUnpaidOrders().put(getActiveTable(), order);
-            logger.info("New order made: " + order.toString());
-        }
-        else
-        { //in een bestaand order een lijn toevoegen of updaten
-            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
-        }
 
         if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter()))
         {
             logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
             throw new IllegalArgumentException("Table belongs to other waiter");
         }
+
+        if (!getUnpaidOrders().containsKey(getActiveTable())) {
+            Order order = new Order(getOrderNumber(), date, getLoggedInWaiter().getID(), getActiveTable().getTableID());
+            getUnpaidOrders().put(getActiveTable(), order);
+            logger.info("New order made: " + order.toString());
+        }
+            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
         }
 
     public void removeOrder(OrderItem orderItem) { //orderlijn verwijderen
@@ -226,6 +219,13 @@ public class Cafe {
     public void setActiveTable(int tableID) {
         this.activeTable = tables.get(tableID);
         logger.info("Set " + activeTable + " as active table");
+        if (getActiveTable().getBelongsToWaiter() == null) //lege tafel koppelen aan de waiter
+        {
+            getActiveTable().setBelongsToWaiter(getLoggedInWaiter());
+            logger.info("Assigned  " + getActiveTable().toString() + " to " + getLoggedInWaiter().toString());
+            increaseOrderNumber();
+            logger.debug("orderNumber count increased to: " + getOrderNumber());
+        }
     }
 
     private void removeActiveTable() {

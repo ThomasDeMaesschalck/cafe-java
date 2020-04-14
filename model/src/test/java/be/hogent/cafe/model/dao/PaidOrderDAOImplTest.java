@@ -45,7 +45,8 @@ public class PaidOrderDAOImplTest {
         int newSize = paidOrdersDAO.size() + 1;
 
         LocalDate date = LocalDate.of (2020, 4, 8);
-        Order orderTest = new Order(1000, date, o1, 2, 999 );
+        Order orderTest = new Order(1000, date, 2, 999 );
+        orderTest.getOrderLines().add(o1);
         orderTest.getOrderLines().add(o2);
 
         boolean isOrderAlreadyInCollection = paidOrdersDAO.stream().anyMatch((o -> o.getOrderNumber() == 1000));

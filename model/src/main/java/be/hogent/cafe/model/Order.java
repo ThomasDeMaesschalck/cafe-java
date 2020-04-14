@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.Set;
 
 public class Order {
@@ -20,9 +19,8 @@ public class Order {
     public Order() {
     }
 
-    public Order(int orderNumber, LocalDate date, OrderItem orderItem, int waterID, int tableID) {
+    public Order(int orderNumber, LocalDate date, int waterID, int tableID) {
         this.orderNumber = orderNumber;
-        getOrderLines().add(orderItem);
         this.date = date;
         this.waiterID = waterID;
         this.tableID = tableID;
@@ -31,14 +29,12 @@ public class Order {
     public void AddOrUpdateOrderLine(OrderItem orderItem)
     {
         if(getOrderLines().contains(orderItem)) {  //qty van bestaande orderlijn updaten
-            Optional<OrderItem> originalOrderItem = getOrderLines().stream().filter((orderItem::equals)).findFirst();
-            int newQuantity = originalOrderItem.orElseThrow().getQty() + orderItem.getQty();
             getOrderLines().forEach(o ->  {
                 if(o.equals(orderItem))
                 {
-                    o.setQty(newQuantity);
+                    o.increaseQty(orderItem.getQty());
                 }});
-            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline " + orderItem.getBeverage().getBeverageName() + " to new quantity: " + newQuantity);
+            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline " + orderItem.getBeverage().getBeverageName() + " quantity with: " + orderItem.getQty());
           }
         else{ //orderlijn toevoegen aan bestaand order
             getOrderLines().add(orderItem);

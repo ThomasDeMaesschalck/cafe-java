@@ -52,10 +52,6 @@ public class OrderItem {
         return beverage.equals(orderItem.beverage);
     }
 
-    public void setQty(int qty) {
-        this.qty = qty;
-    }
-
     @Override
     public int hashCode() {
         return Objects.hash(beverage);

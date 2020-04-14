@@ -25,8 +25,10 @@ public class OrderTest {
         cafe.getBeverages().add(cola);
         cafe.getBeverages().add(leffe);
         OrderItem  orderItem = new OrderItem( cola, 5);
-        order1 = new Order(1,  LocalDate.now(), orderItem,2, 2);
-        order2 = new Order(2, LocalDate.now(), orderItem, 4, 1);
+        order1 = new Order(1,  LocalDate.now() ,2, 2);
+        order1.getOrderLines().add(orderItem);
+        order2 = new Order(2, LocalDate.now(), 4, 1);
+        order2.getOrderLines().add(orderItem);
     }
 
 

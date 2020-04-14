@@ -131,6 +131,8 @@ public class CafeTest {
 
     @Test
     public void testSetActiveTable(){
+        cafe.addWaiter(wout);
+        cafe.logIn("Wout Peters","password");
         cafe.setActiveTable(1);
         assertEquals(cafe.getTables().get(1), cafe.getActiveTable(), "Test SetActiveTable() 01 failed");
         cafe.setActiveTable(9);
