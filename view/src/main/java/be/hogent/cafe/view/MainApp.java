@@ -3,16 +3,12 @@ package be.hogent.cafe.view;
 
 import be.hogent.cafe.model.*;
 import javafx.application.*;
-import javafx.beans.Observable;
 import javafx.collections.*;
 import javafx.fxml.*;
 import javafx.scene.*;
-import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.stage.*;
-
 import java.io.*;
-import java.util.HashSet;
 
 public class MainApp extends Application {
 
@@ -58,7 +54,7 @@ public class MainApp extends Application {
 
         initRootLayout ();
 
-        showCafeOverview ();
+        showLogIn ();
     }
 
     /**
@@ -80,10 +76,27 @@ public class MainApp extends Application {
         }
     }
 
-    /**
-     * Shows the person overview inside the root layout.
-     */
-    private void showCafeOverview () {
+    private void showLogIn () {
+        try {
+            // Load person overview.
+            FXMLLoader loader = new FXMLLoader ();
+            loader.setLocation (getClass ().getResource ("/cafe/LogIn.fxml"));
+            AnchorPane LogIn = loader.load ();
+
+            // Set person overview into the center of root layout.
+            rootLayout.setCenter (LogIn);
+
+            // Give the controller access to the main app.
+            be.hogent.cafe.view.LogInController controller = loader.getController ();
+            controller.setModel (model);
+            controller.setCafeView (this);
+
+        } catch (IOException e) {
+            e.printStackTrace ();
+        }
+    }
+
+    public void showCafeOverview () {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader ();

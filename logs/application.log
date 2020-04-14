@@ -1,17 +1,19 @@
-[INFO ] 2020-04-13 00:32:23.362 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 00:33:27.583 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 11:42:08.169 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 11:42:29.820 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:16:31.314 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:21:27.112 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:21:51.273 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:22:25.512 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:22:42.249 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:23:26.420 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:24:13.961 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:24:42.380 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:25:24.065 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:25:39.860 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:43:41.024 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:50:15.158 [JavaFX Application Thread] Cafe - Cafe started
-[INFO ] 2020-04-13 14:56:55.924 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:13:24.759 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:17:40.503 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:31:17.518 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:31:40.393 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:34:12.569 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:38:06.185 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:38:30.955 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:43:42.162 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:47:57.886 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:54:16.062 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-15 00:54:27.378 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-15 00:54:36.536 [JavaFX Application Thread] Cafe - Cafe started
+[ERROR] 2020-04-15 00:54:40.272 [JavaFX Application Thread] Cafe - Login failed, username incorrect: hkjhk password: kkk
+[INFO ] 2020-04-15 01:04:32.986 [JavaFX Application Thread] Cafe - Cafe started
+[ERROR] 2020-04-15 01:04:35.292 [JavaFX Application Thread] Cafe - Login failed, username incorrect:  password: 
+[INFO ] 2020-04-15 01:06:24.831 [JavaFX Application Thread] Cafe - Cafe started
+[ERROR] 2020-04-15 01:06:27.943 [JavaFX Application Thread] Cafe - Login failed, username incorrect:  password: 
+[ERROR] 2020-04-15 01:06:36.597 [JavaFX Application Thread] Cafe - Login failed, wrong password: username: Wout Peters password: jljlkjlk
+[INFO ] 2020-04-15 01:06:43.103 [JavaFX Application Thread] Cafe - Wout Peters logged in
