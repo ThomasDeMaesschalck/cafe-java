@@ -15,11 +15,11 @@ public class CafeOverViewController {
     @FXML
     private TableColumn<Beverage, String> beveragePriceColumn;
 
+    @FXML
+    private Label loggedInUserName;
 
     // Reference to the main application.
-    private MainApp cafeView;
-
-    private Cafe model;
+    private MainApp mainApp;
 
     /**
      * The constructor.
@@ -34,34 +34,33 @@ public class CafeOverViewController {
      */
     @FXML
     private void initialize () {
-
         PropertyValueFactory<Beverage, String> beverageNameProperty =
                 new PropertyValueFactory<> ("beverageName");
-
         PropertyValueFactory<Beverage, String> beveragePriceProperty =
                 new PropertyValueFactory<> ("price");
-
         beverageNameColumn.setCellValueFactory (beverageNameProperty);
         beveragePriceColumn.setCellValueFactory (beveragePriceProperty);
-
 
     }
 
     /**
      * Is called by the main application to give a reference back to itself.
      *
-     * @param cafeView
+     * @param mainApp
+     *
      */
-    public void setCafeView (MainApp cafeView) {
-        this.cafeView = cafeView;
+    public void setMainApp (MainApp mainApp) {
+        this.mainApp = mainApp;
 
         // Add observable list data to the table
-        beverageTable.setItems (cafeView.getBeverageData ());
+        beverageTable.setItems (mainApp.getBeverageData ());
+
+        String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
+        loggedInUserName.setText("Logged in user: " + loggedInWaiter);
+
     }
 
-    public void setModel (Cafe model) {
-        this.model = model;
-    }
+
 
 
 

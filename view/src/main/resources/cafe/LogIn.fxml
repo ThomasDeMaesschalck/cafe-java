@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.LogInController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.LogInController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="282.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@javalogo2.png" />
          </image>
       </ImageView>
-      <Label layoutX="197.0" layoutY="122.0" prefHeight="60.0" prefWidth="94.0" text="Cafe" textFill="#b96f20">
+      <Label layoutX="279.0" layoutY="184.0" prefHeight="60.0" prefWidth="94.0" text="Cafe" textFill="#b96f20">
          <font>
             <Font name="Arial" size="44.0" />
          </font>
       </Label>
-      <TextField layoutX="226.0" layoutY="218.0" promptText="Username"  fx:id="userName"/>
-      <PasswordField layoutX="226.0" layoutY="260.0" promptText="Password" fx:id="pass"/>
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="197.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="userName" layoutX="308.0" layoutY="280.0" promptText="Username" />
+      <PasswordField fx:id="pass" layoutX="308.0" layoutY="322.0" promptText="Password" />
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="279.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@user.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="199.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="281.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pass.png" />
          </image>
       </ImageView>
-      <Button layoutX="225.0" layoutY="299.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="149.0" style="-fx-background-color: B06A1E;" text="Login" onAction="#logIn" >
+      <Button defaultButton="true" layoutX="307.0" layoutY="361.0" mnemonicParsing="false" onAction="#logIn" prefHeight="18.0" prefWidth="149.0" style="-fx-background-color: B06A1E;" text="Login">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

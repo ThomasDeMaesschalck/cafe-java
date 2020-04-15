@@ -12,7 +12,7 @@ import java.io.*;
 
 public class MainApp extends Application {
 
-    private final Cafe model;
+    private final Cafe model = new Cafe();
     private Stage primaryStage;
     private BorderPane rootLayout;
 
@@ -30,7 +30,6 @@ public class MainApp extends Application {
      * Constructor
      */
     public MainApp () {
-        model = new Cafe ();
     }
 
 
@@ -50,7 +49,7 @@ public class MainApp extends Application {
     beverageData = FXCollections.observableArrayList(model.getBeverages());
 
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle ("CafeApp");
+        this.primaryStage.setTitle ("Cafe Java");
 
         initRootLayout ();
 
@@ -70,6 +69,7 @@ public class MainApp extends Application {
             // Show the scene containing the root layout.
             Scene scene = new Scene (rootLayout);
             primaryStage.setScene (scene);
+            primaryStage.setResizable(false);
             primaryStage.show ();
         } catch (IOException e) {
             e.printStackTrace ();
@@ -88,8 +88,7 @@ public class MainApp extends Application {
 
             // Give the controller access to the main app.
             be.hogent.cafe.view.LogInController controller = loader.getController ();
-            controller.setModel (model);
-            controller.setCafeView (this);
+            controller.setMainApp (this);
 
         } catch (IOException e) {
             e.printStackTrace ();
@@ -108,16 +107,16 @@ public class MainApp extends Application {
 
             // Give the controller access to the main app.
             be.hogent.cafe.view.CafeOverViewController controller = loader.getController ();
-            controller.setModel (model);
-
-            controller.setCafeView (this);
+            controller.setMainApp (this);
 
         } catch (IOException e) {
             e.printStackTrace ();
         }
     }
 
-
+    public Cafe getModel() {
+        return model;
+    }
 
     public Stage getPrimaryStage () {
         return primaryStage;

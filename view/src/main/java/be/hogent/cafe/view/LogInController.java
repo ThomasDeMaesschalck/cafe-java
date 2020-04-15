@@ -12,8 +12,7 @@ import javafx.stage.Stage;
 
 public class LogInController {
 
-    private MainApp logIn;
-    private Cafe model;
+    private MainApp mainApp;
     private Stage logInStage;
 
     @FXML
@@ -22,37 +21,32 @@ public class LogInController {
     @FXML
     private PasswordField pass;
 
-    public void setModel (Cafe model) {
-        this.model = model;
-    }
-
-
-    public void setCafeView (MainApp logIn) {
-        this.logIn = logIn;
+       public void setMainApp (MainApp mainApp) {
+        this.mainApp = mainApp;
 
     }
 
     public void logIn()
     {
-        if (logInCheck() == true)
+        if (logInCheck())
         {
-            logIn.showCafeOverview();
+            mainApp.showCafeOverview();
 
         }
     }
 
     public boolean logInCheck() {
-        String errorMessage = "";
+        String errorMessage;
 
-        try {model.logIn(userName.getText(), pass.getText());
+        try {mainApp.getModel().logIn(userName.getText(), pass.getText());
             return true;}
         catch (IllegalArgumentException e)
         {
             errorMessage = e.getMessage();
             Alert alert = new Alert (Alert.AlertType.ERROR);
-            alert.initOwner (logInStage);
+         //   alert.initOwner (logInStage);
             alert.setTitle ("Invalid Fields");
-            alert.setHeaderText ("Please correct invalid fields");
+            alert.setHeaderText ("Please correct invalid fields:");
             alert.setContentText (errorMessage);
 
             alert.showAndWait ();
