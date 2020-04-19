@@ -36,13 +36,13 @@ public class OrderTest {
     public void testToString(){
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters","password");
-        cafe.setActiveTable(1);
+        cafe.setActiveTable(0);
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 5);
 
         LocalDate date = LocalDate.now();
         int thisOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber() + 1; //om het nieuwe ordernummer te verkrijgen voor onderstaande test
-        assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [beverage: Leffe, quantity: 5, beverage: Cola, quantity: 5], tableID: 1", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
+        assertEquals("Order: " + thisOrderNumber + ", date: "  + date + ", waiterID: 1, orderItems: [beverage: Leffe, quantity: 5, beverage: Cola, quantity: 5], tableID: 0", cafe.getUnpaidOrders().get(cafe.getActiveTable()).toString(), "Test toString() 01 failed");
     }
 
 

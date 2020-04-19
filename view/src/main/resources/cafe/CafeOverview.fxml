@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeOverViewController">
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeOverViewController">
    <children>
       <SplitPane dividerPositions="0.75" layoutY="0" prefHeight="600.0" prefWidth="800.0">
         <items>
@@ -14,7 +11,21 @@
                <children>
                   <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="612.0" prefWidth="605.0">
                     <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <AnchorPane prefHeight="51.0" prefWidth="605.0">
+                                 <children>
+                                    <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
+                                      <buttons>
+                                        <Button mnemonicParsing="false" opacity="0.33" text="Home" />
+                                          <Button mnemonicParsing="false" onAction="#reports" text="Reports" />
+                                          <Button mnemonicParsing="false" onAction="#logout" text="Logout" />
+                                      </buttons>
+                                    </ButtonBar>
+                                 </children>
+                              </AnchorPane>
+                              <TilePane fx:id="tablePane" layoutX="14.0" layoutY="68.0" prefHeight="463.0" prefWidth="586.0" />
+                           </children></AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                            <children>
                               <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="29.0" prefWidth="187.0" text="Logged in user:" />
@@ -24,7 +35,7 @@
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0">
                <children>
-                  <TableView fx:id="beverageTable" prefHeight="600.0" prefWidth="217.0">
+                  <TableView fx:id="beverageTable" prefHeight="349.0" prefWidth="217.0">
                     <columns>
                       <TableColumn fx:id="beverageNameColumn" prefWidth="75.0" text="Beverage" />
                       <TableColumn fx:id="beveragePriceColumn" prefWidth="75.0" text="Price" />

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeReportsController">
+   <children>
+      <SplitPane layoutY="0" prefHeight="600.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600" prefWidth="800.0">
+               <children>
+                  <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="612.0" prefWidth="800.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <AnchorPane prefHeight="51.0" prefWidth="605.0">
+                                 <children>
+                                    <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
+                                      <buttons>
+                                        <Button mnemonicParsing="false" onAction="#home" text="Home" />
+                                          <Button mnemonicParsing="false" opacity="0.33" text="Reports" />
+                                          <Button mnemonicParsing="false" onAction="#logout" text="Logout" />
+                                      </buttons>
+                                    </ButtonBar>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="14.0" layoutY="60.0" prefHeight="467.0" prefWidth="778.0">
+                                 <children>
+                                    <HBox layoutX="4.0" prefHeight="40.0" prefWidth="771.0">
+                                       <children>
+                                          <ButtonBar prefHeight="40.0" prefWidth="406.0">
+                                            <buttons>
+                                              <Button mnemonicParsing="false" text="All sales" />
+                                                <Button mnemonicParsing="false" text="Sales by date" />
+                                                <Button mnemonicParsing="false" onAction="#pieChart" text="Pie chart" />
+                                            </buttons>
+                                          </ButtonBar>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="29.0" prefWidth="187.0" text="Logged in user:" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

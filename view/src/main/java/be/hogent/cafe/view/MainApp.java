@@ -76,7 +76,7 @@ public class MainApp extends Application {
         }
     }
 
-    private void showLogIn () {
+    protected void showLogIn () {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader ();
@@ -107,6 +107,25 @@ public class MainApp extends Application {
 
             // Give the controller access to the main app.
             be.hogent.cafe.view.CafeOverViewController controller = loader.getController ();
+            controller.setMainApp (this);
+
+        } catch (IOException e) {
+            e.printStackTrace ();
+        }
+    }
+
+    public void showCafeReports () {
+        try {
+            // Load person overview.
+            FXMLLoader loader = new FXMLLoader ();
+            loader.setLocation (getClass ().getResource ("/cafe/CafeReports.fxml"));
+            AnchorPane cafeReports = loader.load ();
+
+            // Set person overview into the center of root layout.
+            rootLayout.setCenter (cafeReports);
+
+            // Give the controller access to the main app.
+            be.hogent.cafe.view.CafeReportsController controller = loader.getController ();
             controller.setMainApp (this);
 
         } catch (IOException e) {

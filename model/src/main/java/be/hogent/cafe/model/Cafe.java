@@ -23,6 +23,7 @@ public class Cafe {
     private  String cafeName;
     private int numberOfTables;
     private int numberOfWaitersInPieChart;
+    private static String reportsDirectory;
     private Set<Waiter> waiters = new HashSet<>();
     private Waiter loggedInWaiter;
     private Table activeTable;
@@ -53,6 +54,7 @@ public class Cafe {
             cafeName = cafeProperties.getProperty("cafeName");
             numberOfTables = Integer.parseInt(cafeProperties.getProperty("numberOfTables"));
             numberOfWaitersInPieChart = Integer.parseInt(cafeProperties.getProperty("numberOfWaitersInPieChart"));
+            reportsDirectory = cafeProperties.getProperty("reportsDirectory");
 
         } catch (IOException ioe) {
             logger.error("cafe properties not loaded");
@@ -83,6 +85,7 @@ public class Cafe {
     public boolean logOut() {
           logger.info(getLoggedInWaiter() + " logged out");
           setLoggedInWaiter(null);
+          removeActiveTable();
           return true;
         }
 
@@ -200,8 +203,9 @@ public class Cafe {
     }
 
     public void createTables(int numberOfTables){
-        for(int i = 0; i < numberOfTables; i++)
+        for(int i = 0; i < numberOfTables; i++) {
             tables.add(new Table(i));
+        }
     }
 
     public List<Table> getTables() {
@@ -213,11 +217,11 @@ public class Cafe {
     }
 
     public Table getTable(int tableID) {
-        return tables.get(tableID);
+        return tables.get(tableID); //gezien tafel nummer op één start en array op 0
     }
 
     public void setActiveTable(int tableID) {
-        this.activeTable = tables.get(tableID);
+        this.activeTable = getTable(tableID);
         logger.info("Set " + activeTable + " as active table");
         if (getActiveTable().getBelongsToWaiter() == null) //lege tafel koppelen aan de waiter
         {
@@ -278,5 +282,10 @@ public class Cafe {
 
     private void setLoggedInWaiter(Waiter loggedInWaiter) {
         this.loggedInWaiter = loggedInWaiter;
+    }
+
+    public static String getReportsDirectory()
+    {
+     return reportsDirectory;
     }
 }

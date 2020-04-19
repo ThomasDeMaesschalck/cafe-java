@@ -172,6 +172,7 @@ public class CafeTest {
 
         cafe.addWaiter(patrick);
         cafe.logIn("Patrick Desmet","password");
+        cafe.setActiveTable(2);
         try {
             cafe.placeOrder(leffe, 2);
         }

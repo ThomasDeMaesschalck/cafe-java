@@ -16,6 +16,7 @@ public class MakeTopWaitersChart {
     //exception handling nog af te werken
 
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+    private static String reportsDirectory = Cafe.getReportsDirectory();
 
     public static boolean createJPG(HashMap<Waiter, Double> topWaiters) throws IOException {
 
@@ -34,7 +35,8 @@ public class MakeTopWaitersChart {
 
         int width = 640;   /* Width of the image */
         int height = 480;  /* Height of the image */
-        File pieChart = new File( "reports/topwaiterchart.jpg" );
+
+        File pieChart = new File( reportsDirectory + "/topwaiterchart.jpg" );
         ChartUtilities.saveChartAsJPEG( pieChart , chart , width , height );
         if (pieChart.exists()) {
             return true;
