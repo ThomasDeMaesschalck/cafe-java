@@ -466,31 +466,6 @@ public class CafeTest {
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
-        cafe.placeOrder(cola, 10); //24
-        cafe.placeOrder(leffe, 10); //30
-        cafe.pay();
-        cafe.setActiveTable(2);
-        cafe.placeOrder(leffe, 30); //90
-        cafe.placeOrder(cola, 20); //48  == 192 totaal -- getallen niet meer van toepassing na toevoeging database connectie
-        cafe.pay();
-        cafe.logOut();
-        cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet", "password");
-        cafe.setActiveTable(1);
-        cafe.placeOrder(cola, 10); //24
-        cafe.placeOrder(leffe, 10); //30
-        cafe.pay();
-        cafe.setActiveTable(2);
-        cafe.placeOrder(leffe, 10); //30
-        cafe.placeOrder(cola, 10); //24 == 108 totaal
-        cafe.pay();
-        cafe.logOut();
-        cafe.addWaiter(ilse);
-        cafe.logIn("Ilse Vandenbroeck", "password");
-        cafe.setActiveTable(5);
-        cafe.placeOrder(cola, 10); //24
-        cafe.placeOrder(leffe, 10); //30
-        cafe.pay();
         cafe.getTopWaitersByRevenue(3);
         assertThat(cafe.topWaiterPieChart()).isTrue();
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten

@@ -158,7 +158,6 @@ public class Cafe {
     public boolean topWaiterPieChart() throws Exception {
         logger.info(getLoggedInWaiter().toString() + " created top waiter pie chart");
         return  MakeTopWaitersChart.createJPG(getTopWaitersByRevenue(3));
-
     }
 
     public Map<Beverage, Integer> getAllWaiterSales(){ //alle omzet van waiter

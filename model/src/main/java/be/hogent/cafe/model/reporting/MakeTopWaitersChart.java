@@ -36,7 +36,12 @@ public class MakeTopWaitersChart {
         int width = 640;   /* Width of the image */
         int height = 480;  /* Height of the image */
 
+
         File pieChart = new File( reportsDirectory + "/topwaiterchart.jpg" );
+        File parent = pieChart.getParentFile();
+        if (!parent.exists() && !parent.mkdirs()) {
+            throw new IllegalStateException("Couldn't create dir: " + parent);
+        }
         ChartUtilities.saveChartAsJPEG( pieChart , chart , width , height );
         if (pieChart.exists()) {
             return true;

@@ -89,6 +89,8 @@ public class CafeOverViewController {
                 @Override
                 public void handle(MouseEvent mouseEvent) {
 
+                    //mss hier met hashmap werken om ID beter te krijgen en op 1 te laten starten met string als value
+
             String thisTable = tableButton.getText();
                     for (Table table: mainApp.getModel().getTables()) {
                         if (table.toString().equals(thisTable))
