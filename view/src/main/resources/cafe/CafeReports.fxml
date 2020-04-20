@@ -6,6 +6,8 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -38,7 +40,24 @@
                                       <tabs>
                                         <Tab fx:id="allSalesTab" text="All sales">
                                           <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <TableView fx:id="allSalesTable" layoutX="14.0" layoutY="14.0" prefHeight="353.0" prefWidth="307.0">
+                                                        <columns>
+                                                          <TableColumn fx:id="beverageNameColumn" prefWidth="75.0" text="Beverage" />
+                                                          <TableColumn fx:id="beveragePriceColumn" prefWidth="75.0" text="Price" />
+                                                            <TableColumn fx:id="beverageQtyColumn" prefWidth="75.0" text="Qty" />
+                                                            <TableColumn fx:id="beverageSubTotalColumn" prefWidth="75.0" text="Subtotal" />
+                                                        </columns>
+                                                      </TableView>
+                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" text="Export to PDF" />
+                                                      <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
+                                                         <children>
+                                                            <Label text="Total sales:" />
+                                                            <Label fx:id="salesTotal" text="total" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children></AnchorPane>
                                           </content>
                                         </Tab>
                                         <Tab fx:id="byDateTab" text="Sales by date">
@@ -50,7 +69,7 @@
                                               <content>
                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                                    <children>
-                                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" fx:id="iv" />
+                                                      <ImageView fx:id="iv" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
                                                    </children></AnchorPane>
                                               </content>
                                           </Tab>
