@@ -75,4 +75,10 @@ public class PaidOrderDAOImplTest {
         assertEquals(maxOrderNumber.getAsInt(), highestOrderNumber , "testGetHighestOrderNumber 01 failed - number not correct");
          }
 
+    @Test
+    public void testWaiterSalesDates() throws DAOException {
+        Assertions.assertTrue(PaidOrderDAOImpl.getInstance().waiterSalesDates(1).size() > 0, "testWaiterSalesDates 01 failed");
+    }
+
+
 }

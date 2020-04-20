@@ -18,13 +18,6 @@ import javafx.scene.text.Text;
 public class CafeOverViewController {
 
     @FXML
-    private TableView<Beverage> beverageTable;
-    @FXML
-    private TableColumn<Beverage, String> beverageNameColumn;
-    @FXML
-    private TableColumn<Beverage, String> beveragePriceColumn;
-
-    @FXML
     private Label loggedInUserName;
 
     @FXML
@@ -46,12 +39,6 @@ public class CafeOverViewController {
      */
     @FXML
     private void initialize () {
-        PropertyValueFactory<Beverage, String> beverageNameProperty =
-                new PropertyValueFactory<> ("beverageName");
-        PropertyValueFactory<Beverage, String> beveragePriceProperty =
-                new PropertyValueFactory<> ("price");
-        beverageNameColumn.setCellValueFactory (beverageNameProperty);
-        beveragePriceColumn.setCellValueFactory (beveragePriceProperty);
 
     }
 
@@ -63,11 +50,6 @@ public class CafeOverViewController {
      */
     public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
-
-        // Add observable list data to the table
-        beverageTable.setItems (mainApp.getBeverageData ());
-        beverageTable.getSortOrder().add(beverageNameColumn);
-        beverageTable.sort();
 
         String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
         loggedInUserName.setText("Logged in user: " + loggedInWaiter);
@@ -85,12 +67,10 @@ public class CafeOverViewController {
             tablePane.getChildren().addAll(tableButton);
             tableButton.setMinSize(100, 100);
 
+
             tableButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent mouseEvent) {
-
-                    //mss hier met hashmap werken om ID beter te krijgen en op 1 te laten starten met string als value
-
             String thisTable = tableButton.getText();
                     for (Table table: mainApp.getModel().getTables()) {
                         if (table.toString().equals(thisTable))
@@ -98,6 +78,7 @@ public class CafeOverViewController {
                     }
                     tableButton.setStyle("-fx-background-color: green");
 
+                    mainApp.showCafeOrderDialog();
                 }
             });
 

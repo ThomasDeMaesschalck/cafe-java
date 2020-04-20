@@ -23,8 +23,7 @@ public class LogInController {
 
        public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
-
-    }
+       }
 
     public void logIn()
     {

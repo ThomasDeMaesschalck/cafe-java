@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeOrderDialogController">
+      <TableView fx:id="beverageTable" layoutX="545.0" layoutY="6.0" prefHeight="351.0" prefWidth="155.0">
+          <columns>
+              <TableColumn fx:id="beverageNameColumn" prefWidth="75.0" text="Beverage" />
+              <TableColumn fx:id="beveragePriceColumn" prefWidth="75.0" text="Price" />
+          </columns>
+      </TableView>
+   <Button layoutX="545.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" text="Add" />
+   <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="44.0" prefWidth="84.0" text="Close" />
+   <TableView layoutX="14.0" layoutY="50.0" prefHeight="263.0" prefWidth="239.0">
+     <columns>
+       <TableColumn prefWidth="88.0" text="Beverage" />
+       <TableColumn prefWidth="62.0" text="Quantity" />
+         <TableColumn prefWidth="88.0" text="SubTotal" />
+     </columns>
+   </TableView>
+   <Button layoutX="14.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="239.0" text="Increase" />
+   <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="239.0" text="Decrease" />
+   <Button layoutX="14.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="239.0" text="Remove" />
+   <Button layoutX="534.0" layoutY="417.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="143.0" text="Pay" />
+   <Label layoutX="20.0" layoutY="14.0" text="Table: " />
+   <Label layoutX="55.0" layoutY="14.0" text="tableNumber" fx:id="tableIDNumber"/>
+    
+</AnchorPane>

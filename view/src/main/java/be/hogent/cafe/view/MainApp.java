@@ -135,6 +135,36 @@ public class MainApp extends Application {
         }
     }
 
+    public void showCafeOrderDialog ()  {
+        try {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader ();
+            loader.setLocation (getClass ().getResource ("/cafe/CafeOrderDialog.fxml"));
+            AnchorPane page = loader.load ();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage ();
+            dialogStage.setTitle ("Make an order");
+            dialogStage.initModality (Modality.WINDOW_MODAL);
+            dialogStage.initOwner (primaryStage);
+            Scene scene = new Scene (page);
+            dialogStage.setScene (scene);
+
+            // Set the person into the controller.
+            be.hogent.cafe.view.CafeOrderDialogController controller = loader.getController ();
+            controller.setDialogStage (dialogStage);
+            //controller.setTable ();
+            controller.setMainApp (this);
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait ();
+        } catch (IOException e) {
+            e.printStackTrace ();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public Cafe getModel() {
         return model;
     }
