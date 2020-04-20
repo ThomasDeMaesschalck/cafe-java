@@ -51,10 +51,12 @@ public class MakePDFSalesReport {
         sales.keySet().forEach(beverage -> {
             double subtotal = (beverage.getPrice() * sales.get(beverage));
             totalSales[0] += subtotal;
-            document.add(new Paragraph("Sold " + sales.get(beverage) + "x " + beverage.getBeverageName() + " subtotal: " + subtotal));
+            String subtotalString = String.format("%.2f", subtotal); //afronden
+            document.add(new Paragraph("Sold " + sales.get(beverage) + "x " + beverage.getBeverageName() + " subtotal: " + subtotalString));
         });
 
-        document.add(new Paragraph("Total: " + totalSales[0]));
+        String totalSalesString = String.format("%.2f", totalSales[0]); //afronden
+        document.add(new Paragraph("Total: " + totalSalesString));
 
         //Close document
         document.close();

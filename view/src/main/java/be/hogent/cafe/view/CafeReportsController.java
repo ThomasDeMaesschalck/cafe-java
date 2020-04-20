@@ -12,6 +12,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.io.File;
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -50,12 +54,13 @@ public class CafeReportsController {
     @FXML
     private TableColumn<BeverageSales, Integer> beverageQtyColumn;
     @FXML
-    private TableColumn<BeverageSales, Double> beverageSubTotalColumn;
+    private TableColumn<BeverageSales, BigDecimal> beverageSubTotalColumn;
     @FXML
     private Label salesTotal;
 
     List<BeverageSales> salesItems = new ArrayList<>();
     private ObservableList<BeverageSales> salesItemList;
+    private LocalDate selectedDate = null;
 
 
     // Reference to the main application.
@@ -80,7 +85,7 @@ public class CafeReportsController {
                 new PropertyValueFactory<> ("beveragePrice");
         PropertyValueFactory<BeverageSales, Integer> beverageQtyProperty =
                 new PropertyValueFactory<> ("beverageQty");
-        PropertyValueFactory<BeverageSales, Double> beverageSubTotalProperty =
+        PropertyValueFactory<BeverageSales, BigDecimal> beverageSubTotalProperty =
                 new PropertyValueFactory<> ("subTotal");
         beverageNameColumn.setCellValueFactory (beverageNameProperty);
         beveragePriceColumn.setCellValueFactory (beveragePriceProperty);
@@ -126,19 +131,19 @@ public class CafeReportsController {
         Tab tab = new Tab(tabName);
         final Group root = new Group();
         tab.setContent(root);
-        AtomicReference<Double> waiterSalesTotal = new AtomicReference<>(0.0);
+        AtomicReference<BigDecimal> waiterSalesTotal = new AtomicReference<>(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
 
 
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
         salesMap.forEach((k,v) ->
         {
-            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v.intValue(), (k.getPrice()*v.intValue()) );
+            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v.intValue(), BigDecimal.valueOf(k.getPrice()*v.intValue()) );
 
             salesItems.add(beverageLine);
         }
         );
         salesMap.forEach((k,v) -> {
-            waiterSalesTotal.updateAndGet(v1 -> v1 + (k.getPrice() * v.intValue()));
+           waiterSalesTotal.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v.intValue()).setScale(2, RoundingMode.HALF_EVEN)));
         });
 
         salesTotal.setText(String.valueOf(waiterSalesTotal));
@@ -150,6 +155,10 @@ public class CafeReportsController {
 
 
         return tab;
+    }
+
+    public void generatePDF() throws IOException {
+        mainApp.getModel().waiterSalesReportPDF(selectedDate);
     }
 
     public void logout()
@@ -167,13 +176,13 @@ public class CafeReportsController {
         public String beverageName;
         public Double beveragePrice;
         public Integer beverageQty;
-        public Double subTotal;
+        public BigDecimal subTotal;
 
-    public BeverageSales(String beverageName, Double beveragePrice, Integer beverageQty, Double subTotal) {
+    public BeverageSales(String beverageName, Double beveragePrice, Integer beverageQty, BigDecimal subTotal) {
         this.beverageName = beverageName;
         this.beveragePrice = beveragePrice;
         this.beverageQty = beverageQty;
-        this.subTotal = subTotal;
+        this.subTotal = subTotal.setScale(2, RoundingMode.HALF_EVEN);
     }
 
     public String getBeverageName() {
@@ -188,7 +197,7 @@ public class CafeReportsController {
         return beverageQty;
     }
 
-    public Double getSubTotal() {
+    public BigDecimal getSubTotal() {
         return subTotal;
     }
 }
