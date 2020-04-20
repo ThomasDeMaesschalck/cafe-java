@@ -167,7 +167,7 @@ public class Cafe {
 
     public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate){ //sales voor specifieke datum indien date niet null
         logger.info(getLoggedInWaiter().toString() + " retrieved his sales data");
-        return  AllWaiterSales.calculate(specificDate, getPaidOrders(), getLoggedInWaiter());
+        return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(getBeverages()), getLoggedInWaiter());
     }
 
     public boolean waiterSalesReportPDF() throws IOException {

@@ -170,7 +170,7 @@ public class CafeReportsController {
 
         salesItemList = FXCollections.observableArrayList (salesItems);
 
-        allSalesTable.setItems((salesItemList));
+        allSalesTable.setItems(FXCollections.observableArrayList((salesItemList)));
         allSalesTable.getSortOrder().add(beverageNameColumn);
 
         return tab;
@@ -226,7 +226,7 @@ public class CafeReportsController {
 
         salesByDateItemList = FXCollections.observableArrayList (salesByDateItems);
 
-        allSalesTable.getSortOrder().add(beverageNameColumn);
+        allSalesByDateTable.getSortOrder().add(beverageNameColumn);
         allSalesByDateTable.setItems(salesByDateItemList);
     }
 
