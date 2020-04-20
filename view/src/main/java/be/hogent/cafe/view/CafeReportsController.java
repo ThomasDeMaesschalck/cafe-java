@@ -178,8 +178,6 @@ public class CafeReportsController {
 
     private Tab generateSalesByDateTab(String tabName) throws DAOException {
         Tab tab = new Tab(tabName);
-        //  final Group root = new Group();
-        //tab.setContent(root);
 
         int waiterID = mainApp.getModel().getLoggedInWaiter().getID();
         Set<LocalDate> waiterDatesFromDB = PaidOrderDAOImpl.getInstance().waiterSalesDates(waiterID);

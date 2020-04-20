@@ -1,11 +1,16 @@
 package be.hogent.cafe.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Objects;
 
 public class OrderItem {
 
     private  Beverage beverage;
     private int qty;
+    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+
 
     public OrderItem(Beverage beverage, int qty) {
         this.beverage = beverage;
@@ -27,16 +32,22 @@ public class OrderItem {
 
     public void increaseQty(){
         qty++;
+        logger.info("Quantity increased of " + this.getBeverage().getBeverageName());
+
     }
 
     public void increaseQty(int increase){
         qty = qty + increase;
+        logger.info("Quantity increased of " + this.getBeverage().getBeverageName());
+
     }
 
 
     public void decreaseQty(){
         if (qty > 0)
-        { qty--; }
+        { qty--;
+            logger.info("Quantity decreased of " + this.getBeverage().getBeverageName());
+        }
     }
 
     @Override
