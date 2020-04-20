@@ -11,6 +11,7 @@ import java.time.Month;
 
 import static java.time.LocalDate.of;
 import static java.time.Month.FEBRUARY;
+import static java.time.Month.JANUARY;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -434,7 +435,7 @@ public class CafeTest {
 
     @Test
     public void testWaiterSalesReportPDFSpecificDate() throws IOException, DAOException {
-        int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
+       int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         LocalDate firstDate = LocalDate.of(2020, FEBRUARY, 5);
         cafe.logIn("Thomas DM","password");
         cafe.setActiveTable(1);

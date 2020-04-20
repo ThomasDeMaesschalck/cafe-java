@@ -3,6 +3,7 @@ package be.hogent.cafe.model.dao;
 import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.Order;
 
+import java.time.LocalDate;
 import java.util.Set;
 
 public interface PaidOrderDAO {
@@ -14,4 +15,5 @@ public interface PaidOrderDAO {
 
     int highestOrderNumber();
 
+    Set<LocalDate> waiterSalesDates(int waiterID) throws DAOException;
 }

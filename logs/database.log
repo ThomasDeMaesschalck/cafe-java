@@ -278,3 +278,199 @@
 [INFO ] 2020-04-20 11:06:33.886 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
 [INFO ] 2020-04-20 11:06:33.926 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
 [INFO ] 2020-04-20 11:06:33.936 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 11:09:55.055 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 11:09:55.098 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 11:09:55.124 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 11:09:55.132 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:22:12.989 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:22:13.014 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:22:13.046 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:22:13.053 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:22:50.356 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:22:50.434 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:22:50.461 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:22:50.466 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:25:56.553 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:25:56.576 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:25:56.599 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:25:56.607 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:27:17.890 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:27:17.919 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:27:17.958 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:27:17.966 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:32:27.347 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:32:27.561 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:32:27.602 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:32:27.608 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:33:38.355 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:33:38.373 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:33:38.400 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:33:38.406 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:36:54.434 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:36:54.496 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:36:54.521 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:36:54.528 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:46:27.907 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:46:27.930 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:46:27.955 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:46:27.970 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:50:02.377 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:50:02.395 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:50:02.424 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:50:02.450 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:51:58.981 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:51:59.000 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:51:59.029 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:51:59.050 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:54:12.907 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:54:12.936 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:54:12.968 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:54:12.976 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:54:41.764 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:54:41.781 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:54:41.803 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:54:41.823 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 13:56:01.782 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 13:56:01.812 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 13:56:01.903 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 13:56:01.916 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 14:39:19.392 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 14:39:19.418 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 14:39:19.484 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 14:39:19.492 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 14:39:30.664 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 14:40:09.087 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 14:40:09.114 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 14:40:09.140 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 14:40:09.154 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 14:40:16.810 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:01:46.479 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:01:46.501 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:01:46.526 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:01:46.533 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:01:53.459 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:32:55.162 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:32:55.184 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:32:55.212 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:32:55.219 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:33:02.702 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:33:14.383 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:34:55.826 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:34:55.873 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:34:55.935 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:34:55.963 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:35:05.442 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:50:30.374 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:50:30.401 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:50:30.431 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:50:30.438 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:50:39.246 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:51:54.941 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:51:54.987 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:51:55.043 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:51:55.059 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:52:01.906 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:54:42.889 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:54:42.904 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:54:42.933 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:54:42.945 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:54:54.439 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 15:56:16.755 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 15:56:16.798 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 15:56:16.847 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 15:56:16.875 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 15:56:23.924 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:02:26.572 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:02:26.613 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:02:26.647 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:02:26.655 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:02:32.558 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:23:35.092 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:23:35.113 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:23:35.138 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:23:35.146 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:23:42.669 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:25:17.700 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:25:17.731 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:25:17.775 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:25:17.788 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:25:25.415 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:26:01.945 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:26:01.961 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:26:01.990 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:26:01.997 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:26:09.103 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:26:51.017 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:26:51.036 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:26:51.056 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:26:51.062 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:26:57.834 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:28:15.290 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:28:15.314 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:28:15.344 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:28:15.368 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:28:22.130 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:29:27.635 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:29:27.652 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:29:27.676 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:29:27.682 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:29:34.136 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:30:04.602 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:30:04.616 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:30:04.638 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:30:04.647 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:30:12.155 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:30:55.742 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:30:55.753 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:30:55.775 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:30:55.786 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:31:04.012 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 16:43:44.776 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 16:43:44.885 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 16:43:44.916 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 16:43:44.920 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 16:43:51.517 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:00:35.813 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:00:35.842 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:00:35.891 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:00:35.903 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:01:14.467 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:01:57.844 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:02:10.336 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:02:10.442 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:02:10.461 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:02:10.466 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:03:15.398 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:04:06.560 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:04:51.681 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:06:12.990 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:07:52.321 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:10:05.156 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:17:42.396 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:17:51.146 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:22:04.354 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:22:26.274 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:22:43.258 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:22:43.276 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:22:43.303 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:22:43.311 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:22:53.308 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:27:13.797 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:29:46.854 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:29:46.889 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:29:46.922 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:29:46.961 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:29:56.514 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:43:20.223 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:43:20.318 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:43:20.377 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:43:20.390 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:43:31.527 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:44:09.887 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:44:34.161 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:44:55.963 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-20 18:46:19.167 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-20 18:46:19.206 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-20 18:46:19.267 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-20 18:46:19.274 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database
+[INFO ] 2020-04-20 18:46:43.077 [JavaFX Application Thread] PaidOrderDAOImpl - Retrieved waiter sales dates from DB

@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
@@ -20,7 +21,7 @@
                <children>
                   <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="612.0" prefWidth="800.0">
                     <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="809.0">
                            <children>
                               <AnchorPane prefHeight="51.0" prefWidth="605.0">
                                  <children>
@@ -50,7 +51,7 @@
                                                             <TableColumn fx:id="beverageSubTotalColumn" prefWidth="75.0" text="Subtotal" />
                                                         </columns>
                                                       </TableView>
-                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" text="Export to PDF" onAction="#generatePDF"/>
+                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />
                                                       <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
                                                          <children>
                                                             <Label text="Total sales:" />
@@ -62,8 +63,28 @@
                                         </Tab>
                                         <Tab fx:id="byDateTab" text="Sales by date">
                                           <content>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                          </content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                  <children>
+                                                      <TableView fx:id="allSalesByDateTable" layoutX="14.0" layoutY="14.0" prefHeight="353.0" prefWidth="307.0">
+                                                          <placeholder>
+                                                              <Label text="Select a date first"/>
+                                                          </placeholder>
+                                                          <columns>
+                                                              <TableColumn fx:id="beverageNameByDateColumn" prefWidth="75.0" text="Beverage" />
+                                                              <TableColumn fx:id="beveragePriceByDateColumn" prefWidth="75.0" text="Price" />
+                                                              <TableColumn fx:id="beverageQtyByDateColumn" prefWidth="75.0" text="Qty" />
+                                                              <TableColumn fx:id="beverageSubTotalByDateColumn" prefWidth="75.0" text="Subtotal" />
+                                                          </columns>
+                                                      </TableView>
+                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />
+                                                      <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
+                                                          <children>
+                                                              <Label text="Total sales: " />
+                                                              <Label fx:id="salesByDateTotal" text=" 0" />
+                                                          </children>
+                                                      </HBox>
+                                                      <ComboBox layoutX="359.0" layoutY="23.0" prefWidth="150.0" promptText="Select a date" fx:id="selectDatesBox" onAction="#comboBoxClick" />
+                                                  </children></AnchorPane>                                          </content>
                                       </Tab>
                                           <Tab fx:id="pieTab" text="Pie chart">
                                               <content>
