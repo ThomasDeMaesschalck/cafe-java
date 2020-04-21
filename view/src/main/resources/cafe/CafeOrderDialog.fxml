@@ -23,7 +23,7 @@
    <Button layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleIncrease" prefHeight="25.0" prefWidth="239.0" text="Increase" />
    <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleDecrease" prefHeight="25.0" prefWidth="239.0" text="Decrease" />
    <Button layoutX="14.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="239.0" text="Remove" />
-   <Button layoutX="534.0" layoutY="417.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="143.0" text="Pay" />
+   <Button layoutX="534.0" layoutY="417.0" mnemonicParsing="false" onAction="#handlePay" prefHeight="69.0" prefWidth="143.0" text="Pay" />
    <Label layoutX="20.0" layoutY="14.0" text="Table: " />
    <Label fx:id="tableIDNumber" layoutX="55.0" layoutY="14.0" text="tableNumber" />
    <Label layoutX="286.0" layoutY="447.0" prefHeight="34.0" prefWidth="129.0" text="Order total:">

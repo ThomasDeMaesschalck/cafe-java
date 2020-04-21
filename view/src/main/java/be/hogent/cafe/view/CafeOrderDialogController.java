@@ -3,8 +3,10 @@ package be.hogent.cafe.view;
 import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.Order;
 import be.hogent.cafe.model.OrderItem;
+import be.hogent.cafe.model.dao.DAOException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -232,6 +234,29 @@ public class CafeOrderDialogController {
         alert.setHeaderText ("Please select orderline first");
         alert.setContentText (errorMessage);
         alert.showAndWait ();
+    }
+
+    public void handlePay() throws DAOException {
+            if(orderItems.isEmpty()){
+                String errorMessage = "There is no order";
+                Alert alert = new Alert (Alert.AlertType.ERROR);
+                alert.initOwner (dialogStage);
+                alert.setTitle ("No order yet");
+                alert.setHeaderText ("Enter order first or close window");
+                alert.setContentText (errorMessage);
+                alert.showAndWait ();
+            }
+            else{
+                mainApp.getModel().pay();
+                Alert alert = new Alert (Alert.AlertType.INFORMATION);
+                alert.initOwner (dialogStage);
+                alert.setTitle ("Payment");
+                alert.setHeaderText ("Get payment from customer");
+                alert.showAndWait ();
+
+                dialogStage.close ();
+                mainApp.showCafeOverview();
+            }
     }
 
     public class OrderLines{
