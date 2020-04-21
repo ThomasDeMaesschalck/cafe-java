@@ -1,19 +1,10 @@
 package be.hogent.cafe.view;
 
-import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.*;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.*;
-import javafx.geometry.Insets;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.*;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Region;
 import javafx.scene.layout.TilePane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
+
 
 public class CafeOverViewController {
 
@@ -42,12 +33,7 @@ public class CafeOverViewController {
 
     }
 
-    /**
-     * Is called by the main application to give a reference back to itself.
-     *
-     * @param mainApp
-     *
-     */
+
     public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
 
@@ -68,16 +54,15 @@ public class CafeOverViewController {
             tableButton.setMinSize(100, 100);
 
 
-            tableButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
-                @Override
-                public void handle(MouseEvent mouseEvent) {
-            String thisTable = tableButton.getText();
-                    for (Table table: mainApp.getModel().getTables()) {
-                        if (table.toString().equals(thisTable))
-                            mainApp.getModel().setActiveTable(table.getTableID());
-                    }
-                    mainApp.showCafeOrderDialog();
+            tableButton.setOnMouseClicked(mouseEvent -> {
+                tableButton.setStyle("-fx-background-color: orange");
+
+                String thisTable = tableButton.getText();
+                for (Table table1 : mainApp.getModel().getTables()) {
+                    if (table1.toString().equals(thisTable))
+                        mainApp.getModel().setActiveTable(table1.getTableID());
                 }
+                mainApp.showCafeOrderDialog();
             });
 
 

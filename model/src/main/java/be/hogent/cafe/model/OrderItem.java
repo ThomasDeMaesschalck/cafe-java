@@ -32,13 +32,13 @@ public class OrderItem {
 
     public void increaseQty(){
         qty++;
-        logger.info("Quantity increased of " + this.getBeverage().getBeverageName());
+        logger.info("Quantity increased of " + this.getBeverage().getBeverageName() + " to " + this.getQty());
 
     }
 
     public void increaseQty(int increase){
         qty = qty + increase;
-        logger.info("Quantity increased of " + this.getBeverage().getBeverageName());
+        logger.info("Quantity increased of " + this.getBeverage().getBeverageName() + " to " + this.getQty());
 
     }
 

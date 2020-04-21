@@ -28,18 +28,14 @@ public class Order {
 
     public void AddOrUpdateOrderLine(OrderItem orderItem)
     {
-        if(getOrderLines().contains(orderItem)) {  //qty van bestaande orderlijn updaten
+        if(!getOrderLines().add(orderItem)) {  //qty van bestaande orderlijn updaten indien reeds aanwezig
             getOrderLines().forEach(o ->  {
                 if(o.equals(orderItem))
                 {
                     o.increaseQty(orderItem.getQty());
                 }});
-            logger.info("orderNumber: " + getOrderNumber() +  " - updated orderline " + orderItem.getBeverage().getBeverageName() + " quantity with: " + orderItem.getQty());
           }
-        else{ //orderlijn toevoegen aan bestaand order
-            getOrderLines().add(orderItem);
-            logger.info("orderNumber: " + getOrderNumber() + " -  added orderline " + orderItem.toString());
-        }
+        logger.info("orderNumber: " + getOrderNumber() +  " - added " + orderItem.getQty() + " " + orderItem.getBeverage().getBeverageName());
     }
 
     public int getOrderNumber() {
@@ -78,9 +74,9 @@ public class Order {
         this.waiterID = waiterID;
     }
 
-    public void setOrderItems(OrderItem orderItem) {
-        this.orderItems.add(orderItem);
-    }
+    //public void setOrderItems(OrderItem orderItem) {
+      //  this.orderItems.add(orderItem);
+   // }
 
     @Override
     public String toString() {
@@ -101,6 +97,6 @@ public class Order {
 
     @Override
     public int hashCode() {
-        return Objects.hash(orderNumber, waiterID);
+        return Objects.hash(orderNumber);
     }
 }

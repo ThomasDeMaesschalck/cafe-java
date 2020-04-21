@@ -19,7 +19,7 @@ public class MainApp extends Application {
     // ... AFTER THE OTHER VARIABLES
 
     /**
-     * The data as an observable list of Persons.
+     * The data as an observable list of beverages.
      */
     private ObservableList<Beverage> beverageData;
 
@@ -38,7 +38,7 @@ public class MainApp extends Application {
     }
 
     /**
-     * Returns the data as an observable list of Persons
+     * Returns the data as an observable list of beverages
      */
     public ObservableList<Beverage> getBeverageData () {
         return beverageData;
@@ -78,12 +78,12 @@ public class MainApp extends Application {
 
     protected void showLogIn () {
         try {
-            // Load person overview.
+            // Load login overview.
             FXMLLoader loader = new FXMLLoader ();
             loader.setLocation (getClass ().getResource ("/cafe/LogIn.fxml"));
             AnchorPane LogIn = loader.load ();
 
-            // Set person overview into the center of root layout.
+            // Set login overview into the center of root layout.
             rootLayout.setCenter (LogIn);
 
             // Give the controller access to the main app.
@@ -97,12 +97,12 @@ public class MainApp extends Application {
 
     public void showCafeOverview () {
         try {
-            // Load person overview.
+            // Load cafe overview.
             FXMLLoader loader = new FXMLLoader ();
             loader.setLocation (getClass ().getResource ("/cafe/CafeOverview.fxml"));
             AnchorPane cafeOverview = loader.load ();
 
-            // Set person overview into the center of root layout.
+            // Set cafe overview into the center of root layout.
             rootLayout.setCenter (cafeOverview);
 
             // Give the controller access to the main app.
@@ -116,22 +116,20 @@ public class MainApp extends Application {
 
     public void showCafeReports () {
         try {
-            // Load person overview.
+            // Load reports overview.
             FXMLLoader loader = new FXMLLoader ();
             loader.setLocation (getClass ().getResource ("/cafe/CafeReports.fxml"));
             AnchorPane cafeReports = loader.load ();
 
-            // Set person overview into the center of root layout.
+            // Set reports overview into the center of root layout.
             rootLayout.setCenter (cafeReports);
 
             // Give the controller access to the main app.
             be.hogent.cafe.view.CafeReportsController controller = loader.getController ();
             controller.setMainApp (this);
 
-        } catch (IOException e) {
-            e.printStackTrace ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
     }
 
@@ -149,19 +147,14 @@ public class MainApp extends Application {
             dialogStage.initOwner (primaryStage);
             Scene scene = new Scene (page);
             dialogStage.setScene (scene);
-
-            // Set the person into the controller.
             be.hogent.cafe.view.CafeOrderDialogController controller = loader.getController ();
             controller.setDialogStage (dialogStage);
-            //controller.setTable ();
             controller.setMainApp (this);
 
             // Show the dialog and wait until the user closes it
             dialogStage.showAndWait ();
-        } catch (IOException e) {
-            e.printStackTrace ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
     }
 

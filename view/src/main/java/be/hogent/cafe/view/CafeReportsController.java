@@ -6,30 +6,22 @@ import be.hogent.cafe.model.dao.DAOException;
 import be.hogent.cafe.model.dao.PaidOrderDAOImpl;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.*;
-import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
-
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class CafeReportsController {
 
-
-    @FXML
-    public ImageView pieChart;
 
     @FXML
     private Label loggedInUserName;
@@ -45,9 +37,6 @@ public class CafeReportsController {
 
     @FXML
     private Tab pieTab;
-
-    @FXML
-    private ImageView iv;
 
     @FXML
     private TableView<BeverageSales> allSalesTable;
@@ -73,13 +62,11 @@ public class CafeReportsController {
     private Label salesTotal;
     @FXML
     private Label salesByDateTotal;
-
     @FXML
-    private ComboBox selectDatesBox;
+    private ComboBox<LocalDate> selectDatesBox;
 
-    List<BeverageSales> salesItems = new ArrayList<>();
-    List<BeverageSales> salesByDateItems = new ArrayList<>();
-    private ObservableList<BeverageSales> salesItemList;
+    final List<BeverageSales> salesItems = new ArrayList<>();
+    final List<BeverageSales> salesByDateItems = new ArrayList<>();
     private ObservableList<BeverageSales> salesByDateItemList;
     private LocalDate selectedDate = null;
 
@@ -117,58 +104,43 @@ public class CafeReportsController {
         beveragePriceByDateColumn.setCellValueFactory (beveragePriceProperty);
         beverageQtyByDateColumn.setCellValueFactory (beverageQtyProperty);
         beverageSubTotalByDateColumn.setCellValueFactory (beverageSubTotalProperty);
-
-
     }
 
-    /**
-     * Is called by the main application to give a reference back to itself.
-     *
-     * @param mainApp
-     *
-     */
     public void setMainApp (MainApp mainApp) throws Exception {
         this.mainApp = mainApp;
 
-        mainApp.getModel().topWaiterPieChart(); //exception handling toevoegen
-
         String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
         loggedInUserName.setText("Logged in user: " + loggedInWaiter);
-        allSalesTab = generateAllSalesTab("All sales of waiter:");
-        byDateTab = generateSalesByDateTab("Sales by date:");
+        allSalesTab = generateAllSalesTab();
+        byDateTab = generateSalesByDateTab();
         pieTab.setContent(generatePieTab());
-
     }
 
-    private Node generatePieTab(){
+    private Node generatePieTab() throws Exception {
+        mainApp.getModel().topWaiterPieChart();
         String pieChartjpg = Cafe.getReportsDirectory() + "/topwaiterchart.jpg";
         File file = new File(pieChartjpg);
         Image image = new Image(file.toURI().toString());
         return new ImageView(image);
     }
 
-    private Tab generateAllSalesTab(String tabName){
-        Tab tab = new Tab(tabName);
-      //  final Group root = new Group();
-        //tab.setContent(root);
+    private Tab generateAllSalesTab(){
+        Tab tab = new Tab("All sales of waiter:");
         AtomicReference<BigDecimal> waiterSalesTotal = new AtomicReference<>(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
 
 
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
         salesMap.forEach((k,v) ->
         {
-            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v.intValue(), BigDecimal.valueOf(k.getPrice()*v.intValue()) );
-
+            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice()* v) );
             salesItems.add(beverageLine);
         }
         );
-        salesMap.forEach((k,v) -> {
-           waiterSalesTotal.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v.intValue()).setScale(2, RoundingMode.HALF_EVEN)));
-        });
+        salesMap.forEach((k,v) -> waiterSalesTotal.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v).setScale(2, RoundingMode.HALF_EVEN))));
 
         salesTotal.setText(String.valueOf(waiterSalesTotal));
 
-        salesItemList = FXCollections.observableArrayList (salesItems);
+        ObservableList<BeverageSales> salesItemList = FXCollections.observableArrayList(salesItems);
 
         allSalesTable.setItems(FXCollections.observableArrayList((salesItemList)));
         allSalesTable.getSortOrder().add(beverageNameColumn);
@@ -176,8 +148,8 @@ public class CafeReportsController {
         return tab;
     }
 
-    private Tab generateSalesByDateTab(String tabName) throws DAOException {
-        Tab tab = new Tab(tabName);
+    private Tab generateSalesByDateTab() throws DAOException {
+        Tab tab = new Tab("Sales by date:");
 
         int waiterID = mainApp.getModel().getLoggedInWaiter().getID();
         Set<LocalDate> waiterDatesFromDB = PaidOrderDAOImpl.getInstance().waiterSalesDates(waiterID);
@@ -204,21 +176,18 @@ public class CafeReportsController {
     public void comboBoxClick() {
         AtomicReference<BigDecimal> waiterSalesTotalByDate = new AtomicReference<>(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
 
-        //allSalesTable.setItems(null); //alles leeg zetten zodat het met combobox kan gevuld worden
         salesByDateItems.clear();
 
-        selectedDate = (LocalDate) selectDatesBox.getSelectionModel().getSelectedItem();
+        selectedDate = selectDatesBox.getSelectionModel().getSelectedItem();
         Map<Beverage, Integer> salesByDateMap = mainApp.getModel().getAllWaiterSales(selectedDate);
         salesByDateMap.forEach((k,v) ->
                 {
-                    BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v.intValue(), BigDecimal.valueOf(k.getPrice()*v.intValue()) );
+                    BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice()* v) );
 
                     salesByDateItems.add(beverageLine);
                 }
         );
-        salesByDateMap.forEach((k,v) -> {
-            waiterSalesTotalByDate.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v.intValue()).setScale(2, RoundingMode.HALF_EVEN)));
-        });
+        salesByDateMap.forEach((k,v) -> waiterSalesTotalByDate.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v).setScale(2, RoundingMode.HALF_EVEN))));
 
         salesByDateTotal.setText(String.valueOf(waiterSalesTotalByDate));
 
@@ -230,10 +199,10 @@ public class CafeReportsController {
 
 
     public class BeverageSales{
-        public String beverageName;
-        public Double beveragePrice;
-        public Integer beverageQty;
-        public BigDecimal subTotal;
+        public final String beverageName;
+        public final Double beveragePrice;
+        public final Integer beverageQty;
+        public final BigDecimal subTotal;
 
     public BeverageSales(String beverageName, Double beveragePrice, Integer beverageQty, BigDecimal subTotal) {
         this.beverageName = beverageName;
@@ -242,7 +211,7 @@ public class CafeReportsController {
         this.subTotal = subTotal.setScale(2, RoundingMode.HALF_EVEN);
     }
 
-    public String getBeverageName() {
+    public String getBeverageName() { //these are necessary for the TableView
         return beverageName;
     }
 

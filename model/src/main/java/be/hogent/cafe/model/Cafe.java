@@ -27,7 +27,7 @@ public class Cafe {
     private Set<Waiter> waiters = new HashSet<>();
     private Waiter loggedInWaiter;
     private Table activeTable;
-    private List<Table> tables = new ArrayList<>();
+    private final List<Table> tables = new ArrayList<>();
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
@@ -235,15 +235,7 @@ public class Cafe {
         this.activeTable = null;
     }
 
-    public boolean tableHasActiveOrder(int tableID){
-        if (getUnpaidOrders().containsKey(tableID))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public Set<Order> getPaidOrders() {
+     public Set<Order> getPaidOrders() {
         return paidOrders;
     }
 
@@ -266,8 +258,7 @@ public class Cafe {
 
     public static Beverage getBeverageByID(int beverageID)
     {
-        Beverage beverage = beverages.stream().filter(b -> b.getBeverageID() == beverageID).findFirst().get();
-        return beverage;
+        return beverages.stream().filter(b -> b.getBeverageID() == beverageID).findFirst().orElse(null);
     }
 
     public void setHighestOrderNumber(int number) {highestOrderNumber = number;}

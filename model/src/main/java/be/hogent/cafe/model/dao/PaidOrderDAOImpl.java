@@ -49,27 +49,24 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                 paidOrder.setOrderNumber(resultSet.getInt("orderNumber"));
                 paidOrder.setWaiterID(resultSet.getInt("waiterID"));
 
-
                 paidOrder.setDate(resultSet.getDate("date").toLocalDate());
 
                 int beverageIDFromDB = resultSet.getInt("beverageID");
-
                 Beverage beverage = Cafe.getBeverageByID(beverageIDFromDB);
 
+                paidOrders.add(paidOrder);
+
                 OrderItem orderItem = new OrderItem(beverage, resultSet.getInt("qty"));
-                if (paidOrders.contains(paidOrder)) //als er een order in collectie zit met zelfde orderNumber => geen nieuw order aanmaken maar orderiTem toevoegen
-                {
-                    for (Order paidOrderFromSet : paidOrders) {
-                        if (paidOrderFromSet.getOrderNumber() == paidOrder.getOrderNumber()) {
-                            paidOrderFromSet.getOrderLines().add(orderItem);
-                        }
+
+                for (Order paidOrderFromSet : paidOrders) {
+                    if (paidOrderFromSet.getOrderNumber() == paidOrder.getOrderNumber()) {
+                        paidOrderFromSet.getOrderLines().add(orderItem);
                     }
-                } else {
-                    paidOrder.setOrderItems(orderItem);
-                    paidOrders.add(paidOrder);
                 }
             }
+
             logger.info("paidOrders are loaded from database");
+
 
         } catch (Exception e) {
             logger.error("Error getting paidOrders from database. " + e.getMessage());
@@ -142,7 +139,6 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
     @Override
     public Set<LocalDate> waiterSalesDates(int waiterID) throws DAOException {
         Set<LocalDate> waiterSalesDates = new TreeSet<>();
-
 
         try (Connection connection = getConnection();
 

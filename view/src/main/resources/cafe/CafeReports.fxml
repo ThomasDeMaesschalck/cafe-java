@@ -90,7 +90,7 @@
                                               <content>
                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                                    <children>
-                                                      <ImageView fx:id="iv" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
                                                    </children></AnchorPane>
                                               </content>
                                           </Tab>

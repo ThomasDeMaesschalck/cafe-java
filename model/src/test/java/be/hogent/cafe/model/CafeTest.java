@@ -11,7 +11,6 @@ import java.time.Month;
 
 import static java.time.LocalDate.of;
 import static java.time.Month.FEBRUARY;
-import static java.time.Month.JANUARY;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
