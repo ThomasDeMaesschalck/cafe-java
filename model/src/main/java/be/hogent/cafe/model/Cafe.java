@@ -203,7 +203,7 @@ public class Cafe {
 
     public void createTables(int numberOfTables){
         for(int i = 0; i < numberOfTables; i++) {
-            tables.add(new Table(i));
+            tables.add(new Table(i +1)); //start table number at 1 instead of 0
         }
     }
 
@@ -216,7 +216,7 @@ public class Cafe {
     }
 
     public Table getTable(int tableID) {
-        return tables.get(tableID); //gezien tafel nummer op één start en array op 0
+        return tables.get(tableID - 1); //difference between index position in array and table ID
     }
 
     public void setActiveTable(int tableID) {

@@ -135,9 +135,9 @@ public class CafeTest {
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters","password");
         cafe.setActiveTable(1);
-        assertEquals(cafe.getTables().get(1), cafe.getActiveTable(), "Test SetActiveTable() 01 failed");
+        assertEquals(cafe.getTables().get(0), cafe.getActiveTable(), "Test SetActiveTable() 01 failed"); //difference between index in array and tableID
         cafe.setActiveTable(9);
-        assertEquals(cafe.getTables().get(9), cafe.getActiveTable(), "Test SetActiveTable() 02 failed");
+        assertEquals(cafe.getTables().get(8), cafe.getActiveTable(), "Test SetActiveTable() 02 failed");
     }
 
     @Test
