@@ -6,12 +6,12 @@ import be.hogent.cafe.model.OrderItem;
 import be.hogent.cafe.model.dao.DAOException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -38,7 +38,6 @@ public class CafeOrderDialogController {
     private Label orderTotal;
 
     private final List<OrderLines> orderItems = new ArrayList<>();
-
 
     private Stage dialogStage;
 
@@ -71,8 +70,6 @@ public class CafeOrderDialogController {
 
     }
 
-
-
     public void setDialogStage (Stage dialogStage) {
         this.dialogStage = dialogStage;
         dialogStage.setOnCloseRequest(evt -> {
@@ -82,7 +79,6 @@ public class CafeOrderDialogController {
             handleClose();
         });
     }
-
 
     public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
@@ -196,7 +192,6 @@ public class CafeOrderDialogController {
         }
     }
 
-
     @FXML
     public void handleDelete() {
         if (orderTable.getSelectionModel().getSelectedItem() == null) {
@@ -236,7 +231,7 @@ public class CafeOrderDialogController {
         alert.showAndWait ();
     }
 
-    public void handlePay() throws DAOException {
+    public void handlePay() {
             if(orderItems.isEmpty()){
                 String errorMessage = "There is no order";
                 Alert alert = new Alert (Alert.AlertType.ERROR);
@@ -248,10 +243,10 @@ public class CafeOrderDialogController {
             }
             else{
                 mainApp.getModel().pay();
-                Alert alert = new Alert (Alert.AlertType.INFORMATION);
+                Alert alert = new Alert (Alert.AlertType.INFORMATION, "", ButtonType.FINISH);
                 alert.initOwner (dialogStage);
-                alert.setTitle ("Payment");
-                alert.setHeaderText ("Get payment from customer");
+                alert.setTitle ("Payment:");
+                alert.setHeaderText ("OK. Get " + orderTotal.getText() + "EUR from customer");
                 alert.showAndWait ();
 
                 dialogStage.close ();
@@ -259,7 +254,7 @@ public class CafeOrderDialogController {
             }
     }
 
-    public class OrderLines{
+    public static class OrderLines{
         public final String orderBeverageName;
         public final Double orderBeveragePrice;
         public final Integer orderBeverageQty;

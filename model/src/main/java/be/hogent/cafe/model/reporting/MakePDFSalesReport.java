@@ -23,6 +23,7 @@ public class MakePDFSalesReport {
     public static final String DEST =  reportsDirectory + "/salesreport.pdf";
 
     public static boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
+
         File file = new File(DEST);
         File parent = file.getParentFile();
         if (!parent.exists() && !parent.mkdirs()) {

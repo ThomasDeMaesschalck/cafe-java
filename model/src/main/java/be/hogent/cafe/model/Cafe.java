@@ -131,14 +131,18 @@ public class Cafe {
         removeActiveTable();
     }
 
-    public void pay() throws DAOException { //order betalen en verplaatsen naar paidorder collectie
+    public void pay()  { //order betalen en verplaatsen naar paidorder collectie
         if (getActiveTable() == null)
         {
             logger.error("Pay failed, no active table");
             throw new IllegalArgumentException("No active table");
         }
         logger.info("Table " + getActiveTable().toString() + " paid orderNumber " + getUnpaidOrders().get(getActiveTable()).getOrderNumber());
-        PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
+        try {
+            PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
         getUnpaidOrders().remove(getActiveTable());
         clearTable();
         setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
@@ -172,9 +176,14 @@ public class Cafe {
         return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
     }
 
-    public boolean waiterSalesReportPDF() throws IOException {
+    public boolean waiterSalesReportPDF() {
         logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report");
-        return MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), null);
+        try {
+            return MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), null);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     public boolean waiterSalesReportPDF(LocalDate date) throws IOException {

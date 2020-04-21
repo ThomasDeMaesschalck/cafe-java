@@ -67,7 +67,6 @@ public class CafeReportsController {
 
     final List<BeverageSales> salesItems = new ArrayList<>();
     final List<BeverageSales> salesByDateItems = new ArrayList<>();
-    private ObservableList<BeverageSales> salesByDateItemList;
     private LocalDate selectedDate = null;
 
 
@@ -106,7 +105,7 @@ public class CafeReportsController {
         beverageSubTotalByDateColumn.setCellValueFactory (beverageSubTotalProperty);
     }
 
-    public void setMainApp (MainApp mainApp) throws Exception {
+    public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
 
         String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
@@ -116,9 +115,14 @@ public class CafeReportsController {
         pieTab.setContent(generatePieTab());
     }
 
-    private Node generatePieTab() throws Exception {
-        mainApp.getModel().topWaiterPieChart();
-        String pieChartjpg = Cafe.getReportsDirectory() + "/topwaiterchart.jpg";
+    private Node generatePieTab() {
+        try{
+            mainApp.getModel().topWaiterPieChart();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+            String pieChartjpg = Cafe.getReportsDirectory() + "/topwaiterchart.jpg";
         File file = new File(pieChartjpg);
         Image image = new Image(file.toURI().toString());
         return new ImageView(image);
@@ -132,7 +136,7 @@ public class CafeReportsController {
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
         salesMap.forEach((k,v) ->
         {
-            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice()* v) );
+            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice() * v));
             salesItems.add(beverageLine);
         }
         );
@@ -148,18 +152,29 @@ public class CafeReportsController {
         return tab;
     }
 
-    private Tab generateSalesByDateTab() throws DAOException {
+    private Tab generateSalesByDateTab()  {
         Tab tab = new Tab("Sales by date:");
 
         int waiterID = mainApp.getModel().getLoggedInWaiter().getID();
-        Set<LocalDate> waiterDatesFromDB = PaidOrderDAOImpl.getInstance().waiterSalesDates(waiterID);
+
+        Set<LocalDate> waiterDatesFromDB = null;
+        try {
+            waiterDatesFromDB = PaidOrderDAOImpl.getInstance().waiterSalesDates(waiterID);
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
         selectDatesBox.setItems(FXCollections.observableArrayList(waiterDatesFromDB));
 
         return tab;
     }
 
-    public void generatePDF() throws IOException {
-        mainApp.getModel().waiterSalesReportPDF(selectedDate);
+    public void generatePDF() {
+        try {
+            mainApp.getModel().waiterSalesReportPDF(selectedDate);
+        }
+        catch (IOException e) {
+            e.printStackTrace ();
+        }
     }
 
     public void logout()
@@ -182,7 +197,7 @@ public class CafeReportsController {
         Map<Beverage, Integer> salesByDateMap = mainApp.getModel().getAllWaiterSales(selectedDate);
         salesByDateMap.forEach((k,v) ->
                 {
-                    BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice()* v) );
+                    BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice() * v));
 
                     salesByDateItems.add(beverageLine);
                 }
@@ -191,14 +206,14 @@ public class CafeReportsController {
 
         salesByDateTotal.setText(String.valueOf(waiterSalesTotalByDate));
 
-        salesByDateItemList = FXCollections.observableArrayList (salesByDateItems);
+        ObservableList<BeverageSales> salesByDateItemList = FXCollections.observableArrayList(salesByDateItems);
 
         allSalesByDateTable.getSortOrder().add(beverageNameColumn);
         allSalesByDateTable.setItems(salesByDateItemList);
     }
 
 
-    public class BeverageSales{
+    public static class BeverageSales{
         public final String beverageName;
         public final Double beveragePrice;
         public final Integer beverageQty;

@@ -126,7 +126,7 @@ public class CafeTest {
 
     @Test
     public void testCreateTables(){
-        assertEquals(12, cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
+        assertEquals(15, cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
     }
 
     @Test

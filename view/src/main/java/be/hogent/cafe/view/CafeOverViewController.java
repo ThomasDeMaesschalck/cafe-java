@@ -2,7 +2,11 @@ package be.hogent.cafe.view;
 
 import be.hogent.cafe.model.*;
 import javafx.fxml.*;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.TilePane;
 
 
@@ -30,7 +34,6 @@ public class CafeOverViewController {
      */
     @FXML
     private void initialize () {
-
     }
 
 
@@ -45,14 +48,14 @@ public class CafeOverViewController {
     }
 
     public void showTables(){
+
+        tablePane.setHgap(15);
+        tablePane.setVgap(15);
+
         for (Table table: mainApp.getModel().getTables()) {
             Button tableButton = new Button(table.toString());
-            tablePane.setHgap(5);
-            tablePane.setVgap(5);
-            tablePane.setPrefColumns(4);
             tablePane.getChildren().addAll(tableButton);
-            tableButton.setMinSize(100, 100);
-
+            tableButton.setPrefSize(100, 100);
 
             tableButton.setOnMouseClicked(mouseEvent -> {
                 tableButton.setStyle("-fx-background-color: orange");
