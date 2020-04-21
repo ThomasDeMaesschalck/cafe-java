@@ -34,7 +34,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
 
 
     @Override
-    public Set<Order> getOrders(Set<Beverage> beverages) {
+    public Set<Order> getOrders() {
         Set<Order> paidOrders = new HashSet<>();
 
         try (
@@ -49,25 +49,12 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                 paidOrder.setOrderNumber(resultSet.getInt("orderNumber"));
                 paidOrder.setWaiterID(resultSet.getInt("waiterID"));
 
-                //LocalDate date = resultSet.getDate("date").toLocalDate(); ///PROBLEEM MET DATABASE => bij opslagen in DB trekt hij 1 dag af?!
 
                 paidOrder.setDate(resultSet.getDate("date").toLocalDate());
 
-
-                // paidOrder.setDate(date.plusDays(1)); ///PROBLEEM MET DATABASE => bij opslagen in DB trekt hij 1 dag af?!
-
                 int beverageIDFromDB = resultSet.getInt("beverageID");
-                final double[] beveragePrice = {0}; //om lambda te kunnen gebruiken
-                final String[] beverageName = {null}; //idem
 
-                beverages.forEach(beverage -> { //naam en prijs van beverage opzoeken
-                    if (beverage.getBeverageID() == beverageIDFromDB) {
-                        beveragePrice[0] = beverage.getPrice();
-                        beverageName[0] = beverage.getBeverageName();
-                    }
-                });
-
-                Beverage beverage = new Beverage(beverageIDFromDB, beverageName[0], beveragePrice[0]);
+                Beverage beverage = Cafe.getBeverageByID(beverageIDFromDB);
 
                 OrderItem orderItem = new OrderItem(beverage, resultSet.getInt("qty"));
                 if (paidOrders.contains(paidOrder)) //als er een order in collectie zit met zelfde orderNumber => geen nieuw order aanmaken maar orderiTem toevoegen
@@ -162,9 +149,9 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
              PreparedStatement preparedStatement = connection.prepareStatement(GET_ALL_DATES_SQL)) {
             preparedStatement.setInt(1, waiterID);
 
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                LocalDate result = rs.getDate(1).toLocalDate();
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                LocalDate result = resultSet.getDate(1).toLocalDate();
                 waiterSalesDates.add(result);
 
             }

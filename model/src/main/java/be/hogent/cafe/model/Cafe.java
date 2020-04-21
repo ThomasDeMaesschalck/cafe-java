@@ -39,7 +39,7 @@ public class Cafe {
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
-        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
+        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
         this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
         orderNumber = highestOrderNumber;
     }
@@ -139,7 +139,7 @@ public class Cafe {
         PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
         getUnpaidOrders().remove(getActiveTable());
         clearTable();
-        setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders(getBeverages()));
+        setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
     }
 
     public double getTotalWaiterRevenue(){ //voor actieve waiter
@@ -167,7 +167,7 @@ public class Cafe {
 
     public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate){ //sales voor specifieke datum indien date niet null
         logger.info(getLoggedInWaiter().toString() + " retrieved his sales data");
-        return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(getBeverages()), getLoggedInWaiter());
+        return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
     }
 
     public boolean waiterSalesReportPDF() throws IOException {
@@ -254,6 +254,12 @@ public class Cafe {
     public void setBeverages(Set<Beverage> beverage)
     {
         beverages = beverage;
+    }
+
+    public static Beverage getBeverageByID(int beverageID)
+    {
+        Beverage beverage = beverages.stream().filter(b -> b.getBeverageID() == beverageID).findFirst().get();
+        return beverage;
     }
 
     public void setHighestOrderNumber(int number) {highestOrderNumber = number;}

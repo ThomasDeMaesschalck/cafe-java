@@ -382,3 +382,36 @@
 [DEBUG] 2020-04-21 10:37:15.208 [JavaFX Application Thread] Cafe - orderNumber count increased to: 802
 [INFO ] 2020-04-21 10:37:17.832 [JavaFX Application Thread] Cafe - New order made: Order: 802, date: 2020-04-21, waiterID: 1, orderItems: [], tableID: 7
 [INFO ] 2020-04-21 10:37:17.833 [JavaFX Application Thread] Cafe - orderNumber: 802 -  added orderline beverage: Hoegaarden, quantity: 1
+[INFO ] 2020-04-21 13:53:02.971 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-21 13:53:38.167 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-21 13:53:40.474 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-21 13:53:40.972 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 13:53:47.441 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:04:01.241 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-21 14:04:08.607 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-21 14:04:10.357 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-21 14:04:10.876 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:04:15.324 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:04:23.969 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:04:42.735 [JavaFX Application Thread] Cafe - Set table 1 as active table
+[INFO ] 2020-04-21 14:04:42.736 [JavaFX Application Thread] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-21 14:04:42.736 [JavaFX Application Thread] Cafe - orderNumber count increased to: 802
+[INFO ] 2020-04-21 14:04:48.795 [JavaFX Application Thread] Cafe - New order made: Order: 802, date: 2020-04-21, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-21 14:04:48.796 [JavaFX Application Thread] Cafe - orderNumber: 802 -  added orderline beverage: Duvel, quantity: 1
+[INFO ] 2020-04-21 14:04:49.777 [JavaFX Application Thread] Cafe - Quantity increased of Duvel
+[INFO ] 2020-04-21 14:04:49.780 [JavaFX Application Thread] Cafe - orderNumber: 802 - updated orderline Duvel quantity with: 1
+[INFO ] 2020-04-21 14:04:50.203 [JavaFX Application Thread] Cafe - Quantity increased of Duvel
+[INFO ] 2020-04-21 14:04:50.203 [JavaFX Application Thread] Cafe - orderNumber: 802 - updated orderline Duvel quantity with: 1
+[INFO ] 2020-04-21 14:04:50.486 [JavaFX Application Thread] Cafe - Quantity increased of Duvel
+[INFO ] 2020-04-21 14:04:50.486 [JavaFX Application Thread] Cafe - orderNumber: 802 - updated orderline Duvel quantity with: 1
+[INFO ] 2020-04-21 14:04:53.516 [JavaFX Application Thread] Cafe - Quantity increased of Duvel
+[INFO ] 2020-04-21 14:04:54.239 [JavaFX Application Thread] Cafe - Quantity decreased of Duvel
+[INFO ] 2020-04-21 14:04:54.793 [JavaFX Application Thread] Cafe - Quantity decreased of Duvel
+[INFO ] 2020-04-21 14:04:55.220 [JavaFX Application Thread] Cafe - Quantity decreased of Duvel
+[INFO ] 2020-04-21 14:04:55.751 [JavaFX Application Thread] Cafe - Removed orderline beverage: Duvel, quantity: 4
+[INFO ] 2020-04-21 14:11:43.960 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-21 14:11:49.712 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-21 14:11:51.759 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-21 14:11:52.185 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:11:55.799 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data
+[INFO ] 2020-04-21 14:12:04.643 [JavaFX Application Thread] Cafe - Wout Peters retrieved his sales data

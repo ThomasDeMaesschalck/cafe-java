@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.Set;
 
 public interface PaidOrderDAO {
-    Set<Order> getOrders(Set<Beverage> beverages);
+    Set<Order> getOrders();
 
     boolean insertOrder (Order o) throws DAOException;
 

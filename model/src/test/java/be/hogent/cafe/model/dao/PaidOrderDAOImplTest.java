@@ -31,7 +31,7 @@ public class PaidOrderDAOImplTest {
          o2 = new OrderItem(koffie, 2);
          o3 = new OrderItem( spa, 3);
          o4 = new OrderItem( westmalle, 3);
-        paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders(cafe.getBeverages());
+        paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders();
     }
 
     @Test
@@ -57,7 +57,7 @@ public class PaidOrderDAOImplTest {
         }
 
         Assertions.assertTrue(PaidOrderDAOImpl.getInstance().insertOrder(orderTest), "testInsertOrder 01 failed");
-        int sizeCheck = PaidOrderDAOImpl.getInstance().getOrders(cafe.getBeverages()).size();
+        int sizeCheck = PaidOrderDAOImpl.getInstance().getOrders().size();
        assertEquals(newSize, sizeCheck , "testInsertOrder 02 failed - size not correct");
 
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
