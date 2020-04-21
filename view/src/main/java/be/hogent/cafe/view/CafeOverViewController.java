@@ -76,12 +76,9 @@ public class CafeOverViewController {
                         if (table.toString().equals(thisTable))
                             mainApp.getModel().setActiveTable(table.getTableID());
                     }
-                    tableButton.setStyle("-fx-background-color: green");
-
                     mainApp.showCafeOrderDialog();
                 }
             });
-
 
 
             if (table.getBelongsToWaiter() == null)
@@ -97,8 +94,8 @@ public class CafeOverViewController {
                 }
                 else
                 {
+                    tableButton.setDisable(true);
                     tableButton.setStyle("-fx-background-color: red");
-
                 }
             }
 

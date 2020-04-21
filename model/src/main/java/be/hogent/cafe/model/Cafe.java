@@ -105,6 +105,8 @@ public class Cafe {
         }
 
         if (!getUnpaidOrders().containsKey(getActiveTable())) {
+            increaseOrderNumber();
+            logger.debug("orderNumber count increased to: " + getOrderNumber());
             Order order = new Order(getOrderNumber(), date, getLoggedInWaiter().getID(), getActiveTable().getTableID());
             getUnpaidOrders().put(getActiveTable(), order);
             logger.info("New order made: " + order.toString());
@@ -166,7 +168,7 @@ public class Cafe {
     }
 
     public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate){ //sales voor specifieke datum indien date niet null
-        logger.info(getLoggedInWaiter().toString() + " retrieved his sales data");
+        logger.info(getLoggedInWaiter().toString() + " retrieved sales data");
         return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
     }
 
@@ -226,13 +228,19 @@ public class Cafe {
         {
             getActiveTable().setBelongsToWaiter(getLoggedInWaiter());
             logger.info("Assigned  " + getActiveTable().toString() + " to " + getLoggedInWaiter().toString());
-            increaseOrderNumber();
-            logger.debug("orderNumber count increased to: " + getOrderNumber());
         }
     }
 
     private void removeActiveTable() {
         this.activeTable = null;
+    }
+
+    public boolean tableHasActiveOrder(int tableID){
+        if (getUnpaidOrders().containsKey(tableID))
+        {
+            return true;
+        }
+        return false;
     }
 
     public Set<Order> getPaidOrders() {

@@ -127,7 +127,7 @@ public class CafeTest {
 
     @Test
     public void testCreateTables(){
-        assertEquals(12, cafe.getTables().size(), "Test CreateTables() 02 failed"); //aanmaak in constructor
+        assertEquals(12, cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
     }
 
     @Test
@@ -137,7 +137,13 @@ public class CafeTest {
         cafe.setActiveTable(1);
         assertEquals(cafe.getTables().get(0), cafe.getActiveTable(), "Test SetActiveTable() 01 failed"); //difference between index in array and tableID
         cafe.setActiveTable(9);
-        assertEquals(cafe.getTables().get(8), cafe.getActiveTable(), "Test SetActiveTable() 02 failed");
+        assertEquals(cafe.getTables().get(8), cafe.getActiveTable(), "Test SetActiveTable() 02 failed"); //difference between index in array and tableID
+    }
+
+    @Test
+    public void testGetBeverageByID(){
+        Beverage beverage = Cafe.getBeverageByID(1);
+        assertEquals("Cola", beverage.getBeverageName(), "Test getBeverageById() 01 failed");
     }
 
     @Test
