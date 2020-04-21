@@ -422,7 +422,7 @@ public class CafeTest {
     }
 
     @Test
-    public void testWaiterSalesReportPDF() throws IOException, DAOException {
+    public void testWaiterSalesReportPDF() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         LocalDate date = of(2020, FEBRUARY, 5);
         cafe.logIn("Thomas DM","password");

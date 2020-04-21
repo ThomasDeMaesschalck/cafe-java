@@ -30,11 +30,7 @@ public class AllWaiterSales {
 
         //orderitems samentellen
         sales.forEach(item -> { Beverage beverage = item.getBeverage();
-            if (!salesMap.containsKey(beverage)) {
-                salesMap.put(beverage, item.getQty());
-            } else {
-                salesMap.put(beverage, salesMap.get(beverage) + item.getQty());
-            }
+                salesMap.merge(beverage, item.getQty(), Integer::sum );
         });
         return salesMap;
     }

@@ -16,8 +16,6 @@ import java.util.Map;
 
 public class MakePDFSalesReport {
 
-    //exception handling nog af te werken
-
     private static final String reportsDirectory = Cafe.getReportsDirectory();
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     public static final String DEST =  reportsDirectory + "/salesreport.pdf";

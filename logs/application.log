@@ -106,3 +106,120 @@
 [INFO ] 2020-04-22 00:36:40.778 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
 [INFO ] 2020-04-22 00:36:44.669 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
 [INFO ] 2020-04-22 00:36:49.711 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 00:48:13.911 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 00:48:21.000 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 00:48:45.402 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 00:48:49.712 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 00:49:17.557 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 00:49:22.624 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 00:49:46.175 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 00:49:51.640 [JavaFX Application Thread] Cafe - Nathalie Segers logged in
+[INFO ] 2020-04-22 00:49:53.184 [JavaFX Application Thread] Cafe - Nathalie Segers retrieved sales data
+[INFO ] 2020-04-22 00:49:53.242 [JavaFX Application Thread] Cafe - Nathalie Segers created top waiter pie chart
+[INFO ] 2020-04-22 00:49:57.907 [JavaFX Application Thread] Cafe - Nathalie Segers logged out
+[ERROR] 2020-04-22 00:50:03.952 [JavaFX Application Thread] Cafe - Login failed, wrong password: username: Patrick Desmet password: pasword
+[INFO ] 2020-04-22 00:50:06.807 [JavaFX Application Thread] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 00:50:07.630 [JavaFX Application Thread] Cafe - Patrick Desmet retrieved sales data
+[INFO ] 2020-04-22 00:50:07.650 [JavaFX Application Thread] Cafe - Patrick Desmet created top waiter pie chart
+[INFO ] 2020-04-22 00:50:12.763 [JavaFX Application Thread] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 00:50:18.679 [JavaFX Application Thread] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 00:50:19.743 [JavaFX Application Thread] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 00:50:19.759 [JavaFX Application Thread] Cafe - Thomas DM created top waiter pie chart
+[INFO ] 2020-04-22 00:56:56.274 [JavaFX Application Thread] Cafe - Cafe started
+[ERROR] 2020-04-22 00:57:01.072 [JavaFX Application Thread] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 00:57:03.952 [JavaFX Application Thread] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 00:57:07.128 [JavaFX Application Thread] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 00:57:11.647 [JavaFX Application Thread] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[INFO ] 2020-04-22 00:57:14.183 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 00:57:15.493 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 00:59:13.299 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 00:59:18.368 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 00:59:19.704 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 00:59:19.769 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 00:59:29.034 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 00:59:30.946 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 00:59:35.283 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:00:42.522 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:00:47.513 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:00:48.999 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:00:49.065 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:00:56.666 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:00:59.164 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:22.740 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:02:27.297 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:02:28.794 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:28.862 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:02:32.859 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:34.956 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:37.495 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:39.367 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:40.998 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:42.798 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:44.051 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:02:45.734 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:04:49.901 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:04:54.952 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:04:56.428 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:04:56.495 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:05:01.515 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:05:03.507 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:05:04.859 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:05:06.416 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:10:34.943 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:10:39.672 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:10:41.062 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:10:41.129 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:10:44.963 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:10:47.031 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:10:48.827 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:30.872 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:11:35.073 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:11:37.093 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:37.139 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:11:45.432 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:47.163 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:49.778 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:53.736 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:11:53.758 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:12:22.093 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:12:26.488 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:12:27.836 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:12:27.902 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:12:46.250 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 01:14:34.846 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:14:39.640 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:14:41.034 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:14:41.110 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:16:01.808 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:16:06.362 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:16:07.828 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:16:07.908 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:16:19.003 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:17:27.463 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:17:33.024 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:17:34.609 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:17:34.675 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:17:56.085 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:17:59.533 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:18:02.338 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:21:34.516 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:21:39.432 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:21:41.094 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:21:41.155 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:22:15.311 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:22:21.825 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:22:23.168 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:22:23.214 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:22:40.243 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:22:45.248 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:22:46.872 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:22:46.944 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:23:22.433 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:23:26.945 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:23:28.258 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:28:31.917 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 01:28:36.761 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 01:28:38.644 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:28:38.709 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 01:28:43.179 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 01:28:45.538 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data

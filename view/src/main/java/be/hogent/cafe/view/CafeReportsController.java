@@ -130,19 +130,19 @@ public class CafeReportsController {
 
     private Tab generateAllSalesTab(){
         Tab tab = new Tab("All sales of waiter:");
-        AtomicReference<BigDecimal> waiterSalesTotal = new AtomicReference<>(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
-
+        double waiterSalesTotal = 0.0;
 
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
-        salesMap.forEach((k,v) ->
-        {
-            BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice() * v));
-            salesItems.add(beverageLine);
-        }
-        );
-        salesMap.forEach((k,v) -> waiterSalesTotal.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v).setScale(2, RoundingMode.HALF_EVEN))));
 
-        salesTotal.setText(String.valueOf(waiterSalesTotal));
+        salesMap.forEach((key, value) -> salesItems.add(
+                new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
+
+
+        waiterSalesTotal +=  ((salesMap.entrySet().stream().mapToDouble(s -> (s.getValue() * s.getKey().getPrice())).sum()));
+
+        String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal); //afronden
+
+        salesTotal.setText(waiterSalesTotalString);
 
         ObservableList<BeverageSales> salesItemList = FXCollections.observableArrayList(salesItems);
 
@@ -189,22 +189,23 @@ public class CafeReportsController {
     }
 
     public void comboBoxClick() {
-        AtomicReference<BigDecimal> waiterSalesTotalByDate = new AtomicReference<>(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
+        double waiterSalesTotalByDate = 0.0;
 
         salesByDateItems.clear();
 
         selectedDate = selectDatesBox.getSelectionModel().getSelectedItem();
         Map<Beverage, Integer> salesByDateMap = mainApp.getModel().getAllWaiterSales(selectedDate);
-        salesByDateMap.forEach((k,v) ->
-                {
-                    BeverageSales beverageLine = new BeverageSales(k.getBeverageName(), k.getPrice(), v, BigDecimal.valueOf(k.getPrice() * v));
 
-                    salesByDateItems.add(beverageLine);
-                }
-        );
-        salesByDateMap.forEach((k,v) -> waiterSalesTotalByDate.updateAndGet(v1 -> v1.add(BigDecimal.valueOf(k.getPrice() * v).setScale(2, RoundingMode.HALF_EVEN))));
 
-        salesByDateTotal.setText(String.valueOf(waiterSalesTotalByDate));
+        salesByDateMap.forEach((key, value) -> salesByDateItems.add(
+                new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
+
+
+        waiterSalesTotalByDate += ((salesByDateMap.entrySet().stream().mapToDouble(s -> (s.getValue() * s.getKey().getPrice())).sum()));
+
+        String salesByDateTotalString = String.format("%.2f", waiterSalesTotalByDate); //afronden
+
+        salesByDateTotal.setText(salesByDateTotalString);
 
         ObservableList<BeverageSales> salesByDateItemList = FXCollections.observableArrayList(salesByDateItems);
 

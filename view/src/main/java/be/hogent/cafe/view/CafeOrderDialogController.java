@@ -3,15 +3,12 @@ package be.hogent.cafe.view;
 import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.Order;
 import be.hogent.cafe.model.OrderItem;
-import be.hogent.cafe.model.dao.DAOException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -115,7 +112,6 @@ public class CafeOrderDialogController {
             orderTable.setItems(FXCollections.observableArrayList((orderLinesList)));
             String orderLinesTotaltoString = String.format("%.2f", orderLinesTotal); //afronden
             orderTotal.setText(String.valueOf(orderLinesTotaltoString));
-
         }
     }
 
