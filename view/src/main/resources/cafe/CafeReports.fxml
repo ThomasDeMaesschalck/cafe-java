@@ -39,13 +39,13 @@
                                                           <TableColumn fx:id="beverageNameColumn" prefWidth="75.0" text="Beverage" />
                                                           <TableColumn fx:id="beveragePriceColumn" prefWidth="55.0" text="Price" />
                                                             <TableColumn fx:id="beverageQtyColumn" prefWidth="52.0" text="Qty" />
-                                                            <TableColumn fx:id="beverageSubTotalColumn" prefWidth="115.0" text="Subtotal" />
+                                                            <TableColumn fx:id="beverageSubTotalColumn" prefWidth="104.0" text="Subtotal" />
                                                         </columns>
                                                       </TableView>
                                                       <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />
                                                       <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
                                                          <children>
-                                                            <Label text="Total sales:" />
+                                                            <Label text="Total sales: " />
                                                             <Label fx:id="salesTotal" text="total" />
                                                          </children>
                                                       </HBox>
@@ -62,9 +62,9 @@
                                                           </placeholder>
                                                           <columns>
                                                               <TableColumn fx:id="beverageNameByDateColumn" prefWidth="75.0" text="Beverage" />
-                                                              <TableColumn fx:id="beveragePriceByDateColumn" prefWidth="75.0" text="Price" />
-                                                              <TableColumn fx:id="beverageQtyByDateColumn" prefWidth="75.0" text="Qty" />
-                                                              <TableColumn fx:id="beverageSubTotalByDateColumn" prefWidth="75.0" text="Subtotal" />
+                                                              <TableColumn fx:id="beveragePriceByDateColumn" prefWidth="55.0" text="Price" />
+                                                              <TableColumn fx:id="beverageQtyByDateColumn" prefWidth="52.0" text="Qty" />
+                                                              <TableColumn fx:id="beverageSubTotalByDateColumn" prefWidth="104.0" text="Subtotal" />
                                                           </columns>
                                                       </TableView>
                                                       <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />

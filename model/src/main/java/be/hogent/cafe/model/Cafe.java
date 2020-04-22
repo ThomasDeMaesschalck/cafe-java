@@ -163,7 +163,7 @@ public class Cafe {
 
     public boolean topWaiterPieChart() throws Exception {
         logger.info(getLoggedInWaiter().toString() + " created top waiter pie chart");
-        return  MakeTopWaitersChart.createJPG(getTopWaitersByRevenue(3));
+        return  MakeTopWaitersChart.getInstance().createJPG(getTopWaitersByRevenue(3));
     }
 
     public Map<Beverage, Integer> getAllWaiterSales(){ //alle omzet van waiter
@@ -176,19 +176,16 @@ public class Cafe {
         return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
     }
 
-    public boolean waiterSalesReportPDF() {
-        logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report");
-        try {
-            return MakePDFSalesReport.createPDF(getAllWaiterSales(), getLoggedInWaiter().toString(), null);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
     public boolean waiterSalesReportPDF(LocalDate date) throws IOException {
-        logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report for " + date);
-    return   MakePDFSalesReport.createPDF(getAllWaiterSales(date), getLoggedInWaiter().toString(), date);
+        if (date == null)
+        {
+            logger.info(getLoggedInWaiter().toString() + " created a total waiter sales PDF report");
+        }
+        else
+            {
+            logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report for " + date);
+        }
+    return   MakePDFSalesReport.getInstance().createPDF(getAllWaiterSales(date), getLoggedInWaiter().toString(), date);
     }
 
     public void addWaiter(Waiter waiter){
@@ -300,5 +297,9 @@ public class Cafe {
     public static String getReportsDirectory()
     {
      return reportsDirectory;
+    }
+
+    public int getNumberOfTables() {
+        return numberOfTables;
     }
 }

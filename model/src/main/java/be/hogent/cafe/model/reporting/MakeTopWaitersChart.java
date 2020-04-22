@@ -11,14 +11,27 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 
+
 public class MakeTopWaitersChart {
+
+    private static MakeTopWaitersChart instance;
+
+    private MakeTopWaitersChart() {
+    }
+
+    public synchronized static MakeTopWaitersChart getInstance() {
+        if (instance == null) {
+            instance = new MakeTopWaitersChart();
+        }
+        return instance;
+    }
 
     //exception handling nog af te werken
 
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
     private static final String reportsDirectory = Cafe.getReportsDirectory();
 
-    public static boolean createJPG(HashMap<Waiter, Double> topWaiters) throws IOException {
+    public boolean createJPG(HashMap<Waiter, Double> topWaiters) throws IOException {
 
         DefaultPieDataset dataset = new DefaultPieDataset( );
 

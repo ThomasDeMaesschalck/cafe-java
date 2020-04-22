@@ -18,7 +18,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class CafeReportsController {
 
@@ -130,18 +129,14 @@ public class CafeReportsController {
 
     private Tab generateAllSalesTab(){
         Tab tab = new Tab("All sales of waiter:");
-        double waiterSalesTotal = 0.0;
 
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
 
         salesMap.forEach((key, value) -> salesItems.add(
                 new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
 
-
-        waiterSalesTotal +=  ((salesMap.entrySet().stream().mapToDouble(s -> (s.getValue() * s.getKey().getPrice())).sum()));
-
-        String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal); //afronden
-
+        BigDecimal waiterSalesTotal =  salesItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
+        String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal.doubleValue()); //afronden
         salesTotal.setText(waiterSalesTotalString);
 
         ObservableList<BeverageSales> salesItemList = FXCollections.observableArrayList(salesItems);
@@ -171,6 +166,7 @@ public class CafeReportsController {
     public void generatePDF() {
         try {
             mainApp.getModel().waiterSalesReportPDF(selectedDate);
+            handleExportToPDF();
         }
         catch (IOException e) {
             e.printStackTrace ();
@@ -189,22 +185,17 @@ public class CafeReportsController {
     }
 
     public void comboBoxClick() {
-        double waiterSalesTotalByDate = 0.0;
 
         salesByDateItems.clear();
 
         selectedDate = selectDatesBox.getSelectionModel().getSelectedItem();
         Map<Beverage, Integer> salesByDateMap = mainApp.getModel().getAllWaiterSales(selectedDate);
 
-
         salesByDateMap.forEach((key, value) -> salesByDateItems.add(
                 new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
 
-
-        waiterSalesTotalByDate += ((salesByDateMap.entrySet().stream().mapToDouble(s -> (s.getValue() * s.getKey().getPrice())).sum()));
-
+        BigDecimal waiterSalesTotalByDate =  salesByDateItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
         String salesByDateTotalString = String.format("%.2f", waiterSalesTotalByDate); //afronden
-
         salesByDateTotal.setText(salesByDateTotalString);
 
         ObservableList<BeverageSales> salesByDateItemList = FXCollections.observableArrayList(salesByDateItems);
@@ -212,6 +203,14 @@ public class CafeReportsController {
         allSalesByDateTable.getSortOrder().add(beverageNameColumn);
         allSalesByDateTable.setItems(salesByDateItemList);
     }
+
+    public void handleExportToPDF() {
+            Alert alert = new Alert (Alert.AlertType.INFORMATION);
+            alert.setTitle ("PDF export");
+            alert.setHeaderText ("PDF waiter sales report has been generated. You can find it in the configured reports folder.");
+            alert.showAndWait ();
+            selectedDate = null;
+        }
 
 
     public static class BeverageSales{

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeOrderDialogController">
-      <TableView fx:id="beverageTable" layoutX="495.0" layoutY="6.0" prefHeight="351.0" prefWidth="205.0">
+      <TableView fx:id="beverageTable" layoutX="490.0" layoutY="6.0" prefHeight="351.0" prefWidth="205.0">
           <columns>
               <TableColumn fx:id="beverageNameColumn" prefWidth="138.0" text="Beverage" />
               <TableColumn fx:id="beveragePriceColumn" prefWidth="66.0" text="Price" />
           </columns>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
       </TableView>
-   <Button layoutX="495.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="31.0" prefWidth="205.0" text="Add" />
+   <Button layoutX="490.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="31.0" prefWidth="205.0" text="Add" />
    <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="44.0" prefWidth="84.0" text="Close" />
    <TableView fx:id="orderTable" layoutX="14.0" layoutY="50.0" prefHeight="263.0" prefWidth="239.0">
      <columns>

@@ -1893,3 +1893,1519 @@
 [INFO ] 2020-04-22 01:29:41.683 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
 [INFO ] 2020-04-22 01:29:41.683 [main] Cafe - orderNumber: 817 - added 5 Cola
 [INFO ] 2020-04-22 01:29:41.684 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:03.498 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.040 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.129 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:04.131 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.131 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:04.132 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:04.145 [main] Cafe - New order made: Order: 817, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.149 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:04.151 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:04.186 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.200 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:04.200 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:04.200 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:04.200 [main] Cafe - New order made: Order: 818, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:04.200 [main] Cafe - orderNumber: 818 - added 30 Leffe
+[INFO ] 2020-04-22 09:35:04.200 [main] Cafe - orderNumber: 818 - added 20 Cola
+[INFO ] 2020-04-22 09:35:04.201 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:04.224 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:04.235 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:04.235 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 09:35:04.235 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.235 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 09:35:04.251 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:04.251 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.251 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 09:35:04.252 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 09:35:04.252 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 09:35:04.277 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.289 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 09:35:04.289 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:04.289 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 09:35:04.310 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:04.330 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.365 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:04.366 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.366 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:04.366 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:04.366 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.366 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:04.367 [main] Cafe - orderNumber: 817 - added 10 Leffe
+[INFO ] 2020-04-22 09:35:04.367 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:04.407 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.415 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:04.415 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:04.415 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:04.416 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:04.416 [main] Cafe - orderNumber: 818 - added 30 Leffe
+[INFO ] 2020-04-22 09:35:04.416 [main] Cafe - orderNumber: 818 - added 20 Cola
+[INFO ] 2020-04-22 09:35:04.416 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:04.435 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:04.442 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:04.443 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 09:35:04.443 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.443 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 09:35:04.443 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:04.443 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.444 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 09:35:04.444 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 09:35:04.444 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 09:35:04.468 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.476 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 09:35:04.476 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:04.477 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 09:35:04.486 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:04.486 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 09:35:04.486 [main] Cafe - Tom DM retrieved sales data
+[INFO ] 2020-04-22 09:35:04.509 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.559 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:04.559 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.560 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:04.560 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:04.560 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.561 [main] Cafe - orderNumber: 817 - added 2 Cola
+[INFO ] 2020-04-22 09:35:04.562 [main] Cafe - orderNumber: 817 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:04.562 [main] Cafe - orderNumber: 817 - added 2 Duvel
+[INFO ] 2020-04-22 09:35:04.563 [main] Cafe - orderNumber: 817 - added 2 Fanta
+[INFO ] 2020-04-22 09:35:04.565 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:04.611 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.619 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:04.621 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:04.622 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 09:35:04.623 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 09:35:04.623 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:04.623 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 09:35:04.623 [main] Cafe - orderNumber: 818 - added 20 Cola
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - orderNumber: 818 - added 30 Leffe
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - orderNumber: 818 - added 40 Duvel
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.624 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:04.625 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:04.625 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 09:35:04.626 [main] Cafe - Table table 10 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:04.666 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 09:35:04.696 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.734 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 09:35:04.735 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-04-22 09:35:04.735 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:04.735 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:04.736 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:04.736 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:04.736 [main] Cafe - orderNumber: 817 - added 5 Cola
+[INFO ] 2020-04-22 09:35:04.736 [main] Cafe - orderNumber: 817 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:04.736 [main] Cafe - orderNumber: 817 - added 10 Duvel
+[INFO ] 2020-04-22 09:35:04.736 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:04.821 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:04.827 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:04.827 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:04.827 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 09:35:04.827 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 09:35:04.827 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - orderNumber: 818 - added 1 Cola
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - orderNumber: 818 - added 3 Leffe
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - orderNumber: 818 - added 5 Duvel
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - orderNumber: 818 - added 4 Fanta
+[INFO ] 2020-04-22 09:35:04.828 [main] Cafe - Table table 10 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:04.890 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 09:35:04.905 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.948 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:04.951 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-04-22 09:35:04.952 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-04-22 09:35:04.952 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 09:35:04.952 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-04-22 09:35:04.952 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-04-22 09:35:04.953 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:04.953 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-04-22 09:35:04.956 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-04-22 09:35:04.957 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:04.999 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.032 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:05.032 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.032 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:05.032 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - orderNumber: 817 - added 5 Cola
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - orderNumber: 817 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-04-22 09:35:05.033 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:05.033 [main] Cafe - orderNumber: 818 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:05.034 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 09:35:05.034 [main] Cafe - orderNumber: 818 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:05.035 [main] Cafe - Quantity increased of Leffe to 9
+[INFO ] 2020-04-22 09:35:05.035 [main] Cafe - orderNumber: 818 - added 5 Leffe
+[INFO ] 2020-04-22 09:35:05.035 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:05.035 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:05.035 [main] Cafe - Set table 2 as active table
+[ERROR] 2020-04-22 09:35:05.036 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-04-22 09:35:05.036 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-04-22 09:35:05.036 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-04-22 09:35:05.036 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:05.036 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 3
+[INFO ] 2020-04-22 09:35:05.036 [main] Cafe - orderNumber: 819 - added 3 Leffe
+[INFO ] 2020-04-22 09:35:05.036 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 09:35:05.037 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 09:35:05.037 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:05.037 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.037 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 09:35:05.037 [main] Cafe - orderNumber: 817 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:05.040 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.064 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 09:35:05.064 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-04-22 09:35:05.064 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.064 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:05.064 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:05.064 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:05.064 [main] Cafe - orderNumber: 817 - added 2 Cola
+[INFO ] 2020-04-22 09:35:05.065 [main] Cafe - orderNumber: 817 - added 2 Leffe
+[INFO ] 2020-04-22 09:35:05.065 [main] Cafe - orderNumber: 817 - added 2 Duvel
+[INFO ] 2020-04-22 09:35:05.065 [main] Cafe - orderNumber: 817 - added 2 Fanta
+[INFO ] 2020-04-22 09:35:05.065 [main] Cafe - Removed orderline beverage: Cola, quantity: 2
+[INFO ] 2020-04-22 09:35:05.070 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.098 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:05.098 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:05.098 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:05.099 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.134 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:05.134 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.134 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.134 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:05.135 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:05.136 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:05.136 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 09:35:05.136 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:05.136 [main] Cafe - orderNumber: 817 - added 10 Leffe
+[INFO ] 2020-04-22 09:35:05.136 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:05.167 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:05.176 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:05.176 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.176 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:05.176 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:05.177 [main] Cafe - orderNumber: 818 - added 30 Leffe
+[INFO ] 2020-04-22 09:35:05.177 [main] Cafe - orderNumber: 818 - added 20 Cola
+[INFO ] 2020-04-22 09:35:05.177 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:05.197 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:05.224 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.253 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:05.254 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.254 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 09:35:05.256 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-04-22 09:35:05.256 [main] Cafe - Assigned  table 9 to Wout Peters
+[INFO ] 2020-04-22 09:35:05.257 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:05.352 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:05.352 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.352 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.352 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:05.352 [main] Cafe - New order made: Order: 817, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:05.353 [main] Cafe - orderNumber: 817 - added 666 Cola
+[INFO ] 2020-04-22 09:35:05.353 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:05.366 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:05.377 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:05.377 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.378 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:05.378 [main] Cafe - New order made: Order: 818, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:05.378 [main] Cafe - orderNumber: 818 - added 222 Leffe
+[INFO ] 2020-04-22 09:35:05.378 [main] Cafe - orderNumber: 818 - added 111 Cola
+[INFO ] 2020-04-22 09:35:05.378 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:05.412 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:05.421 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:05.422 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:05.422 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:05.422 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.422 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:05.423 [main] Cafe - New order made: Order: 819, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:05.423 [main] Cafe - orderNumber: 819 - added 100000 Cola
+[INFO ] 2020-04-22 09:35:05.424 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 09:35:05.448 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:05.465 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:05.465 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:05.465 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 09:35:05.465 [main] Cafe - New order made: Order: 820, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:05.466 [main] Cafe - orderNumber: 820 - added 100000 Leffe
+[INFO ] 2020-04-22 09:35:05.466 [main] Cafe - orderNumber: 820 - added 100000 Cola
+[INFO ] 2020-04-22 09:35:05.466 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 09:35:05.503 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:05.524 [main] Cafe - Thomas DM created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-04-22 09:35:05.524 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 09:35:06.070 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:06.118 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:06.118 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:06.118 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 09:35:06.125 [main] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 09:35:07.267 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.301 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.327 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:07.327 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:07.327 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:07.328 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:07.328 [main] Cafe - New order made: Order: 817, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:07.328 [main] Cafe - orderNumber: 817 - added 1000 Cola
+[INFO ] 2020-04-22 09:35:07.328 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:07.336 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:07.342 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:07.342 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:07.342 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:07.342 [main] Cafe - New order made: Order: 818, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:07.342 [main] Cafe - orderNumber: 818 - added 3000 Leffe
+[INFO ] 2020-04-22 09:35:07.343 [main] Cafe - orderNumber: 818 - added 2000 Cola
+[INFO ] 2020-04-22 09:35:07.343 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:07.364 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:07.369 [main] Cafe - Thomas DM created a waiter sales PDF report
+[INFO ] 2020-04-22 09:35:07.369 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 09:35:07.392 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.415 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:07.567 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 09:35:07.567 [main] Cafe - orderNumber: 817 - added 10 Cola
+[INFO ] 2020-04-22 09:35:07.568 [main] Cafe - orderNumber: 817 - added 10 Leffe
+[INFO ] 2020-04-22 09:35:07.570 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 09:35:07.601 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - orderNumber: 817 - added 100 Cola
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - orderNumber: 817 - added 100 Leffe
+[INFO ] 2020-04-22 09:35:07.601 [main] Cafe - Table table 1 paid orderNumber 817
+[INFO ] 2020-04-22 09:35:07.619 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:07.628 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:07.628 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 09:35:07.628 [main] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-22 09:35:07.628 [main] Cafe - New order made: Order: 818, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:07.629 [main] Cafe - orderNumber: 818 - added 300 Leffe
+[INFO ] 2020-04-22 09:35:07.629 [main] Cafe - orderNumber: 818 - added 200 Cola
+[INFO ] 2020-04-22 09:35:07.629 [main] Cafe - Table table 2 paid orderNumber 818
+[INFO ] 2020-04-22 09:35:07.656 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - Tina DM logged in
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - Assigned  table 1 to Tina DM
+[DEBUG] 2020-04-22 09:35:07.661 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - orderNumber: 819 - added 100 Cola
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - orderNumber: 819 - added 100 Leffe
+[INFO ] 2020-04-22 09:35:07.661 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 09:35:07.677 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - Assigned  table 2 to Tina DM
+[DEBUG] 2020-04-22 09:35:07.681 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - orderNumber: 820 - added 1000 Leffe
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - orderNumber: 820 - added 1000 Cola
+[INFO ] 2020-04-22 09:35:07.681 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 09:35:07.702 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - Tina DM logged out
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - Assigned  table 5 to Tom DM
+[DEBUG] 2020-04-22 09:35:07.707 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 5
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - orderNumber: 821 - added 1000 Cola
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - orderNumber: 821 - added 100 Leffe
+[INFO ] 2020-04-22 09:35:07.707 [main] Cafe - Table table 5 paid orderNumber 821
+[INFO ] 2020-04-22 09:35:07.725 [main] Cafe - Cleared table table 5
+[INFO ] 2020-04-22 09:35:07.746 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.781 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:07.781 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:07.784 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:07.805 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:07.805 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 09:35:07.805 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 09:35:09.323 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.408 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.487 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.513 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.614 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.695 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:09.696 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:09.696 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 09:35:09.696 [main] Cafe - Quantity decreased of Cola
+[INFO ] 2020-04-22 09:35:09.698 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:09.734 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - orderNumber: 817 - added 5 Cola
+[INFO ] 2020-04-22 09:35:09.734 [main] Cafe - orderNumber: 817 - added 5 Leffe
+[INFO ] 2020-04-22 09:35:09.735 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.762 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:09.762 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:09.762 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 09:35:09.763 [main] Cafe - Quantity increased of Cola to 7
+[INFO ] 2020-04-22 09:35:09.769 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.880 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:09.880 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:09.880 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 09:35:09.880 [main] Cafe - Quantity increased of Cola to 3
+[INFO ] 2020-04-22 09:35:09.881 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.907 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:09.949 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:09.949 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:09.950 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:09.950 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:09.950 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:09.951 [main] Cafe - orderNumber: 817 - added 5 Cola
+[INFO ] 2020-04-22 09:35:09.951 [main] Cafe - orderNumber: 817 - added 5 Leffe
+[INFO ] 2020-04-22 09:35:09.988 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:10.134 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 09:35:10.325 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 09:35:10.325 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 09:35:10.325 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 09:35:10.325 [main] Cafe - orderNumber count increased to: 817
+[INFO ] 2020-04-22 09:35:10.325 [main] Cafe - New order made: Order: 817, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 09:35:10.325 [main] Cafe - orderNumber: 817 - added 5 Cola
+[INFO ] 2020-04-22 09:35:10.327 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:52.294 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:52.656 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:52.699 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:52.700 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:52.700 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:52.701 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:52.708 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:52.711 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:52.714 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:52.730 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:52.744 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:52.744 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:52.745 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:52.745 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:52.745 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:26:52.745 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:26:52.745 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:52.768 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:52.777 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:52.777 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:26:52.778 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:52.778 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:26:52.791 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:52.791 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:52.791 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:26:52.792 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:26:52.792 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:26:52.811 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:52.821 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:26:52.821 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:52.821 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:26:52.838 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:52.852 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:52.890 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:52.890 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:52.890 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:52.890 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:52.891 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:52.891 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:52.891 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:26:52.891 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:52.917 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:52.926 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:52.927 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:52.927 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:52.927 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:52.928 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:26:52.928 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:26:52.929 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:52.984 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:52.990 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:52.991 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:26:52.991 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:52.991 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:26:52.992 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:52.992 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:52.992 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:26:52.992 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:26:52.992 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:26:53.011 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.018 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:26:53.019 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:53.019 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:26:53.027 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:53.027 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:26:53.027 [main] Cafe - Tom DM retrieved sales data
+[INFO ] 2020-04-22 11:26:53.045 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.079 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.080 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:26:53.080 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:26:53.081 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:53.122 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.127 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:53.127 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:26:53.128 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - orderNumber: 820 - added 40 Duvel
+[INFO ] 2020-04-22 11:26:53.128 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.129 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - orderNumber: 821 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.129 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:53.130 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.130 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:26:53.130 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:53.154 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:26:53.183 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.209 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:26:53.209 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-04-22 11:26:53.209 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.209 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.209 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.210 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.210 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:26:53.210 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.210 [main] Cafe - orderNumber: 819 - added 10 Duvel
+[INFO ] 2020-04-22 11:26:53.210 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:53.236 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.242 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:26:53.243 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - orderNumber: 820 - added 1 Cola
+[INFO ] 2020-04-22 11:26:53.243 [main] Cafe - orderNumber: 820 - added 3 Leffe
+[INFO ] 2020-04-22 11:26:53.244 [main] Cafe - orderNumber: 820 - added 5 Duvel
+[INFO ] 2020-04-22 11:26:53.244 [main] Cafe - orderNumber: 820 - added 4 Fanta
+[INFO ] 2020-04-22 11:26:53.244 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:53.282 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:26:53.297 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.318 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.319 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-04-22 11:26:53.320 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-04-22 11:26:53.320 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 11:26:53.320 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-04-22 11:26:53.321 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-04-22 11:26:53.321 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.321 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-04-22 11:26:53.321 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-04-22 11:26:53.323 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.343 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.364 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:26:53.364 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.365 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:53.365 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.365 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:53.365 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:53.365 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.366 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:26:53.366 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.366 [main] Cafe - Quantity increased of Leffe to 9
+[INFO ] 2020-04-22 11:26:53.366 [main] Cafe - orderNumber: 820 - added 5 Leffe
+[INFO ] 2020-04-22 11:26:53.367 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:53.367 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.367 [main] Cafe - Set table 2 as active table
+[ERROR] 2020-04-22 11:26:53.368 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-04-22 11:26:53.368 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-04-22 11:26:53.368 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-04-22 11:26:53.368 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:53.368 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 3
+[INFO ] 2020-04-22 11:26:53.368 [main] Cafe - orderNumber: 821 - added 3 Leffe
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:26:53.369 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.370 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.389 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:26:53.389 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-04-22 11:26:53.389 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.389 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:53.389 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.389 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.390 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:26:53.390 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:26:53.390 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:26:53.390 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:26:53.390 [main] Cafe - Removed orderline beverage: Cola, quantity: 2
+[INFO ] 2020-04-22 11:26:53.392 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.412 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.413 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:53.413 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:53.415 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.442 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:53.442 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.442 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.443 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.447 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.449 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:53.449 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:26:53.450 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:53.450 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:26:53.450 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:53.467 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.475 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:53.476 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.476 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:53.476 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:53.476 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:26:53.476 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:26:53.476 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:53.496 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:53.517 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.532 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:53.532 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.532 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:26:53.532 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-04-22 11:26:53.532 [main] Cafe - Assigned  table 9 to Wout Peters
+[INFO ] 2020-04-22 11:26:53.534 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.562 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - orderNumber: 819 - added 666 Cola
+[INFO ] 2020-04-22 11:26:53.562 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:53.570 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.575 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:53.575 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.575 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:53.575 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:53.575 [main] Cafe - orderNumber: 820 - added 222 Leffe
+[INFO ] 2020-04-22 11:26:53.576 [main] Cafe - orderNumber: 820 - added 111 Cola
+[INFO ] 2020-04-22 11:26:53.576 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:53.597 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:53.602 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:53.602 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:53.602 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:53.602 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.602 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:53.602 [main] Cafe - New order made: Order: 821, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:53.603 [main] Cafe - orderNumber: 821 - added 100000 Cola
+[INFO ] 2020-04-22 11:26:53.603 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:26:53.611 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:53.616 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:53.618 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:53.619 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:26:53.619 [main] Cafe - New order made: Order: 822, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:53.619 [main] Cafe - orderNumber: 822 - added 100000 Leffe
+[INFO ] 2020-04-22 11:26:53.619 [main] Cafe - orderNumber: 822 - added 100000 Cola
+[INFO ] 2020-04-22 11:26:53.619 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:26:53.639 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:53.643 [main] Cafe - Thomas DM created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-04-22 11:26:53.646 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:26:54.036 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.059 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:54.059 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:54.059 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:26:54.063 [main] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 11:26:54.565 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.586 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.608 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:54.608 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:54.608 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:54.608 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:54.608 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:54.609 [main] Cafe - orderNumber: 819 - added 1000 Cola
+[INFO ] 2020-04-22 11:26:54.609 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:54.623 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:54.627 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:54.627 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:54.627 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:54.627 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:54.627 [main] Cafe - orderNumber: 820 - added 3000 Leffe
+[INFO ] 2020-04-22 11:26:54.628 [main] Cafe - orderNumber: 820 - added 2000 Cola
+[INFO ] 2020-04-22 11:26:54.628 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:54.645 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:54.650 [main] Cafe - Thomas DM created a waiter sales PDF report
+[INFO ] 2020-04-22 11:26:54.650 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:26:54.671 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.688 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.707 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:54.707 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:54.707 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:54.708 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:54.708 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:54.708 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:54.708 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:26:54.708 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:26:54.708 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:26:54.710 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:54.740 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:26:54.740 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:54.740 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:26:54.740 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:54.740 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:54.741 [main] Cafe - orderNumber: 819 - added 100 Cola
+[INFO ] 2020-04-22 11:26:54.741 [main] Cafe - orderNumber: 819 - added 100 Leffe
+[INFO ] 2020-04-22 11:26:54.741 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:26:54.757 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:54.761 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:54.761 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:26:54.762 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:26:54.762 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:54.762 [main] Cafe - orderNumber: 820 - added 300 Leffe
+[INFO ] 2020-04-22 11:26:54.762 [main] Cafe - orderNumber: 820 - added 200 Cola
+[INFO ] 2020-04-22 11:26:54.763 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:26:54.792 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:54.800 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:26:54.800 [main] Cafe - Tina DM logged in
+[INFO ] 2020-04-22 11:26:54.800 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:54.801 [main] Cafe - Assigned  table 1 to Tina DM
+[DEBUG] 2020-04-22 11:26:54.801 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:26:54.813 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:54.813 [main] Cafe - orderNumber: 821 - added 100 Cola
+[INFO ] 2020-04-22 11:26:54.815 [main] Cafe - orderNumber: 821 - added 100 Leffe
+[INFO ] 2020-04-22 11:26:54.816 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:26:54.835 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:26:54.841 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:26:54.841 [main] Cafe - Assigned  table 2 to Tina DM
+[DEBUG] 2020-04-22 11:26:54.841 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:26:54.841 [main] Cafe - New order made: Order: 822, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:26:54.841 [main] Cafe - orderNumber: 822 - added 1000 Leffe
+[INFO ] 2020-04-22 11:26:54.842 [main] Cafe - orderNumber: 822 - added 1000 Cola
+[INFO ] 2020-04-22 11:26:54.842 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:26:54.883 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:26:54.899 [main] Cafe - Tina DM logged out
+[INFO ] 2020-04-22 11:26:54.900 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:26:54.900 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-04-22 11:26:54.900 [main] Cafe - Assigned  table 5 to Tom DM
+[DEBUG] 2020-04-22 11:26:54.900 [main] Cafe - orderNumber count increased to: 823
+[INFO ] 2020-04-22 11:26:54.900 [main] Cafe - New order made: Order: 823, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 5
+[INFO ] 2020-04-22 11:26:54.902 [main] Cafe - orderNumber: 823 - added 1000 Cola
+[INFO ] 2020-04-22 11:26:54.902 [main] Cafe - orderNumber: 823 - added 100 Leffe
+[INFO ] 2020-04-22 11:26:54.902 [main] Cafe - Table table 5 paid orderNumber 823
+[INFO ] 2020-04-22 11:26:54.931 [main] Cafe - Cleared table table 5
+[INFO ] 2020-04-22 11:26:54.992 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:55.109 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:55.109 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:55.111 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:55.159 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:55.159 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:26:55.159 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:26:56.116 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.206 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.410 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.444 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.525 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.640 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.640 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.641 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:26:56.641 [main] Cafe - Quantity decreased of Cola
+[INFO ] 2020-04-22 11:26:56.643 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:56.663 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:26:56.663 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:26:56.666 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.703 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.704 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.704 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:26:56.704 [main] Cafe - Quantity increased of Cola to 7
+[INFO ] 2020-04-22 11:26:56.706 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.729 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.729 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.730 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:26:56.730 [main] Cafe - Quantity increased of Cola to 3
+[INFO ] 2020-04-22 11:26:56.732 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.755 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.845 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.845 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.846 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:56.846 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:56.847 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:56.847 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:26:56.848 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:26:56.859 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.905 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:26:56.939 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:26:56.939 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:26:56.939 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:26:56.939 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:26:56.940 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:26:56.940 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:26:56.941 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:33.310 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:33.695 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:33.751 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:33.752 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:33.753 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:33.754 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:33.764 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:33.768 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:33.770 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:33.784 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:33.798 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:33.798 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:33.798 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:33.799 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:33.799 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:28:33.799 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:28:33.799 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:33.821 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:33.835 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:33.835 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:28:33.836 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:33.836 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:28:33.851 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:33.852 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:33.852 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:28:33.853 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:28:33.854 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:28:33.882 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:33.893 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:28:33.893 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:33.894 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:28:33.916 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:33.928 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:33.980 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:33.980 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:33.981 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:33.983 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:33.984 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:33.985 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:33.986 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:28:33.987 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:34.023 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.032 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:34.032 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.032 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.032 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:34.033 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:28:34.033 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:28:34.033 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:34.055 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:34.064 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:34.064 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:28:34.065 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:28:34.065 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:28:34.104 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.111 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:28:34.112 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:34.112 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:28:34.119 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:34.119 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:28:34.119 [main] Cafe - Tom DM retrieved sales data
+[INFO ] 2020-04-22 11:28:34.137 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.168 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.168 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.168 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.168 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.168 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.168 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:28:34.169 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.169 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:28:34.169 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:28:34.169 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:34.207 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.212 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:34.212 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.213 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:28:34.213 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:28:34.213 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.213 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:28:34.213 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:28:34.214 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:28:34.214 [main] Cafe - orderNumber: 820 - added 40 Duvel
+[INFO ] 2020-04-22 11:28:34.214 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:28:34.214 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.214 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.215 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.215 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:34.215 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.215 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:28:34.215 [main] Cafe - orderNumber: 821 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.216 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:34.216 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.216 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:28:34.216 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:34.242 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:28:34.259 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.285 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:28:34.285 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-04-22 11:28:34.285 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.286 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.286 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.286 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.286 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:28:34.286 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.287 [main] Cafe - orderNumber: 819 - added 10 Duvel
+[INFO ] 2020-04-22 11:28:34.287 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:34.312 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.317 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:28:34.318 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - orderNumber: 820 - added 1 Cola
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - orderNumber: 820 - added 3 Leffe
+[INFO ] 2020-04-22 11:28:34.318 [main] Cafe - orderNumber: 820 - added 5 Duvel
+[INFO ] 2020-04-22 11:28:34.319 [main] Cafe - orderNumber: 820 - added 4 Fanta
+[INFO ] 2020-04-22 11:28:34.319 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:34.352 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:28:34.376 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.393 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.394 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-04-22 11:28:34.395 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-04-22 11:28:34.395 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 11:28:34.395 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-04-22 11:28:34.395 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-04-22 11:28:34.395 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.395 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-04-22 11:28:34.396 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-04-22 11:28:34.398 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.419 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.437 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.437 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.437 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.437 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.437 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.437 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:28:34.438 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.438 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:34.438 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.438 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.438 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:34.438 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.439 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:28:34.439 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.439 [main] Cafe - Quantity increased of Leffe to 9
+[INFO ] 2020-04-22 11:28:34.439 [main] Cafe - orderNumber: 820 - added 5 Leffe
+[INFO ] 2020-04-22 11:28:34.440 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:34.440 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.440 [main] Cafe - Set table 2 as active table
+[ERROR] 2020-04-22 11:28:34.440 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-04-22 11:28:34.440 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-04-22 11:28:34.440 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-04-22 11:28:34.441 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 3
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - orderNumber: 821 - added 3 Leffe
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:28:34.441 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.442 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.457 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:28:34.458 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:34.458 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:28:34.458 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:28:34.459 [main] Cafe - Removed orderline beverage: Cola, quantity: 2
+[INFO ] 2020-04-22 11:28:34.460 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.478 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.479 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:34.479 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:34.483 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.505 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:34.505 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:28:34.506 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:34.506 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:28:34.506 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:34.524 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.529 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:28:34.529 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:34.547 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:34.565 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.584 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:34.584 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.585 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:28:34.585 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-04-22 11:28:34.585 [main] Cafe - Assigned  table 9 to Wout Peters
+[INFO ] 2020-04-22 11:28:34.586 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.611 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - orderNumber: 819 - added 666 Cola
+[INFO ] 2020-04-22 11:28:34.611 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:34.623 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.628 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:34.628 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.628 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:34.628 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:34.628 [main] Cafe - orderNumber: 820 - added 222 Leffe
+[INFO ] 2020-04-22 11:28:34.628 [main] Cafe - orderNumber: 820 - added 111 Cola
+[INFO ] 2020-04-22 11:28:34.629 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:34.646 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:34.650 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:34.650 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:34.650 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:34.650 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.650 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:34.650 [main] Cafe - New order made: Order: 821, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:34.651 [main] Cafe - orderNumber: 821 - added 100000 Cola
+[INFO ] 2020-04-22 11:28:34.651 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:28:34.660 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:34.665 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:34.665 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:34.665 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:28:34.666 [main] Cafe - New order made: Order: 822, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:34.666 [main] Cafe - orderNumber: 822 - added 100000 Leffe
+[INFO ] 2020-04-22 11:28:34.666 [main] Cafe - orderNumber: 822 - added 100000 Cola
+[INFO ] 2020-04-22 11:28:34.666 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:28:34.682 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:34.686 [main] Cafe - Thomas DM created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-04-22 11:28:34.689 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:28:35.002 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:35.024 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:35.024 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:35.024 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:28:35.029 [main] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 11:28:35.905 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:35.964 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.079 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:36.086 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:36.086 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:36.086 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:36.087 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:36.087 [main] Cafe - orderNumber: 819 - added 1000 Cola
+[INFO ] 2020-04-22 11:28:36.087 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:36.118 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:36.122 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:36.123 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:36.123 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:36.123 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:36.123 [main] Cafe - orderNumber: 820 - added 3000 Leffe
+[INFO ] 2020-04-22 11:28:36.123 [main] Cafe - orderNumber: 820 - added 2000 Cola
+[INFO ] 2020-04-22 11:28:36.123 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:36.139 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:36.144 [main] Cafe - Thomas DM created a waiter sales PDF report
+[INFO ] 2020-04-22 11:28:36.144 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:28:36.165 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.184 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.204 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:36.204 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:36.204 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:36.204 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:36.205 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:36.205 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:36.205 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:28:36.205 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:28:36.205 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:28:36.207 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.291 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:28:36.291 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:36.291 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:28:36.291 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:36.292 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:36.292 [main] Cafe - orderNumber: 819 - added 100 Cola
+[INFO ] 2020-04-22 11:28:36.292 [main] Cafe - orderNumber: 819 - added 100 Leffe
+[INFO ] 2020-04-22 11:28:36.292 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:28:36.311 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:28:36.318 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - orderNumber: 820 - added 300 Leffe
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - orderNumber: 820 - added 200 Cola
+[INFO ] 2020-04-22 11:28:36.318 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:28:36.336 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - Tina DM logged in
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - Assigned  table 1 to Tina DM
+[DEBUG] 2020-04-22 11:28:36.341 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - orderNumber: 821 - added 100 Cola
+[INFO ] 2020-04-22 11:28:36.341 [main] Cafe - orderNumber: 821 - added 100 Leffe
+[INFO ] 2020-04-22 11:28:36.342 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:28:36.362 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - Assigned  table 2 to Tina DM
+[DEBUG] 2020-04-22 11:28:36.368 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - New order made: Order: 822, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - orderNumber: 822 - added 1000 Leffe
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - orderNumber: 822 - added 1000 Cola
+[INFO ] 2020-04-22 11:28:36.368 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:28:36.385 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:28:36.390 [main] Cafe - Tina DM logged out
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - Assigned  table 5 to Tom DM
+[DEBUG] 2020-04-22 11:28:36.391 [main] Cafe - orderNumber count increased to: 823
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - New order made: Order: 823, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 5
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - orderNumber: 823 - added 1000 Cola
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - orderNumber: 823 - added 100 Leffe
+[INFO ] 2020-04-22 11:28:36.391 [main] Cafe - Table table 5 paid orderNumber 823
+[INFO ] 2020-04-22 11:28:36.411 [main] Cafe - Cleared table table 5
+[INFO ] 2020-04-22 11:28:36.428 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.457 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:36.457 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:36.461 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:36.482 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:36.482 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:28:36.491 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:28:37.353 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.397 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.496 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.522 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.592 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.621 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.621 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.621 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:28:37.622 [main] Cafe - Quantity decreased of Cola
+[INFO ] 2020-04-22 11:28:37.623 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:37.649 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:28:37.649 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:28:37.651 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.677 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.678 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.678 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:28:37.678 [main] Cafe - Quantity increased of Cola to 7
+[INFO ] 2020-04-22 11:28:37.679 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.710 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.710 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.711 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:28:37.711 [main] Cafe - Quantity increased of Cola to 3
+[INFO ] 2020-04-22 11:28:37.712 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.742 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:37.773 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:28:37.773 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:28:37.786 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.826 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:28:37.846 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:28:37.846 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:28:37.846 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:28:37.846 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:28:37.846 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:28:37.846 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:28:37.847 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:12.320 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:12.631 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:12.666 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:12.667 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:12.667 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:12.668 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:12.675 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:12.678 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:12.679 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:12.697 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:12.707 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:12.708 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:12.708 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:12.708 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:12.708 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:41:12.708 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:41:12.708 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:12.727 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:12.739 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:12.739 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:41:12.739 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:12.739 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:41:12.750 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:12.750 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:12.750 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:41:12.750 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:41:12.751 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:41:12.771 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:12.780 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:41:12.780 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:12.781 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:41:12.794 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:12.803 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:12.831 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:12.832 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:12.832 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:12.832 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:12.832 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:12.832 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:12.833 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:41:12.833 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:12.852 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:12.863 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:12.864 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:12.864 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:12.864 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:12.864 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:41:12.865 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:41:12.865 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:12.890 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:12.900 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:12.901 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:41:12.901 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:12.901 [main] Cafe - Assigned  table 1 to Tom DM
+[DEBUG] 2020-04-22 11:41:12.901 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:12.901 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:12.902 [main] Cafe - orderNumber: 821 - added 10 Cola
+[INFO ] 2020-04-22 11:41:12.902 [main] Cafe - orderNumber: 821 - added 10 Leffe
+[INFO ] 2020-04-22 11:41:12.902 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:41:12.942 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:12.948 [main] Cafe - Tom DM logged out
+[INFO ] 2020-04-22 11:41:12.948 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:12.948 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:41:12.954 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:12.955 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:41:12.955 [main] Cafe - Tom DM retrieved sales data
+[INFO ] 2020-04-22 11:41:12.976 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.000 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.000 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.000 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.000 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.000 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.000 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:41:13.001 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.001 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:41:13.001 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:41:13.001 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:13.040 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:13.045 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:41:13.046 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:41:13.046 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - orderNumber: 820 - added 40 Duvel
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.047 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:41:13.047 [main] Cafe - orderNumber: 821 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.048 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:13.048 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.048 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:41:13.048 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:13.072 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:41:13.086 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.113 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:41:13.114 [main] Cafe - Pay failed, no active table
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.114 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.114 [main] Cafe - orderNumber: 819 - added 10 Duvel
+[INFO ] 2020-04-22 11:41:13.115 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:13.138 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:13.145 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:13.145 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.145 [main] Cafe - Set table 10 as active table
+[INFO ] 2020-04-22 11:41:13.146 [main] Cafe - Assigned  table 10 to Patrick Desmet
+[DEBUG] 2020-04-22 11:41:13.146 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:13.146 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 10
+[INFO ] 2020-04-22 11:41:13.146 [main] Cafe - orderNumber: 820 - added 1 Cola
+[INFO ] 2020-04-22 11:41:13.146 [main] Cafe - orderNumber: 820 - added 3 Leffe
+[INFO ] 2020-04-22 11:41:13.147 [main] Cafe - orderNumber: 820 - added 5 Duvel
+[INFO ] 2020-04-22 11:41:13.147 [main] Cafe - orderNumber: 820 - added 4 Fanta
+[INFO ] 2020-04-22 11:41:13.147 [main] Cafe - Table table 10 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:13.182 [main] Cafe - Cleared table table 10
+[INFO ] 2020-04-22 11:41:13.197 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.214 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.215 [main] Cafe - Wout Peters logged out
+[ERROR] 2020-04-22 11:41:13.215 [main] Cafe - Login failed, username incorrect: Wouter Peters password: password
+[ERROR] 2020-04-22 11:41:13.216 [main] Cafe - Login failed, username incorrect: Wouters Peter password: password
+[ERROR] 2020-04-22 11:41:13.216 [main] Cafe - Login failed, username incorrect: Wout Peeters password: password
+[ERROR] 2020-04-22 11:41:13.216 [main] Cafe - Login failed, wrong password: username: Wout Peters password: passwoord
+[INFO ] 2020-04-22 11:41:13.216 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.216 [main] Cafe - Patrick Desmet logged out
+[ERROR] 2020-04-22 11:41:13.216 [main] Cafe - Login failed, username incorrect: Patrick Desmeet password: password
+[INFO ] 2020-04-22 11:41:13.217 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.237 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.256 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:41:13.256 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.257 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:13.257 [main] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.257 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:13.257 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:13.257 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.258 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:41:13.258 [main] Cafe - orderNumber: 820 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.258 [main] Cafe - Quantity increased of Leffe to 9
+[INFO ] 2020-04-22 11:41:13.259 [main] Cafe - orderNumber: 820 - added 5 Leffe
+[INFO ] 2020-04-22 11:41:13.259 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:13.259 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.259 [main] Cafe - Set table 2 as active table
+[ERROR] 2020-04-22 11:41:13.259 [main] Cafe - table 2 does not belong to: Patrick Desmet
+[INFO ] 2020-04-22 11:41:13.259 [main] Cafe - Set table 3 as active table
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - Assigned  table 3 to Patrick Desmet
+[DEBUG] 2020-04-22 11:41:13.260 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 4, orderItems: [], tableID: 3
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - orderNumber: 821 - added 3 Leffe
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - orderNumber: 821 - added 2 Cola
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - Patrick Desmet logged out
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.260 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.261 [main] Cafe - Quantity increased of Leffe to 4
+[INFO ] 2020-04-22 11:41:13.261 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.262 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.279 [main] Cafe - Wout Peters logged in
+[ERROR] 2020-04-22 11:41:13.279 [main] Cafe - Remove of orderline failed, no active table
+[INFO ] 2020-04-22 11:41:13.279 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.279 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:13.279 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - orderNumber: 819 - added 2 Cola
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - orderNumber: 819 - added 2 Leffe
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - orderNumber: 819 - added 2 Duvel
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - orderNumber: 819 - added 2 Fanta
+[INFO ] 2020-04-22 11:41:13.280 [main] Cafe - Removed orderline beverage: Cola, quantity: 2
+[INFO ] 2020-04-22 11:41:13.282 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.320 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.321 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:13.321 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:13.323 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.369 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:13.369 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.369 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.369 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.370 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.370 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:13.371 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:41:13.371 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:13.371 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:41:13.371 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:13.389 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.397 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - orderNumber: 820 - added 30 Leffe
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - orderNumber: 820 - added 20 Cola
+[INFO ] 2020-04-22 11:41:13.397 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:13.428 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:13.463 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.499 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:13.518 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.520 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:41:13.522 [main] Cafe - Set table 9 as active table
+[INFO ] 2020-04-22 11:41:13.522 [main] Cafe - Assigned  table 9 to Wout Peters
+[INFO ] 2020-04-22 11:41:13.525 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:13.577 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:13.577 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.577 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.577 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:13.577 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.578 [main] Cafe - orderNumber: 819 - added 666 Cola
+[INFO ] 2020-04-22 11:41:13.578 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:13.590 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:13.597 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:13.597 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.597 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:13.597 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:13.597 [main] Cafe - orderNumber: 820 - added 222 Leffe
+[INFO ] 2020-04-22 11:41:13.598 [main] Cafe - orderNumber: 820 - added 111 Cola
+[INFO ] 2020-04-22 11:41:13.598 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:13.617 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:13.623 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:13.623 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:13.623 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:13.623 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.624 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:13.624 [main] Cafe - New order made: Order: 821, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:13.624 [main] Cafe - orderNumber: 821 - added 100000 Cola
+[INFO ] 2020-04-22 11:41:13.624 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:41:13.636 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:13.647 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:13.648 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:13.648 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:41:13.649 [main] Cafe - New order made: Order: 822, date: 2020-02-10, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:13.649 [main] Cafe - orderNumber: 822 - added 100000 Leffe
+[INFO ] 2020-04-22 11:41:13.650 [main] Cafe - orderNumber: 822 - added 100000 Cola
+[INFO ] 2020-04-22 11:41:13.650 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:41:13.672 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:13.678 [main] Cafe - Thomas DM created a waiter sales PDF report for 2020-02-05
+[INFO ] 2020-04-22 11:41:13.682 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:41:14.028 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.056 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:14.056 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:14.056 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:41:14.061 [main] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 11:41:14.584 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.606 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.634 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:14.634 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:14.634 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:14.634 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:14.635 [main] Cafe - New order made: Order: 819, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:14.635 [main] Cafe - orderNumber: 819 - added 1000 Cola
+[INFO ] 2020-04-22 11:41:14.635 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:14.658 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:14.674 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:14.675 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:14.675 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:14.675 [main] Cafe - New order made: Order: 820, date: 2020-02-05, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:14.675 [main] Cafe - orderNumber: 820 - added 3000 Leffe
+[INFO ] 2020-04-22 11:41:14.675 [main] Cafe - orderNumber: 820 - added 2000 Cola
+[INFO ] 2020-04-22 11:41:14.676 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:14.701 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:14.707 [main] Cafe - Thomas DM created a total waiter sales PDF report
+[INFO ] 2020-04-22 11:41:14.708 [main] Cafe - Thomas DM retrieved sales data
+[INFO ] 2020-04-22 11:41:14.726 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.742 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.775 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:14.776 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - Quantity increased of Cola to 20
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - orderNumber: 819 - added 10 Cola
+[INFO ] 2020-04-22 11:41:14.776 [main] Cafe - orderNumber: 819 - added 10 Leffe
+[INFO ] 2020-04-22 11:41:14.777 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - Thomas DM logged in
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - Assigned  table 1 to Thomas DM
+[DEBUG] 2020-04-22 11:41:14.805 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - orderNumber: 819 - added 100 Cola
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - orderNumber: 819 - added 100 Leffe
+[INFO ] 2020-04-22 11:41:14.805 [main] Cafe - Table table 1 paid orderNumber 819
+[INFO ] 2020-04-22 11:41:14.825 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:14.830 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:14.830 [main] Cafe - Assigned  table 2 to Thomas DM
+[DEBUG] 2020-04-22 11:41:14.830 [main] Cafe - orderNumber count increased to: 820
+[INFO ] 2020-04-22 11:41:14.830 [main] Cafe - New order made: Order: 820, date: 2020-04-22, waiterID: 5, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:14.830 [main] Cafe - orderNumber: 820 - added 300 Leffe
+[INFO ] 2020-04-22 11:41:14.830 [main] Cafe - orderNumber: 820 - added 200 Cola
+[INFO ] 2020-04-22 11:41:14.831 [main] Cafe - Table table 2 paid orderNumber 820
+[INFO ] 2020-04-22 11:41:14.849 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:14.855 [main] Cafe - Thomas DM logged out
+[INFO ] 2020-04-22 11:41:14.855 [main] Cafe - Tina DM logged in
+[INFO ] 2020-04-22 11:41:14.855 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:14.856 [main] Cafe - Assigned  table 1 to Tina DM
+[DEBUG] 2020-04-22 11:41:14.856 [main] Cafe - orderNumber count increased to: 821
+[INFO ] 2020-04-22 11:41:14.856 [main] Cafe - New order made: Order: 821, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:14.856 [main] Cafe - orderNumber: 821 - added 100 Cola
+[INFO ] 2020-04-22 11:41:14.856 [main] Cafe - orderNumber: 821 - added 100 Leffe
+[INFO ] 2020-04-22 11:41:14.857 [main] Cafe - Table table 1 paid orderNumber 821
+[INFO ] 2020-04-22 11:41:14.874 [main] Cafe - Cleared table table 1
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - Assigned  table 2 to Tina DM
+[DEBUG] 2020-04-22 11:41:14.879 [main] Cafe - orderNumber count increased to: 822
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - New order made: Order: 822, date: 2020-04-22, waiterID: 7, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - orderNumber: 822 - added 1000 Leffe
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - orderNumber: 822 - added 1000 Cola
+[INFO ] 2020-04-22 11:41:14.879 [main] Cafe - Table table 2 paid orderNumber 822
+[INFO ] 2020-04-22 11:41:14.895 [main] Cafe - Cleared table table 2
+[INFO ] 2020-04-22 11:41:14.900 [main] Cafe - Tina DM logged out
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - Tom DM logged in
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - Set table 5 as active table
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - Assigned  table 5 to Tom DM
+[DEBUG] 2020-04-22 11:41:14.901 [main] Cafe - orderNumber count increased to: 823
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - New order made: Order: 823, date: 2020-04-22, waiterID: 8, orderItems: [], tableID: 5
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - orderNumber: 823 - added 1000 Cola
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - orderNumber: 823 - added 100 Leffe
+[INFO ] 2020-04-22 11:41:14.901 [main] Cafe - Table table 5 paid orderNumber 823
+[INFO ] 2020-04-22 11:41:14.921 [main] Cafe - Cleared table table 5
+[INFO ] 2020-04-22 11:41:14.937 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:14.961 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:14.961 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:14.963 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:15.004 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:15.004 [main] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 11:41:15.004 [main] Cafe - Patrick Desmet logged in
+[INFO ] 2020-04-22 11:41:15.959 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:15.997 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.077 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.100 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.150 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.176 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.176 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.176 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:41:16.176 [main] Cafe - Quantity decreased of Cola
+[INFO ] 2020-04-22 11:41:16.178 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.211 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.211 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.211 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:16.211 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:16.211 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:16.212 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:41:16.213 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:41:16.218 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.241 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.242 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.242 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:41:16.242 [main] Cafe - Quantity increased of Cola to 7
+[INFO ] 2020-04-22 11:41:16.242 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.262 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.262 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.262 [main] Cafe - Assigned  table 1 to Wout Peters
+[INFO ] 2020-04-22 11:41:16.262 [main] Cafe - Quantity increased of Cola to 3
+[INFO ] 2020-04-22 11:41:16.263 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.293 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.323 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.323 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.323 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:16.324 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:16.324 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:16.324 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:41:16.325 [main] Cafe - orderNumber: 819 - added 5 Leffe
+[INFO ] 2020-04-22 11:41:16.362 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.410 [main] Cafe - Cafe started
+[INFO ] 2020-04-22 11:41:16.455 [main] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 11:41:16.455 [main] Cafe - Set table 1 as active table
+[INFO ] 2020-04-22 11:41:16.455 [main] Cafe - Assigned  table 1 to Wout Peters
+[DEBUG] 2020-04-22 11:41:16.455 [main] Cafe - orderNumber count increased to: 819
+[INFO ] 2020-04-22 11:41:16.455 [main] Cafe - New order made: Order: 819, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 1
+[INFO ] 2020-04-22 11:41:16.455 [main] Cafe - orderNumber: 819 - added 5 Cola
+[INFO ] 2020-04-22 11:41:16.457 [main] Cafe - Cafe started

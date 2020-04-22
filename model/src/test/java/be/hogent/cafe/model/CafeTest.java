@@ -126,7 +126,7 @@ public class CafeTest {
 
     @Test
     public void testCreateTables(){
-        assertEquals(15, cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
+        assertEquals(cafe.getNumberOfTables(), cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
     }
 
     @Test
@@ -422,7 +422,7 @@ public class CafeTest {
     }
 
     @Test
-    public void testWaiterSalesReportPDF() throws DAOException {
+    public void testWaiterSalesReportPDF() throws DAOException, IOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         LocalDate date = of(2020, FEBRUARY, 5);
         cafe.logIn("Thomas DM","password");
@@ -433,7 +433,7 @@ public class CafeTest {
         cafe.placeOrder(leffe, 3000, date);
         cafe.placeOrder(cola, 2000, date);
         cafe.pay();
-        assertThat(cafe.waiterSalesReportPDF()).isTrue();
+        assertThat(cafe.waiterSalesReportPDF(null)).isTrue();
 
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }

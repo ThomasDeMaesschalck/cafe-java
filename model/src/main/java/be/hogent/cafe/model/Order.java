@@ -29,6 +29,7 @@ public class Order {
     public void AddOrUpdateOrderLine(OrderItem orderItem)
     {
         if(!getOrderLines().add(orderItem)) {  //qty van bestaande orderlijn updaten indien reeds aanwezig
+
             getOrderLines().forEach(o ->  {
                 if(o.equals(orderItem))
                 {

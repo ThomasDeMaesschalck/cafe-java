@@ -2,7 +2,9 @@ package be.hogent.cafe.view;
 
 import be.hogent.cafe.model.*;
 import javafx.fxml.*;
+import javafx.geometry.Insets;
 import javafx.scene.control.*;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.TilePane;
 
 
@@ -13,6 +15,9 @@ public class CafeOverViewController {
 
     @FXML
     private TilePane tablePane;
+
+    @FXML
+    private ScrollPane scrollPane;
 
     // Reference to the main application.
     private MainApp mainApp;
@@ -38,20 +43,25 @@ public class CafeOverViewController {
 
         String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
         loggedInUserName.setText("Logged in user: " + loggedInWaiter);
-
         showTables();
 
     }
 
     public void showTables(){
+        scrollPane.setContent(tablePane);
+        scrollPane.setFitToWidth(true);
 
+        tablePane.setPadding(new Insets(5, 5, 5 ,5));
         tablePane.setHgap(15);
         tablePane.setVgap(15);
+        tablePane.setPrefColumns(6);
+        tablePane.setMaxHeight(Region.USE_PREF_SIZE);
+
 
         for (Table table: mainApp.getModel().getTables()) {
             Button tableButton = new Button(table.toString());
-            tablePane.getChildren().addAll(tableButton);
             tableButton.setPrefSize(100, 100);
+            tablePane.getChildren().addAll(tableButton);
 
             tableButton.setOnMouseClicked(mouseEvent -> {
                 tableButton.setStyle("-fx-background-color: orange");
@@ -82,9 +92,7 @@ public class CafeOverViewController {
                     tableButton.setStyle("-fx-background-color: red");
                 }
             }
-
         }
-
     }
 
     public void logout()

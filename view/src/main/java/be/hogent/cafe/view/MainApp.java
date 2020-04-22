@@ -24,14 +24,11 @@ public class MainApp extends Application {
     private ObservableList<Beverage> beverageData;
 
 
-
-
     /**
      * Constructor
      */
     public MainApp () {
     }
-
 
     public static void main (String[] args) {
         launch (args);
@@ -49,8 +46,7 @@ public class MainApp extends Application {
     beverageData = FXCollections.observableArrayList(model.getBeverages());
 
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle ("Cafe Java");
-
+        this.primaryStage.setTitle (this.getModel().getCafeName());
         initRootLayout ();
 
         showLogIn ();
@@ -144,7 +140,7 @@ public class MainApp extends Application {
             Stage dialogStage = new Stage ();
             dialogStage.setTitle ("Make an order");
             dialogStage.initModality (Modality.WINDOW_MODAL);
-            dialogStage.initOwner (primaryStage);
+            dialogStage.initOwner (getPrimaryStage());
             Scene scene = new Scene (page);
             dialogStage.setScene (scene);
             be.hogent.cafe.view.CafeOrderDialogController controller = loader.getController ();

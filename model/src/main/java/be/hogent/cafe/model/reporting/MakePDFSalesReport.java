@@ -7,20 +7,30 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Map;
 
-
 public class MakePDFSalesReport {
+
+    private static MakePDFSalesReport instance;
+
+    private MakePDFSalesReport() {
+    }
+
+    public synchronized static MakePDFSalesReport getInstance() {
+        if (instance == null) {
+            instance = new MakePDFSalesReport();
+        }
+        return instance;
+    }
 
     private static final String reportsDirectory = Cafe.getReportsDirectory();
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     public static final String DEST =  reportsDirectory + "/salesreport.pdf";
 
-    public static boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
+    public boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
 
         File file = new File(DEST);
         File parent = file.getParentFile();
