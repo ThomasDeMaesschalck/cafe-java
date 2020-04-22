@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class LogInController {
 
@@ -15,8 +17,23 @@ public class LogInController {
     @FXML
     private PasswordField pass;
 
-       public void setMainApp (MainApp mainApp) {
+    @FXML
+    private ImageView eye;
+    private String password;
+
+
+    public void setMainApp (MainApp mainApp) {
         this.mainApp = mainApp;
+
+        eye.addEventFilter(MouseEvent.MOUSE_PRESSED, e -> { //pass reveal feature
+               password = pass.getText();
+               pass.clear();
+               pass.setPromptText(password);
+           });
+           eye.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
+               pass.setText(password);
+               pass.setPromptText("Password");
+           });
        }
 
     public void logIn()
@@ -46,7 +63,6 @@ public class LogInController {
         }
         return false;
      }
-
 
 
 }

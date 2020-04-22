@@ -59,14 +59,13 @@ public class MainApp extends Application {
         try {
             FXMLLoader loader = new FXMLLoader ();
             loader.setLocation (MainApp.class.getResource ("/cafe/RootLayout.fxml"));
-
             rootLayout = loader.load ();
-
             // Show the scene containing the root layout.
             Scene scene = new Scene (rootLayout);
             primaryStage.setScene (scene);
             primaryStage.setResizable(false);
             primaryStage.show ();
+
         } catch (IOException e) {
             e.printStackTrace ();
         }
@@ -135,7 +134,6 @@ public class MainApp extends Application {
             FXMLLoader loader = new FXMLLoader ();
             loader.setLocation (getClass ().getResource ("/cafe/CafeOrderDialog.fxml"));
             AnchorPane page = loader.load ();
-
             // Create the dialog Stage.
             Stage dialogStage = new Stage ();
             dialogStage.setTitle ("Make an order");

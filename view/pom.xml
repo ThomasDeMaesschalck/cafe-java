@@ -28,7 +28,7 @@
             <artifactId>javafx-fxml</artifactId>
             <version>14</version>
         </dependency>
-    </dependencies>
+       </dependencies>
 
 
 </project>
