@@ -833,3 +833,22 @@
 [ERROR] 2020-04-22 22:22:34.766 [JavaFX Application Thread] Cafe - Login failed, wrong password: username: Wout Peters password: pppp
 [INFO ] 2020-04-22 22:22:40.050 [JavaFX Application Thread] Cafe - Wout Peters logged in
 [INFO ] 2020-04-22 22:22:41.465 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-22 23:12:17.167 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-22 23:12:31.836 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-22 23:12:34.170 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 23:12:34.242 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-22 23:12:39.275 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 23:12:41.544 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 23:12:43.663 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 23:12:52.380 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-22 23:12:54.837 [JavaFX Application Thread] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 23:12:54.838 [JavaFX Application Thread] Cafe - Assigned  table 2 to Wout Peters
+[DEBUG] 2020-04-22 23:12:58.509 [JavaFX Application Thread] Cafe - orderNumber count increased to: 829
+[INFO ] 2020-04-22 23:12:58.516 [JavaFX Application Thread] Cafe - New order made: Order: 829, date: 2020-04-22, waiterID: 1, orderItems: [], tableID: 2
+[INFO ] 2020-04-22 23:12:58.519 [JavaFX Application Thread] Cafe - orderNumber: 829 - added 1 Latte
+[INFO ] 2020-04-22 23:13:00.234 [JavaFX Application Thread] Cafe - Set table 2 as active table
+[INFO ] 2020-04-22 23:13:03.092 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 2
+[INFO ] 2020-04-22 23:13:03.250 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 3
+[INFO ] 2020-04-22 23:13:03.427 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 4
+[INFO ] 2020-04-22 23:13:04.209 [JavaFX Application Thread] Cafe - Quantity decreased of Latte
+[INFO ] 2020-04-22 23:13:06.146 [JavaFX Application Thread] Cafe - Set table 2 as active table

@@ -98,11 +98,11 @@ public class Cafe {
     public void placeOrder(Beverage beverage, int quantity, LocalDate date) //waiter een order laten maken
     {
 
-        if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter()))
-        {
-            logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
-            throw new IllegalArgumentException("Table belongs to other waiter");
-        }
+        //if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter())) //taken care of in front-end
+        //{
+         //   logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
+         //   throw new IllegalArgumentException("Table belongs to other waiter");
+        //}
 
         if (!getUnpaidOrders().containsKey(getActiveTable())) {
             increaseOrderNumber();
@@ -115,11 +115,6 @@ public class Cafe {
         }
 
     public void removeOrder(OrderItem orderItem) { //orderlijn verwijderen
-        if (getActiveTable() == null)
-        {
-            logger.error("Remove of orderline failed, no active table");
-            throw new IllegalArgumentException("No active table");
-        }
         getUnpaidOrders().get(getActiveTable()).getOrderLines().remove(orderItem);
         logger.info("Removed orderline " + orderItem.toString());
     }
@@ -132,11 +127,6 @@ public class Cafe {
     }
 
     public void pay()  { //order betalen en verplaatsen naar paidorder collectie
-        if (getActiveTable() == null)
-        {
-            logger.error("Pay failed, no active table");
-            throw new IllegalArgumentException("No active table");
-        }
         logger.info("Table " + getActiveTable().toString() + " paid orderNumber " + getUnpaidOrders().get(getActiveTable()).getOrderNumber());
         try {
             PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
@@ -163,7 +153,7 @@ public class Cafe {
 
     public boolean topWaiterPieChart() throws Exception {
         logger.info(getLoggedInWaiter().toString() + " created top waiter pie chart");
-        return  MakeTopWaitersChart.getInstance().createJPG(getTopWaitersByRevenue(3));
+        return  MakeTopWaitersChart.getInstance().createJPG(getTopWaitersByRevenue(numberOfWaitersInPieChart));
     }
 
     public Map<Beverage, Integer> getAllWaiterSales(){ //alle omzet van waiter
@@ -224,7 +214,7 @@ public class Cafe {
     }
 
     public Table getTable(int tableID) {
-        return tables.get(tableID - 1); //difference between index position in array and table ID
+        return tables.get(tableID - 1); //difference between index position in array and table ID in GUI
     }
 
     public void setActiveTable(int tableID) {
