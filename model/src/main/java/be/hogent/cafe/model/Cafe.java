@@ -18,9 +18,9 @@ import java.util.*;
 
 public class Cafe {
 
-    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+    private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     private static Set<Beverage> beverages;
-    private  String cafeName;
+    private String cafeName;
     private int numberOfTables;
     private int numberOfWaitersInPieChart;
     private static String reportsDirectory;
@@ -29,28 +29,28 @@ public class Cafe {
     private Table activeTable;
     private final List<Table> tables = new ArrayList<>();
     private final HashMap<Table, Order> unpaidOrders = new HashMap<>();
-    private Set<Order> paidOrders = new HashSet<>();
+   //private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
     private int orderNumber;
 
-    public Cafe()  {
+    public Cafe() {
         logger.info("Cafe started");
         readProperties();
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
-        this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
+        //this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
         this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
         orderNumber = highestOrderNumber;
     }
 
-    private  void readProperties() {
-        Properties cafeProperties = new Properties ();
+    private void readProperties() {
+        Properties cafeProperties = new Properties();
 
-        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream ("cafe.properties")) {
+        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream("cafe.properties")) {
 
             assert inputStream != null;
-            cafeProperties.load (inputStream);
+            cafeProperties.load(inputStream);
             cafeName = cafeProperties.getProperty("cafeName");
             numberOfTables = Integer.parseInt(cafeProperties.getProperty("numberOfTables"));
             numberOfWaitersInPieChart = Integer.parseInt(cafeProperties.getProperty("numberOfWaitersInPieChart"));
@@ -58,21 +58,17 @@ public class Cafe {
 
         } catch (IOException ioe) {
             logger.error("cafe properties not loaded");
-            ioe.printStackTrace ();
+            ioe.printStackTrace();
         }
     }
 
-    public boolean logIn(String name, String password)
-    {
-         for (Waiter waiter: getWaiterCollection())
-        {
-            if (waiter.toString().equals(name) && !waiter.getPassword().equals(password))
-            {
+    public boolean logIn(String name, String password) {
+        for (Waiter waiter : getWaiterCollection()) {
+            if (waiter.toString().equals(name) && !waiter.getPassword().equals(password)) {
                 logger.error("Login failed, wrong password: " + "username: " + waiter.toString() + " password: " + password);
                 throw new IllegalArgumentException("password incorrect");
             }
-            if (waiter.toString().equals(name) && waiter.getPassword().equals(password))
-            {
+            if (waiter.toString().equals(name) && waiter.getPassword().equals(password)) {
                 logger.info(waiter.toString() + " logged in");
                 setLoggedInWaiter(waiter);
                 return true;
@@ -83,15 +79,15 @@ public class Cafe {
     }
 
     public boolean logOut() {
-          logger.info(getLoggedInWaiter() + " logged out");
-          setLoggedInWaiter(null);
-          removeActiveTable();
-          return true;
-        }
+        logger.info(getLoggedInWaiter() + " logged out");
+        setLoggedInWaiter(null);
+        removeActiveTable();
+        return true;
+    }
 
     public void placeOrder(Beverage beverage, int quantity) //waiter order laten maken. Versie zonder datum, neemt huidige datum.
     {
-        LocalDate date =  LocalDate.now();
+        LocalDate date = LocalDate.now();
         placeOrder(beverage, quantity, date);
     }
 
@@ -100,8 +96,8 @@ public class Cafe {
 
         //if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter())) //taken care of in front-end
         //{
-         //   logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
-         //   throw new IllegalArgumentException("Table belongs to other waiter");
+        //   logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
+        //   throw new IllegalArgumentException("Table belongs to other waiter");
         //}
 
         if (!getUnpaidOrders().containsKey(getActiveTable())) {
@@ -111,8 +107,8 @@ public class Cafe {
             getUnpaidOrders().put(getActiveTable(), order);
             logger.info("New order made: " + order.toString());
         }
-            getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
-        }
+        getUnpaidOrders().get(getActiveTable()).AddOrUpdateOrderLine(new OrderItem(beverage, quantity));
+    }
 
     public void removeOrder(OrderItem orderItem) { //orderlijn verwijderen
         getUnpaidOrders().get(getActiveTable()).getOrderLines().remove(orderItem);
@@ -126,7 +122,7 @@ public class Cafe {
         removeActiveTable();
     }
 
-    public void pay()  { //order betalen en verplaatsen naar paidorder collectie
+    public void pay() { //order betalen en verplaatsen naar paidorder collectie
         logger.info("Table " + getActiveTable().toString() + " paid orderNumber " + getUnpaidOrders().get(getActiveTable()).getOrderNumber());
         try {
             PaidOrderDAOImpl.getInstance().insertOrder(getUnpaidOrders().get(getActiveTable()));
@@ -135,14 +131,14 @@ public class Cafe {
         }
         getUnpaidOrders().remove(getActiveTable());
         clearTable();
-        setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
+        //setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
     }
 
-    public double getTotalWaiterRevenue(){ //voor actieve waiter
-        return getTotalWaiterRevenue( getLoggedInWaiter().getID());
+    public double getTotalWaiterRevenue() { //voor actieve waiter
+        return getTotalWaiterRevenue(getLoggedInWaiter().getID());
     }
 
-    public double getTotalWaiterRevenue(int waiterID){ //indien op basis van waiterID
+    public double getTotalWaiterRevenue(int waiterID) { //indien op basis van waiterID
         return getPaidOrders().stream().filter(order -> order.getWaiterID() == waiterID).mapToDouble(Order::getTotalOrderPrice).sum();
     }
 
@@ -153,32 +149,29 @@ public class Cafe {
 
     public boolean topWaiterPieChart() throws Exception {
         logger.info(getLoggedInWaiter().toString() + " created top waiter pie chart");
-        return  MakeTopWaitersChart.getInstance().createJPG(getTopWaitersByRevenue(numberOfWaitersInPieChart));
+        return MakeTopWaitersChart.getInstance().createJPG(getTopWaitersByRevenue(numberOfWaitersInPieChart));
     }
 
-    public Map<Beverage, Integer> getAllWaiterSales(){ //alle omzet van waiter
+    public Map<Beverage, Integer> getAllWaiterSales() { //alle omzet van waiter
         //null meegeven als datum om via method overloading alle sales te krijgen
         return getAllWaiterSales(null);
     }
 
-    public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate){ //sales voor specifieke datum indien date niet null
+    public Map<Beverage, Integer> getAllWaiterSales(LocalDate specificDate) { //sales voor specifieke datum indien date niet null
         logger.info(getLoggedInWaiter().toString() + " retrieved sales data");
-        return  AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
+        return AllWaiterSales.calculate(specificDate, PaidOrderDAOImpl.getInstance().getOrders(), getLoggedInWaiter());
     }
 
     public boolean waiterSalesReportPDF(LocalDate date) throws IOException {
-        if (date == null)
-        {
+        if (date == null) {
             logger.info(getLoggedInWaiter().toString() + " created a total waiter sales PDF report");
-        }
-        else
-            {
+        } else {
             logger.info(getLoggedInWaiter().toString() + " created a waiter sales PDF report for " + date);
         }
-    return   MakePDFSalesReport.getInstance().createPDF(getAllWaiterSales(date), getLoggedInWaiter().toString(), date);
+        return MakePDFSalesReport.getInstance().createPDF(getAllWaiterSales(date), getLoggedInWaiter().toString(), date);
     }
 
-    public void addWaiter(Waiter waiter){
+    public void addWaiter(Waiter waiter) {
         waiters.add(waiter);
     }
 
@@ -186,22 +179,21 @@ public class Cafe {
         return waiters;
     }
 
-    public void setWaiters(Set<Waiter> waiter)
-    {
+    public void setWaiters(Set<Waiter> waiter) {
         this.waiters = waiter;
     }
 
     public Waiter getLoggedInWaiter() {
-               return loggedInWaiter;
+        return loggedInWaiter;
     }
 
-    public String getNameOfLoggedInWaiter(){
+    public String getNameOfLoggedInWaiter() {
         return getLoggedInWaiter().getFirstName() + " " + getLoggedInWaiter().getLastName();
     }
 
-    public void createTables(int numberOfTables){
-        for(int i = 0; i < numberOfTables; i++) {
-            tables.add(new Table(i +1)); //start table number at 1 instead of 0
+    public void createTables(int numberOfTables) {
+        for (int i = 0; i < numberOfTables; i++) {
+            tables.add(new Table(i + 1)); //start table number at 1 instead of 0
         }
     }
 
@@ -231,8 +223,8 @@ public class Cafe {
         this.activeTable = null;
     }
 
-     public Set<Order> getPaidOrders() {
-        return paidOrders;
+    public Set<Order> getPaidOrders() {
+        return PaidOrderDAOImpl.getInstance().getOrders();
     }
 
     public int getHighestOrderNumber() {
@@ -247,22 +239,21 @@ public class Cafe {
         return beverages;
     }
 
-    public void setBeverages(Set<Beverage> beverage)
-    {
+    public void setBeverages(Set<Beverage> beverage) {
         beverages = beverage;
     }
 
-    public static Beverage getBeverageByID(int beverageID)
-    {
+    public static Beverage getBeverageByID(int beverageID) {
         return beverages.stream().filter(b -> b.getBeverageID() == beverageID).findFirst().orElse(null);
     }
 
-    public void setHighestOrderNumber(int number) {highestOrderNumber = number;}
-
-    public void setPaidOrders(Set<Order> paidOrder)
-    {
-        paidOrders = paidOrder;
+    public void setHighestOrderNumber(int number) {
+        highestOrderNumber = number;
     }
+
+    //public void setPaidOrders(Set<Order> paidOrder) {
+      //  paidOrders = paidOrder;
+    //}
 
     public HashMap<Table, Order> getUnpaidOrders() {
         return unpaidOrders;
@@ -272,7 +263,7 @@ public class Cafe {
         return orderNumber;
     }
 
-    private void increaseOrderNumber(){
+    private void increaseOrderNumber() {
         orderNumber++;
     }
 
@@ -284,9 +275,8 @@ public class Cafe {
         this.loggedInWaiter = loggedInWaiter;
     }
 
-    public static String getReportsDirectory()
-    {
-     return reportsDirectory;
+    public static String getReportsDirectory() {
+        return reportsDirectory;
     }
 
     public int getNumberOfTables() {
