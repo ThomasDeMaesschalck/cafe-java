@@ -21,7 +21,7 @@ public class CafeOrderDialogController {
     @FXML
     private TableColumn<Beverage, String> beverageNameColumn;
     @FXML
-    private TableColumn<Beverage, String> beveragePriceColumn;
+    private TableColumn<Beverage, Double> beveragePriceColumn;
 
     @FXML
     private TableView<OrderLines>  orderTable;
@@ -49,7 +49,7 @@ public class CafeOrderDialogController {
     private void initialize () {
         PropertyValueFactory<Beverage, String> beverageNameProperty =
                 new PropertyValueFactory<> ("beverageName");
-        PropertyValueFactory<Beverage, String> beveragePriceProperty =
+        PropertyValueFactory<Beverage, Double> beveragePriceProperty =
                 new PropertyValueFactory<> ("price");
         beverageNameColumn.setCellValueFactory (beverageNameProperty);
         beveragePriceColumn.setCellValueFactory (beveragePriceProperty);

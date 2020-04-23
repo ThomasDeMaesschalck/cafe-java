@@ -28,7 +28,7 @@ public class Cafe {
     private Waiter loggedInWaiter;
     private Table activeTable;
     private final List<Table> tables = new ArrayList<>();
-    private HashMap<Table, Order> unpaidOrders = new HashMap<>();
+    private final HashMap<Table, Order> unpaidOrders = new HashMap<>();
     private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
     private int orderNumber;

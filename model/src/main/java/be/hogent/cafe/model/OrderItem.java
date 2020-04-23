@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class OrderItem {
 
-    private  Beverage beverage;
+    private final Beverage beverage;
     private int qty;
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
 

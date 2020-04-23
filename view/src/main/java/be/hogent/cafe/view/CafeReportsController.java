@@ -1,6 +1,5 @@
 package be.hogent.cafe.view;
 
-import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.*;
 import be.hogent.cafe.model.dao.DAOException;
 import be.hogent.cafe.model.dao.PaidOrderDAOImpl;

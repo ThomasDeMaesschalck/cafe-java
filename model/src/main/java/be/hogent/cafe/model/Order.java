@@ -12,7 +12,7 @@ public class Order {
     private  int orderNumber;
     private  LocalDate date;
     private  int waiterID;
-    private Set<OrderItem> orderItems  =  new HashSet<>();
+    private final Set<OrderItem> orderItems  =  new HashSet<>();
     private  int tableID;
     private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
 

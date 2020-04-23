@@ -1,7 +1,6 @@
 module be.hogent.cafe.model {
     requires java.sql;
     requires log4j.api;
-    requires log4j.core;
     requires kernel;
     requires layout;
     requires jfreechart;
