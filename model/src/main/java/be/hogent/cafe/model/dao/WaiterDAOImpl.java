@@ -1,9 +1,11 @@
 package be.hogent.cafe.model.dao;
 
 import be.hogent.cafe.model.*;
+
 import java.sql.*;
 import java.util.HashSet;
 import java.util.Set;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

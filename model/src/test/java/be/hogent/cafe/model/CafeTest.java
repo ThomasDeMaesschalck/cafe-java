@@ -5,6 +5,7 @@ import be.hogent.cafe.model.dao.PaidOrderDAOImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
@@ -14,6 +15,8 @@ import static java.time.Month.FEBRUARY;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.nio.file.*;
+
 
 public class CafeTest {
 
@@ -32,24 +35,24 @@ public class CafeTest {
     @BeforeEach
     public void setUp() {
         cafe = new Cafe();
-        wout = new Waiter( 1,"Peters", "Wout", "password");
-        ilse = new Waiter( 3,"Vandenbroeck", "Ilse", "password");
-        patrick = new Waiter( 4,"Desmet", "Patrick", "password");
-        thomas = new Waiter( 5,"DM", "Thomas", "password");
-        tina = new Waiter( 7,"DM", "Tina", "password");
-        tom = new Waiter( 8,"DM", "Tom", "password");
+        wout = new Waiter(1, "Peters", "Wout", "password");
+        ilse = new Waiter(3, "Vandenbroeck", "Ilse", "password");
+        patrick = new Waiter(4, "Desmet", "Patrick", "password");
+        thomas = new Waiter(5, "DM", "Thomas", "password");
+        tina = new Waiter(7, "DM", "Tina", "password");
+        tom = new Waiter(8, "DM", "Tom", "password");
 
-        cola = new Beverage ( 1,"Cola", 2.40);
-        leffe = new Beverage ( 2,"Leffe", 3.00);
-        duvel = new Beverage ( 3,"Duvel", 2.40);
-        fanta = new Beverage ( 4,"Fanta", 3.00);
+        cola = new Beverage(1, "Cola", 2.40);
+        leffe = new Beverage(2, "Leffe", 3.00);
+        duvel = new Beverage(3, "Duvel", 2.40);
+        fanta = new Beverage(4, "Fanta", 3.00);
         cafe.getBeverages().add(cola);
         cafe.getBeverages().add(leffe);
 
     }
 
     @Test
-    public void testCafe(){
+    public void testCafe() {
         assertEquals("Cafe Thomas", cafe.getCafeName(), "Test cafe() 01 failed");
     }
 
@@ -66,30 +69,30 @@ public class CafeTest {
         assertTrue(cafe.logIn("Wout Peters", "password"), "logIn1 failed");
         cafe.logOut();
         try {
-            cafe.logIn("Wouter Peters","password");        }
-        catch (IllegalArgumentException expected){
+            cafe.logIn("Wouter Peters", "password");
+        } catch (IllegalArgumentException expected) {
             assertEquals("username incorrect", expected.getMessage(), "logIn2 passed when it should have failed");
         }
         try {
-            cafe.logIn("Wouters Peter", "password");        }
-        catch (IllegalArgumentException expected){
+            cafe.logIn("Wouters Peter", "password");
+        } catch (IllegalArgumentException expected) {
             assertEquals("username incorrect", expected.getMessage(), "logIn3 passed when it should have failed");
         }
         try {
-            cafe.logIn("Wout Peeters", "password");        }
-        catch (IllegalArgumentException expected){
+            cafe.logIn("Wout Peeters", "password");
+        } catch (IllegalArgumentException expected) {
             assertEquals("username incorrect", expected.getMessage(), "logIn4 passed when it should have failed");
         }
         try {
-            cafe.logIn("Wout Peters", "passwoord");        }
-        catch (IllegalArgumentException expected){
+            cafe.logIn("Wout Peters", "passwoord");
+        } catch (IllegalArgumentException expected) {
             assertEquals("password incorrect", expected.getMessage(), "logIn5 passed when it should have failed");
         }
         assertTrue(cafe.logIn("Patrick Desmet", "password"), "logIn6 failed");
         cafe.logOut();
         try {
-            cafe.logIn("Patrick Desmeet",  "password");        }
-        catch (IllegalArgumentException expected){
+            cafe.logIn("Patrick Desmeet", "password");
+        } catch (IllegalArgumentException expected) {
             assertEquals("username incorrect", expected.getMessage(), "logIn7 passed when it should have failed");
         }
     }
@@ -99,15 +102,15 @@ public class CafeTest {
     public void testGetLoggedInWaiter() {
         cafe.addWaiter(wout);
         cafe.addWaiter(patrick);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         assertEquals(wout, cafe.getLoggedInWaiter(), "Test getLoggedInWaiter() 01 failed");
         cafe.logOut();
-        cafe.logIn("Patrick Desmet",  "password");
+        cafe.logIn("Patrick Desmet", "password");
         assertEquals(patrick, cafe.getLoggedInWaiter(), "Test getLoggedInWaiter() 02 failed");
     }
 
     @Test
-    public void testGetNameOfLoggedInWaiter(){
+    public void testGetNameOfLoggedInWaiter() {
         cafe.addWaiter(wout);
         cafe.addWaiter(patrick);
         cafe.logIn("Wout Peters", "password");
@@ -117,22 +120,23 @@ public class CafeTest {
         assertEquals("Patrick Desmet", cafe.getNameOfLoggedInWaiter(), "Test GetNameOfLoggedInWaiter() 02 failed");
 
     }
+
     @Test
     public void testLogOut() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         assertTrue(cafe.logOut(), "Test logOut() 01 failed");
     }
 
     @Test
-    public void testCreateTables(){
+    public void testCreateTables() {
         assertEquals(cafe.getNumberOfTables(), cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
     }
 
     @Test
-    public void testSetActiveTable(){
+    public void testSetActiveTable() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         assertEquals(cafe.getTables().get(0), cafe.getActiveTable(), "Test SetActiveTable() 01 failed"); //difference between index in array and tableID
         cafe.setActiveTable(9);
@@ -140,44 +144,44 @@ public class CafeTest {
     }
 
     @Test
-    public void testGetBeverageByID(){
+    public void testGetBeverageByID() {
         Beverage beverage = Cafe.getBeverageByID(1);
         assertEquals("Cola", beverage.getBeverageName(), "Test getBeverageById() 01 failed");
     }
 
     @Test
-    public void testPlaceOrder(){
+    public void testPlaceOrder() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5); //ID1, orderNumber 1
         assertEquals(1, cafe.getUnpaidOrders().size(), "Test PlaceOrder() 01 failed");
         int thisOrderNumber = cafe.getHighestOrderNumber() + 1; //nieuwe order nummer verkrijgen, daarna voor volgende orders terug eentje bijtellen voor de test
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 02 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 02 failed - problem with orderNumber count");
 
         cafe.placeOrder(leffe, 2); //ID2, orderNumber 1
         assertEquals(2, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 03 failed");
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 04 failed - problem with orderNumber count");
-        OrderItem leffeTest = new OrderItem( leffe, 2);
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 04 failed - problem with orderNumber count");
+        OrderItem leffeTest = new OrderItem(leffe, 2);
         assertTrue(cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().contains(leffeTest), "Test PlaceOrder() 05 failed");
 
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 2); //ID3, orderNumber 2
         assertEquals(2, cafe.getUnpaidOrders().size(), "Test PlaceOrder() 06 failed");
         thisOrderNumber += 1;
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 07 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 07 failed - problem with orderNumber count");
 
         cafe.placeOrder(leffe, 2); //blijft ID3 orderNumber 2
         cafe.placeOrder(leffe, 5); //blijft ID3 orderNumber 2
 
         assertEquals(1, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 08 failed - order not added to existing orderline");
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 09 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 09 failed - problem with orderNumber count");
 
 
         cafe.logOut();
 
         cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         //cafe.setActiveTable(2);
         //try {
         //    cafe.placeOrder(leffe, 2);
@@ -189,11 +193,11 @@ public class CafeTest {
         cafe.placeOrder(leffe, 3); //ID4
         assertEquals(1, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 11 failed");
         thisOrderNumber += 1;
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 12 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 12 failed - problem with orderNumber count");
 
         cafe.placeOrder(cola, 2); //ID5
         assertEquals(2, cafe.getUnpaidOrders().get((cafe.getActiveTable())).getOrderLines().size(), "Test PlaceOrder() 13 failed");
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 14 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 14 failed - problem with orderNumber count");
 
         cafe.logOut();
 
@@ -203,14 +207,14 @@ public class CafeTest {
         assertEquals(2, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test PlaceOrder() 15 failed");
         thisOrderNumber -= 2;
 
-        assertEquals(thisOrderNumber,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 16 failed - problem with orderNumber count");
+        assertEquals(thisOrderNumber, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderNumber(), "Test PlaceOrder() 16 failed - problem with orderNumber count");
     }
 
 
     @Test
-    public void testGetTotalOrderLinePrice(){
+    public void testGetTotalOrderLinePrice() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(cola, 10);
@@ -218,9 +222,9 @@ public class CafeTest {
         assertEquals(78.0, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getTotalOrderPrice(), "Test getTotalOrderLinePrice() 01 failed");
     }
 
-  @Test
-    public void testRemoveOrder(){
-        OrderItem  orderItem = new OrderItem( cola, 2);
+    @Test
+    public void testRemoveOrder() {
+        OrderItem orderItem = new OrderItem(cola, 2);
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
@@ -229,7 +233,7 @@ public class CafeTest {
         cafe.placeOrder(duvel, 2);
         cafe.placeOrder(fanta, 2);
         cafe.removeOrder(orderItem);
-        assertEquals(3,  cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test removeOrder 02 failed");
+        assertEquals(3, cafe.getUnpaidOrders().get(cafe.getActiveTable()).getOrderLines().size(), "Test removeOrder 02 failed");
     }
 
 
@@ -245,10 +249,10 @@ public class CafeTest {
         cafe.placeOrder(fanta, 2);
         int paidOrderOriginalSize = cafe.getPaidOrders().size();
         cafe.pay();
-        assertEquals(0,  cafe.getUnpaidOrders().size(), "Test clearTable 01 failed");
+        assertEquals(0, cafe.getUnpaidOrders().size(), "Test clearTable 01 failed");
         cafe.logOut();
         cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         cafe.setActiveTable(10);
         cafe.placeOrder(cola, 20);
         cafe.placeOrder(leffe, 30);
@@ -259,11 +263,11 @@ public class CafeTest {
         cafe.placeOrder(cola, 2);
         cafe.placeOrder(leffe, 2);
         cafe.logOut();
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         cafe.setActiveTable(10);
         cafe.pay();
-        assertEquals(1,  cafe.getUnpaidOrders().size(), "Test clearTable 02 failed");
-        assertEquals(paidOrderOriginalSize+2,  cafe.getPaidOrders().size(), "Test clearTable 03 failed - interfered with other table");
+        assertEquals(1, cafe.getUnpaidOrders().size(), "Test clearTable 02 failed");
+        assertEquals(paidOrderOriginalSize + 2, cafe.getPaidOrders().size(), "Test clearTable 03 failed - interfered with other table");
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }
 
@@ -272,7 +276,7 @@ public class CafeTest {
     public void testPay() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 2);
@@ -280,10 +284,10 @@ public class CafeTest {
         int paidOrderOriginalSize = cafe.getPaidOrders().size();
         cafe.pay();
         assertEquals(0, cafe.getUnpaidOrders().size(), "Test pay() 01 failed - table not cleared");
-        assertEquals(paidOrderOriginalSize+1, cafe.getPaidOrders().size(), "Test pay() 02 failed - paidOrders collection not OK");
+        assertEquals(paidOrderOriginalSize + 1, cafe.getPaidOrders().size(), "Test pay() 02 failed - paidOrders collection not OK");
         cafe.logOut();
         cafe.addWaiter(patrick);
-        cafe.logIn("Patrick Desmet","password");
+        cafe.logIn("Patrick Desmet", "password");
         cafe.setActiveTable(10);
         cafe.placeOrder(cola, 1);
         cafe.placeOrder(leffe, 3);
@@ -291,7 +295,7 @@ public class CafeTest {
         cafe.placeOrder(fanta, 4);
         cafe.pay();
         assertEquals(0, cafe.getUnpaidOrders().size(), "Test pay() 03 failed - table not cleared");
-        assertEquals(paidOrderOriginalSize+2, cafe.getPaidOrders().size(), "Test pay() 04 failed - paidOrders collection not OK");
+        assertEquals(paidOrderOriginalSize + 2, cafe.getPaidOrders().size(), "Test pay() 04 failed - paidOrders collection not OK");
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }
 
@@ -299,7 +303,7 @@ public class CafeTest {
     public void testGetTotalWaiterRevenue() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         cafe.addWaiter(thomas);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10); //24
         cafe.placeOrder(cola, 10); //24 - test om te zien of qty updaten werkt
@@ -318,7 +322,7 @@ public class CafeTest {
     public void testGetTopThreeWaitersByRevenue() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         cafe.addWaiter(thomas);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10000); //24000
         cafe.placeOrder(leffe, 10000); //30000
@@ -329,7 +333,7 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(tina);
-        cafe.logIn("Tina DM","password");
+        cafe.logIn("Tina DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10000); //24000
         cafe.placeOrder(leffe, 10000); //30000
@@ -340,7 +344,7 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(tom);
-        cafe.logIn("Tom DM","password");
+        cafe.logIn("Tom DM", "password");
         cafe.setActiveTable(5);
         cafe.placeOrder(cola, 100000); //240000
         cafe.placeOrder(leffe, 10000); //30000  == 270000 totaal
@@ -356,7 +360,7 @@ public class CafeTest {
     public void testgetAllWaiterSales() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         cafe.addWaiter(thomas);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
@@ -367,16 +371,16 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(tom);
-        cafe.logIn("Tom DM","password");
+        cafe.logIn("Tom DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         assertEquals(2, cafe.getAllWaiterSales().size(), "Test getAllWaiterSales() 01 failed");
         cafe.logOut();
-        cafe.logIn("Tom DM","password");
+        cafe.logIn("Tom DM", "password");
         assertEquals(2, cafe.getAllWaiterSales().size(), "Test getAllWaiterSales() 02 failed");
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }
@@ -386,10 +390,10 @@ public class CafeTest {
     public void testgetAllWaiterSalesByDate() throws DAOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         cafe.addWaiter(thomas);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
         LocalDate date = LocalDate.of(2020, Month.FEBRUARY, 5);
-        cafe.placeOrder(cola, 10,  date);
+        cafe.placeOrder(cola, 10, date);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 30, date);
@@ -397,13 +401,13 @@ public class CafeTest {
         cafe.pay();
         cafe.logOut();
         cafe.addWaiter(tom);
-        cafe.logIn("Tom DM","password");
+        cafe.logIn("Tom DM", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 10);
         cafe.placeOrder(leffe, 10);
         cafe.pay();
         cafe.logOut();
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         assertEquals(2, cafe.getAllWaiterSales(date).size(), "Test getAllWaiterSalesByDate() 01 failed");
         cafe.logOut();
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
@@ -413,9 +417,9 @@ public class CafeTest {
     public void testWaiterSalesReportPDF() throws DAOException, IOException {
         int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         LocalDate date = of(2020, FEBRUARY, 5);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
-        cafe.placeOrder(cola, 1000,  date);
+        cafe.placeOrder(cola, 1000, date);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 3000, date);
@@ -428,11 +432,11 @@ public class CafeTest {
 
     @Test
     public void testWaiterSalesReportPDFSpecificDate() throws IOException, DAOException {
-       int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
+        int originalNumberOfHighestOrderNumber = PaidOrderDAOImpl.getInstance().highestOrderNumber();
         LocalDate firstDate = LocalDate.of(2020, FEBRUARY, 5);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
-        cafe.placeOrder(cola, 666,  firstDate);
+        cafe.placeOrder(cola, 666, firstDate);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 222, firstDate);
@@ -441,9 +445,9 @@ public class CafeTest {
         cafe.logOut();
 
         LocalDate secondDate = LocalDate.of(2020, FEBRUARY, 10);
-        cafe.logIn("Thomas DM","password");
+        cafe.logIn("Thomas DM", "password");
         cafe.setActiveTable(1);
-        cafe.placeOrder(cola, 100000,  secondDate);
+        cafe.placeOrder(cola, 100000, secondDate);
         cafe.pay();
         cafe.setActiveTable(2);
         cafe.placeOrder(leffe, 100000, secondDate);

@@ -22,24 +22,22 @@ public class LogInController {
     private String password;
 
 
-    public void setMainApp (MainApp mainApp) {
+    public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
 
         eye.addEventFilter(MouseEvent.MOUSE_PRESSED, e -> { //pass reveal feature
-               password = pass.getText();
-               pass.clear();
-               pass.setPromptText(password);
-           });
-           eye.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
-               pass.setText(password);
-               pass.setPromptText("Password");
-           });
-       }
+            password = pass.getText();
+            pass.clear();
+            pass.setPromptText(password);
+        });
+        eye.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
+            pass.setText(password);
+            pass.setPromptText("Password");
+        });
+    }
 
-    public void logIn()
-    {
-        if (logInCheck())
-        {
+    public void logIn() {
+        if (logInCheck()) {
             mainApp.showCafeOverview();
 
         }
@@ -48,21 +46,21 @@ public class LogInController {
     public boolean logInCheck() {
         String errorMessage;
 
-        try {mainApp.getModel().logIn(userName.getText(), pass.getText());
-            return true;}
-        catch (IllegalArgumentException e)
-        {
+        try {
+            mainApp.getModel().logIn(userName.getText(), pass.getText());
+            return true;
+        } catch (IllegalArgumentException e) {
             errorMessage = e.getMessage();
-            Alert alert = new Alert (Alert.AlertType.ERROR);
-         //   alert.initOwner (logInStage);
-            alert.setTitle ("Invalid Fields");
-            alert.setHeaderText ("Please correct invalid fields:");
-            alert.setContentText (errorMessage);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            //   alert.initOwner (logInStage);
+            alert.setTitle("Invalid Fields");
+            alert.setHeaderText("Please correct invalid fields:");
+            alert.setContentText(errorMessage);
 
-            alert.showAndWait ();
+            alert.showAndWait();
         }
         return false;
-     }
+    }
 
 
 }

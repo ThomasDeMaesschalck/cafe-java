@@ -2,6 +2,7 @@ package be.hogent.cafe.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -13,9 +14,9 @@ class BeverageTest {
 
     @BeforeEach
     public void setUp() {
-        cola = new Beverage ( 1,"Cola", 2.40);
-        cola2 = new Beverage ( 1,"Cola", 2.40);
-        leffe = new Beverage ( 3,"Leffe", 3.00);
+        cola = new Beverage(1, "Cola", 2.40);
+        cola2 = new Beverage(1, "Cola", 2.40);
+        leffe = new Beverage(3, "Leffe", 3.00);
 
     }
 

@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -24,7 +25,7 @@ public class CafeOrderDialogController {
     private TableColumn<Beverage, Double> beveragePriceColumn;
 
     @FXML
-    private TableView<OrderLines>  orderTable;
+    private TableView<OrderLines> orderTable;
     @FXML
     private TableColumn<OrderLines, String> orderBeverageNameColumn;
     @FXML
@@ -42,32 +43,32 @@ public class CafeOrderDialogController {
     // Reference to the main application.
     private MainApp mainApp;
 
-    public CafeOrderDialogController(){
+    public CafeOrderDialogController() {
     }
 
     @FXML
-    private void initialize () {
+    private void initialize() {
         PropertyValueFactory<Beverage, String> beverageNameProperty =
-                new PropertyValueFactory<> ("beverageName");
+                new PropertyValueFactory<>("beverageName");
         PropertyValueFactory<Beverage, Double> beveragePriceProperty =
-                new PropertyValueFactory<> ("price");
-        beverageNameColumn.setCellValueFactory (beverageNameProperty);
-        beveragePriceColumn.setCellValueFactory (beveragePriceProperty);
+                new PropertyValueFactory<>("price");
+        beverageNameColumn.setCellValueFactory(beverageNameProperty);
+        beveragePriceColumn.setCellValueFactory(beveragePriceProperty);
 
 
         PropertyValueFactory<OrderLines, String> orderBeverageNameProperty =
-                new PropertyValueFactory<> ("orderBeverageName");
+                new PropertyValueFactory<>("orderBeverageName");
         PropertyValueFactory<OrderLines, Integer> orderBeverageQtyProperty =
-                new PropertyValueFactory<> ("orderBeverageQty");
+                new PropertyValueFactory<>("orderBeverageQty");
         PropertyValueFactory<OrderLines, BigDecimal> orderSubTotalProperty =
-                new PropertyValueFactory<> ("orderSubTotal");
-        orderBeverageNameColumn.setCellValueFactory (orderBeverageNameProperty);
-        orderBeverageQtyColumn.setCellValueFactory (orderBeverageQtyProperty);
-        orderSubTotalColumn.setCellValueFactory (orderSubTotalProperty);
+                new PropertyValueFactory<>("orderSubTotal");
+        orderBeverageNameColumn.setCellValueFactory(orderBeverageNameProperty);
+        orderBeverageQtyColumn.setCellValueFactory(orderBeverageQtyProperty);
+        orderSubTotalColumn.setCellValueFactory(orderSubTotalProperty);
 
     }
 
-    public void setDialogStage (Stage dialogStage) {
+    public void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
         dialogStage.setOnCloseRequest(evt -> {
             // prevent window from closing
@@ -77,19 +78,18 @@ public class CafeOrderDialogController {
         });
     }
 
-    public void setMainApp (MainApp mainApp) {
+    public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
 
         // Add observable list data to the table
-        beverageTable.setItems (mainApp.getBeverageData ());
+        beverageTable.setItems(mainApp.getBeverageData());
         beverageTable.getSortOrder().add(beverageNameColumn);
         beverageTable.sort();
 
         int tableID = mainApp.getModel().getActiveTable().getTableID();
         tableIDNumber.setText(String.valueOf(tableID));
 
-        if (!(mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()) == null))
-        {
+        if (!(mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()) == null)) {
             populateOrderLinesTable();
         }
     }
@@ -116,30 +116,25 @@ public class CafeOrderDialogController {
     }
 
     @FXML
-    private void handleClose () {
-        dialogStage.close ();
+    private void handleClose() {
+        dialogStage.close();
         //order volledig verwijderen indien alle orderlines verwijderd zijn in dialog
-        if(mainApp.getModel().getUnpaidOrders().containsKey(mainApp.getModel().getActiveTable())
-                && mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()).getOrderLines().isEmpty())
-        {
+        if (mainApp.getModel().getUnpaidOrders().containsKey(mainApp.getModel().getActiveTable())
+                && mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()).getOrderLines().isEmpty()) {
             mainApp.getModel().getUnpaidOrders().remove(mainApp.getModel().getActiveTable());
         }
         //waiter assignment verwijderen indien tafel aangeklikt werd maar er geen order geplaatst werd
-        if(!mainApp.getModel().getUnpaidOrders().containsKey(mainApp.getModel().getActiveTable()))
-        {
+        if (!mainApp.getModel().getUnpaidOrders().containsKey(mainApp.getModel().getActiveTable())) {
             mainApp.getModel().clearTable();
         }
         mainApp.showCafeOverview();
     }
 
     @FXML
-    public void handleIncrease()
-    {
-        if (orderTable.getSelectionModel().getSelectedItem() == null)
-        {
+    public void handleIncrease() {
+        if (orderTable.getSelectionModel().getSelectedItem() == null) {
             nothingSelectedDialog();
-        }
-        else {
+        } else {
 
             OrderLines selectedItem = orderTable.getSelectionModel().getSelectedItem();
             OrderItem oi = orderTable.getSelectionModel().getSelectedItem().getOrderItem();
@@ -156,13 +151,10 @@ public class CafeOrderDialogController {
     }
 
     @FXML
-    public void handleDecrease()
-    {
-        if (orderTable.getSelectionModel().getSelectedItem() == null)
-        {
-           nothingSelectedDialog();
-        }
-        else {
+    public void handleDecrease() {
+        if (orderTable.getSelectionModel().getSelectedItem() == null) {
+            nothingSelectedDialog();
+        } else {
             OrderLines selectedItem = orderTable.getSelectionModel().getSelectedItem();
 
             OrderItem oi = orderTable.getSelectionModel().getSelectedItem().getOrderItem();
@@ -200,57 +192,54 @@ public class CafeOrderDialogController {
     }
 
     public void handleAdd() {
-        if(beverageTable.getSelectionModel().getSelectedItem() == null)
-        {
+        if (beverageTable.getSelectionModel().getSelectedItem() == null) {
             String errorMessage = "No beverage selected";
-            Alert alert = new Alert (Alert.AlertType.ERROR);
-            alert.initOwner (dialogStage);
-            alert.setTitle ("Nothing selected");
-            alert.setHeaderText ("Please select a beverage first");
-            alert.setContentText (errorMessage);
-            alert.showAndWait ();
-        }
-        else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.initOwner(dialogStage);
+            alert.setTitle("Nothing selected");
+            alert.setHeaderText("Please select a beverage first");
+            alert.setContentText(errorMessage);
+            alert.showAndWait();
+        } else {
             Beverage beverage = beverageTable.getSelectionModel().getSelectedItem();
             mainApp.getModel().placeOrder(beverage, 1);
             populateOrderLinesTable();
         }
     }
 
-    public void nothingSelectedDialog(){
+    public void nothingSelectedDialog() {
         String errorMessage = "Nothing selected";
-        Alert alert = new Alert (Alert.AlertType.ERROR);
-        alert.initOwner (dialogStage);
-        alert.setTitle ("Nothing selected");
-        alert.setHeaderText ("Please select orderline first");
-        alert.setContentText (errorMessage);
-        alert.showAndWait ();
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.initOwner(dialogStage);
+        alert.setTitle("Nothing selected");
+        alert.setHeaderText("Please select orderline first");
+        alert.setContentText(errorMessage);
+        alert.showAndWait();
     }
 
     public void handlePay() {
-            if(orderItems.isEmpty()){
-                String errorMessage = "There is no order";
-                Alert alert = new Alert (Alert.AlertType.ERROR);
-                alert.initOwner (dialogStage);
-                alert.setTitle ("No order yet");
-                alert.setHeaderText ("Enter order first or close window");
-                alert.setContentText (errorMessage);
-                alert.showAndWait ();
-            }
-            else{
-                mainApp.getModel().pay();
-                Alert alert = new Alert (Alert.AlertType.INFORMATION, "", ButtonType.FINISH);
-                alert.initOwner (dialogStage);
-                alert.setTitle ("Payment:");
-                alert.setHeaderText ("OK. Get " + orderTotal.getText() + "EUR from customer");
-                alert.showAndWait ();
+        if (orderItems.isEmpty()) {
+            String errorMessage = "There is no order";
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.initOwner(dialogStage);
+            alert.setTitle("No order yet");
+            alert.setHeaderText("Enter order first or close window");
+            alert.setContentText(errorMessage);
+            alert.showAndWait();
+        } else {
+            mainApp.getModel().pay();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "", ButtonType.FINISH);
+            alert.initOwner(dialogStage);
+            alert.setTitle("Payment:");
+            alert.setHeaderText("OK. Get " + orderTotal.getText() + "EUR from customer");
+            alert.showAndWait();
 
-                dialogStage.close ();
-                mainApp.showCafeOverview();
-            }
+            dialogStage.close();
+            mainApp.showCafeOverview();
+        }
     }
 
-    public static class OrderLines{
+    public static class OrderLines {
         public final String orderBeverageName;
         public final Double orderBeveragePrice;
         public final Integer orderBeverageQty;

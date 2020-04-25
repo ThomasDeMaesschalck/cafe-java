@@ -6,7 +6,7 @@ public class Table {
     private final int tableID;
     private Waiter belongsToWaiter;
 
-    public Table(int tableID){
+    public Table(int tableID) {
         this.tableID = tableID;
         this.belongsToWaiter = null;
     }
@@ -32,7 +32,7 @@ public class Table {
         this.belongsToWaiter = waiter;
     }
 
-     @Override
+    @Override
     public String toString() {
         return "table " + tableID;
     }

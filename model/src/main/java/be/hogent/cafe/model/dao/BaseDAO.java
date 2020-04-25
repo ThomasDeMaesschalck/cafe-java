@@ -9,36 +9,36 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class BaseDAO implements DAO {
-    private final Logger logger = LogManager.getLogger (BaseDAO.class.getName ());
+    private final Logger logger = LogManager.getLogger(BaseDAO.class.getName());
 
     private String dbUrl, dbPassword, dbUser;
 
 
-    private  void readProperties() {
+    private void readProperties() {
 
-        Properties dbProperties = new Properties ();
+        Properties dbProperties = new Properties();
 
-        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream ("db.properties")) {
+        try (InputStream inputStream = ClassLoader.getSystemResourceAsStream("db.properties")) {
 
             assert inputStream != null;
-            dbProperties.load (inputStream);
+            dbProperties.load(inputStream);
             dbUrl = dbProperties.getProperty("dbUrl");
             dbPassword = dbProperties.getProperty("dbPassword");
             dbUser = dbProperties.getProperty("dbUser");
 
         } catch (IOException ioe) {
             logger.error("db properties not loaded");
-            ioe.printStackTrace ();
+            ioe.printStackTrace();
         }
     }
 
-    public Connection getConnection () throws DAOException {
+    public Connection getConnection() throws DAOException {
         try {
             readProperties();
-            return DriverManager.getConnection (dbUrl, dbUser, dbPassword);
+            return DriverManager.getConnection(dbUrl, dbUser, dbPassword);
         } catch (SQLException e) {
             logger.error(e.getMessage());
-            throw new DAOException (e.getMessage());
+            throw new DAOException(e.getMessage());
         }
     }
 }

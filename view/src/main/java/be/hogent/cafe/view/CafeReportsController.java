@@ -67,6 +67,7 @@ public class CafeReportsController {
     final List<BeverageSales> salesItems = new ArrayList<>();
     final List<BeverageSales> salesByDateItems = new ArrayList<>();
     private LocalDate selectedDate = null;
+    String euro = "\u20AC";
 
 
     // Reference to the main application.
@@ -136,11 +137,11 @@ public class CafeReportsController {
 
         BigDecimal waiterSalesTotal = salesItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
         String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal.doubleValue()); //afronden
-        salesTotal.setText(waiterSalesTotalString);
+        salesTotal.setText(euro + waiterSalesTotalString);
 
         ObservableList<BeverageSales> salesItemList = FXCollections.observableArrayList(salesItems);
 
-        allSalesTable.setItems(FXCollections.observableArrayList((salesItemList)));
+        allSalesTable.setItems(salesItemList);
         allSalesTable.getSortOrder().add(beverageNameColumn);
 
         return tab;
@@ -193,7 +194,7 @@ public class CafeReportsController {
 
         BigDecimal waiterSalesTotalByDate = salesByDateItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
         String salesByDateTotalString = String.format("%.2f", waiterSalesTotalByDate); //afronden
-        salesByDateTotal.setText(salesByDateTotalString);
+        salesByDateTotal.setText(euro + salesByDateTotalString);
 
         ObservableList<BeverageSales> salesByDateItemList = FXCollections.observableArrayList(salesByDateItems);
 

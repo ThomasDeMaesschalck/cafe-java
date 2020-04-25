@@ -1,4 +1,5 @@
 package be.hogent.cafe.model.reporting;
+
 import be.hogent.cafe.model.Beverage;
 import be.hogent.cafe.model.Cafe;
 import com.itextpdf.kernel.pdf.PdfDocument;
@@ -7,6 +8,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -28,7 +30,7 @@ public class MakePDFSalesReport {
 
     private static final String reportsDirectory = Cafe.getReportsDirectory();
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
-    public static final String DEST =  reportsDirectory + "/salesreport.pdf";
+    public static final String DEST = reportsDirectory + "/salesreport.pdf";
 
     public boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
 
@@ -71,8 +73,7 @@ public class MakePDFSalesReport {
         document.close();
         if (file.exists()) {
             return true;
-        } else
-            {
+        } else {
             logger.error("PDF file creation failed");
             return false;
         }

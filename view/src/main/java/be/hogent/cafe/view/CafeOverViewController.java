@@ -26,7 +26,7 @@ public class CafeOverViewController {
      * The constructor.
      * The constructor is called before the initialize() method.
      */
-    public CafeOverViewController () {
+    public CafeOverViewController() {
     }
 
     /**
@@ -34,11 +34,11 @@ public class CafeOverViewController {
      * after the fxml file has been loaded.
      */
     @FXML
-    private void initialize () {
+    private void initialize() {
     }
 
 
-    public void setMainApp (MainApp mainApp) {
+    public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
 
         String loggedInWaiter = mainApp.getModel().getNameOfLoggedInWaiter();
@@ -47,18 +47,18 @@ public class CafeOverViewController {
 
     }
 
-    public void showTables(){
+    public void showTables() {
         scrollPane.setContent(tablePane);
         scrollPane.setFitToWidth(true);
 
-        tablePane.setPadding(new Insets(5, 5, 5 ,5));
+        tablePane.setPadding(new Insets(5, 5, 5, 5));
         tablePane.setHgap(15);
         tablePane.setVgap(15);
         tablePane.setPrefColumns(6);
         tablePane.setMaxHeight(Region.USE_PREF_SIZE);
 
 
-        for (Table table: mainApp.getModel().getTables()) {
+        for (Table table : mainApp.getModel().getTables()) {
             Button tableButton = new Button(table.toString());
             tableButton.setPrefSize(100, 100);
             tablePane.getChildren().addAll(tableButton);
@@ -75,19 +75,14 @@ public class CafeOverViewController {
             });
 
 
-            if (table.getBelongsToWaiter() == null)
-            {
+            if (table.getBelongsToWaiter() == null) {
                 tableButton.setStyle("-fx-background-color: grey");
-            }
-            else {
+            } else {
 
-                if (table.getBelongsToWaiter().equals(mainApp.getModel().getLoggedInWaiter()))
-                {
+                if (table.getBelongsToWaiter().equals(mainApp.getModel().getLoggedInWaiter())) {
                     tableButton.setStyle("-fx-background-color: green");
 
-                }
-                else
-                {
+                } else {
                     tableButton.setDisable(true);
                     tableButton.setStyle("-fx-background-color: red");
                 }
@@ -95,10 +90,9 @@ public class CafeOverViewController {
         }
     }
 
-    public void logout()
-    {
-            mainApp.getModel().logOut();
-            mainApp.showLogIn();
+    public void logout() {
+        mainApp.getModel().logOut();
+        mainApp.showLogIn();
     }
 
 

@@ -2,59 +2,60 @@ package be.hogent.cafe.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class OrderItemTest {
 
 
-        private Cafe cafe;
-        private Waiter wout;
-        private Beverage cola;
-        private Beverage leffe;
-        private OrderItem order1;
+    private Cafe cafe;
+    private Waiter wout;
+    private Beverage cola;
+    private Beverage leffe;
+    private OrderItem order1;
 
-        @BeforeEach
-        public void setUp() {
-            cafe = new Cafe();
-            wout = new Waiter(1,"Peters", "Wout", "password");
-            cola = new Beverage ( 1,"Cola", 2.40);
-            leffe = new Beverage ( 2,"Leffe", 3.00);
-            cafe.getBeverages().add(cola);
-            cafe.getBeverages().add(leffe);
-            order1 = new OrderItem(cola,2);
-        }
+    @BeforeEach
+    public void setUp() {
+        cafe = new Cafe();
+        wout = new Waiter(1, "Peters", "Wout", "password");
+        cola = new Beverage(1, "Cola", 2.40);
+        leffe = new Beverage(2, "Leffe", 3.00);
+        cafe.getBeverages().add(cola);
+        cafe.getBeverages().add(leffe);
+        order1 = new OrderItem(cola, 2);
+    }
 
     @Test
-    public void testIncreaseQty(){
+    public void testIncreaseQty() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         order1.increaseQty();
         assertEquals(3, order1.getQty(), "Test increaseQty() 01 failed");
     }
 
     @Test
-    public void testIncreaseQtyOverloaded(){
+    public void testIncreaseQtyOverloaded() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         order1.increaseQty(5);
         assertEquals(7, order1.getQty(), "Test increaseQtyOverloaded() 01 failed");
     }
 
     @Test
-    public void testDecreaseQty(){
+    public void testDecreaseQty() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         order1.decreaseQty();
         assertEquals(1, order1.getQty(), "Test decreaseQty() 01 failed");
     }
 
     @Test
-    public void testToString(){
+    public void testToString() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5);
         cafe.placeOrder(leffe, 5);

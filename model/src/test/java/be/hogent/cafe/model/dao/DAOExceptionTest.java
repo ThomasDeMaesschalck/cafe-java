@@ -1,5 +1,7 @@
 package be.hogent.cafe.model.dao;
+
 import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
 public class DAOExceptionTest {

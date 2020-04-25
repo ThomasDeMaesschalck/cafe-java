@@ -4,12 +4,12 @@ import java.util.Objects;
 
 public class Waiter {
 
-    private  String lastName;
-    private  String firstName;
-    private  String password;
-    private  int ID;
+    private String lastName;
+    private String firstName;
+    private String password;
+    private int ID;
 
-    public Waiter(){
+    public Waiter() {
     }
 
     public Waiter(int ID, String lastName, String firstName, String password) {
@@ -56,7 +56,7 @@ public class Waiter {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Waiter waiter = (Waiter) o;
-        return  lastName.equals(waiter.lastName) &&  firstName.equals(waiter.firstName) &&  password.equals(waiter.password);
+        return lastName.equals(waiter.lastName) && firstName.equals(waiter.firstName) && password.equals(waiter.password);
     }
 
     @Override

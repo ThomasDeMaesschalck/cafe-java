@@ -16,11 +16,11 @@ public class TableTest {
     @BeforeEach
     public void setUp() {
         cafe = new Cafe();
-        wout = new Waiter(1,"Peters", "Wout", "password");
+        wout = new Waiter(1, "Peters", "Wout", "password");
         one = new Table(1);
         oneone = new Table(1);
         ten = new Table(10);
-        cola = new Beverage ( 1,"Cola", 2.40);
+        cola = new Beverage(1, "Cola", 2.40);
         cafe.getBeverages().add(cola);
     }
 
@@ -34,9 +34,9 @@ public class TableTest {
     }
 
     @Test
-    public void testToString(){
+    public void testToString() {
         cafe.addWaiter(wout);
-        cafe.logIn("Wout Peters","password");
+        cafe.logIn("Wout Peters", "password");
         cafe.setActiveTable(1);
         cafe.placeOrder(cola, 5);
 

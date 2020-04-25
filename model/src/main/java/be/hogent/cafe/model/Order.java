@@ -9,12 +9,12 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Order {
-    private  int orderNumber;
-    private  LocalDate date;
-    private  int waiterID;
-    private final Set<OrderItem> orderItems  =  new HashSet<>();
-    private  int tableID;
-    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+    private int orderNumber;
+    private LocalDate date;
+    private int waiterID;
+    private final Set<OrderItem> orderItems = new HashSet<>();
+    private int tableID;
+    private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
 
     public Order() {
     }
@@ -26,24 +26,23 @@ public class Order {
         this.tableID = tableID;
     }
 
-    public void AddOrUpdateOrderLine(OrderItem orderItem)
-    {
-        if(!getOrderLines().add(orderItem)) {  //qty van bestaande orderlijn updaten indien reeds aanwezig
+    public void AddOrUpdateOrderLine(OrderItem orderItem) {
+        if (!getOrderLines().add(orderItem)) {  //qty van bestaande orderlijn updaten indien reeds aanwezig
 
-            getOrderLines().forEach(o ->  {
-                if(o.equals(orderItem))
-                {
+            getOrderLines().forEach(o -> {
+                if (o.equals(orderItem)) {
                     o.increaseQty(orderItem.getQty());
-                }});
-          }
-        logger.info("orderNumber: " + getOrderNumber() +  " - added " + orderItem.getQty() + " " + orderItem.getBeverage().getBeverageName());
+                }
+            });
+        }
+        logger.info("orderNumber: " + getOrderNumber() + " - added " + orderItem.getQty() + " " + orderItem.getBeverage().getBeverageName());
     }
 
     public int getOrderNumber() {
         return orderNumber;
     }
 
-    public double getTotalOrderPrice(){ //totaal bedrag van een volledig order
+    public double getTotalOrderPrice() { //totaal bedrag van een volledig order
         return getOrderLines().stream().mapToDouble(OrderItem::getOrderLinePrice).sum();
     }
 
@@ -76,8 +75,8 @@ public class Order {
     }
 
     //public void setOrderItems(OrderItem orderItem) {
-      //  this.orderItems.add(orderItem);
-   // }
+    //  this.orderItems.add(orderItem);
+    // }
 
     @Override
     public String toString() {

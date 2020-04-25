@@ -1,4 +1,5 @@
 package be.hogent.cafe.model.reporting;
+
 import java.io.*;
 import java.util.HashMap;
 
@@ -28,18 +29,18 @@ public class MakeTopWaitersChart {
 
     //exception handling nog af te werken
 
-    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+    private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     private static final String reportsDirectory = Cafe.getReportsDirectory();
 
     public boolean createJPG(HashMap<Waiter, Double> topWaiters) throws IOException {
 
-        DefaultPieDataset dataset = new DefaultPieDataset( );
+        DefaultPieDataset dataset = new DefaultPieDataset();
 
-        topWaiters.forEach((waiter, revenue) ->  { //dataset vullen
+        topWaiters.forEach((waiter, revenue) -> { //dataset vullen
             dataset.setValue((waiter.toString()), revenue);
         });
 
-          JFreeChart chart = ChartFactory.createPieChart(
+        JFreeChart chart = ChartFactory.createPieChart(
                 "Top waiters in Cafe Java",   // chart title
                 dataset,          // data
                 true,             // include legend
@@ -50,16 +51,15 @@ public class MakeTopWaitersChart {
         int height = 480;  /* Height of the image */
 
 
-        File pieChart = new File( reportsDirectory + "/topwaiterchart.jpg" );
+        File pieChart = new File(reportsDirectory + "/topwaiterchart.jpg");
         File parent = pieChart.getParentFile();
         if (!parent.exists() && !parent.mkdirs()) {
             throw new IllegalStateException("Couldn't create dir: " + parent);
         }
-        ChartUtilities.saveChartAsJPEG( pieChart , chart , width , height );
+        ChartUtilities.saveChartAsJPEG(pieChart, chart, width, height);
         if (pieChart.exists()) {
             return true;
-        } else
-        {
+        } else {
             logger.error("PDF file creation failed");
             return false;
         }

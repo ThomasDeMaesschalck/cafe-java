@@ -8,6 +8,7 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.stage.*;
+
 import java.io.*;
 
 public class MainApp extends Application {
@@ -27,128 +28,128 @@ public class MainApp extends Application {
     /**
      * Constructor
      */
-    public MainApp () {
+    public MainApp() {
     }
 
-    public static void main (String[] args) {
-        launch (args);
+    public static void main(String[] args) {
+        launch(args);
     }
 
     /**
      * Returns the data as an observable list of beverages
      */
-    public ObservableList<Beverage> getBeverageData () {
+    public ObservableList<Beverage> getBeverageData() {
         return beverageData;
     }
 
     @Override
-    public void start (Stage primaryStage) {
-    beverageData = FXCollections.observableArrayList(model.getBeverages());
+    public void start(Stage primaryStage) {
+        beverageData = FXCollections.observableArrayList(model.getBeverages());
 
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle (this.getModel().getCafeName());
-        initRootLayout ();
+        this.primaryStage.setTitle(this.getModel().getCafeName());
+        initRootLayout();
 
-        showLogIn ();
+        showLogIn();
     }
 
     /**
      * Initializes the root layout.
      */
-    private void initRootLayout () {
+    private void initRootLayout() {
         try {
-            FXMLLoader loader = new FXMLLoader ();
-            loader.setLocation (MainApp.class.getResource ("/cafe/RootLayout.fxml"));
-            rootLayout = loader.load ();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("/cafe/RootLayout.fxml"));
+            rootLayout = loader.load();
             // Show the scene containing the root layout.
-            Scene scene = new Scene (rootLayout);
-            primaryStage.setScene (scene);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
             primaryStage.setResizable(false);
-            primaryStage.show ();
+            primaryStage.show();
 
         } catch (IOException e) {
-            e.printStackTrace ();
+            e.printStackTrace();
         }
     }
 
-    protected void showLogIn () {
+    protected void showLogIn() {
         try {
             // Load login overview.
-            FXMLLoader loader = new FXMLLoader ();
-            loader.setLocation (getClass ().getResource ("/cafe/LogIn.fxml"));
-            AnchorPane LogIn = loader.load ();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/cafe/LogIn.fxml"));
+            AnchorPane LogIn = loader.load();
 
             // Set login overview into the center of root layout.
-            rootLayout.setCenter (LogIn);
+            rootLayout.setCenter(LogIn);
 
             // Give the controller access to the main app.
-            be.hogent.cafe.view.LogInController controller = loader.getController ();
-            controller.setMainApp (this);
+            be.hogent.cafe.view.LogInController controller = loader.getController();
+            controller.setMainApp(this);
 
         } catch (IOException e) {
-            e.printStackTrace ();
+            e.printStackTrace();
         }
     }
 
-    public void showCafeOverview () {
+    public void showCafeOverview() {
         try {
             // Load cafe overview.
-            FXMLLoader loader = new FXMLLoader ();
-            loader.setLocation (getClass ().getResource ("/cafe/CafeOverview.fxml"));
-            AnchorPane cafeOverview = loader.load ();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/cafe/CafeOverview.fxml"));
+            AnchorPane cafeOverview = loader.load();
 
             // Set cafe overview into the center of root layout.
-            rootLayout.setCenter (cafeOverview);
+            rootLayout.setCenter(cafeOverview);
 
             // Give the controller access to the main app.
-            be.hogent.cafe.view.CafeOverViewController controller = loader.getController ();
-            controller.setMainApp (this);
+            be.hogent.cafe.view.CafeOverViewController controller = loader.getController();
+            controller.setMainApp(this);
 
         } catch (IOException e) {
-            e.printStackTrace ();
+            e.printStackTrace();
         }
     }
 
-    public void showCafeReports () {
+    public void showCafeReports() {
         try {
             // Load reports overview.
-            FXMLLoader loader = new FXMLLoader ();
-            loader.setLocation (getClass ().getResource ("/cafe/CafeReports.fxml"));
-            AnchorPane cafeReports = loader.load ();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/cafe/CafeReports.fxml"));
+            AnchorPane cafeReports = loader.load();
 
             // Set reports overview into the center of root layout.
-            rootLayout.setCenter (cafeReports);
+            rootLayout.setCenter(cafeReports);
 
             // Give the controller access to the main app.
-            be.hogent.cafe.view.CafeReportsController controller = loader.getController ();
-            controller.setMainApp (this);
+            be.hogent.cafe.view.CafeReportsController controller = loader.getController();
+            controller.setMainApp(this);
 
         } catch (Exception e) {
-            e.printStackTrace ();
+            e.printStackTrace();
         }
     }
 
-    public void showCafeOrderDialog ()  {
+    public void showCafeOrderDialog() {
         try {
             // Load the fxml file and create a new stage for the popup dialog.
-            FXMLLoader loader = new FXMLLoader ();
-            loader.setLocation (getClass ().getResource ("/cafe/CafeOrderDialog.fxml"));
-            AnchorPane page = loader.load ();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/cafe/CafeOrderDialog.fxml"));
+            AnchorPane page = loader.load();
             // Create the dialog Stage.
-            Stage dialogStage = new Stage ();
-            dialogStage.setTitle ("Make an order");
-            dialogStage.initModality (Modality.WINDOW_MODAL);
-            dialogStage.initOwner (getPrimaryStage());
-            Scene scene = new Scene (page);
-            dialogStage.setScene (scene);
-            be.hogent.cafe.view.CafeOrderDialogController controller = loader.getController ();
-            controller.setDialogStage (dialogStage);
-            controller.setMainApp (this);
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Make an order");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(getPrimaryStage());
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+            be.hogent.cafe.view.CafeOrderDialogController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setMainApp(this);
 
             // Show the dialog and wait until the user closes it
-            dialogStage.showAndWait ();
+            dialogStage.showAndWait();
         } catch (Exception e) {
-            e.printStackTrace ();
+            e.printStackTrace();
         }
     }
 
@@ -156,7 +157,7 @@ public class MainApp extends Application {
         return model;
     }
 
-    public Stage getPrimaryStage () {
+    public Stage getPrimaryStage() {
         return primaryStage;
     }
 }

@@ -29,7 +29,7 @@ public class Cafe {
     private Table activeTable;
     private final List<Table> tables = new ArrayList<>();
     private final HashMap<Table, Order> unpaidOrders = new HashMap<>();
-   //private Set<Order> paidOrders = new HashSet<>();
+    //private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
     private int orderNumber;
 
@@ -252,7 +252,7 @@ public class Cafe {
     }
 
     //public void setPaidOrders(Set<Order> paidOrder) {
-      //  paidOrders = paidOrder;
+    //  paidOrders = paidOrder;
     //}
 
     public HashMap<Table, Order> getUnpaidOrders() {

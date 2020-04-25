@@ -9,7 +9,7 @@ public class OrderItem {
 
     private final Beverage beverage;
     private int qty;
-    private static final Logger logger = LogManager.getLogger (Cafe.class.getName ());
+    private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
 
 
     public OrderItem(Beverage beverage, int qty) {
@@ -17,7 +17,7 @@ public class OrderItem {
         this.qty = qty;
     }
 
-     public double getOrderLinePrice(){
+    public double getOrderLinePrice() {
         return getBeverage().getPrice() * getQty();
     }
 
@@ -30,22 +30,22 @@ public class OrderItem {
     }
 
 
-    public void increaseQty(){
+    public void increaseQty() {
         qty++;
         logger.info("Quantity increased of " + this.getBeverage().getBeverageName() + " to " + this.getQty());
 
     }
 
-    public void increaseQty(int increase){
+    public void increaseQty(int increase) {
         qty = qty + increase;
         logger.info("Quantity increased of " + this.getBeverage().getBeverageName() + " to " + this.getQty());
 
     }
 
 
-    public void decreaseQty(){
-        if (qty > 0)
-        { qty--;
+    public void decreaseQty() {
+        if (qty > 0) {
+            qty--;
             logger.info("Quantity decreased of " + this.getBeverage().getBeverageName());
         }
     }

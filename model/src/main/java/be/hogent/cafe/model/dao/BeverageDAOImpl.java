@@ -3,6 +3,7 @@ package be.hogent.cafe.model.dao;
 import be.hogent.cafe.model.Beverage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -28,7 +29,7 @@ public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {
     }
 
     @Override
-    public  Set<Beverage> getBeverages() {
+    public Set<Beverage> getBeverages() {
         Set<Beverage> beverages = new HashSet<>();
 
         try (
@@ -46,7 +47,7 @@ public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {
             }
             logger.info("beverages are loaded from database");
 
-    } catch (Exception e) {
+        } catch (Exception e) {
             logger.error("Error getting beverages. " + e.getMessage());
         }
         return beverages;

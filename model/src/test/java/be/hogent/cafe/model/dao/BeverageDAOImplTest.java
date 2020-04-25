@@ -12,7 +12,7 @@ public class BeverageDAOImplTest {
 
 
     @Test
-    public void testGetBeverages()  {
+    public void testGetBeverages() {
         Set<Beverage> beveragesDAO;
 
         beveragesDAO = BeverageDAOImpl.getInstance().getBeverages();
@@ -20,4 +20,4 @@ public class BeverageDAOImplTest {
         Assertions.assertTrue(beveragesDAO.contains(cola), "testGetBeverages 01 failed");
         assertEquals(17, beveragesDAO.size(), "testGetBeverages02 failed");
     }
-    }
+}

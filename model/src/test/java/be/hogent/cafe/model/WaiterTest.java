@@ -1,9 +1,10 @@
 package be.hogent.cafe.model;
 
-        import org.junit.jupiter.api.BeforeEach;
-        import org.junit.jupiter.api.Test;
-        import static org.junit.jupiter.api.Assertions.assertEquals;
-        import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class WaiterTest {
 
@@ -15,9 +16,9 @@ class WaiterTest {
 
     @BeforeEach
     public void setUp() {
-        wout = new Waiter( 1,"Peters", "Wout", "password");
-        nathalie = new Waiter( 2,"Segers", "Nathalie", "password");
-        ilse = new Waiter( 3,"Vandenbroeck", "Ilse", "password");
+        wout = new Waiter(1, "Peters", "Wout", "password");
+        nathalie = new Waiter(2, "Segers", "Nathalie", "password");
+        ilse = new Waiter(3, "Vandenbroeck", "Ilse", "password");
     }
 
 
@@ -28,7 +29,7 @@ class WaiterTest {
     }
 
     @Test
-    public void testToString(){
+    public void testToString() {
         assertEquals("Wout Peters", wout.toString(), "Test toString() 01 failed");
         assertEquals("Ilse Vandenbroeck", ilse.toString(), "Test toString() 02 failed");
 
