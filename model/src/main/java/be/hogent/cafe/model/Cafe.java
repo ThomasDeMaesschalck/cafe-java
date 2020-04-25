@@ -11,13 +11,13 @@ import be.hogent.cafe.model.reporting.WaitersByRevenue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
 
-public class Cafe {
+public class Cafe implements Serializable {
 
+    private static final long serialVersionUID = -7985844604654656130L;
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     private static Set<Beverage> beverages;
     private String cafeName;
@@ -27,8 +27,8 @@ public class Cafe {
     private Set<Waiter> waiters = new HashSet<>();
     private Waiter loggedInWaiter;
     private Table activeTable;
-    private final List<Table> tables = new ArrayList<>();
-    private final HashMap<Table, Order> unpaidOrders = new HashMap<>();
+    private List<Table> tables = new ArrayList<>();
+    private HashMap<Table, Order> unpaidOrders = new HashMap<>();
     //private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
     private int orderNumber;
@@ -59,6 +59,46 @@ public class Cafe {
         } catch (IOException ioe) {
             logger.error("cafe properties not loaded");
             ioe.printStackTrace();
+        }
+    }
+
+    public void serializeCafe() {
+        try {
+            FileOutputStream fs = new FileOutputStream("tables.ser");
+            ObjectOutputStream os = new ObjectOutputStream(fs);
+            os.writeObject(tables);
+            os.close();
+
+            FileOutputStream fs2 = new FileOutputStream("unpaidorders.ser");
+            ObjectOutputStream os2 = new ObjectOutputStream(fs2);
+            os2.writeObject(unpaidOrders);
+            os2.close();
+            logger.info("Serialized cafe");
+
+        } catch (
+                Exception e) {
+            logger.error("Error, failed to serialize the cafe");
+            e.printStackTrace();
+        }
+    }
+
+    public void deSerializeCafe() {
+        try {
+            FileInputStream fis = new FileInputStream("tables.ser");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            tables = (List<Table>) ois.readObject();
+            ois.close();
+
+            FileInputStream fis2 = new FileInputStream("unpaidorders.ser");
+            ObjectInputStream ois2 = new ObjectInputStream(fis2);
+            unpaidOrders = (HashMap<Table, Order>) ois2.readObject();
+            ois2.close();
+
+            logger.info("Deserialized cafe");
+        } catch (
+                Exception e) {
+            logger.error("Error, failed to deserialize the cafe");
+            e.printStackTrace();
         }
     }
 
@@ -192,8 +232,16 @@ public class Cafe {
     }
 
     public void createTables(int numberOfTables) {
-        for (int i = 0; i < numberOfTables; i++) {
-            tables.add(new Table(i + 1)); //start table number at 1 instead of 0
+        File serializedTables = new File("tables.ser");
+        File serializedOrders = new File("unpaidorders.ser");
+        if (serializedTables.exists() && serializedOrders.exists())
+        {
+            deSerializeCafe();
+        }
+        else {
+            for (int i = 0; i < numberOfTables; i++) {
+                tables.add(new Table(i + 1)); //start table number at 1 instead of 0
+            }
         }
     }
 

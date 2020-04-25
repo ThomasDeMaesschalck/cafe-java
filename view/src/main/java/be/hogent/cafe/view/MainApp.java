@@ -53,6 +53,11 @@ public class MainApp extends Application {
         showLogIn();
     }
 
+    @Override
+    public void stop(){
+        getModel().serializeCafe();
+    }
+
     /**
      * Initializes the root layout.
      */

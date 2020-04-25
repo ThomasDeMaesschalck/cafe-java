@@ -870,3 +870,528 @@
 [INFO ] 2020-04-25 17:58:53.903 [main] BeverageDAOImpl - beverages are loaded from database
 [INFO ] 2020-04-25 17:58:53.907 [main] WaiterDAOImpl - Waiters are loaded from database
 [INFO ] 2020-04-25 17:58:53.911 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.527 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:07.549 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:07.571 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.581 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:07.589 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:07.595 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.601 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.673 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:07.684 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:07.697 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:07.721 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:07.731 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:07.754 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:07.774 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:07.781 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:07.788 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:07.794 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.799 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.812 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:07.819 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:07.828 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:07.852 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:07.865 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:07.877 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:07.892 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:07.905 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:07.915 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:07.921 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:07.927 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:07.932 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.939 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:07.955 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:07.977 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:07.985 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:07.994 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.003 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.015 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.028 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.038 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.057 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.067 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:08.077 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.082 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.090 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.095 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.121 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.137 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.147 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.158 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.163 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.175 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.183 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.193 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.202 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.208 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.216 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:08.224 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.228 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.232 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.241 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.244 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.247 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.254 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.259 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.265 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.288 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.292 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.309 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.317 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.322 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.327 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.342 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.346 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.381 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.394 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.406 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.438 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.452 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.465 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.492 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.539 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:08.561 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:08.655 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.677 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.682 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.697 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:08.715 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:08.720 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.726 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:08.740 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:08.755 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.765 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:08.778 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:08.787 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 19:56:08.796 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 19:56:08.815 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:09.402 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:09.410 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:09.417 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:09.422 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:09.429 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:09.438 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:09.487 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.385 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:10.411 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.417 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.426 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.436 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.440 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.444 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.450 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.462 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:10.474 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:10.484 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:10.502 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.518 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:10.529 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.539 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.543 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.549 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.555 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.558 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.564 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.569 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.572 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.576 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.586 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:10.612 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 19:56:10.629 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:10.640 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 19:56:10.649 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:10.661 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 19:56:10.674 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 19:56:10.682 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 19:56:10.691 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 843 into database
+[INFO ] 2020-04-25 19:56:10.699 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 843 into database
+[INFO ] 2020-04-25 19:56:10.705 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.711 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.719 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.726 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:10.738 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:10.744 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.748 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.753 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:10.761 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:10.764 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:10.768 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.609 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.624 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.629 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.634 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.640 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:11.646 [main] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-25 19:56:11.658 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.662 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.668 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.674 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:11.679 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.692 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 19:56:11.702 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 19:56:11.708 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:11.716 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 19:56:11.723 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.727 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.731 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.738 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:11.746 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.751 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.756 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.765 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 19:56:11.778 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.785 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.795 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.802 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.806 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.821 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.825 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.830 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.844 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.858 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.876 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.890 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.895 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.900 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.909 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.913 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.918 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.926 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.929 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.934 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.943 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.956 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.960 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.963 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.972 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.977 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.983 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 19:56:11.991 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 19:56:11.995 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 19:56:11.999 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.514 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.553 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.584 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.634 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.649 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.656 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.666 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.684 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.697 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.703 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.710 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.724 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.758 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.784 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.798 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.842 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.852 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.869 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.886 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.902 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.907 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.912 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.930 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.935 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.942 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.949 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:45.956 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:45.968 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:45.986 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.003 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.013 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.169 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.219 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.236 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.257 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.267 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.272 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.278 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.335 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.340 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.346 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.393 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.397 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.401 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.414 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.429 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.434 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.438 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.444 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.463 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.468 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.474 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.485 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.492 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.496 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.500 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.508 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.512 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.517 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.526 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.535 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.568 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.578 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.583 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.587 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.594 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.605 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.611 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.619 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:46.629 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:46.635 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:46.639 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.662 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:47.694 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:47.701 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:47.711 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.727 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:52:47.773 [main] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-25 22:52:47.802 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:47.807 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:47.813 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.823 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:52:47.828 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.847 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 22:52:47.860 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 22:52:47.888 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:52:47.902 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:52:47.913 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:47.918 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:47.924 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.933 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:52:47.944 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:47.949 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:47.955 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.962 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:52:47.974 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:47.987 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:47.997 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.002 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.007 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.019 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.024 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.029 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.083 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.089 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.103 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.114 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.120 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.127 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.140 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.149 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.158 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.169 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.173 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.177 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.182 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.194 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.203 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.210 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.222 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.228 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.232 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:52:48.240 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:52:48.244 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:52:48.251 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:36.896 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:36.910 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:36.917 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:36.927 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:36.937 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:36.943 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:36.948 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:36.991 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.021 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.030 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.058 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:37.068 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:37.086 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.100 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:37.110 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.117 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.121 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.128 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.140 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.149 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.159 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.170 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.181 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:37.191 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:37.203 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.218 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.225 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:37.234 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.238 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.243 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.247 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.260 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.274 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.285 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.292 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.299 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.312 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.321 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.328 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.335 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.347 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:37.352 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.356 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.360 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.364 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.371 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.383 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.391 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.412 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.419 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.439 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.450 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.459 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.467 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.474 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.486 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:37.496 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.505 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.510 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.522 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.526 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.530 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.537 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.545 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.551 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.562 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.565 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.568 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.573 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.577 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.586 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.592 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.595 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.601 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.607 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.622 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.630 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.637 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.647 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.655 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.680 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:37.689 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:37.707 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.718 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.724 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.743 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:37.746 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:37.752 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.755 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:37.768 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:37.776 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.786 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:37.796 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:37.803 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 22:54:37.809 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 22:54:37.817 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:38.153 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:38.160 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:38.165 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:38.169 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:38.172 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:38.178 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:38.194 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:38.928 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:38.935 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:38.940 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:38.948 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:38.956 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:38.960 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:38.964 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:38.969 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:38.986 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:38.996 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:39.005 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:39.026 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.042 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:39.050 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.056 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.060 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.067 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.070 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.073 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.081 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.084 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.088 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.092 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.109 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:39.118 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 839 into database
+[INFO ] 2020-04-25 22:54:39.127 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:39.137 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 840 into database
+[INFO ] 2020-04-25 22:54:39.147 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:39.155 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 841 into database
+[INFO ] 2020-04-25 22:54:39.165 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 22:54:39.175 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 842 into database
+[INFO ] 2020-04-25 22:54:39.186 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 843 into database
+[INFO ] 2020-04-25 22:54:39.194 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 843 into database
+[INFO ] 2020-04-25 22:54:39.198 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.203 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.210 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.216 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.225 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:39.233 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.236 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.239 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.246 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.248 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.252 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.897 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.916 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.921 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.926 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.931 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.937 [main] PaidOrderDAOImpl - Retrieved waiter sales dates from DB
+[INFO ] 2020-04-25 22:54:39.945 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:39.950 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:39.955 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.962 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:39.968 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:39.983 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 22:54:39.992 [main] PaidOrderDAOImpl - Inserted orderLine from orderNumber 1000 into database
+[INFO ] 2020-04-25 22:54:40.000 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:40.014 [main] PaidOrderDAOImpl - Deleted orderNumber(s) equal or higher than 839 from database
+[INFO ] 2020-04-25 22:54:40.020 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.023 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.027 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.031 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:40.036 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.039 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.044 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.049 [main] PaidOrderDAOImpl - paidOrders are loaded from database
+[INFO ] 2020-04-25 22:54:40.059 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.069 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.080 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.083 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.087 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.096 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.099 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.103 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.111 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.118 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.122 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.133 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.138 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.142 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.151 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.157 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.163 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.173 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.178 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.183 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.189 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.202 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.206 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.211 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.223 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.229 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.233 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database
+[INFO ] 2020-04-25 22:54:40.241 [main] BeverageDAOImpl - beverages are loaded from database
+[INFO ] 2020-04-25 22:54:40.246 [main] WaiterDAOImpl - Waiters are loaded from database
+[INFO ] 2020-04-25 22:54:40.249 [main] PaidOrderDAOImpl - Returned highest orderNumber 838 from database

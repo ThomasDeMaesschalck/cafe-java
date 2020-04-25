@@ -1,9 +1,11 @@
 package be.hogent.cafe.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Waiter {
+public class Waiter implements Serializable {
 
+    private static final long serialVersionUID = 3732993171516191017L;
     private String lastName;
     private String firstName;
     private String password;

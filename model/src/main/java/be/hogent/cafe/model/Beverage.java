@@ -1,8 +1,12 @@
 package be.hogent.cafe.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Beverage {
+public class Beverage implements Serializable {
+
+    private static final long serialVersionUID = 2834937874439465695L;
+
     private int beverageID;
     private String beverageName;
     private double price;

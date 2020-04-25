@@ -35,6 +35,11 @@ public class CafeTest {
     @BeforeEach
     public void setUp() {
         cafe = new Cafe();
+
+        cafe.getUnpaidOrders().clear(); //clearen voor compatibiliteit testen in combinatie met serialization in JavaFX
+        cafe.getTables().clear(); //collectie leegmaken voor compatibiliteit testen vs serialization
+        cafe.createTables(cafe.getNumberOfTables()); //voor compatibiliteit met testen vs serialization
+
         wout = new Waiter(1, "Peters", "Wout", "password");
         ilse = new Waiter(3, "Vandenbroeck", "Ilse", "password");
         patrick = new Waiter(4, "Desmet", "Patrick", "password");
@@ -48,6 +53,7 @@ public class CafeTest {
         fanta = new Beverage(4, "Fanta", 3.00);
         cafe.getBeverages().add(cola);
         cafe.getBeverages().add(leffe);
+
 
     }
 

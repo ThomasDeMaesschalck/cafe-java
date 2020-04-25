@@ -3,18 +3,20 @@ package be.hogent.cafe.model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Order {
+public class Order implements Serializable {
     private int orderNumber;
     private LocalDate date;
     private int waiterID;
     private final Set<OrderItem> orderItems = new HashSet<>();
     private int tableID;
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
+    private static final long serialVersionUID = -8828166283545782525L;
 
     public Order() {
     }

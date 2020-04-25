@@ -1,10 +1,12 @@
 package be.hogent.cafe.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Table {
+public class Table implements Serializable {
     private final int tableID;
     private Waiter belongsToWaiter;
+    private static final long serialVersionUID = -5883989462029327886L;
 
     public Table(int tableID) {
         this.tableID = tableID;

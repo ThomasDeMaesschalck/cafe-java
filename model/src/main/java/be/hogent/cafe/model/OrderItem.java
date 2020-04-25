@@ -3,14 +3,15 @@ package be.hogent.cafe.model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class OrderItem {
+public class OrderItem implements Serializable {
 
     private final Beverage beverage;
     private int qty;
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
-
+    private static final long serialVersionUID = 6646850442574953970L;
 
     public OrderItem(Beverage beverage, int qty) {
         this.beverage = beverage;
