@@ -34,10 +34,6 @@ public class CafeTest {
     public void setUp() {
         cafe = new Cafe();
 
-        cafe.getUnpaidOrders().clear(); //clearen voor compatibiliteit testen in combinatie met serialization in JavaFX
-        cafe.getTables().clear(); //collectie leegmaken voor compatibiliteit testen vs serialization
-        cafe.createTables(cafe.getNumberOfTables()); //voor compatibiliteit met testen vs serialization
-
         wout = new Waiter(1, "Peters", "Wout", "password");
         ilse = new Waiter(3, "Vandenbroeck", "Ilse", "password");
         patrick = new Waiter(4, "Desmet", "Patrick", "password");
@@ -135,7 +131,7 @@ public class CafeTest {
 
     @Test
     public void testCreateTables() {
-        assertEquals(cafe.getNumberOfTables(), cafe.getTables().size(), "Test CreateTables() 02 failed"); //tables generated in constructor
+        assertEquals(cafe.getNumberOfTables(), cafe.getTables().size(), "Test CreateTables() 01 failed"); //tables generated in constructor
     }
 
     @Test
@@ -474,7 +470,7 @@ public class CafeTest {
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
     }
 
-   @Test
+    @Test
     public void testSerializationCafe() throws IOException {
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters", "password");
@@ -485,9 +481,9 @@ public class CafeTest {
         File unpaidOrders = new File("unpaidorders.ser");
         assertTrue(tables.exists(), "Test serializationCafe() 01 failed");
         assertTrue(unpaidOrders.exists(), "Test serializationCafe() 02 failed");
-       if (!tables.delete() | !unpaidOrders.delete()) {
-           throw new IOException("failed to delete ser files");
-       }
+        if (!tables.delete() | !unpaidOrders.delete()) { //files terug verwijderen, anders werken bovenstaande testen niet correct
+            throw new IOException("failed to delete ser files");
+        }
     }
 
 
@@ -505,8 +501,7 @@ public class CafeTest {
         assertFalse(cafe.getUnpaidOrders().isEmpty(), "Test deSerializationCafe() 02 failed");
         File tables = new File("tables.ser");
         File unpaidOrders = new File("unpaidorders.ser");
-
-        if (!tables.delete() | !unpaidOrders.delete()) {
+        if (!tables.delete() | !unpaidOrders.delete()) { //files terug verwijderen, anders werken bovenstaande testen niet correct
             throw new IOException("failed to delete ser files");
         }
     }

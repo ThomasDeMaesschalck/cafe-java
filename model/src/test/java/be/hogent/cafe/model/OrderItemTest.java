@@ -17,7 +17,6 @@ public class OrderItemTest {
     @BeforeEach
     public void setUp() {
         cafe = new Cafe();
-        cafe.getUnpaidOrders().clear(); //clearen voor compatibiliteit testen in combinatie met serialization in JavaFX
         wout = new Waiter(1, "Peters", "Wout", "password");
         cola = new Beverage(1, "Cola", 2.40);
         leffe = new Beverage(2, "Leffe", 3.00);
