@@ -13,9 +13,7 @@ import java.time.Month;
 import static java.time.LocalDate.of;
 import static java.time.Month.FEBRUARY;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import java.nio.file.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CafeTest {
@@ -72,6 +70,7 @@ public class CafeTest {
     public void testLogIn() {
         cafe.addWaiter(wout);
         cafe.addWaiter(patrick);
+        cafe.addWaiter(ilse);
         assertTrue(cafe.logIn("Wout Peters", "password"), "logIn1 failed");
         cafe.logOut();
         try {
@@ -473,6 +472,43 @@ public class CafeTest {
         cafe.getTopWaitersByRevenue(3);
         assertThat(cafe.topWaiterPieChart()).isTrue();
         PaidOrderDAOImpl.getInstance().deleteOrders(originalNumberOfHighestOrderNumber + 1); //gemaakte orders terug deleten
+    }
+
+   @Test
+    public void testSerializationCafe() throws IOException {
+        cafe.addWaiter(wout);
+        cafe.logIn("Wout Peters", "password");
+        cafe.setActiveTable(1);
+        cafe.placeOrder(cola, 5);
+        cafe.serializeCafe();
+        File tables = new File("tables.ser");
+        File unpaidOrders = new File("unpaidorders.ser");
+        assertTrue(tables.exists(), "Test serializationCafe() 01 failed");
+        assertTrue(unpaidOrders.exists(), "Test serializationCafe() 02 failed");
+       if (!tables.delete() | !unpaidOrders.delete()) {
+           throw new IOException("failed to delete ser files");
+       }
+    }
+
+
+    @Test
+    public void testDeSerializationCafe() throws IOException {
+        cafe.addWaiter(wout);
+        cafe.logIn("Wout Peters", "password");
+        cafe.setActiveTable(1);
+        cafe.placeOrder(cola, 5);
+        cafe.serializeCafe();
+        cafe.getUnpaidOrders().clear();
+        cafe.getTables().clear();
+        cafe.deSerializeCafe();
+        assertFalse(cafe.getTables().isEmpty(), "Test deSerializationCafe() 01 failed");
+        assertFalse(cafe.getUnpaidOrders().isEmpty(), "Test deSerializationCafe() 02 failed");
+        File tables = new File("tables.ser");
+        File unpaidOrders = new File("unpaidorders.ser");
+
+        if (!tables.delete() | !unpaidOrders.delete()) {
+            throw new IOException("failed to delete ser files");
+        }
     }
 
 }
