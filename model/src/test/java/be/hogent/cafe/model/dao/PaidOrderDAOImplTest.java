@@ -16,22 +16,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PaidOrderDAOImplTest {
     private OrderItem o1;
     private OrderItem o2;
-    private OrderItem o3;
-    private OrderItem o4;
     private Set<Order> paidOrdersDAO;
-    private Cafe cafe;
 
     @BeforeEach
     public void setUp() {
-        cafe = new Cafe();
+        Cafe cafe = new Cafe();
         Beverage duvel = new Beverage(10, "Duvel", 3.20);
         Beverage koffie = new Beverage(3, "Koffie", 2.40);
-        Beverage spa = new Beverage(7, "Spa", 2.40);
-        Beverage westmalle = new Beverage(8, "Westmalle", 3.00);
         o1 = new OrderItem(duvel, 2);
         o2 = new OrderItem(koffie, 2);
-        o3 = new OrderItem(spa, 3);
-        o4 = new OrderItem(westmalle, 3);
         paidOrdersDAO = PaidOrderDAOImpl.getInstance().getOrders();
     }
 

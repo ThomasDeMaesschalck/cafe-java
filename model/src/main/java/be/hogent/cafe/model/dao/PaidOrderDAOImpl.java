@@ -101,7 +101,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
     }
 
     @Override
-    public boolean deleteOrders(int orderNumbersToDelete) throws DAOException { //gebruikt om orders van de testen terug uit de DB te halen
+    public void deleteOrders(int orderNumbersToDelete) throws DAOException { //gebruikt om orders van de testen terug uit de DB te halen
         try (Connection connection = getConnection();
 
              PreparedStatement pStatement = connection.prepareStatement(DELETE_FROM_ORDERS)) {
@@ -113,7 +113,6 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
             logger.error("Error deleting orders in DB. " + e.getMessage());
             throw new DAOException("Failed to delete order(s) in DB " + e.getMessage());
         }
-        return true;
     }
 
     @Override

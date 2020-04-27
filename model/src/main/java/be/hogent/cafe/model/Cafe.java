@@ -82,6 +82,7 @@ public class Cafe implements Serializable {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public void deSerializeCafe() {
         try {
             FileInputStream fis = new FileInputStream("tables.ser");

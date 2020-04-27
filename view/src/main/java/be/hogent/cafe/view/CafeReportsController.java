@@ -67,7 +67,7 @@ public class CafeReportsController {
     final List<BeverageSales> salesItems = new ArrayList<>();
     final List<BeverageSales> salesByDateItems = new ArrayList<>();
     private LocalDate selectedDate = null;
-    String euro = "\u20AC";
+    final String euro = "\u20AC";
 
 
     // Reference to the main application.

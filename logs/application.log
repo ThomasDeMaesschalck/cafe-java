@@ -95,3 +95,87 @@
 [INFO ] 2020-04-26 00:49:58.902 [JavaFX Application Thread] Cafe - Deserialized cafe
 [INFO ] 2020-04-26 00:50:05.630 [JavaFX Application Thread] Cafe - Patrick Desmet logged in
 [INFO ] 2020-04-26 00:50:09.853 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 15:37:04.666 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 15:37:04.738 [JavaFX Application Thread] Cafe - Deserialized cafe
+[INFO ] 2020-04-26 15:37:15.869 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 15:37:19.196 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-26 15:37:19.276 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-26 15:37:26.064 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-26 15:37:48.441 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-26 15:37:49.262 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 16:37:35.639 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 16:37:35.712 [JavaFX Application Thread] Cafe - Deserialized cafe
+[ERROR] 2020-04-26 16:37:46.359 [JavaFX Application Thread] Cafe - Login failed, username incorrect: NathalieSegers password: password
+[INFO ] 2020-04-26 16:37:49.799 [JavaFX Application Thread] Cafe - Nathalie Segers logged in
+[INFO ] 2020-04-26 16:37:51.949 [JavaFX Application Thread] Cafe - Nathalie Segers retrieved sales data
+[INFO ] 2020-04-26 16:37:52.005 [JavaFX Application Thread] Cafe - Nathalie Segers created top waiter pie chart
+[INFO ] 2020-04-26 16:37:58.753 [JavaFX Application Thread] Cafe - Nathalie Segers retrieved sales data
+[INFO ] 2020-04-26 16:38:01.874 [JavaFX Application Thread] Cafe - Set table 22 as active table
+[INFO ] 2020-04-26 16:38:01.875 [JavaFX Application Thread] Cafe - Assigned  table 22 to Nathalie Segers
+[DEBUG] 2020-04-26 16:38:03.882 [JavaFX Application Thread] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-26 16:38:03.890 [JavaFX Application Thread] Cafe - New order made: Order: 818, date: 2020-04-26, waiterID: 2, orderItems: [], tableID: 22
+[INFO ] 2020-04-26 16:38:03.892 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Koffie
+[INFO ] 2020-04-26 16:38:05.836 [JavaFX Application Thread] Cafe - Set table 4 as active table
+[INFO ] 2020-04-26 16:38:05.836 [JavaFX Application Thread] Cafe - Assigned  table 4 to Nathalie Segers
+[INFO ] 2020-04-26 16:38:07.950 [JavaFX Application Thread] Cafe - Cleared table table 4
+[INFO ] 2020-04-26 16:38:08.444 [JavaFX Application Thread] Cafe - Set table 22 as active table
+[INFO ] 2020-04-26 16:38:10.107 [JavaFX Application Thread] Cafe - Removed orderline beverage: Koffie, quantity: 1
+[INFO ] 2020-04-26 16:38:10.646 [JavaFX Application Thread] Cafe - Cleared table table 22
+[INFO ] 2020-04-26 16:38:11.629 [JavaFX Application Thread] Cafe - Nathalie Segers logged out
+[ERROR] 2020-04-26 16:38:17.199 [JavaFX Application Thread] Cafe - Login failed, wrong password: username: Wout Peters password: pasword
+[INFO ] 2020-04-26 16:38:18.918 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 16:38:22.637 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-26 16:38:23.369 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 18:31:38.700 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 18:31:38.731 [JavaFX Application Thread] Cafe - Deserialized cafe
+[INFO ] 2020-04-26 18:31:43.314 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 18:31:45.595 [JavaFX Application Thread] Cafe - Set table 3 as active table
+[INFO ] 2020-04-26 18:31:45.595 [JavaFX Application Thread] Cafe - Assigned  table 3 to Wout Peters
+[DEBUG] 2020-04-26 18:31:47.524 [JavaFX Application Thread] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-26 18:31:47.534 [JavaFX Application Thread] Cafe - New order made: Order: 818, date: 2020-04-26, waiterID: 1, orderItems: [], tableID: 3
+[INFO ] 2020-04-26 18:31:47.537 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 18:31:47.764 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 2
+[INFO ] 2020-04-26 18:31:47.764 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 18:31:49.542 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-26 18:31:49.579 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-26 18:31:52.638 [JavaFX Application Thread] Cafe - Wout Peters retrieved sales data
+[INFO ] 2020-04-26 18:31:52.659 [JavaFX Application Thread] Cafe - Wout Peters created top waiter pie chart
+[INFO ] 2020-04-26 18:31:53.558 [JavaFX Application Thread] Cafe - Wout Peters logged out
+[INFO ] 2020-04-26 18:31:57.744 [JavaFX Application Thread] Cafe - Nathalie Segers logged in
+[INFO ] 2020-04-26 18:32:01.938 [JavaFX Application Thread] Cafe - Set table 8 as active table
+[INFO ] 2020-04-26 18:32:10.684 [JavaFX Application Thread] Cafe - Nathalie Segers logged out
+[INFO ] 2020-04-26 18:32:11.669 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 18:54:07.210 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 18:54:07.278 [JavaFX Application Thread] Cafe - Deserialized cafe
+[ERROR] 2020-04-26 18:54:11.594 [JavaFX Application Thread] Cafe - Login failed, wrong password: username: Wout Peters password: 
+[INFO ] 2020-04-26 18:54:13.945 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 18:54:16.661 [JavaFX Application Thread] Cafe - Set table 24 as active table
+[INFO ] 2020-04-26 18:54:16.662 [JavaFX Application Thread] Cafe - Assigned  table 24 to Wout Peters
+[INFO ] 2020-04-26 18:54:18.631 [JavaFX Application Thread] Cafe - Cleared table table 24
+[INFO ] 2020-04-26 18:54:19.104 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 19:14:30.534 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 19:14:37.211 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 19:14:39.558 [JavaFX Application Thread] Cafe - Set table 15 as active table
+[INFO ] 2020-04-26 19:14:39.558 [JavaFX Application Thread] Cafe - Assigned  table 15 to Wout Peters
+[DEBUG] 2020-04-26 19:14:41.945 [JavaFX Application Thread] Cafe - orderNumber count increased to: 818
+[INFO ] 2020-04-26 19:14:41.956 [JavaFX Application Thread] Cafe - New order made: Order: 818, date: 2020-04-26, waiterID: 1, orderItems: [], tableID: 15
+[INFO ] 2020-04-26 19:14:41.960 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 19:14:42.105 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 2
+[INFO ] 2020-04-26 19:14:42.105 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 19:14:42.204 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 3
+[INFO ] 2020-04-26 19:14:42.204 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 19:14:42.277 [JavaFX Application Thread] Cafe - Quantity increased of Latte to 4
+[INFO ] 2020-04-26 19:14:42.277 [JavaFX Application Thread] Cafe - orderNumber: 818 - added 1 Latte
+[INFO ] 2020-04-26 19:14:44.248 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 19:58:13.152 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 19:58:13.207 [JavaFX Application Thread] Cafe - Deserialized cafe
+[INFO ] 2020-04-26 19:58:17.197 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 20:01:25.947 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 20:01:25.992 [JavaFX Application Thread] Cafe - Deserialized cafe
+[INFO ] 2020-04-26 20:01:32.293 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 20:01:34.026 [JavaFX Application Thread] Cafe - Set table 15 as active table
+[INFO ] 2020-04-26 20:01:36.851 [JavaFX Application Thread] Cafe - Serialized cafe
+[INFO ] 2020-04-26 20:24:08.676 [JavaFX Application Thread] Cafe - Cafe started
+[INFO ] 2020-04-26 20:24:08.755 [JavaFX Application Thread] Cafe - Deserialized cafe
+[INFO ] 2020-04-26 20:24:14.909 [JavaFX Application Thread] Cafe - Wout Peters logged in
+[INFO ] 2020-04-26 20:24:17.375 [JavaFX Application Thread] Cafe - Serialized cafe
