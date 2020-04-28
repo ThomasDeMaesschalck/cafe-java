@@ -76,8 +76,8 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
     }
 
     @Override
-    public boolean insertOrder(Order o) throws DAOException {
-
+    public int insertOrder(Order o) throws DAOException {
+        int count = 0;
         for (OrderItem oi : o.getOrderLines()) {
 
             try (Connection connection = getConnection();
@@ -88,7 +88,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
                 pStatement.setInt(3, oi.getQty());
                 pStatement.setDate(4, Date.valueOf(o.getDate()));
                 pStatement.setInt(5, o.getWaiterID());
-                pStatement.executeUpdate();
+                count += pStatement.executeUpdate();
                 logger.info("Inserted orderLine from orderNumber " + o.getOrderNumber() + " into database");
 
             } catch (SQLException e) {
@@ -97,7 +97,7 @@ public class PaidOrderDAOImpl extends BaseDAO implements PaidOrderDAO {
             }
 
         }
-        return true;
+        return count;
     }
 
     @Override

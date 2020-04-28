@@ -54,7 +54,7 @@ public class MainApp extends Application {
     }
 
     @Override
-    public void stop(){
+    public void stop() {
         getModel().serializeCafe();
     }
 

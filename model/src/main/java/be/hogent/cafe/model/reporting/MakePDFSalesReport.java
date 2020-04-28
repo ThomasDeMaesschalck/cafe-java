@@ -31,6 +31,8 @@ public class MakePDFSalesReport {
     private static final String reportsDirectory = Cafe.getReportsDirectory();
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     private static final String DEST = reportsDirectory + "/salesreport.pdf";
+    private final String euro = "\u20AC";
+
 
     public boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
 
@@ -63,11 +65,11 @@ public class MakePDFSalesReport {
             double subtotal = (beverage.getPrice() * sales.get(beverage));
             totalSales[0] += subtotal;
             String subtotalString = String.format("%.2f", subtotal); //afronden
-            document.add(new Paragraph("Sold " + sales.get(beverage) + "x " + beverage.getBeverageName() + " subtotal: " + subtotalString));
+            document.add(new Paragraph("Sold: " + sales.get(beverage) + "x " + beverage.getBeverageName() + " - subtotal: " + euro + subtotalString));
         });
 
         String totalSalesString = String.format("%.2f", totalSales[0]); //afronden
-        document.add(new Paragraph("Total: " + totalSalesString));
+        document.add(new Paragraph("Total: " + euro + totalSalesString));
 
         //Close document
         document.close();

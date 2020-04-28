@@ -39,7 +39,6 @@ public class CafeOrderDialogController {
 
     private Stage dialogStage;
 
-
     // Reference to the main application.
     private MainApp mainApp;
 
@@ -54,7 +53,6 @@ public class CafeOrderDialogController {
                 new PropertyValueFactory<>("price");
         beverageNameColumn.setCellValueFactory(beverageNameProperty);
         beveragePriceColumn.setCellValueFactory(beveragePriceProperty);
-
 
         PropertyValueFactory<OrderLines, String> orderBeverageNameProperty =
                 new PropertyValueFactory<>("orderBeverageName");

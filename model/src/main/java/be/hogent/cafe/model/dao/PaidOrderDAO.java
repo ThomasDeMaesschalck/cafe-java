@@ -8,7 +8,7 @@ import java.util.Set;
 public interface PaidOrderDAO {
     Set<Order> getOrders();
 
-    boolean insertOrder(Order o) throws DAOException;
+    int insertOrder(Order o) throws DAOException;
 
     void deleteOrders(int orderNumbersToDelete) throws DAOException;
 

@@ -21,7 +21,6 @@ import java.util.*;
 
 public class CafeReportsController {
 
-
     @FXML
     private Label loggedInUserName;
 
@@ -164,6 +163,7 @@ public class CafeReportsController {
             handleExportToPDF();
         } catch (IOException e) {
             e.printStackTrace();
+            handlePDFError();
         }
     }
 
@@ -191,7 +191,7 @@ public class CafeReportsController {
         allSalesByDateTable.setItems(salesByDateItemList);
     }
 
-    public void getSalesDataForTableView(Map<Beverage, Integer> salesItemMap, List<BeverageSales> salesItemsList, Label salesTotalLabel){
+    public void getSalesDataForTableView(Map<Beverage, Integer> salesItemMap, List<BeverageSales> salesItemsList, Label salesTotalLabel) {
         salesItemMap.forEach((key, value) -> salesItemsList.add(
                 new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
 
@@ -208,6 +208,12 @@ public class CafeReportsController {
         selectedDate = null;
     }
 
+    public void handlePDFError() {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("PDF export error");
+        alert.setHeaderText("Failed to save PDF report");
+        alert.showAndWait();
+    }
 
     public static class BeverageSales {
         public final String beverageName;

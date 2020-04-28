@@ -29,7 +29,6 @@ public class Cafe implements Serializable {
     private Table activeTable;
     private List<Table> tables = new ArrayList<>();
     private HashMap<Table, Order> unpaidOrders = new HashMap<>();
-    //private Set<Order> paidOrders = new HashSet<>();
     private int highestOrderNumber;
     private int orderNumber;
 
@@ -39,7 +38,6 @@ public class Cafe implements Serializable {
         createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
-        //this.setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
         this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
         orderNumber = highestOrderNumber;
     }
@@ -119,7 +117,7 @@ public class Cafe implements Serializable {
         throw new IllegalArgumentException("username incorrect");
     }
 
-    public void  logOut() {
+    public void logOut() {
         logger.info(getLoggedInWaiter() + " logged out");
         setLoggedInWaiter(null);
         removeActiveTable();
@@ -133,13 +131,6 @@ public class Cafe implements Serializable {
 
     public void placeOrder(Beverage beverage, int quantity, LocalDate date) //waiter een order laten maken
     {
-
-        //if (!getActiveTable().getBelongsToWaiter().equals(getLoggedInWaiter())) //taken care of in front-end
-        //{
-        //   logger.error( getActiveTable().toString() + " does not belong to: " + getLoggedInWaiter().toString());
-        //   throw new IllegalArgumentException("Table belongs to other waiter");
-        //}
-
         if (!getUnpaidOrders().containsKey(getActiveTable())) {
             increaseOrderNumber();
             logger.debug("orderNumber count increased to: " + getOrderNumber());
@@ -171,7 +162,6 @@ public class Cafe implements Serializable {
         }
         getUnpaidOrders().remove(getActiveTable());
         clearTable();
-        //setPaidOrders(PaidOrderDAOImpl.getInstance().getOrders());
     }
 
     public double getTotalWaiterRevenue() { //voor actieve waiter
@@ -234,11 +224,9 @@ public class Cafe implements Serializable {
     private void createTables(int numberOfTables) {
         File serializedTables = new File("tables.ser");
         File serializedOrders = new File("unpaidorders.ser");
-        if (serializedTables.exists() && serializedOrders.exists())
-        {
+        if (serializedTables.exists() && serializedOrders.exists()) {
             deSerializeCafe();
-        }
-        else {
+        } else {
             for (int i = 0; i < numberOfTables; i++) {
                 tables.add(new Table(i + 1)); //start table number at 1 instead of 0
             }
@@ -298,10 +286,6 @@ public class Cafe implements Serializable {
     private void setHighestOrderNumber(int number) {
         highestOrderNumber = number;
     }
-
-    //public void setPaidOrders(Set<Order> paidOrder) {
-    //  paidOrders = paidOrder;
-    //}
 
     public HashMap<Table, Order> getUnpaidOrders() {
         return unpaidOrders;

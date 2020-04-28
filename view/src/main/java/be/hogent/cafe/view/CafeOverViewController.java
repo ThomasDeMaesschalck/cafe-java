@@ -7,7 +7,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.TilePane;
 
-
 public class CafeOverViewController {
 
     @FXML
