@@ -132,12 +132,7 @@ public class CafeReportsController {
 
         Map<Beverage, Integer> salesMap = mainApp.getModel().getAllWaiterSales();
 
-        salesMap.forEach((key, value) -> salesItems.add(
-                new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
-
-        BigDecimal waiterSalesTotal = salesItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
-        String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal.doubleValue()); //afronden
-        salesTotal.setText(euro + waiterSalesTotalString);
+        getSalesDataForTableView(salesMap, salesItems, salesTotal);
 
         ObservableList<BeverageSales> salesItemList = FXCollections.observableArrayList(salesItems);
 
@@ -183,23 +178,26 @@ public class CafeReportsController {
     }
 
     public void comboBoxClick() {
-
         salesByDateItems.clear();
 
         selectedDate = selectDatesBox.getSelectionModel().getSelectedItem();
         Map<Beverage, Integer> salesByDateMap = mainApp.getModel().getAllWaiterSales(selectedDate);
 
-        salesByDateMap.forEach((key, value) -> salesByDateItems.add(
-                new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
-
-        BigDecimal waiterSalesTotalByDate = salesByDateItems.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
-        String salesByDateTotalString = String.format("%.2f", waiterSalesTotalByDate); //afronden
-        salesByDateTotal.setText(euro + salesByDateTotalString);
+        getSalesDataForTableView(salesByDateMap, salesByDateItems, salesByDateTotal);
 
         ObservableList<BeverageSales> salesByDateItemList = FXCollections.observableArrayList(salesByDateItems);
 
         allSalesByDateTable.getSortOrder().add(beverageNameColumn);
         allSalesByDateTable.setItems(salesByDateItemList);
+    }
+
+    public void getSalesDataForTableView(Map<Beverage, Integer> salesItemMap, List<BeverageSales> salesItemsList, Label salesTotalLabel){
+        salesItemMap.forEach((key, value) -> salesItemsList.add(
+                new BeverageSales(key.getBeverageName(), key.getPrice(), value, BigDecimal.valueOf(key.getPrice() * value))));
+
+        BigDecimal waiterSalesTotal = salesItemsList.stream().map(BeverageSales::getSubTotal).reduce(BigDecimal::add).orElseThrow();
+        String waiterSalesTotalString = String.format("%.2f", waiterSalesTotal.doubleValue()); //afronden
+        salesTotalLabel.setText(euro + waiterSalesTotalString);
     }
 
     public void handleExportToPDF() {

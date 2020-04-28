@@ -30,7 +30,7 @@ public class MakePDFSalesReport {
 
     private static final String reportsDirectory = Cafe.getReportsDirectory();
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
-    public static final String DEST = reportsDirectory + "/salesreport.pdf";
+    private static final String DEST = reportsDirectory + "/salesreport.pdf";
 
     public boolean createPDF(Map<Beverage, Integer> sales, String waiterName, LocalDate date) throws IOException {
 

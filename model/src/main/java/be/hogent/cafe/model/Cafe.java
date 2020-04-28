@@ -119,11 +119,10 @@ public class Cafe implements Serializable {
         throw new IllegalArgumentException("username incorrect");
     }
 
-    public boolean logOut() {
+    public void  logOut() {
         logger.info(getLoggedInWaiter() + " logged out");
         setLoggedInWaiter(null);
         removeActiveTable();
-        return true;
     }
 
     public void placeOrder(Beverage beverage, int quantity) //waiter order laten maken. Versie zonder datum, neemt huidige datum.
@@ -220,7 +219,7 @@ public class Cafe implements Serializable {
         return waiters;
     }
 
-    public void setWaiters(Set<Waiter> waiter) {
+    private void setWaiters(Set<Waiter> waiter) {
         this.waiters = waiter;
     }
 
@@ -232,7 +231,7 @@ public class Cafe implements Serializable {
         return getLoggedInWaiter().getFirstName() + " " + getLoggedInWaiter().getLastName();
     }
 
-    public void createTables(int numberOfTables) {
+    private void createTables(int numberOfTables) {
         File serializedTables = new File("tables.ser");
         File serializedOrders = new File("unpaidorders.ser");
         if (serializedTables.exists() && serializedOrders.exists())
@@ -288,7 +287,7 @@ public class Cafe implements Serializable {
         return beverages;
     }
 
-    public void setBeverages(Set<Beverage> beverage) {
+    private void setBeverages(Set<Beverage> beverage) {
         beverages = beverage;
     }
 
@@ -296,7 +295,7 @@ public class Cafe implements Serializable {
         return beverages.stream().filter(b -> b.getBeverageID() == beverageID).findFirst().orElse(null);
     }
 
-    public void setHighestOrderNumber(int number) {
+    private void setHighestOrderNumber(int number) {
         highestOrderNumber = number;
     }
 

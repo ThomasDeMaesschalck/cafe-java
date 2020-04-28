@@ -126,7 +126,8 @@ public class CafeTest {
     public void testLogOut() {
         cafe.addWaiter(wout);
         cafe.logIn("Wout Peters", "password");
-        assertTrue(cafe.logOut(), "Test logOut() 01 failed");
+        cafe.logOut();
+        assertNull(cafe.getLoggedInWaiter(), "Test logOut() 01 failed");
     }
 
     @Test

@@ -118,7 +118,7 @@ public class CafeOrderDialogController {
     @FXML
     private void handleClose() {
         dialogStage.close();
-        //order volledig verwijderen indien alle orderlines verwijderd zijn in dialog
+        //order volledig verwijderen indien order aangemaakt werd maar daarna alle orderlines verwijderd zijn in dialog
         if (mainApp.getModel().getUnpaidOrders().containsKey(mainApp.getModel().getActiveTable())
                 && mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()).getOrderLines().isEmpty()) {
             mainApp.getModel().getUnpaidOrders().remove(mainApp.getModel().getActiveTable());

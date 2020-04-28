@@ -46,7 +46,7 @@
                                                       <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
                                                          <children>
                                                             <Label text="Total sales: " />
-                                                            <Label fx:id="salesTotal" text="total" />
+                                                            <Label fx:id="salesTotal" text=" 0" />
                                                          </children>
                                                       </HBox>
                                                    </children></AnchorPane>
