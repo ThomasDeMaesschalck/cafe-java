@@ -42,7 +42,7 @@
                                                             <TableColumn fx:id="beverageSubTotalColumn" prefWidth="104.0" text="Subtotal" />
                                                         </columns>
                                                       </TableView>
-                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />
+                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generateAllSalesPDF" text="Export to PDF" />
                                                       <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
                                                          <children>
                                                             <Label text="Total sales: " />

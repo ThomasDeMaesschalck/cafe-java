@@ -157,6 +157,16 @@ public class CafeReportsController {
         return tab;
     }
 
+    public void generateAllSalesPDF() {
+        try {
+            mainApp.getModel().waiterSalesReportPDF(null);
+            handleExportToPDF();
+        } catch (IOException e) {
+            e.printStackTrace();
+            handlePDFError();
+        }
+    }
+
     public void generatePDF() {
         try {
             mainApp.getModel().waiterSalesReportPDF(selectedDate);
@@ -205,7 +215,6 @@ public class CafeReportsController {
         alert.setTitle("PDF export");
         alert.setHeaderText("PDF waiter sales report has been generated. You can find it in the configured reports folder.");
         alert.showAndWait();
-        selectedDate = null;
     }
 
     public void handlePDFError() {
