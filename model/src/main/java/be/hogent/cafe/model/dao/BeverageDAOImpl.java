@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.util.HashSet;
 import java.util.Set;
 
-
 public class BeverageDAOImpl extends BaseDAO implements BeverageDAO {
     private static final String GET_ALL_BEVERAGES = "SELECT * from beverages";
 

@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2017. All code is used during Programmeren 3 module at CVO hogent
- */
-
 package be.hogent.cafe.model.dao;
 
 public class DAOException extends Exception {

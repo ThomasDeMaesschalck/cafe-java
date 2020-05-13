@@ -39,7 +39,6 @@ public class LogInController {
     public void logIn() {
         if (logInCheck()) {
             mainApp.showCafeOverview();
-
         }
     }
 

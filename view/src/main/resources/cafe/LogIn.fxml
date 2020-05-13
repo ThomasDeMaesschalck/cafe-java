@@ -9,39 +9,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.LogInController">
-   <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@javalogo2.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="279.0" layoutY="184.0" prefHeight="60.0" prefWidth="94.0" text="Cafe" textFill="#b96f20">
-         <font>
-            <Font name="Arial" size="44.0" />
-         </font>
-      </Label>
-      <TextField fx:id="userName" layoutX="308.0" layoutY="280.0" promptText="Username" style="-fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);"/>
-      <PasswordField fx:id="pass" layoutX="308.0" layoutY="322.0" promptText="Password" style="-fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);"/>
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="279.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@user.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="281.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@pass.png" />
-         </image>
-      </ImageView>
-      <Button defaultButton="true" layoutX="307.0" layoutY="361.0" mnemonicParsing="false" onAction="#logIn" prefHeight="18.0" prefWidth="149.0" style="-fx-background-color: B06A1E;" text="Login">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <ImageView fx:id="eye" fitHeight="19.0" fitWidth="24.0" layoutX="430.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@eye.jpg" />
-         </image>
-      </ImageView>
-   </children>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="be.hogent.cafe.view.LogInController">
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="94.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@javalogo2.png"/>
+   </ImageView>
+   <Label layoutX="279.0" layoutY="184.0" prefHeight="60.0" prefWidth="94.0" text="Cafe" textFill="#b96f20">
+      <font>
+         <Font name="Arial" size="44.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="userName" layoutX="308.0" layoutY="280.0" promptText="Username"
+              style="-fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);"/>
+   <PasswordField fx:id="pass" layoutX="308.0" layoutY="322.0" promptText="Password"
+                  style="-fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);"/>
+   <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="279.0" layoutY="280.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@user.png"/>
+   </ImageView>
+   <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="281.0" layoutY="321.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@pass.png"/>
+   </ImageView>
+   <Button defaultButton="true" layoutX="307.0" layoutY="361.0" mnemonicParsing="false" onAction="#logIn"
+           prefHeight="18.0" prefWidth="149.0" style="-fx-background-color: B06A1E;" text="Login">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Button>
+   <ImageView fx:id="eye" fitHeight="19.0" fitWidth="24.0" layoutX="430.0" layoutY="324.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@eye.jpg"/>
+   </ImageView>
 </AnchorPane>

@@ -35,11 +35,11 @@ public class Cafe implements Serializable {
     public Cafe() {
         logger.info("Cafe started");
         readProperties();
-        createTables(numberOfTables);
         this.setBeverages(BeverageDAOImpl.getInstance().getBeverages());
         this.setWaiters(WaiterDAOImpl.getInstance().getWaiters());
         this.setHighestOrderNumber(PaidOrderDAOImpl.getInstance().highestOrderNumber());
         orderNumber = highestOrderNumber;
+        createTables(numberOfTables);
     }
 
     private void readProperties() {
@@ -226,6 +226,7 @@ public class Cafe implements Serializable {
         File serializedOrders = new File("unpaidorders.ser");
         if (serializedTables.exists() && serializedOrders.exists()) {
             deSerializeCafe();
+            orderNumber = orderNumber + getUnpaidOrders().size(); //vermijden dat twee waiters dezelfde ordernummer kunnen krijgen
         } else {
             for (int i = 0; i < numberOfTables; i++) {
                 tables.add(new Table(i + 1)); //start table number at 1 instead of 0

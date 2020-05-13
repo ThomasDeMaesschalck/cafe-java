@@ -3,39 +3,33 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeOverViewController" prefHeight="600.0" prefWidth="800.0">
-   <children>
-      <SplitPane layoutY="0" prefHeight="600.0" prefWidth="800.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600" prefWidth="800.0">
-               <children>
-                  <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0">
-                    <items>
-                      <AnchorPane prefHeight="535.0" prefWidth="794.0">
-                           <children>
-                              <AnchorPane prefHeight="51.0" prefWidth="605.0">
-                                 <children>
-                                    <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
-                                      <buttons>
-                                        <Button mnemonicParsing="false" opacity="0.33" text="Home" />
-                                          <Button mnemonicParsing="false" onAction="#reports" text="Reports" />
-                                          <Button mnemonicParsing="false" onAction="#logout" text="Logout" />
-                                      </buttons>
-                                    </ButtonBar>
-                                 </children>
-                              </AnchorPane>
-                               <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="47.0" prefHeight="484.0" prefWidth="773.0" style="-fx-background-color: transparent;">
-                                   <TilePane fx:id="tablePane" layoutX="14.0" layoutY="68.0" prefHeight="475.0" prefWidth="757.0" />
-                               </ScrollPane>
-                           </children></AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="160.0">
-                           <children>
-                              <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="20.0" prefWidth="187.0" text="Logged in user:" />
-                           </children></AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children></AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="be.hogent.cafe.view.CafeOverViewController" prefHeight="600.0" prefWidth="800.0">
+    <SplitPane prefHeight="600.0" prefWidth="800.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600" prefWidth="800.0">
+            <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL"
+                       prefHeight="600.0" prefWidth="800.0">
+                <AnchorPane prefHeight="535.0" prefWidth="794.0">
+                    <AnchorPane prefHeight="51.0" prefWidth="605.0">
+                        <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
+                            <buttons>
+                                <Button mnemonicParsing="false" opacity="0.33" text="Home"/>
+                                <Button mnemonicParsing="false" onAction="#reports" text="Reports"/>
+                                <Button mnemonicParsing="false" onAction="#logout" text="Logout"/>
+                            </buttons>
+                        </ButtonBar>
+                    </AnchorPane>
+                    <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="47.0" prefHeight="484.0"
+                                prefWidth="773.0" style="-fx-background-color: transparent;">
+                        <TilePane fx:id="tablePane" layoutX="14.0" layoutY="68.0" prefHeight="475.0"
+                                  prefWidth="757.0"/>
+                    </ScrollPane>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="160.0">
+                    <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="20.0" prefWidth="187.0"
+                           text="Logged in user:"/>
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </SplitPane>
 </AnchorPane>

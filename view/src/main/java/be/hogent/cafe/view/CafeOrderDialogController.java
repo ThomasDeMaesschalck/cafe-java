@@ -94,7 +94,7 @@ public class CafeOrderDialogController {
 
     public void populateOrderLinesTable() {
         Set<Order> orderMap = new HashSet<>();
-        orderItems.clear(); //resetten
+        orderItems.clear(); //eerst resetten zodat het er geen tweede keer bijgeplakt wordt
         double orderLinesTotal = 0.0;
 
         orderMap.add(mainApp.getModel().getUnpaidOrders().get(mainApp.getModel().getActiveTable()));

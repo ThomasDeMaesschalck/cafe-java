@@ -4,100 +4,98 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.hogent.cafe.view.CafeReportsController">
-   <children>
-      <SplitPane layoutY="0" prefHeight="600.0" prefWidth="800.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600" prefWidth="800.0">
-               <children>
-                  <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="612.0" prefWidth="800.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="809.0">
-                           <children>
-                              <AnchorPane prefHeight="51.0" prefWidth="605.0">
-                                 <children>
-                                    <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
-                                      <buttons>
-                                        <Button mnemonicParsing="false" onAction="#home" text="Home" />
-                                          <Button mnemonicParsing="false" opacity="0.33" text="Reports" />
-                                          <Button mnemonicParsing="false" onAction="#logout" text="Logout" />
-                                      </buttons>
-                                    </ButtonBar>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane layoutX="14.0" layoutY="60.0" prefHeight="467.0" prefWidth="778.0">
-                                 <children>
-                                    <HBox layoutX="4.0" prefHeight="40.0" prefWidth="771.0" />
-                                    <TabPane fx:id="tabPane" layoutX="4.0" prefHeight="461.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE">
-                                      <tabs>
-                                        <Tab fx:id="allSalesTab" text="All sales">
-                                          <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                   <children>
-                                                      <TableView fx:id="allSalesTable" layoutX="14.0" layoutY="14.0" prefHeight="353.0" prefWidth="307.0">
-                                                        <columns>
-                                                          <TableColumn fx:id="beverageNameColumn" prefWidth="75.0" text="Beverage"  />
-                                                          <TableColumn fx:id="beveragePriceColumn" prefWidth="55.0" text="Price" />
-                                                            <TableColumn fx:id="beverageQtyColumn" prefWidth="52.0" text="Qty" />
-                                                            <TableColumn fx:id="beverageSubTotalColumn" prefWidth="104.0" text="Subtotal" />
-                                                        </columns>
-                                                      </TableView>
-                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generateAllSalesPDF" text="Export to PDF" />
-                                                      <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
-                                                         <children>
-                                                            <Label text="Total sales: " />
-                                                            <Label fx:id="salesTotal" text=" 0" />
-                                                         </children>
-                                                      </HBox>
-                                                   </children></AnchorPane>
-                                          </content>
-                                        </Tab>
-                                        <Tab fx:id="byDateTab" text="Sales by date">
-                                          <content>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                  <children>
-                                                      <TableView fx:id="allSalesByDateTable" layoutX="14.0" layoutY="14.0" prefHeight="353.0" prefWidth="307.0">
-                                                          <placeholder>
-                                                              <Label text="Select a date first" />
-                                                          </placeholder>
-                                                          <columns>
-                                                              <TableColumn fx:id="beverageNameByDateColumn" prefWidth="75.0" text="Beverage" />
-                                                              <TableColumn fx:id="beveragePriceByDateColumn" prefWidth="55.0" text="Price" />
-                                                              <TableColumn fx:id="beverageQtyByDateColumn" prefWidth="52.0" text="Qty" />
-                                                              <TableColumn fx:id="beverageSubTotalByDateColumn" prefWidth="104.0" text="Subtotal" />
-                                                          </columns>
-                                                      </TableView>
-                                                      <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF" />
-                                                      <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0">
-                                                          <children>
-                                                              <Label text="Total sales: " />
-                                                              <Label fx:id="salesByDateTotal" text=" 0" />
-                                                          </children>
-                                                      </HBox>
-                                                      <ComboBox fx:id="selectDatesBox" layoutX="359.0" layoutY="23.0" onAction="#comboBoxClick" prefWidth="150.0" promptText="Select a date" />
-                                                  </children></AnchorPane>                                          </content>
-                                      </Tab>
-                                          <Tab fx:id="pieTab" text="Pie chart">
-                                              <content>
-                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                   <children>
-                                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
-                                                   </children></AnchorPane>
-                                              </content>
-                                          </Tab>
-                                      </tabs>
-                                    </TabPane>
-                                 </children>
-                              </AnchorPane>
-                           </children></AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="160.0">
-                           <children>
-                              <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="20.0" prefWidth="187.0" text="Logged in user:" />
-                           </children></AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children></AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="be.hogent.cafe.view.CafeReportsController">
+    <SplitPane prefHeight="600.0" prefWidth="800.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600" prefWidth="800.0">
+            <SplitPane dividerPositions="0.8819672131147541" layoutX="-7.0" layoutY="-1.0" orientation="VERTICAL"
+                       prefHeight="612.0" prefWidth="800.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="809.0">
+                    <AnchorPane prefHeight="51.0" prefWidth="605.0">
+                        <ButtonBar layoutX="21.0" layoutY="6.0" prefHeight="40.0" prefWidth="568.0">
+                            <buttons>
+                                <Button mnemonicParsing="false" onAction="#home" text="Home"/>
+                                <Button mnemonicParsing="false" opacity="0.33" text="Reports"/>
+                                <Button mnemonicParsing="false" onAction="#logout" text="Logout"/>
+                            </buttons>
+                        </ButtonBar>
+                    </AnchorPane>
+                    <AnchorPane layoutX="14.0" layoutY="60.0" prefHeight="467.0" prefWidth="778.0">
+                        <HBox layoutX="4.0" prefHeight="40.0" prefWidth="771.0"/>
+                        <TabPane fx:id="tabPane" layoutX="4.0" prefHeight="461.0" prefWidth="771.0"
+                                 tabClosingPolicy="UNAVAILABLE">
+                            <Tab fx:id="allSalesTab" text="All sales">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                            prefWidth="200.0">
+                                    <TableView fx:id="allSalesTable" layoutX="14.0" layoutY="14.0"
+                                               prefHeight="353.0" prefWidth="307.0">
+                                        <columns>
+                                            <TableColumn fx:id="beverageNameColumn" prefWidth="75.0"
+                                                         text="Beverage"/>
+                                            <TableColumn fx:id="beveragePriceColumn" prefWidth="55.0"
+                                                         text="Price"/>
+                                            <TableColumn fx:id="beverageQtyColumn" prefWidth="52.0"
+                                                         text="Qty"/>
+                                            <TableColumn fx:id="beverageSubTotalColumn" prefWidth="104.0"
+                                                         text="Subtotal"/>
+                                        </columns>
+                                    </TableView>
+                                    <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false"
+                                            onAction="#generateAllSalesPDF" text="Export to PDF"/>
+                                    <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0"
+                                          prefWidth="644.0">
+                                        <Label text="Total sales: "/>
+                                        <Label fx:id="salesTotal" text=" 0"/>
+                                    </HBox>
+                                </AnchorPane>
+                            </Tab>
+                            <Tab fx:id="byDateTab" text="Sales by date">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                            prefWidth="200.0">
+                                    <TableView fx:id="allSalesByDateTable" layoutX="14.0" layoutY="14.0"
+                                               prefHeight="353.0" prefWidth="307.0">
+                                        <placeholder>
+                                            <Label text="Select a date first"/>
+                                        </placeholder>
+                                        <columns>
+                                            <TableColumn fx:id="beverageNameByDateColumn" prefWidth="75.0"
+                                                         text="Beverage"/>
+                                            <TableColumn fx:id="beveragePriceByDateColumn"
+                                                         prefWidth="55.0" text="Price"/>
+                                            <TableColumn fx:id="beverageQtyByDateColumn" prefWidth="52.0"
+                                                         text="Qty"/>
+                                            <TableColumn fx:id="beverageSubTotalByDateColumn"
+                                                         prefWidth="104.0" text="Subtotal"/>
+                                        </columns>
+                                    </TableView>
+                                    <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false"
+                                            onAction="#generatePDF" text="Export to PDF"/>
+                                    <HBox layoutX="14.0" layoutY="371.0" prefHeight="40.0"
+                                          prefWidth="644.0">
+                                        <Label text="Total sales: "/>
+                                        <Label fx:id="salesByDateTotal" text=" 0"/>
+                                    </HBox>
+                                    <ComboBox fx:id="selectDatesBox" layoutX="359.0" layoutY="23.0"
+                                              onAction="#comboBoxClick" prefWidth="150.0"
+                                              promptText="Select a date"/>
+                                </AnchorPane>
+                            </Tab>
+                            <Tab fx:id="pieTab" text="Pie chart">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                            prefWidth="200.0">
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0"
+                                               layoutY="22.0" pickOnBounds="true"
+                                               preserveRatio="true"/>
+                                </AnchorPane>
+                            </Tab>
+                        </TabPane>
+                    </AnchorPane>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="160.0">
+                    <Label fx:id="loggedInUserName" layoutX="14.0" prefHeight="20.0" prefWidth="187.0"
+                           text="Logged in user:"/>
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </SplitPane>
 </AnchorPane>

@@ -1,4 +1,0 @@
-[INFO ] 2020-04-16 22:40:35.214 [JavaFX Application Thread] BeverageDAOImpl - beverages are loaded from database
-[INFO ] 2020-04-16 22:40:35.243 [JavaFX Application Thread] WaiterDAOImpl - Waiters are loaded from database
-[INFO ] 2020-04-16 22:40:35.276 [JavaFX Application Thread] PaidOrderDAOImpl - paidOrders are loaded from database
-[INFO ] 2020-04-16 22:40:35.287 [JavaFX Application Thread] PaidOrderDAOImpl - Returned highest orderNumber 71 from database

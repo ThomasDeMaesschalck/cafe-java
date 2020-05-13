@@ -1,4 +1,3 @@
-
 package be.hogent.cafe.view;
 
 import be.hogent.cafe.model.*;

@@ -27,8 +27,6 @@ public class MakeTopWaitersChart {
         return instance;
     }
 
-    //exception handling nog af te werken
-
     private static final Logger logger = LogManager.getLogger(Cafe.class.getName());
     private static final String reportsDirectory = Cafe.getReportsDirectory();
 
