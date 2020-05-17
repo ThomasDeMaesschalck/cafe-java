@@ -23,28 +23,25 @@
                         <buttons>
                             <Button mnemonicParsing="false" onAction="#home" prefWidth="175.0" text="Home">
                                 <graphic>
-                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                        <image>
-                                            <Image url="@home_icon.png" />
-                                        </image>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@home_icon.png"/>
                                     </ImageView>
                                 </graphic>
                             </Button>
                             <Button mnemonicParsing="false" opacity="0.33" prefWidth="175.0" text="Reports">
                                 <graphic>
-                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                        <image>
-                                            <Image url="@stats_icon.png" />
-                                        </image>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@stats_icon.png"/>
                                     </ImageView>
                                 </graphic>
                             </Button>
                             <Button mnemonicParsing="false" onAction="#logout" prefWidth="175.0" text="Logout">
                                 <graphic>
-                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                        <image>
-                                            <Image url="@logout_icon.png" />
-                                        </image>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@logout_icon.png"/>
                                     </ImageView>
                                 </graphic>
                             </Button>
@@ -66,10 +63,9 @@
                                 </TableView>
                                 <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generateAllSalesPDF" text="Export to PDF">
                                     <graphic>
-                                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@pdf_icon.png" />
-                                            </image>
+                                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <Image url="@pdf_icon.png"/>
                                         </ImageView>
                                     </graphic>
                                 </Button>
@@ -94,10 +90,9 @@
                                 </TableView>
                                 <Button layoutX="451.0" layoutY="202.0" mnemonicParsing="false" onAction="#generatePDF" text="Export to PDF">
                                     <graphic>
-                                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@pdf_icon.png" />
-                                            </image>
+                                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <Image url="@pdf_icon.png"/>
                                         </ImageView>
                                     </graphic>
                                 </Button>
@@ -120,9 +115,7 @@
             <AnchorPane maxHeight="25.0" minHeight="0.0" minWidth="0.0" prefHeight="25.0" prefWidth="160.0">
                 <Label fx:id="loggedInUserName" layoutX="35.0" prefHeight="20.0" prefWidth="187.0" text="Logged in user:" />
                 <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@user-icon.png" />
-                    </image>
+                    <Image url="@user-icon.png"/>
                 </ImageView>
             </AnchorPane>
         </VBox>

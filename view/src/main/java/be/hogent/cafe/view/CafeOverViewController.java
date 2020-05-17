@@ -4,6 +4,8 @@ import be.hogent.cafe.model.*;
 import javafx.fxml.*;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.TilePane;
 
@@ -57,10 +59,14 @@ public class CafeOverViewController {
         for (Table table : mainApp.getModel().getTables()) {
             Button tableButton = new Button(table.toString());
             tableButton.setPrefSize(100, 100);
+            Image tableImage = new Image(getClass().getResource("/cafe/table_icon.png").toExternalForm(), 24, 24, true, true);
+            ImageView tableImageIcon = new ImageView((tableImage));
+            tableButton.setGraphic(tableImageIcon);
             tablePane.getChildren().addAll(tableButton);
 
             tableButton.setOnMouseClicked(mouseEvent -> {
                 tableButton.setStyle("-fx-background-color: orange");
+
 
                 String thisTable = tableButton.getText();
                 for (Table table1 : mainApp.getModel().getTables()) {
@@ -72,7 +78,7 @@ public class CafeOverViewController {
 
 
             if (table.getBelongsToWaiter() == null) {
-                tableButton.setStyle("-fx-background-color: grey");
+                tableButton.setStyle("-fx-background-color: lightgrey");
             } else {
 
                 if (table.getBelongsToWaiter().equals(mainApp.getModel().getLoggedInWaiter())) {
