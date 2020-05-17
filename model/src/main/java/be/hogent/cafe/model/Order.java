@@ -76,10 +76,6 @@ public class Order implements Serializable {
         this.waiterID = waiterID;
     }
 
-    //public void setOrderItems(OrderItem orderItem) {
-    //  this.orderItems.add(orderItem);
-    // }
-
     @Override
     public String toString() {
         return "Order: " + getOrderNumber() +
