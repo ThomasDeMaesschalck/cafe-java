@@ -1,4 +1,4 @@
-# cafe-java
+# Cafe Java
 I made this project as part of an ICT education. 
 
 This is a JavaFX application that simulates a bar. Waiters can log-in, take orders, and view statistics. 
